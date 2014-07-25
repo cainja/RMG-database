@@ -12,16 +12,16 @@ entry(
     group1 = "OR{R3radEndo, R3radExo}",
     group2 = 
 """
-1 *1 R!H 1
+1 *1 R!H u1
 """,
     group3 = 
 """
-1 *3 R!H 1 {2,S}
-2 *2 R!H 0 {1,S} {3,S}
-3 *4 H   0 {2,S}
+1 *3 R!H u1 {2,S}
+2 *2 R!H u0 {1,S} {3,S}
+3 *4 H   u0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (162000000000.0, 's^-1'),
+        A = (1.62e+11, 's^-1'),
         n = -0.305,
         alpha = 0,
         E0 = (2, 'kcal/mol'),
@@ -42,16 +42,16 @@ entry(
     group1 = "OR{R4radEndo, R4radExo}",
     group2 = 
 """
-1 *1 R!H 1
+1 *1 R!H u1
 """,
     group3 = 
 """
-1 *3 R!H 1 {2,S}
-2 *2 R!H 0 {1,S} {3,S}
-3 *4 H   0 {2,S}
+1 *3 R!H u1 {2,S}
+2 *2 R!H u0 {1,S} {3,S}
+3 *4 H   u0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (776000000.0, 's^-1'),
+        A = (7.76e+08, 's^-1'),
         n = 0.311,
         alpha = 0,
         E0 = (2, 'kcal/mol'),
@@ -72,16 +72,16 @@ entry(
     group1 = "OR{R5radEndo, R5radExo}",
     group2 = 
 """
-1 *1 R!H 1
+1 *1 R!H u1
 """,
     group3 = 
 """
-1 *3 R!H 1 {2,S}
-2 *2 R!H 0 {1,S} {3,S}
-3 *4 H   0 {2,S}
+1 *3 R!H u1 {2,S}
+2 *2 R!H u0 {1,S} {3,S}
+3 *4 H   u0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3210000000.0, 's^-1'),
+        A = (3.21e+09, 's^-1'),
         n = 0.137,
         alpha = 0,
         E0 = (2, 'kcal/mol'),
@@ -102,16 +102,16 @@ entry(
     group1 = "OR{R6radEndo, R6radExo}",
     group2 = 
 """
-1 *1 R!H 1
+1 *1 R!H u1
 """,
     group3 = 
 """
-1 *3 R!H 1 {2,S}
-2 *2 R!H 0 {1,S} {3,S}
-3 *4 H   0 {2,S}
+1 *3 R!H u1 {2,S}
+2 *2 R!H u0 {1,S} {3,S}
+3 *4 H   u0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3210000000.0, 's^-1'),
+        A = (3.21e+09, 's^-1'),
         n = 0.137,
         alpha = 0,
         E0 = (2, 'kcal/mol'),
@@ -132,16 +132,16 @@ entry(
     group1 = "OR{R7radEndo, R7radExo}",
     group2 = 
 """
-1 *1 R!H 1
+1 *1 R!H u1
 """,
     group3 = 
 """
-1 *3 R!H 1 {2,S}
-2 *2 R!H 0 {1,S} {3,S}
-3 *4 H   0 {2,S}
+1 *3 R!H u1 {2,S}
+2 *2 R!H u0 {1,S} {3,S}
+3 *4 H   u0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3210000000.0, 's^-1'),
+        A = (3.21e+09, 's^-1'),
         n = 0.137,
         alpha = 0,
         E0 = (2, 'kcal/mol'),

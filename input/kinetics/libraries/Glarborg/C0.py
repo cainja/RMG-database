@@ -11,32 +11,36 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (3600000000000000.0, 'cm^3/(mol*s)'),
+        A = (3.6e+15, 'cm^3/(mol*s)'),
         n = -0.41,
         Ea = (16600, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -50,30 +54,32 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant3 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -81,7 +87,7 @@ H2
         n = -0.6,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -95,32 +101,34 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant3 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -128,7 +136,7 @@ H2O
         n = -1,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -142,43 +150,36 @@ entry(
     reactant1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     reactant2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
-            Arrhenius(
-                A = (3800000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (7948, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (880000000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (19175, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
+            Arrhenius(A=(3.8e+12, 'cm^3/(mol*s)'), n=0, Ea=(7948, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(8.8e+14, 'cm^3/(mol*s)'), n=0, Ea=(19175, 'cal/mol'), T0=(1, 'K')),
         ],
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -192,26 +193,29 @@ entry(
     reactant1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -219,7 +223,7 @@ H2O
         n = 2.7,
         Ea = (-1822, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -233,34 +237,36 @@ entry(
     reactant1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (210000000.0, 'cm^3/(mol*s)'),
+        A = (2.1e+08, 'cm^3/(mol*s)'),
         n = 1.52,
         Ea = (3449, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -274,26 +280,29 @@ entry(
     reactant1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -301,7 +310,7 @@ H
         n = 2.433,
         Ea = (53502, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -315,34 +324,38 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (84000000000000.0, 'cm^3/(mol*s)'),
+        A = (8.4e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (400, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -356,34 +369,37 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1400000000000.0, 'cm^3/(mol*s)'),
+        A = (1.4e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -397,34 +413,38 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (16000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.6e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-445, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -438,36 +458,39 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (28900000000000.0, 'cm^3/(mol*s)', '*|/', 1.58),
+        A = (2.89e+13, 'cm^3/(mol*s)', '*|/', 1.58),
         n = 0,
         Ea = (-497, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -481,49 +504,42 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
-            Arrhenius(
-                A = (190000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (-1408, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (100000000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (11034, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
+            Arrhenius(A=(1.9e+11, 'cm^3/(mol*s)'), n=0, Ea=(-1408, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(1e+14, 'cm^3/(mol*s)'), n=0, Ea=(11034, 'cal/mol'), T0=(1, 'K')),
         ],
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -537,36 +553,38 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (10000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (3580, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -580,36 +598,38 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1700000000000.0, 'cm^3/(mol*s)'),
+        A = (1.7e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (3760, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -623,36 +643,39 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (9600000.0, 'cm^3/(mol*s)'),
+        A = (9.6e+06, 'cm^3/(mol*s)'),
         n = 2,
         Ea = (3970, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -666,44 +689,41 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
-            Arrhenius(
-                A = (1900000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (427, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
+            Arrhenius(A=(1.9e+12, 'cm^3/(mol*s)'), n=0, Ea=(427, 'cal/mol'), T0=(1, 'K')),
             Arrhenius(A=(1.6e+18, 'cm^3/(mol*s)'), n=0, Ea=(29410, 'cal/mol'), T0=(1, 'K')),
         ],
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -717,29 +737,27 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
-        arrheniusHigh = Arrhenius(
-            A = (1500000000000.0, 'cm^3/(mol*s)'),
-            n = 0.6,
-            Ea = (0, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
+        arrheniusHigh = Arrhenius(A=(1.5e+12, 'cm^3/(mol*s)'), n=0.6, Ea=(0, 'cal/mol'), T0=(1, 'K')),
         arrheniusLow = Arrhenius(
             A = (3.5e+16, 'cm^6/(mol^2*s)'),
             n = -0.41,
@@ -749,8 +767,8 @@ HO2
         alpha = 0.5,
         T3 = (1e-30, 'K'),
         T1 = (1e+30, 'K'),
-        efficiencies = {'[H][H]': 2.0, '[O][O]': 0.78, 'O': 11.0, 'N#N': 0.0, '[Ar]': 0.0},
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        efficiencies = {'[H][H]': 2, '[O][O]': 0.78, 'O': 11, 'N#N': 0, '[Ar]': 0},
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -764,26 +782,28 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
-        arrheniusHigh = Arrhenius(A=(400000000000.0, 's^-1'), n=0, Ea=(37137, 'cal/mol'), T0=(1, 'K')),
+        arrheniusHigh = Arrhenius(A=(4e+11, 's^-1'), n=0, Ea=(37137, 'cal/mol'), T0=(1, 'K')),
         arrheniusLow = Arrhenius(
             A = (2.291e+16, 'cm^3/(mol*s)'),
             n = 0,
@@ -794,8 +814,8 @@ OH
         T3 = (1e-30, 'K'),
         T1 = (1e+30, 'K'),
         T2 = (1e+30, 'K'),
-        efficiencies = {'[H][H]': 2.5, 'O': 12.0, '[Ar]': 0.64},
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        efficiencies = {'[H][H]': 2.5, 'O': 12, '[Ar]': 0.64},
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -809,24 +829,26 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(7e+17, 'cm^6/(mol^2*s)'), n=-1, Ea=(0, 'cal/mol'), T0=(1, 'K')),
-        efficiencies = {'[H][H]': 0.0, 'O': 0.0, 'N#N': 0.0},
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        efficiencies = {'[H][H]': 0, 'O': 0, 'N#N': 0},
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -840,24 +862,27 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(6.2e+16, 'cm^6/(mol^2*s)'), n=-0.6, Ea=(0, 'cal/mol'), T0=(1, 'K')),
-        efficiencies = {'O': 5.0},
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        efficiencies = {'O': 5},
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -871,29 +896,32 @@ entry(
     reactant1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(
-            A = (19000000000000.0, 'cm^6/(mol^2*s)'),
+            A = (1.9e+13, 'cm^6/(mol^2*s)'),
             n = 0,
             Ea = (-1788, 'cal/mol'),
             T0 = (1, 'K'),
         ),
-        efficiencies = {'[O][O]': 1.5, 'O': 10.0, 'N#N': 1.5},
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        efficiencies = {'[O][O]': 1.5, 'O': 10, 'N#N': 1.5},
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -907,26 +935,28 @@ entry(
     reactant1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(4.5e+22, 'cm^6/(mol^2*s)'), n=-2, Ea=(0, 'cal/mol'), T0=(1, 'K')),
-        efficiencies = {'[H][H]': 0.73, 'O': 12.0, '[Ar]': 0.38},
-        comment = 'Reaction and kinetics from Glarborg\\C0.',
+        efficiencies = {'[H][H]': 0.73, 'O': 12, '[Ar]': 0.38},
+        comment = 'Reaction and kinetics from Glarborg/C0.',
     ),
     shortDesc = u"""""",
     longDesc = 

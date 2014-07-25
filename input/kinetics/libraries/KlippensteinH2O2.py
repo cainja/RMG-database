@@ -11,28 +11,32 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (104000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.04e+14, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (15286, 'cal/mol'),
         T0 = (1, 'K'),
@@ -118,37 +122,35 @@ entry(
     reactant1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     reactant2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
+            Arrhenius(A=(3.818e+12, 'cm^3/(mol*s)'), n=0, Ea=(7948, 'cal/mol'), T0=(1, 'K')),
             Arrhenius(
-                A = (3818000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (7948, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (879200000000000.0, 'cm^3/(mol*s)'),
+                A = (8.792e+14, 'cm^3/(mol*s)'),
                 n = 0,
                 Ea = (19170, 'cal/mol'),
                 T0 = (1, 'K'),
@@ -168,30 +170,32 @@ entry(
     reactant1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (216000000.0, 'cm^3/(mol*s)'),
+        A = (2.16e+08, 'cm^3/(mol*s)'),
         n = 1.51,
         Ea = (3430, 'cal/mol'),
         T0 = (1, 'K'),
@@ -209,26 +213,29 @@ entry(
     reactant1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -250,34 +257,36 @@ entry(
     reactant1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product3 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -308,30 +317,33 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2750000.0, 'cm^3/(mol*s)'),
+        A = (2.75e+06, 'cm^3/(mol*s)'),
         n = 2.09,
         Ea = (-1451, 'cal/mol'),
         T0 = (1, 'K'),
@@ -359,30 +371,34 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (70790000000000.0, 'cm^3/(mol*s)'),
+        A = (7.079e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (295, 'cal/mol'),
         T0 = (1, 'K'),
@@ -400,30 +416,34 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (28500000000.0, 'cm^3/(mol*s)'),
+        A = (2.85e+10, 'cm^3/(mol*s)'),
         n = 1,
         Ea = (-723.93, 'cal/mol'),
         T0 = (1, 'K'),
@@ -443,32 +463,35 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (28900000000000.0, 'cm^3/(mol*s)'),
+        A = (2.89e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-497, 'cal/mol'),
         T0 = (1, 'K'),
@@ -486,43 +509,41 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
+            Arrhenius(A=(4.2e+14, 'cm^3/(mol*s)'), n=0, Ea=(11982, 'cal/mol'), T0=(1, 'K')),
             Arrhenius(
-                A = (420000000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (11982, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (130000000000.0, 'cm^3/(mol*s)'),
+                A = (1.3e+11, 'cm^3/(mol*s)'),
                 n = 0,
                 Ea = (-1629.3, 'cal/mol'),
                 T0 = (1, 'K'),
@@ -545,32 +566,34 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (24100000000000.0, 'cm^3/(mol*s)'),
+        A = (2.41e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (3970, 'cal/mol'),
         T0 = (1, 'K'),
@@ -588,32 +611,34 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (48200000000000.0, 'cm^3/(mol*s)'),
+        A = (4.82e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (7950, 'cal/mol'),
         T0 = (1, 'K'),
@@ -631,32 +656,35 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (9550000.0, 'cm^3/(mol*s)'),
+        A = (9.55e+06, 'cm^3/(mol*s)'),
         n = 2,
         Ea = (3970, 'cal/mol'),
         T0 = (1, 'K'),
@@ -674,47 +702,39 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
-            Arrhenius(
-                A = (1740000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (318, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (75900000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (7270, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
+            Arrhenius(A=(1.74e+12, 'cm^3/(mol*s)'), n=0, Ea=(318, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(7.59e+13, 'cm^3/(mol*s)'), n=0, Ea=(7270, 'cal/mol'), T0=(1, 'K')),
         ],
         comment = 'Reaction and kinetics from KlippensteinH2O2.\n! Hong et al., J. Phys. Chem. A  114 (2010) 5718-5727',
     ),
@@ -730,18 +750,20 @@ entry(
     reactant1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -751,7 +773,7 @@ H
             Ea = (104380, 'cal/mol'),
             T0 = (1, 'K'),
         ),
-        efficiencies = {'O=C=O': 3.8, 'O': 12.0, '[H][H]': 2.5, '[He]': 0.0, '[C]=O': 1.9, '[Ar]': 0.0},
+        efficiencies = {'O=C=O': 3.8, 'O': 12, '[H][H]': 2.5, '[He]': 0, '[C]=O': 1.9, '[Ar]': 0},
         comment = 'Reaction and kinetics from KlippensteinH2O2.\n! Tsang and Hampson, J. Phys. Chem. Ref. Data, 15:1087 (1986)',
     ),
     shortDesc = u"""""",
@@ -766,28 +788,31 @@ entry(
     reactant1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(
-            A = (6165000000000000.0, 'cm^6/(mol^2*s)'),
+            A = (6.165e+15, 'cm^6/(mol^2*s)'),
             n = -0.5,
             Ea = (0, 'cal/mol'),
             T0 = (1, 'K'),
         ),
-        efficiencies = {'O=C=O': 3.8, 'O': 12.0, '[H][H]': 2.5, '[He]': 0.0, '[C]=O': 1.9, '[Ar]': 0.0},
+        efficiencies = {'O=C=O': 3.8, 'O': 12, '[H][H]': 2.5, '[He]': 0, '[C]=O': 1.9, '[Ar]': 0},
         comment = 'Reaction and kinetics from KlippensteinH2O2.\n! Tsang and Hampson, J. Phys. Chem. Ref. Data, 15:1087 (1986)',
     ),
     shortDesc = u"""""",
@@ -802,23 +827,26 @@ entry(
     reactant1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(4.714e+18, 'cm^6/(mol^2*s)'), n=-1, Ea=(0, 'cal/mol'), T0=(1, 'K')),
-        efficiencies = {'O=C=O': 3.8, 'O': 12.0, '[H][H]': 2.5, '[He]': 0.75, '[C]=O': 1.9, '[Ar]': 0.75},
+        efficiencies = {'O=C=O': 3.8, 'O': 12, '[H][H]': 2.5, '[He]': 0.75, '[C]=O': 1.9, '[Ar]': 0.75},
         comment = 'Reaction and kinetics from KlippensteinH2O2.\n! Tsang and Hampson, J. Phys. Chem. Ref. Data, 15:1087 (1986)',
     ),
     shortDesc = u"""""",
@@ -833,20 +861,22 @@ entry(
     reactant1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -856,7 +886,7 @@ OH
             Ea = (120790, 'cal/mol'),
             T0 = (1, 'K'),
         ),
-        efficiencies = {'O=C=O': 3.8, 'O': 0.0, '[H][H]': 3.0, '[He]': 1.1, '[O][O]': 1.5, 'N#N': 2.0, '[C]=O': 1.9},
+        efficiencies = {'O=C=O': 3.8, 'O': 0, '[H][H]': 3, '[He]': 1.1, '[O][O]': 1.5, 'N#N': 2, '[C]=O': 1.9},
         comment = 'Reaction and kinetics from KlippensteinH2O2.\n! Srinivasan and Michael, Int. J. Chem. Kinetic. 38 (2006)\n! Rate constant is for Ar with efficiencies from Michael et al., J. Phys. Chem. A, 106 (2002)',
     ),
     shortDesc = u"""""",
@@ -872,25 +902,28 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
         arrheniusHigh = Arrhenius(
-            A = (4650840000000.0, 'cm^3/(mol*s)'),
+            A = (4.65084e+12, 'cm^3/(mol*s)'),
             n = 0.44,
             Ea = (0, 'cal/mol'),
             T0 = (1, 'K'),
@@ -904,7 +937,7 @@ HO2
         alpha = 0.5,
         T3 = (1e-30, 'K'),
         T1 = (1e+30, 'K'),
-        efficiencies = {'O=C=O': 3.8, 'O': 14.0, '[H][H]': 2.0, '[He]': 0.8, '[O][O]': 0.78, '[C]=O': 1.9, '[Ar]': 0.67},
+        efficiencies = {'O=C=O': 3.8, 'O': 14, '[H][H]': 2, '[He]': 0.8, '[O][O]': 0.78, '[C]=O': 1.9, '[Ar]': 0.67},
         comment = 'Reaction and kinetics from KlippensteinH2O2.\n! Efficiencies for CO and CO2 taken from Li et al., Int. J. Chem. Kinet. 36:566-575 (2004)\n! MAIN BATH GAS IS N2 (comment this reaction otherwise)\n!',
     ),
     shortDesc = u"""""",
@@ -921,31 +954,28 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
-        arrheniusHigh = Arrhenius(
-            A = (2000000000000.0, 's^-1'),
-            n = 0.9,
-            Ea = (48749, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
+        arrheniusHigh = Arrhenius(A=(2e+12, 's^-1'), n=0.9, Ea=(48749, 'cal/mol'), T0=(1, 'K')),
         arrheniusLow = Arrhenius(
             A = (2.49e+24, 'cm^3/(mol*s)'),
             n = -2.3,

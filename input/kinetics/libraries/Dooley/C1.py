@@ -11,32 +11,36 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (3547000000000000.0, 'cm^3/(mol*s)'),
+        A = (3.547e+15, 'cm^3/(mol*s)'),
         n = -0.406,
         Ea = (16599, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -50,24 +54,27 @@ entry(
     reactant1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     reactant2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -75,7 +82,7 @@ OH
         n = 2.67,
         Ea = (6290, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -89,34 +96,36 @@ entry(
     reactant1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (216000000.0, 'cm^3/(mol*s)'),
+        A = (2.16e+08, 'cm^3/(mol*s)'),
         n = 1.51,
         Ea = (3430, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -130,34 +139,37 @@ entry(
     reactant1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     reactant2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2970000.0, 'cm^3/(mol*s)'),
+        A = (2.97e+06, 'cm^3/(mol*s)'),
         n = 2.02,
         Ea = (13400, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -171,34 +183,37 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (16600000000000.0, 'cm^3/(mol*s)'),
+        A = (1.66e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (823, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -212,34 +227,38 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (70790000000000.0, 'cm^3/(mol*s)'),
+        A = (7.079e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (295, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -253,34 +272,38 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (32500000000000.0, 'cm^3/(mol*s)'),
+        A = (3.25e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -294,36 +317,39 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (28900000000000.0, 'cm^3/(mol*s)'),
+        A = (2.89e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-497, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -337,49 +363,47 @@ entry(
     reactant1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
+            Arrhenius(A=(4.2e+14, 'cm^3/(mol*s)'), n=0, Ea=(11982, 'cal/mol'), T0=(1, 'K')),
             Arrhenius(
-                A = (420000000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (11982, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (130000000000.0, 'cm^3/(mol*s)'),
+                A = (1.3e+11, 'cm^3/(mol*s)'),
                 n = 0,
                 Ea = (-1629.3, 'cal/mol'),
                 T0 = (1, 'K'),
             ),
         ],
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -393,36 +417,38 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (24100000000000.0, 'cm^3/(mol*s)'),
+        A = (2.41e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (3970, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -436,36 +462,38 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (48200000000000.0, 'cm^3/(mol*s)'),
+        A = (4.82e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (7950, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -479,36 +507,39 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (9550000.0, 'cm^3/(mol*s)'),
+        A = (9.55e+06, 'cm^3/(mol*s)'),
         n = 2,
         Ea = (3970, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -522,49 +553,41 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
-            Arrhenius(
-                A = (1000000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (0, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (580000000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (9557, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
+            Arrhenius(A=(1e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(5.8e+14, 'cm^3/(mol*s)'), n=0, Ea=(9557, 'cal/mol'), T0=(1, 'K')),
         ],
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -578,34 +601,36 @@ entry(
     reactant1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2530000000000.0, 'cm^3/(mol*s)'),
+        A = (2.53e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (47700, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -619,36 +644,38 @@ entry(
     reactant1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30100000000000.0, 'cm^3/(mol*s)'),
+        A = (3.01e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (23000, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -662,26 +689,28 @@ entry(
     reactant1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -689,7 +718,7 @@ H
         n = 1.89,
         Ea = (-1158.7, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -703,36 +732,39 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (7580000000000.0, 'cm^3/(mol*s)'),
+        A = (7.58e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (410, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -746,34 +778,36 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (72300000000000.0, 'cm^3/(mol*s)'),
+        A = (7.23e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -787,34 +821,37 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30200000000000.0, 'cm^3/(mol*s)'),
+        A = (3.02e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -828,36 +865,38 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30200000000000.0, 'cm^3/(mol*s)'),
+        A = (3.02e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -871,34 +910,37 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -912,42 +954,46 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product3 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -961,40 +1007,42 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (26500000000000.0, 'cm^3/(mol*s)'),
+        A = (2.65e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1008,42 +1056,44 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product3 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (3000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1057,38 +1107,40 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1102,32 +1154,35 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 O2CHO
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 O u1 p2 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (120000000000.0, 'cm^3/(mol*s)'),
+        A = (1.2e+11, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-1100, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1141,44 +1196,46 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2CHO
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 O u1 p2 c0  {2,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 HO2CHO
-1 C 0 0 {2,S} {4,D} {5,S}
-2 O 0 2 {1,S} {3,S}
-3 O 0 2 {2,S} {6,S}
-4 O 0 2 {1,D}
-5 H 0 0 {1,S}
-6 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,D} {5,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u0 p2 c0  {2,S} {6,S}
+4 O u0 p2 c0  {1,D}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1990000000000.0, 'cm^3/(mol*s)'),
+        A = (1.99e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (11660, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1192,34 +1249,36 @@ entry(
     reactant1 = 
 """
 HO2CHO
-1 C 0 0 {2,S} {4,D} {5,S}
-2 O 0 2 {1,S} {3,S}
-3 O 0 2 {2,S} {6,S}
-4 O 0 2 {1,D}
-5 H 0 0 {1,S}
-6 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,D} {5,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u0 p2 c0  {2,S} {6,S}
+4 O u0 p2 c0  {1,D}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
 OCHO
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 O 1 2 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 O u1 p2 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (501000000000000.0, 's^-1'),
+        A = (5.01e+14, 's^-1'),
         n = 0,
         Ea = (40150, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1233,36 +1292,38 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (57400000.0, 'cm^3/(mol*s)'),
+        A = (5.74e+07, 'cm^3/(mol*s)'),
         n = 1.9,
         Ea = (2748.6, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1276,36 +1337,39 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (18100000000000.0, 'cm^3/(mol*s)'),
+        A = (1.81e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (3080, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1319,38 +1383,40 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (3430000000.0, 'cm^3/(mol*s)'),
+        A = (3.43e+09, 'cm^3/(mol*s)'),
         n = 1.18,
         Ea = (-447, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1364,38 +1430,41 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1230000.0, 'cm^3/(mol*s)'),
+        A = (1.23e+06, 'cm^3/(mol*s)'),
         n = 3,
         Ea = (52000, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1409,32 +1478,34 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -1442,7 +1513,7 @@ H2O2
         n = 2.5,
         Ea = (10210, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1456,34 +1527,36 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -1491,7 +1564,7 @@ CH4
         n = 5.42,
         Ea = (998, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1505,36 +1578,38 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 OCH2O2H
-1 C 0 0 {2,S} {4,S} {5,S} {6,S}
-2 O 0 2 {1,S} {3,S}
-3 O 0 2 {2,S} {7,S}
-4 O 1 2 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {4,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u0 p2 c0  {2,S} {7,S}
+4 O u1 p2 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (150000000000.0, 'cm^3/(mol*s)'),
+        A = (1.5e+11, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (11900, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1548,32 +1623,34 @@ entry(
     reactant1 = 
 """
 OCH2O2H
-1 C 0 0 {2,S} {4,S} {5,S} {6,S}
-2 O 0 2 {1,S} {3,S}
-3 O 0 2 {2,S} {7,S}
-4 O 1 2 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {4,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u0 p2 c0  {2,S} {7,S}
+4 O u1 p2 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
 HOCH2O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {7,S}
-3 O 0 2 {1,S} {6,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {3,S}
-7 H 0 0 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {7,S}
+3 O u0 p2 c0  {1,S} {6,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {3,S}
+7 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (300000000000.0, 's^-1'),
+        A = (3e+11, 's^-1'),
         n = 0,
         Ea = (8600, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1587,46 +1664,49 @@ entry(
     reactant1 = 
 """
 HOCH2O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {7,S}
-3 O 0 2 {1,S} {6,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {3,S}
-7 H 0 0 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {7,S}
+3 O u0 p2 c0  {1,S} {6,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {3,S}
+7 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HOCH2O2H
-1 C 0 0 {2,S} {3,S} {5,S} {6,S}
-2 O 0 2 {1,S} {4,S}
-3 O 0 2 {1,S} {7,S}
-4 O 0 2 {2,S} {8,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
-8 H 0 0 {4,S}
+1 C u0 p0 c0  {2,S} {3,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 O u0 p2 c0  {1,S} {7,S}
+4 O u0 p2 c0  {2,S} {8,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
+8 H u0 p0 c0  {4,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (35000000000.0, 'cm^3/(mol*s)'),
+        A = (3.5e+10, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-3275, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1640,38 +1720,40 @@ entry(
     reactant1 = 
 """
 HOCH2O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 O 1 2 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 O u1 p2 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HOCH2O2H
-1 C 0 0 {2,S} {3,S} {5,S} {6,S}
-2 O 0 2 {1,S} {4,S}
-3 O 0 2 {1,S} {7,S}
-4 O 0 2 {2,S} {8,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
-8 H 0 0 {4,S}
+1 C u0 p0 c0  {2,S} {3,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 O u0 p2 c0  {1,S} {7,S}
+4 O u0 p2 c0  {2,S} {8,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
+8 H u0 p0 c0  {4,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (10000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1685,36 +1767,39 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (84300000000000.0, 'cm^3/(mol*s)'),
+        A = (8.43e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1728,30 +1813,34 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -1759,7 +1848,7 @@ O
         n = -1.57,
         Ea = (29230, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1773,30 +1862,33 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -1804,7 +1896,7 @@ OH
         n = 3.524,
         Ea = (7380, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1818,40 +1910,44 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (24100000000.0, 'cm^3/(mol*s)'),
+        A = (2.41e+10, 'cm^3/(mol*s)'),
         n = 0.76,
         Ea = (-2325, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1865,38 +1961,40 @@ entry(
     reactant1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (54700000.0, 'cm^3/(mol*s)'),
+        A = (5.47e+07, 'cm^3/(mol*s)'),
         n = 1.97,
         Ea = (11210, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1910,38 +2008,41 @@ entry(
     reactant1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (3150000000000.0, 'cm^3/(mol*s)'),
+        A = (3.15e+12, 'cm^3/(mol*s)'),
         n = 0.5,
         Ea = (10290, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -1955,40 +2056,42 @@ entry(
     reactant1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (5720000.0, 'cm^3/(mol*s)'),
+        A = (5.72e+06, 'cm^3/(mol*s)'),
         n = 1.96,
         Ea = (2639, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2002,40 +2105,43 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (3160000000000.0, 'cm^3/(mol*s)'),
+        A = (3.16e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2049,42 +2155,44 @@ entry(
     reactant1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (181000000000.0, 'cm^3/(mol*s)'),
+        A = (1.81e+11, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (18580, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2098,38 +2206,40 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -2137,7 +2247,7 @@ CH3O
         n = 3.1,
         Ea = (6935, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2151,44 +2261,46 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (12000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2202,38 +2314,40 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (20000000000000.0, 'cm^3/(mol*s)'),
+        A = (2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2247,46 +2361,48 @@ entry(
     reactant1 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     reactant2 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3O2H
-1 C 0 0 {2,S} {4,S} {5,S} {6,S}
-2 O 0 2 {1,S} {3,S}
-3 O 0 2 {2,S} {7,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u0 p2 c0  {2,S} {7,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
 """,
     product2 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1990000000000.0, 'cm^3/(mol*s)'),
+        A = (1.99e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (11660, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2300,48 +2416,50 @@ entry(
     reactant1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CH3O2H
-1 C 0 0 {2,S} {4,S} {5,S} {6,S}
-2 O 0 2 {1,S} {3,S}
-3 O 0 2 {2,S} {7,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u0 p2 c0  {2,S} {7,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (181000000000.0, 'cm^3/(mol*s)'),
+        A = (1.81e+11, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (18480, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2355,50 +2473,52 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     product1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CH3O2H
-1 C 0 0 {2,S} {4,S} {5,S} {6,S}
-2 O 0 2 {1,S} {3,S}
-3 O 0 2 {2,S} {7,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u0 p2 c0  {2,S} {7,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1810000000000.0, 'cm^3/(mol*s)'),
+        A = (1.81e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (13710, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2412,46 +2532,50 @@ entry(
     reactant1 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     reactant2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (5080000000000.0, 'cm^3/(mol*s)'),
+        A = (5.08e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-1411, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2465,44 +2589,47 @@ entry(
     reactant1 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3O2H
-1 C 0 0 {2,S} {4,S} {5,S} {6,S}
-2 O 0 2 {1,S} {3,S}
-3 O 0 2 {2,S} {7,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u0 p2 c0  {2,S} {7,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (247000000000.0, 'cm^3/(mol*s)'),
+        A = (2.47e+11, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-1570, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2516,54 +2643,57 @@ entry(
     reactant1 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     reactant2 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product3 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (311000000000000.0, 'cm^3/(mol*s)'),
+        A = (3.11e+14, 'cm^3/(mol*s)'),
         n = -1.61,
         Ea = (-1051, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2577,46 +2707,51 @@ entry(
     reactant1 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     reactant2 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     product1 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product2 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product3 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -2624,7 +2759,7 @@ CH3O
         n = -1.61,
         Ea = (1860, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2638,40 +2773,44 @@ entry(
     reactant1 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (96000000000000.0, 'cm^3/(mol*s)'),
+        A = (9.6e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2685,40 +2824,44 @@ entry(
     reactant1 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (36000000000000.0, 'cm^3/(mol*s)'),
+        A = (3.6e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2732,42 +2875,45 @@ entry(
     reactant1 = 
 """
 CH3O2
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 O 1 2 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 O u1 p2 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (60000000000000.0, 'cm^3/(mol*s)'),
+        A = (6e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2781,36 +2927,38 @@ entry(
     reactant1 = 
 """
 CH3O2H
-1 C 0 0 {2,S} {4,S} {5,S} {6,S}
-2 O 0 2 {1,S} {3,S}
-3 O 0 2 {2,S} {7,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u0 p2 c0  {2,S} {7,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (631000000000000.0, 's^-1'),
+        A = (6.31e+14, 's^-1'),
         n = 0,
         Ea = (42300, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2824,38 +2972,40 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (6000000000000.0, 'cm^3/(mol*s)'),
+        A = (6e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2869,38 +3019,42 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (96350000000000.0, 'cm^3/(mol*s)'),
+        A = (9.635e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2914,38 +3068,41 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (42000000000000.0, 'cm^3/(mol*s)'),
+        A = (4.2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -2959,40 +3116,42 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (24000000000000.0, 'cm^3/(mol*s)'),
+        A = (2.4e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3006,51 +3165,44 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
-            Arrhenius(
-                A = (241000000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (5017, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
-            Arrhenius(
-                A = (1510000000000000.0, 'cm^3/(mol*s)'),
-                n = -1,
-                Ea = (0, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
+            Arrhenius(A=(2.41e+14, 'cm^3/(mol*s)'), n=0, Ea=(5017, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(1.51e+15, 'cm^3/(mol*s)'), n=-1, Ea=(0, 'cal/mol'), T0=(1, 'K')),
         ],
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3064,42 +3216,44 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (12000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3113,42 +3267,44 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (10000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3162,42 +3318,44 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (15000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.5e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3211,46 +3369,48 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (3000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3264,46 +3424,48 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (24000000000000.0, 'cm^3/(mol*s)'),
+        A = (2.4e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3317,42 +3479,46 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HOCH2O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 O 1 2 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 O u1 p2 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (10000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3366,38 +3532,42 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (32000000000000.0, 'cm^3/(mol*s)'),
+        A = (3.2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3411,38 +3581,41 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (6000000000000.0, 'cm^3/(mol*s)'),
+        A = (6e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3456,40 +3629,42 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (18000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.8e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3503,51 +3678,49 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
     kinetics = MultiArrhenius(
         arrhenius = [
             Arrhenius(
-                A = (90330000000000.0, 'cm^3/(mol*s)'),
+                A = (9.033e+13, 'cm^3/(mol*s)'),
                 n = 0,
                 Ea = (11980, 'cal/mol'),
                 T0 = (1, 'K'),
             ),
-            Arrhenius(
-                A = (22000000000.0, 'cm^3/(mol*s)'),
-                n = 0,
-                Ea = (1748, 'cal/mol'),
-                T0 = (1, 'K'),
-            ),
+            Arrhenius(A=(2.2e+10, 'cm^3/(mol*s)'), n=0, Ea=(1748, 'cal/mol'), T0=(1, 'K')),
         ],
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3561,42 +3734,44 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (300000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+11, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3610,40 +3785,42 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (16000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.6e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (11800, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3657,42 +3834,44 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (90000000000000.0, 'cm^3/(mol*s)'),
+        A = (9e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3706,46 +3885,48 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (60000000000000.0, 'cm^3/(mol*s)'),
+        A = (6e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3759,40 +3940,42 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (32000000000000.0, 'cm^3/(mol*s)'),
+        A = (3.2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (6095, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3806,40 +3989,42 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (8000000000000.0, 'cm^3/(mol*s)'),
+        A = (8e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (6095, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3853,32 +4038,35 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -3886,7 +4074,7 @@ OH
         n = 2.5,
         Ea = (3080, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3900,42 +4088,44 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1000000.0, 'cm^3/(mol*s)'),
+        A = (1e+06, 'cm^3/(mol*s)'),
         n = 2.1,
         Ea = (496.7, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3949,42 +4139,44 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (7100000.0, 'cm^3/(mol*s)'),
+        A = (7.1e+06, 'cm^3/(mol*s)'),
         n = 1.8,
         Ea = (-596, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -3998,42 +4190,45 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (20500000000000.0, 'cm^3/(mol*s)'),
+        A = (2.05e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (44900, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4047,36 +4242,38 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -4084,7 +4281,7 @@ CH2O
         n = 2.9,
         Ea = (13110, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4098,44 +4295,46 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (39800000000000.0, 'cm^3/(mol*s)'),
+        A = (3.98e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (19400, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4149,38 +4348,40 @@ entry(
     reactant1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -4188,7 +4389,7 @@ CH4
         n = 3.17,
         Ea = (7172, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4202,48 +4403,50 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (300000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+11, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (4060, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4257,42 +4460,46 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 C2H5
-1 C 1 0 {2,S} {3,S} {4,S}
-2 C 0 0 {1,S} {5,S} {6,S} {7,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
-6 H 0 0 {2,S}
-7 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 C u0 p0 c0  {1,S} {5,S} {6,S} {7,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
+6 H u0 p0 c0  {2,S}
+7 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (4990000000000.0, 'cm^3/(mol*s)'),
+        A = (4.99e+12, 'cm^3/(mol*s)'),
         n = 0.1,
         Ea = (10600, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4306,42 +4513,45 @@ entry(
     reactant1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2460000.0, 'cm^3/(mol*s)'),
+        A = (2.46e+06, 'cm^3/(mol*s)'),
         n = 2,
         Ea = (8270, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4355,42 +4565,45 @@ entry(
     reactant1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (16000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.6e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-570, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4404,38 +4617,41 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (56000000.0, 'cm^3/(mol*s)'),
+        A = (5.6e+07, 'cm^3/(mol*s)'),
         n = 1.6,
         Ea = (5420, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4449,38 +4665,41 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (25010000000000.0, 'cm^3/(mol*s)'),
+        A = (2.501e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4494,40 +4713,43 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 C2H4
-1 C 0 0 {2,D} {3,S} {4,S}
-2 C 0 0 {1,D} {5,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 C u0 p0 c0  {1,D} {5,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (40000000000000.0, 'cm^3/(mol*s)'),
+        A = (4e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4541,40 +4763,43 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 C2H4
-1 C 0 0 {2,D} {3,S} {4,S}
-2 C 0 0 {1,D} {5,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 C u0 p0 c0  {1,D} {5,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
+6 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (12000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-570, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4588,38 +4813,41 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (16000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.6e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4633,34 +4861,38 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (80000000000000.0, 'cm^3/(mol*s)'),
+        A = (8e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4674,36 +4906,39 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (20000000000000.0, 'cm^3/(mol*s)'),
+        A = (2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4717,28 +4952,31 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -4746,7 +4984,7 @@ CH3
         n = 2,
         Ea = (7230, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4760,36 +4998,40 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (13200000000000.0, 'cm^3/(mol*s)'),
+        A = (1.32e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (1500, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4803,38 +5045,41 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (20000000000000.0, 'cm^3/(mol*s)'),
+        A = (2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4848,38 +5093,40 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 C2H2
-1 C 0 0 {2,T} {3,S}
-2 C 0 0 {1,T} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 C u0 p0 c0  {2,T} {3,S}
+2 C u0 p0 c0  {1,T} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (32000000000000.0, 'cm^3/(mol*s)'),
+        A = (3.2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4893,38 +5140,40 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4938,36 +5187,38 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (9000000000000.0, 'cm^3/(mol*s)'),
+        A = (9e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -4981,38 +5232,40 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (7000000000000.0, 'cm^3/(mol*s)'),
+        A = (7e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5026,34 +5279,36 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (15000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.5e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5067,34 +5322,38 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (15000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.5e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5108,36 +5367,39 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5151,36 +5413,39 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (70000000000000.0, 'cm^3/(mol*s)'),
+        A = (7e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5194,40 +5459,44 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product3 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (28000000000000.0, 'cm^3/(mol*s)'),
+        A = (2.8e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5241,36 +5510,38 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (12000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.2e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5284,38 +5555,39 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (14000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.4e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5329,34 +5601,37 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH
-1 C 3Q 0 {2,S}
-2 H 0  0 {1,S}
+multiplicity 4
+1 C u3 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5370,26 +5645,29 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH
-1 C 3Q 0 {2,S}
-2 H 0  0 {1,S}
+multiplicity 4
+1 C u3 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     duplicate = True,
@@ -5397,13 +5675,13 @@ H2
         arrhenius = [
             Arrhenius(A=(1e+18, 'cm^3/(mol*s)'), n=-1.56, Ea=(0, 'cal/mol'), T0=(1, 'K')),
             Arrhenius(
-                A = (270000000000.0, 'cm^3/(mol*s)'),
+                A = (2.7e+11, 'cm^3/(mol*s)'),
                 n = 0.67,
                 Ea = (25700, 'cal/mol'),
                 T0 = (1, 'K'),
             ),
         ],
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5417,36 +5695,39 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH
-1 C 3Q 0 {2,S}
-2 H 0  0 {1,S}
+multiplicity 4
+1 C u3 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (11300000.0, 'cm^3/(mol*s)'),
+        A = (1.13e+07, 'cm^3/(mol*s)'),
         n = 2,
         Ea = (3000, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5460,34 +5741,38 @@ entry(
     reactant1 = 
 """
 CH
-1 C 3Q 0 {2,S}
-2 H 0  0 {1,S}
+multiplicity 4
+1 C u3 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (33000000000000.0, 'cm^3/(mol*s)'),
+        A = (3.3e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5501,32 +5786,35 @@ entry(
     reactant1 = 
 """
 CH
-1 C 3Q 0 {2,S}
-2 H 0  0 {1,S}
+multiplicity 4
+1 C u3 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 C
-1 C 4V 0
+multiplicity 5
+1 C u4 p0 c0 
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (50000000000000.0, 'cm^3/(mol*s)'),
+        A = (5e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5540,32 +5828,35 @@ entry(
     reactant1 = 
 """
 CH
-1 C 3Q 0 {2,S}
-2 H 0  0 {1,S}
+multiplicity 4
+1 C u3 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (57000000000000.0, 'cm^3/(mol*s)'),
+        A = (5.7e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5579,34 +5870,38 @@ entry(
     reactant1 = 
 """
 CH
-1 C 3Q 0 {2,S}
-2 H 0  0 {1,S}
+multiplicity 4
+1 C u3 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (30000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5620,36 +5915,38 @@ entry(
     reactant1 = 
 """
 CH
-1 C 3Q 0 {2,S}
-2 H 0  0 {1,S}
+multiplicity 4
+1 C u3 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (17130000000000.0, 'cm^3/(mol*s)'),
+        A = (1.713e+13, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (-755, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5663,36 +5960,38 @@ entry(
     reactant1 = 
 """
 CH
-1 C 3Q 0 {2,S}
-2 H 0  0 {1,S}
+multiplicity 4
+1 C u3 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1700000000000.0, 'cm^3/(mol*s)'),
+        A = (1.7e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (685, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5706,34 +6005,36 @@ entry(
     reactant1 = 
 """
 HOCH2O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 O 1 2 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 O u1 p2 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (100000000000000.0, 's^-1'),
+        A = (1e+14, 's^-1'),
         n = 0,
         Ea = (14900, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5747,34 +6048,36 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HOCH2O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 O 1 2 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 O u1 p2 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (4500000000000000.0, 'cm^3/(mol*s)'),
+        A = (4.5e+15, 'cm^3/(mol*s)'),
         n = -1.11,
         Ea = (0, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5788,24 +6091,26 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -5813,7 +6118,7 @@ OH
         n = -0.46,
         Ea = (108300, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5827,44 +6132,46 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product3 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2620000.0, 'cm^3/(mol*s)'),
+        A = (2.62e+06, 'cm^3/(mol*s)'),
         n = 2.06,
         Ea = (916, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5878,44 +6185,46 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product3 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (18500000.0, 'cm^3/(mol*s)'),
+        A = (1.85e+07, 'cm^3/(mol*s)'),
         n = 1.51,
         Ea = (-962, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5929,42 +6238,44 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product3 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (4240000.0, 'cm^3/(mol*s)'),
+        A = (4.24e+06, 'cm^3/(mol*s)'),
         n = 2.1,
         Ea = (4868, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -5978,42 +6289,44 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product3 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (60300000000000.0, 'cm^3/(mol*s)'),
+        A = (6.03e+13, 'cm^3/(mol*s)'),
         n = -0.35,
         Ea = (2988, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6027,40 +6340,42 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product3 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -6068,7 +6383,7 @@ OH
         n = 5.8,
         Ea = (2200, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6082,46 +6397,48 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product3 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+12, 'cm^3/(mol*s)'),
         n = 0,
         Ea = (11920, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6135,34 +6452,37 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product3 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -6170,7 +6490,7 @@ OH
         n = -1.9,
         Ea = (2975, 'cal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6184,18 +6504,20 @@ entry(
     reactant1 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -6205,8 +6527,8 @@ H
             Ea = (104380, 'cal/mol'),
             T0 = (1, 'K'),
         ),
-        efficiencies = {'O=C=O': 3.8, 'O': 12.0, '[H][H]': 2.5, '[He]': 0.0, '[C]=O': 1.9, '[Ar]': 0.0},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'O=C=O': 3.8, 'O': 12, '[H][H]': 2.5, '[He]': 0, '[C]=O': 1.9, '[Ar]': 0},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6220,29 +6542,32 @@ entry(
     reactant1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(
-            A = (6165000000000000.0, 'cm^6/(mol^2*s)'),
+            A = (6.165e+15, 'cm^6/(mol^2*s)'),
             n = -0.5,
             Ea = (0, 'cal/mol'),
             T0 = (1, 'K'),
         ),
-        efficiencies = {'O=C=O': 3.8, 'O': 12.0, '[H][H]': 2.5, '[He]': 0.0, '[C]=O': 1.9, '[Ar]': 0.0},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'O=C=O': 3.8, 'O': 12, '[H][H]': 2.5, '[He]': 0, '[C]=O': 1.9, '[Ar]': 0},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6256,24 +6581,27 @@ entry(
     reactant1 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(4.714e+18, 'cm^6/(mol^2*s)'), n=-1, Ea=(0, 'cal/mol'), T0=(1, 'K')),
-        efficiencies = {'O=C=O': 3.8, 'O': 12.0, '[H][H]': 2.5, '[He]': 0.75, '[C]=O': 1.9, '[Ar]': 0.75},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'O=C=O': 3.8, 'O': 12, '[H][H]': 2.5, '[He]': 0.75, '[C]=O': 1.9, '[Ar]': 0.75},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6287,26 +6615,28 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(3.8e+22, 'cm^6/(mol^2*s)'), n=-2, Ea=(0, 'cal/mol'), T0=(1, 'K')),
-        efficiencies = {'O=C=O': 3.8, 'O': 12.0, '[H][H]': 2.5, '[He]': 0.38, '[C]=O': 1.9, '[Ar]': 0.38},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'O=C=O': 3.8, 'O': 12, '[H][H]': 2.5, '[He]': 0.38, '[C]=O': 1.9, '[Ar]': 0.38},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6320,29 +6650,27 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 O2
-1 O 1 2 {2,S}
-2 O 1 2 {1,S}
+multiplicity 3
+1 O u1 p2 c0  {2,S}
+2 O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
 HO2
-1 O 0 2 {2,S} {3,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
+multiplicity 2
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
-        arrheniusHigh = Arrhenius(
-            A = (1475000000000.0, 'cm^3/(mol*s)'),
-            n = 0.6,
-            Ea = (0, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
+        arrheniusHigh = Arrhenius(A=(1.475e+12, 'cm^3/(mol*s)'), n=0.6, Ea=(0, 'cal/mol'), T0=(1, 'K')),
         arrheniusLow = Arrhenius(
             A = (6.366e+20, 'cm^6/(mol^2*s)'),
             n = -1.72,
@@ -6352,8 +6680,8 @@ HO2
         alpha = 0.8,
         T3 = (1e-30, 'K'),
         T1 = (1e+30, 'K'),
-        efficiencies = {'[H][H]': 2.0, '[C]=O': 1.9, '[O][O]': 0.78, 'O=C=O': 3.8, 'O': 11.0},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'[H][H]': 2, '[C]=O': 1.9, '[O][O]': 0.78, 'O=C=O': 3.8, 'O': 11},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6367,31 +6695,28 @@ entry(
     reactant1 = 
 """
 H2O2
-1 O 0 2 {2,S} {3,S}
-2 O 0 2 {1,S} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 O u0 p2 c0  {1,S} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
-        arrheniusHigh = Arrhenius(
-            A = (295100000000000.0, 's^-1'),
-            n = 0,
-            Ea = (48430, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
+        arrheniusHigh = Arrhenius(A=(2.951e+14, 's^-1'), n=0, Ea=(48430, 'cal/mol'), T0=(1, 'K')),
         arrheniusLow = Arrhenius(
             A = (1.202e+17, 'cm^3/(mol*s)'),
             n = 0,
@@ -6401,8 +6726,8 @@ OH
         alpha = 0.5,
         T3 = (1e-30, 'K'),
         T1 = (1e+30, 'K'),
-        efficiencies = {'O=C=O': 3.8, 'O': 12.0, '[H][H]': 2.5, '[He]': 0.64, '[C]=O': 1.9, '[Ar]': 0.64},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'O=C=O': 3.8, 'O': 12, '[H][H]': 2.5, '[He]': 0.64, '[C]=O': 1.9, '[Ar]': 0.64},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6416,37 +6741,33 @@ entry(
     reactant1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     reactant2 = 
 """
 O
-1 O 2T 2
+multiplicity 3
+1 O u2 p2 c0 
 """,
     product1 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     degeneracy = 1,
     kinetics = Lindemann(
-        arrheniusHigh = Arrhenius(
-            A = (18000000000.0, 'cm^3/(mol*s)'),
-            n = 0,
-            Ea = (2384, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
+        arrheniusHigh = Arrhenius(A=(1.8e+10, 'cm^3/(mol*s)'), n=0, Ea=(2384, 'cal/mol'), T0=(1, 'K')),
         arrheniusLow = Arrhenius(
             A = (1.55e+24, 'cm^6/(mol^2*s)'),
             n = -2.79,
             Ea = (4191, 'cal/mol'),
             T0 = (1, 'K'),
         ),
-        efficiencies = {'[H][H]': 2.5, '[C]=O': 1.9, 'O=C=O': 3.8, 'O': 12.0, '[Ar]': 0.87},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'[H][H]': 2.5, '[C]=O': 1.9, 'O=C=O': 3.8, 'O': 12, '[Ar]': 0.87},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6460,31 +6781,33 @@ entry(
     reactant1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(
-            A = (474850000000.0, 'cm^3/(mol*s)'),
+            A = (4.7485e+11, 'cm^3/(mol*s)'),
             n = 0.659,
             Ea = (14874, 'cal/mol'),
             T0 = (1, 'K'),
         ),
-        efficiencies = {'[H][H]': 2.5, '[C]=O': 1.9, 'O=C=O': 3.8, 'O': 6.0},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'[H][H]': 2.5, '[C]=O': 1.9, 'O=C=O': 3.8, 'O': 6},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6498,22 +6821,24 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 HCO
-1 C 1 0 {2,D} {3,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,D} {3,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -6523,8 +6848,8 @@ H
             Ea = (99900, 'cal/mol'),
             T0 = (1, 'K'),
         ),
-        efficiencies = {'[H][H]': 2.5, '[C]=O': 1.9, 'O=C=O': 3.8, 'O': 12.0, '[Ar]': 0.7},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'[H][H]': 2.5, '[C]=O': 1.9, 'O=C=O': 3.8, 'O': 12, '[Ar]': 0.7},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6538,28 +6863,28 @@ entry(
     reactant1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(3.1e+45, 'cm^3/(mol*s)'), n=-8, Ea=(97510, 'cal/mol'), T0=(1, 'K')),
-        efficiencies = {'[H][H]': 2.5, '[C]=O': 1.9, 'O=C=O': 3.8, 'O': 12.0, '[Ar]': 0.7},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'[H][H]': 2.5, '[C]=O': 1.9, 'O=C=O': 3.8, 'O': 12, '[Ar]': 0.7},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6573,35 +6898,37 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 C2H6
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 C 0 0 {1,S} {6,S} {7,S} {8,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
-7 H 0 0 {2,S}
-8 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 C u0 p0 c0  {1,S} {6,S} {7,S} {8,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
         arrheniusHigh = Arrhenius(
-            A = (2277000000000000.0, 'cm^3/(mol*s)'),
+            A = (2.277e+15, 'cm^3/(mol*s)'),
             n = -0.69,
             Ea = (174.86, 'cal/mol'),
             T0 = (1, 'K'),
@@ -6615,8 +6942,8 @@ C2H6
         T3 = (570, 'K'),
         T1 = (1e-10, 'K'),
         T2 = (1e+30, 'K'),
-        efficiencies = {'[C]=O': 2.0, 'O=C=O': 3.0, 'O': 5.0},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'[C]=O': 2, 'O=C=O': 3, 'O': 5},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6630,24 +6957,26 @@ entry(
     reactant1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH4
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
@@ -6667,8 +6996,8 @@ CH4
         T3 = (74, 'K'),
         T1 = (2941, 'K'),
         T2 = (6964, 'K'),
-        efficiencies = {'C': 2.0, 'O=C=O': 2.0, 'CC': 3.0, 'O': 6.0, '[H][H]': 2.0, '[C]=O': 1.5, '[Ar]': 0.7},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'C': 2, 'O=C=O': 2, 'CC': 3, 'O': 6, '[H][H]': 2, '[C]=O': 1.5, '[Ar]': 0.7},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6682,26 +7011,28 @@ entry(
     reactant1 = 
 """
 OH
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
+multiplicity 2
+1 O u1 p2 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
@@ -6721,8 +7052,8 @@ CH3OH
         T3 = (195, 'K'),
         T1 = (5900, 'K'),
         T2 = (6394, 'K'),
-        efficiencies = {'C': 2.0, 'O=C=O': 2.0, 'CC': 3.0, 'O': 6.0, '[H][H]': 2.0, '[C]=O': 1.5},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'C': 2, 'O=C=O': 2, 'CC': 3, 'O': 6, '[H][H]': 2, '[C]=O': 1.5},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6736,35 +7067,32 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
-        arrheniusHigh = Arrhenius(
-            A = (1055000000000.0, 'cm^3/(mol*s)'),
-            n = 0.5,
-            Ea = (86, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
+        arrheniusHigh = Arrhenius(A=(1.055e+12, 'cm^3/(mol*s)'), n=0.5, Ea=(86, 'cal/mol'), T0=(1, 'K')),
         arrheniusLow = Arrhenius(
             A = (4.36e+31, 'cm^6/(mol^2*s)'),
             n = -4.65,
@@ -6775,8 +7103,8 @@ CH3OH
         T3 = (100, 'K'),
         T1 = (90000, 'K'),
         T2 = (10000, 'K'),
-        efficiencies = {'C': 2.0, 'O=C=O': 2.0, 'CC': 3.0, 'O': 6.0, '[H][H]': 2.0, '[C]=O': 1.5},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'C': 2, 'O=C=O': 2, 'CC': 3, 'O': 6, '[H][H]': 2, '[C]=O': 1.5},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6790,31 +7118,33 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
         arrheniusHigh = Arrhenius(
-            A = (2430000000000.0, 'cm^3/(mol*s)'),
+            A = (2.43e+12, 'cm^3/(mol*s)'),
             n = 0.515,
             Ea = (50, 'cal/mol'),
             T0 = (1, 'K'),
@@ -6829,8 +7159,8 @@ CH3OH
         T3 = (100, 'K'),
         T1 = (90000, 'K'),
         T2 = (10000, 'K'),
-        efficiencies = {'C': 2.0, 'O=C=O': 2.0, 'CC': 3.0, 'O': 6.0, '[H][H]': 2.0, '[C]=O': 1.5},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'C': 2, 'O=C=O': 2, 'CC': 3, 'O': 6, '[H][H]': 2, '[C]=O': 1.5},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6844,26 +7174,27 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH3OH
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 0 2 {1,S} {6,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u0 p2 c0  {1,S} {6,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
@@ -6883,8 +7214,8 @@ CH3OH
         T3 = (208, 'K'),
         T1 = (3922, 'K'),
         T2 = (10180, 'K'),
-        efficiencies = {'C': 2.0, 'O=C=O': 2.0, 'CC': 3.0, 'O': 6.0, '[H][H]': 2.0, '[C]=O': 1.5},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'C': 2, 'O=C=O': 2, 'CC': 3, 'O': 6, '[H][H]': 2, '[C]=O': 1.5},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6898,22 +7229,25 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     product1 = 
 """
 CH3
-1 C 1 0 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
@@ -6928,8 +7262,8 @@ CH3
         T3 = (78, 'K'),
         T1 = (1995, 'K'),
         T2 = (5590, 'K'),
-        efficiencies = {'C': 2.0, 'O=C=O': 2.0, 'CC': 3.0, 'O': 6.0, '[H][H]': 2.0, '[C]=O': 1.5, '[Ar]': 0.7},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'C': 2, 'O=C=O': 2, 'CC': 3, 'O': 6, '[H][H]': 2, '[C]=O': 1.5, '[Ar]': 0.7},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6943,33 +7277,29 @@ entry(
     reactant1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     reactant2 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product1 = 
 """
 CH2CO
-1 C 0 0 {2,D} {4,S} {5,S}
-2 C 0 0 {1,D} {3,D}
-3 O 0 2 {2,D}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {4,S} {5,S}
+2 C u0 p0 c0  {1,D} {3,D}
+3 O u0 p2 c0  {2,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Troe(
-        arrheniusHigh = Arrhenius(
-            A = (810000000000.0, 'cm^3/(mol*s)'),
-            n = 0.5,
-            Ea = (4510, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
+        arrheniusHigh = Arrhenius(A=(8.1e+11, 'cm^3/(mol*s)'), n=0.5, Ea=(4510, 'cal/mol'), T0=(1, 'K')),
         arrheniusLow = Arrhenius(
             A = (2.69e+33, 'cm^6/(mol^2*s)'),
             n = -5.11,
@@ -6980,8 +7310,8 @@ CH2CO
         T3 = (275, 'K'),
         T1 = (1226, 'K'),
         T2 = (5185, 'K'),
-        efficiencies = {'C': 2.0, 'O=C=O': 2.0, 'CC': 3.0, 'O': 6.0, '[H][H]': 2.0, '[C]=O': 1.5, '[Ar]': 0.7},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        efficiencies = {'C': 2, 'O=C=O': 2, 'CC': 3, 'O': 6, '[H][H]': 2, '[C]=O': 1.5, '[Ar]': 0.7},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -6995,27 +7325,24 @@ entry(
     reactant1 = 
 """
 CH2(S)
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 1
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
+multiplicity 3
+1 C u2 p0 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(
-            A = (9000000000000.0, 'cm^3/(mol*s)'),
-            n = 0,
-            Ea = (600, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
-        efficiencies = {'[C]=O': 0.0, 'O=C=O': 0.0, 'O': 0.0, '[Ar]': 0.0},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        arrheniusLow = Arrhenius(A=(9e+12, 'cm^3/(mol*s)'), n=0, Ea=(600, 'cal/mol'), T0=(1, 'K')),
+        efficiencies = {'[C]=O': 0, 'O=C=O': 0, 'O': 0, '[Ar]': 0},
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -7029,33 +7356,35 @@ entry(
     reactant1 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     reactant2 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product1 = 
 """
 OCHO
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 O 1 2 {1,S}
-4 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 O u1 p2 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(
-            A = (75000000000000.0, 'cm^6/(mol^2*s)'),
+            A = (7.5e+13, 'cm^6/(mol^2*s)'),
             n = 0,
             Ea = (29000, 'cal/mol'),
             T0 = (1, 'K'),
         ),
         efficiencies = {},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -7069,35 +7398,32 @@ entry(
     reactant1 = 
 """
 CH2OH
-1 C 1 0 {2,S} {3,S} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+multiplicity 2
+1 C u1 p0 c0  {2,S} {3,S} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(
-            A = (100000000000000.0, 'cm^3/(mol*s)'),
-            n = 0,
-            Ea = (25100, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
+        arrheniusLow = Arrhenius(A=(1e+14, 'cm^3/(mol*s)'), n=0, Ea=(25100, 'cal/mol'), T0=(1, 'K')),
         efficiencies = {},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -7111,24 +7437,26 @@ entry(
     reactant1 = 
 """
 CH3O
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 O 1 2 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 O u1 p2 c0  {1,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
 CH2O
-1 C 0 0 {2,D} {3,S} {4,S}
-2 O 0 2 {1,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 O u0 p2 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H
-1 H 1 0
+multiplicity 2
+1 H u1 p0 c0 
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
@@ -7139,7 +7467,7 @@ H
             T0 = (1, 'K'),
         ),
         efficiencies = {},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -7153,35 +7481,30 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 CO
-1 C 0 1 {2,T}
-2 O 0 1 {1,T}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 """,
     product2 = 
 """
 H2O
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
+1 O u0 p2 c0  {2,S} {3,S}
+2 H u0 p0 c0  {1,S}
+3 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
-        arrheniusLow = Arrhenius(
-            A = (23000000000000.0, 'cm^3/(mol*s)'),
-            n = 0,
-            Ea = (50000, 'cal/mol'),
-            T0 = (1, 'K'),
-        ),
+        arrheniusLow = Arrhenius(A=(2.3e+13, 'cm^3/(mol*s)'), n=0, Ea=(50000, 'cal/mol'), T0=(1, 'K')),
         efficiencies = {},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -7195,30 +7518,30 @@ entry(
     reactant1 = 
 """
 HCOOH
-1 C 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 H 0 0 {1,S}
-5 H 0 0 {2,S}
+1 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
 CO2
-1 C 0 0 {2,D} {3,D}
-2 O 0 2 {1,D}
-3 O 0 2 {1,D}
+1 C u0 p0 c0  {2,D} {3,D}
+2 O u0 p2 c0  {1,D}
+3 O u0 p2 c0  {1,D}
 """,
     product2 = 
 """
 H2
-1 H 0 0 {2,S}
-2 H 0 0 {1,S}
+1 H u0 p0 c0  {2,S}
+2 H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = ThirdBody(
         arrheniusLow = Arrhenius(A=(1.5e+16, 'cm^3/(mol*s)'), n=0, Ea=(57000, 'cal/mol'), T0=(1, 'K')),
         efficiencies = {},
-        comment = 'Reaction and kinetics from Dooley\\C1.',
+        comment = 'Reaction and kinetics from Dooley/C1.',
     ),
     shortDesc = u"""""",
     longDesc = 

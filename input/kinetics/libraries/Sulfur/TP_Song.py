@@ -11,28 +11,29 @@ entry(
     reactant1 = 
 """
 thiophene
-1 C 0 0 {2,S} {3,D} {6,S}
-2 C 0 0 {1,S} {4,D} {7,S}
-3 C 0 0 {1,D} {5,S} {8,S}
-4 C 0 0 {2,D} {5,S} {9,S}
-5 S 0 2 {3,S} {4,S}
-6 H 0 0 {1,S}
-7 H 0 0 {2,S}
-8 H 0 0 {3,S}
-9 H 0 0 {4,S}
+1 C u0 p0 c0  {2,S} {3,D} {6,S}
+2 C u0 p0 c0  {1,S} {4,D} {7,S}
+3 C u0 p0 c0  {1,D} {5,S} {8,S}
+4 C u0 p0 c0  {2,D} {5,S} {9,S}
+5 S u0 p2 c0  {3,S} {4,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {3,S}
+9 H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
 IM1
-1 C 0  0 {2,S} {4,S} {6,S} {7,S}
-2 C 0  0 {1,S} {3,D} {8,S}
-3 C 0  0 {2,D} {5,S} {9,S}
-4 C 2S 0 {1,S} {5,S}
-5 S 0  2 {3,S} {4,S}
-6 H 0  0 {1,S}
-7 H 0  0 {1,S}
-8 H 0  0 {2,S}
-9 H 0  0 {3,S}
+multiplicity 1
+1 C u0 p0 c0  {2,S} {4,S} {6,S} {7,S}
+2 C u0 p0 c0  {1,S} {3,D} {8,S}
+3 C u0 p0 c0  {2,D} {5,S} {9,S}
+4 C u2 p0 c0  {1,S} {5,S}
+5 S u0 p2 c0  {3,S} {4,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {1,S}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -40,7 +41,7 @@ IM1
         n = 0.52,
         Ea = (67.07, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -54,28 +55,28 @@ entry(
     reactant1 = 
 """
 thiophene
-1 C 0 0 {2,S} {3,D} {6,S}
-2 C 0 0 {1,S} {4,D} {7,S}
-3 C 0 0 {1,D} {5,S} {8,S}
-4 C 0 0 {2,D} {5,S} {9,S}
-5 S 0 2 {3,S} {4,S}
-6 H 0 0 {1,S}
-7 H 0 0 {2,S}
-8 H 0 0 {3,S}
-9 H 0 0 {4,S}
+1 C u0 p0 c0  {2,S} {3,D} {6,S}
+2 C u0 p0 c0  {1,S} {4,D} {7,S}
+3 C u0 p0 c0  {1,D} {5,S} {8,S}
+4 C u0 p0 c0  {2,D} {5,S} {9,S}
+5 S u0 p2 c0  {3,S} {4,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {3,S}
+9 H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
 IM2
-1 C 0 0 {2,S} {4,D} {5,S}
-2 C 0 0 {1,S} {6,D} {7,S}
-3 C 0 0 {4,D} {8,S} {9,S}
-4 C 0 0 {1,D} {3,D}
-5 H 0 0 {1,S}
-6 S 0 2 {2,D}
-7 H 0 0 {2,S}
-8 H 0 0 {3,S}
-9 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,D} {5,S}
+2 C u0 p0 c0  {1,S} {6,D} {7,S}
+3 C u0 p0 c0  {4,D} {8,S} {9,S}
+4 C u0 p0 c0  {1,D} {3,D}
+5 H u0 p0 c0  {1,S}
+6 S u0 p2 c0  {2,D}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {3,S}
+9 H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -83,7 +84,7 @@ IM2
         n = 0.55,
         Ea = (74.79, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -97,28 +98,28 @@ entry(
     reactant1 = 
 """
 thiophene
-1 C 0 0 {2,S} {3,D} {6,S}
-2 C 0 0 {1,S} {4,D} {7,S}
-3 C 0 0 {1,D} {5,S} {8,S}
-4 C 0 0 {2,D} {5,S} {9,S}
-5 S 0 2 {3,S} {4,S}
-6 H 0 0 {1,S}
-7 H 0 0 {2,S}
-8 H 0 0 {3,S}
-9 H 0 0 {4,S}
+1 C u0 p0 c0  {2,S} {3,D} {6,S}
+2 C u0 p0 c0  {1,S} {4,D} {7,S}
+3 C u0 p0 c0  {1,D} {5,S} {8,S}
+4 C u0 p0 c0  {2,D} {5,S} {9,S}
+5 S u0 p2 c0  {3,S} {4,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {3,S}
+9 H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
 IM4
-1 C 0 0 {2,S} {3,S} {5,S} {6,S}
-2 C 0 0 {1,S} {7,D} {8,S}
-3 C 0 0 {1,S} {4,T}
-4 C 0 0 {3,T} {9,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 S 0 2 {2,D}
-8 H 0 0 {2,S}
-9 H 0 0 {4,S}
+1 C u0 p0 c0  {2,S} {3,S} {5,S} {6,S}
+2 C u0 p0 c0  {1,S} {7,D} {8,S}
+3 C u0 p0 c0  {1,S} {4,T}
+4 C u0 p0 c0  {3,T} {9,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 S u0 p2 c0  {2,D}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {4,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -126,7 +127,7 @@ IM4
         n = 0.65,
         Ea = (86.88, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.\nthiophene = IM3        2.35E05    0.75    86.11    0.0    0.0    0.0',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.\nthiophene = IM3        2.35E05    0.75    86.11    0.0    0.0    0.0',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -140,40 +141,41 @@ entry(
     reactant1 = 
 """
 IM1
-1 C 0  0 {2,S} {4,S} {6,S} {7,S}
-2 C 0  0 {1,S} {3,D} {8,S}
-3 C 0  0 {2,D} {5,S} {9,S}
-4 C 2S 0 {1,S} {5,S}
-5 S 0  2 {3,S} {4,S}
-6 H 0  0 {1,S}
-7 H 0  0 {1,S}
-8 H 0  0 {2,S}
-9 H 0  0 {3,S}
+multiplicity 1
+1 C u0 p0 c0  {2,S} {4,S} {6,S} {7,S}
+2 C u0 p0 c0  {1,S} {3,D} {8,S}
+3 C u0 p0 c0  {2,D} {5,S} {9,S}
+4 C u2 p0 c0  {1,S} {5,S}
+5 S u0 p2 c0  {3,S} {4,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {1,S}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
 C2H2
-1 C 0 0 {2,T} {3,S}
-2 C 0 0 {1,T} {4,S}
-3 H 0 0 {1,S}
-4 H 0 0 {2,S}
+1 C u0 p0 c0  {2,T} {3,S}
+2 C u0 p0 c0  {1,T} {4,S}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {2,S}
 """,
     product2 = 
 """
 H2CCS
-1 C 0 0 {2,D} {3,S} {4,S}
-2 C 0 0 {1,D} {5,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 S 0 2 {2,D}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 C u0 p0 c0  {1,D} {5,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 S u0 p2 c0  {2,D}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (210000000000.0, 's^-1'),
+        A = (2.1e+11, 's^-1'),
         n = 0.99,
         Ea = (41.95, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -187,36 +189,38 @@ entry(
     reactant1 = 
 """
 IM1
-1 C 0  0 {2,S} {4,S} {6,S} {7,S}
-2 C 0  0 {1,S} {3,D} {8,S}
-3 C 0  0 {2,D} {5,S} {9,S}
-4 C 2S 0 {1,S} {5,S}
-5 S 0  2 {3,S} {4,S}
-6 H 0  0 {1,S}
-7 H 0  0 {1,S}
-8 H 0  0 {2,S}
-9 H 0  0 {3,S}
+multiplicity 1
+1 C u0 p0 c0  {2,S} {4,S} {6,S} {7,S}
+2 C u0 p0 c0  {1,S} {3,D} {8,S}
+3 C u0 p0 c0  {2,D} {5,S} {9,S}
+4 C u2 p0 c0  {1,S} {5,S}
+5 S u0 p2 c0  {3,S} {4,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {1,S}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
 IM5
-1 C 0 0 {2,S} {3,S} {6,S} {7,S}
-2 C 1 0 {1,S} {4,S} {8,S}
-3 C 0 0 {1,S} {5,D} {9,S}
-4 S 0 2 {2,S} {5,S}
-5 C 1 0 {3,D} {4,S}
-6 H 0 0 {1,S}
-7 H 0 0 {1,S}
-8 H 0 0 {2,S}
-9 H 0 0 {3,S}
+multiplicity 3
+1 C u0 p0 c0  {2,S} {3,S} {6,S} {7,S}
+2 C u1 p0 c0  {1,S} {4,S} {8,S}
+3 C u0 p0 c0  {1,S} {5,D} {9,S}
+4 S u0 p2 c0  {2,S} {5,S}
+5 C u1 p0 c0  {3,D} {4,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {1,S}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (345000000000.0, 's^-1'),
+        A = (3.45e+11, 's^-1'),
         n = 0.34,
         Ea = (27.75, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -230,36 +234,37 @@ entry(
     reactant1 = 
 """
 IM5
-1 C 0 0 {2,S} {3,S} {6,S} {7,S}
-2 C 1 0 {1,S} {4,S} {8,S}
-3 C 0 0 {1,S} {5,D} {9,S}
-4 S 0 2 {2,S} {5,S}
-5 C 1 0 {3,D} {4,S}
-6 H 0 0 {1,S}
-7 H 0 0 {1,S}
-8 H 0 0 {2,S}
-9 H 0 0 {3,S}
+multiplicity 3
+1 C u0 p0 c0  {2,S} {3,S} {6,S} {7,S}
+2 C u1 p0 c0  {1,S} {4,S} {8,S}
+3 C u0 p0 c0  {1,S} {5,D} {9,S}
+4 S u0 p2 c0  {2,S} {5,S}
+5 C u1 p0 c0  {3,D} {4,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {1,S}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
 IM4
-1 C 0 0 {2,S} {3,S} {5,S} {6,S}
-2 C 0 0 {1,S} {7,D} {8,S}
-3 C 0 0 {1,S} {4,T}
-4 C 0 0 {3,T} {9,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 S 0 2 {2,D}
-8 H 0 0 {2,S}
-9 H 0 0 {4,S}
+1 C u0 p0 c0  {2,S} {3,S} {5,S} {6,S}
+2 C u0 p0 c0  {1,S} {7,D} {8,S}
+3 C u0 p0 c0  {1,S} {4,T}
+4 C u0 p0 c0  {3,T} {9,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 S u0 p2 c0  {2,D}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {4,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (31300000000000.0, 's^-1'),
+        A = (3.13e+13, 's^-1'),
         n = 0.86,
         Ea = (22.3, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -273,28 +278,29 @@ entry(
     reactant1 = 
 """
 IM2
-1 C 0 0 {2,S} {4,D} {5,S}
-2 C 0 0 {1,S} {6,D} {7,S}
-3 C 0 0 {4,D} {8,S} {9,S}
-4 C 0 0 {1,D} {3,D}
-5 H 0 0 {1,S}
-6 S 0 2 {2,D}
-7 H 0 0 {2,S}
-8 H 0 0 {3,S}
-9 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,D} {5,S}
+2 C u0 p0 c0  {1,S} {6,D} {7,S}
+3 C u0 p0 c0  {4,D} {8,S} {9,S}
+4 C u0 p0 c0  {1,D} {3,D}
+5 H u0 p0 c0  {1,S}
+6 S u0 p2 c0  {2,D}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {3,S}
+9 H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
 IM6
-1 C 0  0 {3,S} {5,S} {6,S} {7,S}
-2 C 0  0 {3,S} {4,D} {8,S}
-3 C 2S 0 {1,S} {2,S}
-4 C 0  0 {2,D} {9,D}
-5 H 0  0 {1,S}
-6 H 0  0 {1,S}
-7 H 0  0 {1,S}
-8 H 0  0 {2,S}
-9 S 0  2 {4,D}
+multiplicity 1
+1 C u0 p0 c0  {3,S} {5,S} {6,S} {7,S}
+2 C u0 p0 c0  {3,S} {4,D} {8,S}
+3 C u2 p0 c0  {1,S} {2,S}
+4 C u0 p0 c0  {2,D} {9,D}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {1,S}
+8 H u0 p0 c0  {2,S}
+9 S u0 p2 c0  {4,D}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -302,7 +308,7 @@ IM6
         n = 0.58,
         Ea = (61.23, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.\nIM2 = IM2a            3.15E12    -0.03    6.03    0.0    0.0    0.0',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.\nIM2 = IM2a            3.15E12    -0.03    6.03    0.0    0.0    0.0',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -316,40 +322,42 @@ entry(
     reactant1 = 
 """
 IM6
-1 C 0  0 {3,S} {5,S} {6,S} {7,S}
-2 C 0  0 {3,S} {4,D} {8,S}
-3 C 2S 0 {1,S} {2,S}
-4 C 0  0 {2,D} {9,D}
-5 H 0  0 {1,S}
-6 H 0  0 {1,S}
-7 H 0  0 {1,S}
-8 H 0  0 {2,S}
-9 S 0  2 {4,D}
+multiplicity 1
+1 C u0 p0 c0  {3,S} {5,S} {6,S} {7,S}
+2 C u0 p0 c0  {3,S} {4,D} {8,S}
+3 C u2 p0 c0  {1,S} {2,S}
+4 C u0 p0 c0  {2,D} {9,D}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {1,S}
+8 H u0 p0 c0  {2,S}
+9 S u0 p2 c0  {4,D}
 """,
     product1 = 
 """
 CS
-1 C 2S 0 {2,D}
-2 S 0  2 {1,D}
+multiplicity 1
+1 C u2 p0 c0  {2,D}
+2 S u0 p2 c0  {1,D}
 """,
     product2 = 
 """
 propyne
-1 C 0 0 {2,S} {4,S} {5,S} {6,S}
-2 C 0 0 {1,S} {3,T}
-3 C 0 0 {2,T} {7,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,S} {5,S} {6,S}
+2 C u0 p0 c0  {1,S} {3,T}
+3 C u0 p0 c0  {2,T} {7,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (7220000000000.0, 's^-1'),
+        A = (7.22e+12, 's^-1'),
         n = 0.37,
         Ea = (14.5, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -363,36 +371,37 @@ entry(
     reactant1 = 
 """
 IM2
-1 C 0 0 {2,S} {4,D} {5,S}
-2 C 0 0 {1,S} {6,D} {7,S}
-3 C 0 0 {4,D} {8,S} {9,S}
-4 C 0 0 {1,D} {3,D}
-5 H 0 0 {1,S}
-6 S 0 2 {2,D}
-7 H 0 0 {2,S}
-8 H 0 0 {3,S}
-9 H 0 0 {3,S}
+1 C u0 p0 c0  {2,S} {4,D} {5,S}
+2 C u0 p0 c0  {1,S} {6,D} {7,S}
+3 C u0 p0 c0  {4,D} {8,S} {9,S}
+4 C u0 p0 c0  {1,D} {3,D}
+5 H u0 p0 c0  {1,S}
+6 S u0 p2 c0  {2,D}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {3,S}
+9 H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
 IM7
-1 C 0 0 {3,S} {4,S} {5,S} {6,S}
-2 C 0 0 {3,D} {7,S} {8,S}
-3 C 1 0 {1,S} {2,D}
-4 C 1 0 {1,S} {9,D}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {2,S}
-8 H 0 0 {2,S}
-9 S 0 2 {4,D}
+multiplicity 3
+1 C u0 p0 c0  {3,S} {4,S} {5,S} {6,S}
+2 C u0 p0 c0  {3,D} {7,S} {8,S}
+3 C u1 p0 c0  {1,S} {2,D}
+4 C u1 p0 c0  {1,S} {9,D}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {2,S}
+9 S u0 p2 c0  {4,D}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (27900000000.0, 's^-1'),
+        A = (2.79e+10, 's^-1'),
         n = 0.64,
         Ea = (71.6, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -406,40 +415,42 @@ entry(
     reactant1 = 
 """
 IM7
-1 C 0 0 {3,S} {4,S} {5,S} {6,S}
-2 C 0 0 {3,D} {7,S} {8,S}
-3 C 1 0 {1,S} {2,D}
-4 C 1 0 {1,S} {9,D}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 H 0 0 {2,S}
-8 H 0 0 {2,S}
-9 S 0 2 {4,D}
+multiplicity 3
+1 C u0 p0 c0  {3,S} {4,S} {5,S} {6,S}
+2 C u0 p0 c0  {3,D} {7,S} {8,S}
+3 C u1 p0 c0  {1,S} {2,D}
+4 C u1 p0 c0  {1,S} {9,D}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {2,S}
+9 S u0 p2 c0  {4,D}
 """,
     product1 = 
 """
 CS
-1 C 2S 0 {2,D}
-2 S 0  2 {1,D}
+multiplicity 1
+1 C u2 p0 c0  {2,D}
+2 S u0 p2 c0  {1,D}
 """,
     product2 = 
 """
 propadiene
-1 C 0 0 {3,D} {4,S} {5,S}
-2 C 0 0 {3,D} {6,S} {7,S}
-3 C 0 0 {1,D} {2,D}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
-7 H 0 0 {2,S}
+1 C u0 p0 c0  {3,D} {4,S} {5,S}
+2 C u0 p0 c0  {3,D} {6,S} {7,S}
+3 C u0 p0 c0  {1,D} {2,D}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
+7 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (32700000000000.0, 's^-1'),
+        A = (3.27e+13, 's^-1'),
         n = 0.22,
         Ea = (8.83, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -453,36 +464,37 @@ entry(
     reactant1 = 
 """
 IM10
-1 C 0  0 {2,S} {4,S} {6,S} {7,S}
-2 C 0  0 {1,S} {3,D} {8,S}
-3 C 0  0 {2,D} {5,S} {9,S}
-4 S 0  2 {1,S} {5,S}
-5 C 2S 0 {3,S} {4,S}
-6 H 0  0 {1,S}
-7 H 0  0 {1,S}
-8 H 0  0 {2,S}
-9 H 0  0 {3,S}
+multiplicity 1
+1 C u0 p0 c0  {2,S} {4,S} {6,S} {7,S}
+2 C u0 p0 c0  {1,S} {3,D} {8,S}
+3 C u0 p0 c0  {2,D} {5,S} {9,S}
+4 S u0 p2 c0  {1,S} {5,S}
+5 C u2 p0 c0  {3,S} {4,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {1,S}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
 IM11
-1 C 0 0 {2,S} {3,D} {5,S}
-2 C 0 0 {1,S} {4,D} {6,S}
-3 C 0 0 {1,D} {7,S} {8,S}
-4 C 0 0 {2,D} {9,D}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
-7 H 0 0 {3,S}
-8 H 0 0 {3,S}
-9 S 0 2 {4,D}
+1 C u0 p0 c0  {2,S} {3,D} {5,S}
+2 C u0 p0 c0  {1,S} {4,D} {6,S}
+3 C u0 p0 c0  {1,D} {7,S} {8,S}
+4 C u0 p0 c0  {2,D} {9,D}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
+7 H u0 p0 c0  {3,S}
+8 H u0 p0 c0  {3,S}
+9 S u0 p2 c0  {4,D}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2900000000000.0, 's^-1'),
+        A = (2.9e+12, 's^-1'),
         n = 0.29,
         Ea = (15.56, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.\nIM3 = IM8a            3.46E19    0.59    13.39    0.0    0.0    0.0\nIM8 = IM8a            2.34E12    -0.09    3.68    0.0    0.0    0.0\nIM8a = IM9            5.40E16    1.27    83.03    0.0    0.0    0.0\nBelow reaction not found with CBS-QB3, guessed (Ea from paper)\nIM9 = H2S + butadiyne    1.00E10    0.10    11.63    0.0    0.0    0.0\nIM3 = IM10            1.00E12    0.23    13.53    0.0    0.0    0.0',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.\nIM3 = IM8a            3.46E19    0.59    13.39    0.0    0.0    0.0\nIM8 = IM8a            2.34E12    -0.09    3.68    0.0    0.0    0.0\nIM8a = IM9            5.40E16    1.27    83.03    0.0    0.0    0.0\nBelow reaction not found with CBS-QB3, guessed (Ea from paper)\nIM9 = H2S + butadiyne    1.00E10    0.10    11.63    0.0    0.0    0.0\nIM3 = IM10            1.00E12    0.23    13.53    0.0    0.0    0.0',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -501,40 +513,41 @@ entry(
     reactant1 = 
 """
 IM11
-1 C 0 0 {2,S} {3,D} {5,S}
-2 C 0 0 {1,S} {4,D} {6,S}
-3 C 0 0 {1,D} {7,S} {8,S}
-4 C 0 0 {2,D} {9,D}
-5 H 0 0 {1,S}
-6 H 0 0 {2,S}
-7 H 0 0 {3,S}
-8 H 0 0 {3,S}
-9 S 0 2 {4,D}
+1 C u0 p0 c0  {2,S} {3,D} {5,S}
+2 C u0 p0 c0  {1,S} {4,D} {6,S}
+3 C u0 p0 c0  {1,D} {7,S} {8,S}
+4 C u0 p0 c0  {2,D} {9,D}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {2,S}
+7 H u0 p0 c0  {3,S}
+8 H u0 p0 c0  {3,S}
+9 S u0 p2 c0  {4,D}
 """,
     product1 = 
 """
 C2H2jj
-1 C 0  0 {2,D} {3,S} {4,S}
-2 C 2S 0 {1,D}
-3 H 0  0 {1,S}
-4 H 0  0 {1,S}
+multiplicity 1
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 C u2 p0 c0  {1,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
 """,
     product2 = 
 """
 H2CCS
-1 C 0 0 {2,D} {3,S} {4,S}
-2 C 0 0 {1,D} {5,D}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 S 0 2 {2,D}
+1 C u0 p0 c0  {2,D} {3,S} {4,S}
+2 C u0 p0 c0  {1,D} {5,D}
+3 H u0 p0 c0  {1,S}
+4 H u0 p0 c0  {1,S}
+5 S u0 p2 c0  {2,D}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (66300000000.0, 's^-1'),
+        A = (6.63e+10, 's^-1'),
         n = 0.98,
         Ea = (88.84, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.',
     ),
     shortDesc = u"""""",
     longDesc = 
@@ -548,36 +561,36 @@ entry(
     reactant1 = 
 """
 IM4
-1 C 0 0 {2,S} {3,S} {5,S} {6,S}
-2 C 0 0 {1,S} {7,D} {8,S}
-3 C 0 0 {1,S} {4,T}
-4 C 0 0 {3,T} {9,S}
-5 H 0 0 {1,S}
-6 H 0 0 {1,S}
-7 S 0 2 {2,D}
-8 H 0 0 {2,S}
-9 H 0 0 {4,S}
+1 C u0 p0 c0  {2,S} {3,S} {5,S} {6,S}
+2 C u0 p0 c0  {1,S} {7,D} {8,S}
+3 C u0 p0 c0  {1,S} {4,T}
+4 C u0 p0 c0  {3,T} {9,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 S u0 p2 c0  {2,D}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
 IM8
-1 C 0 0 {2,D} {3,S} {7,S}
-2 C 0 0 {1,D} {4,S} {6,S}
-3 C 0 0 {1,S} {5,T}
-4 S 0 2 {2,S} {8,S}
-5 C 0 0 {3,T} {9,S}
-6 H 0 0 {2,S}
-7 H 0 0 {1,S}
-8 H 0 0 {4,S}
-9 H 0 0 {5,S}
+1 C u0 p0 c0  {2,D} {3,S} {7,S}
+2 C u0 p0 c0  {1,D} {4,S} {6,S}
+3 C u0 p0 c0  {1,S} {5,T}
+4 S u0 p2 c0  {2,S} {8,S}
+5 C u0 p0 c0  {3,T} {9,S}
+6 H u0 p0 c0  {2,S}
+7 H u0 p0 c0  {1,S}
+8 H u0 p0 c0  {4,S}
+9 H u0 p0 c0  {5,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (258000000000.0, 's^-1'),
+        A = (2.58e+11, 's^-1'),
         n = 0.68,
         Ea = (45.27, 'kcal/mol'),
         T0 = (1, 'K'),
-        comment = 'Reaction and kinetics from Sulfur\\TP_Song.\nIM4 = IM4a            1.24E12    0.02    2.07    0.0    0.0    0.0',
+        comment = 'Reaction and kinetics from Sulfur/TP_Song.\nIM4 = IM4a            1.24E12    0.02    2.07    0.0    0.0    0.0',
     ),
     shortDesc = u"""""",
     longDesc = 

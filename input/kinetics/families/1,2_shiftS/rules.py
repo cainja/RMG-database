@@ -11,17 +11,17 @@ entry(
     label = "XSYJ;YJ-Ss;X-Ss",
     group1 = 
 """
-1 *1 C   0 {3,S}
-2 *2 S   1 {3,S}
-3 *3 R!H 0 {1,S} {2,S}
+1 *1 C   u0 {3,S}
+2 *2 S   u1 {3,S}
+3 *3 R!H u0 {1,S} {2,S}
 """,
     group2 = 
 """
-1 *3 R!H 1
+1 *3 R!H u1
 """,
     group3 = "OR{C-Ss}",
     kinetics = ArrheniusEP(
-        A = (100000000.0, 's^-1'),
+        A = (1e+08, 's^-1'),
         n = 2,
         alpha = 0,
         E0 = (40, 'kcal/mol'),

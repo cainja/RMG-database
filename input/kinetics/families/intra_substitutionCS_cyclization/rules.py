@@ -13,18 +13,18 @@ entry(
     group2 = "OR{CJ, SJ, CJ-3, SJ-3}",
     group3 = 
 """
-1 *1 Cs 0 {2,S} {3,S} {4,S}
-2 *4 R  0 {1,S}
-3    R  0 {1,S}
-4    R  0 {1,S}
+1 *1 Cs u0 {2,S} {3,S} {4,S}
+2 *4 R  u0 {1,S}
+3    R  u0 {1,S}
+4    R  u0 {1,S}
 """,
     group4 = 
 """
-1 *2 S 0 {2,S}
-2    R 0 {1,S}
+1 *2 S u0 {2,S}
+2    R u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1000000000000.0, 's^-1'),
+        A = (1e+12, 's^-1'),
         n = 0,
         alpha = 0,
         E0 = (50, 'kcal/mol'),

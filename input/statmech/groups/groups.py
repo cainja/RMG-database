@@ -24,7 +24,7 @@ entry(
     label = "C_R0",
     group = 
 """
-1 * C 0
+1 * C u0
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -314,7 +314,7 @@ entry(
     label = "C_R1",
     group = 
 """
-1 * C 1
+1 * C u1
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -465,7 +465,7 @@ entry(
     label = "C_R2",
     group = 
 """
-1 * C {2S,2T}
+1 * C u2
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -520,7 +520,7 @@ entry(
     label = "O_R0",
     group = 
 """
-1 * O 0
+1 * O u0
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -635,7 +635,7 @@ entry(
     label = "O_R1",
     group = 
 """
-1 * O 1
+1 * O u1
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -661,3136 +661,10 @@ u"""
 
 entry(
     index = -1,
-    label = "R!Hx0",
-    group = 
-"""
-1 * R!H 0
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "R!Hx1",
-    group = 
-"""
-1 * R!H 1
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "R!Hx2",
-    group = 
-"""
-1 * R!H {2S,2T}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "R!Hx3",
-    group = 
-"""
-1 * R!H {3D,3Q}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH3x0",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 0 {1,S}
-3   H   0 {1,S}
-4   H   0 {1,S}
-5   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH3x1",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 1 {1,S}
-3   H   0 {1,S}
-4   H   0 {1,S}
-5   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH3x2",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H {2S,2T} {1,S}
-3   H   0       {1,S}
-4   H   0       {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCH2x0",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   R!H 0 {1,D}
-3   H   0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCH2x1",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   R!H 1 {1,D}
-3   H   0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCH2x2",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H {2S,2T} {1,D}
-3   H   0       {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCHx0",
-    group = 
-"""
-1 * C 0 {2,T} {3,S}
-2   C 0 {1,T}
-3   H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCHx1",
-    group = 
-"""
-1 * C 0 {2,T} {3,S}
-2   C 1 {1,T}
-3   H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH2sRx00",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   H   0 {1,S}
-5   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH2sRx11",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 1 {1,S}
-3   R!H 1 {1,S}
-4   H   0 {1,S}
-5   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH2sRx01",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 0 {1,S}
-3   R!H 1 {1,S}
-4   H   0 {1,S}
-5   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH2sRx02",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 0       {1,S}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH2sRx12",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 1       {1,S}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH2sRx22",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Aldehydex0",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   O   0 {1,D}
-3   R!H 0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Aldehydex1",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   O   0 {1,D}
-3   R!H 1 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Aldehydex2",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   O   0       {1,D}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Ketenex0",
-    group = 
-"""
-1 * C   0 {2,D} {3,D}
-2   O   0 {1,D}
-3   R!H 0 {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Ketenex1",
-    group = 
-"""
-1 * C   0 {2,D} {3,D}
-2   O   0 {1,D}
-3   R!H 1 {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Ketenex2",
-    group = 
-"""
-1 * C   0       {2,D} {3,D}
-2   O   0       {1,D}
-3   R!H {2S,2T} {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Cumulenex00",
-    group = 
-"""
-1 * C 0 {2,D} {3,D}
-2   C 0 {1,D}
-3   C 0 {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Cumulenex01",
-    group = 
-"""
-1 * C 0 {2,D} {3,D}
-2   C 0 {1,D}
-3   C 1 {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Cumulenex11",
-    group = 
-"""
-1 * C 0 {2,D} {3,D}
-2   C 1 {1,D}
-3   C 1 {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Cumulenex02",
-    group = 
-"""
-1 * C 0       {2,D} {3,D}
-2   C 0       {1,D}
-3   C {2S,2T} {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Cumulenex12",
-    group = 
-"""
-1 * C 0       {2,D} {3,D}
-2   C 1       {1,D}
-3   C {2S,2T} {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Cumulenex22",
-    group = 
-"""
-1 * C 0       {2,D} {3,D}
-2   C {2S,2T} {1,D}
-3   C {2S,2T} {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCHsRx00",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   C   0 {1,D}
-3   R!H 0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCHsRx01",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   C   0 {1,D}
-3   R!H 1 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCHsRx10",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   C   1 {1,D}
-3   R!H 0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCHsRx11",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   C   1 {1,D}
-3   R!H 1 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCHsRx02",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   C   0       {1,D}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCHsRx20",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   C   {2S,2T} {1,D}
-3   R!H 0       {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCHsRx12",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   C   1       {1,D}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCHsRx21",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   C   {2S,2T} {1,D}
-3   R!H 1       {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCHsRx22",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   C   {2S,2T} {1,D}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCsRx00",
-    group = 
-"""
-1 * C   0 {2,T} {3,S}
-2   C   0 {1,T}
-3   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCsRx01",
-    group = 
-"""
-1 * C   0 {2,T} {3,S}
-2   C   0 {1,T}
-3   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCsRx10",
-    group = 
-"""
-1 * C   0 {2,T} {3,S}
-2   C   1 {1,T}
-3   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCsRx11",
-    group = 
-"""
-1 * C   0 {2,T} {3,S}
-2   C   1 {1,T}
-3   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCsRx02",
-    group = 
-"""
-1 * C   0       {2,T} {3,S}
-2   C   0       {1,T}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCsRx12",
-    group = 
-"""
-1 * C   0       {2,T} {3,S}
-2   C   1       {1,T}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x000",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-5   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x111",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 1 {1,S}
-3   R!H 1 {1,S}
-4   R!H 1 {1,S}
-5   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x222",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   R!H {2S,2T} {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x001",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 1 {1,S}
-5   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x002",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 0       {1,S}
-3   R!H 0       {1,S}
-4   R!H {2S,2T} {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x110",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 1 {1,S}
-3   R!H 1 {1,S}
-4   R!H 0 {1,S}
-5   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x112",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 1       {1,S}
-3   R!H 1       {1,S}
-4   R!H {2S,2T} {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x220",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   R!H 0       {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x221",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   R!H 1       {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHsR2x012",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 0       {1,S}
-3   R!H 1       {1,S}
-4   R!H {2S,2T} {1,S}
-5   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x000",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   R!H 0 {1,D}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x001",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   R!H 0 {1,D}
-3   R!H 0 {1,S}
-4   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x011",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   R!H 0 {1,D}
-3   R!H 1 {1,S}
-4   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x002",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H 0       {1,D}
-3   R!H 0       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x012",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H 0       {1,D}
-3   R!H 1       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x022",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H 0       {1,D}
-3   R!H {2S,2T} {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x100",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   R!H 1 {1,D}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x101",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   R!H 1 {1,D}
-3   R!H 0 {1,S}
-4   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x111",
-    group = 
-"""
-1 * C   0 {2,D} {3,S} {4,S}
-2   R!H 1 {1,D}
-3   R!H 1 {1,S}
-4   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x102",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H 1       {1,D}
-3   R!H 0       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x112",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H 1       {1,D}
-3   R!H 1       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x122",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H 1       {1,D}
-3   R!H {2S,2T} {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x200",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H {2S,2T} {1,D}
-3   R!H 0       {1,S}
-4   R!H 0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x201",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H {2S,2T} {1,D}
-3   R!H 0       {1,S}
-4   R!H 1       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x211",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H {2S,2T} {1,D}
-3   R!H 1       {1,S}
-4   R!H 1       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x202",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H {2S,2T} {1,D}
-3   R!H 0       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x212",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H {2S,2T} {1,D}
-3   R!H 1       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCsR2x222",
-    group = 
-"""
-1 * C   0       {2,D} {3,S} {4,S}
-2   R!H {2S,2T} {1,D}
-3   R!H {2S,2T} {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Ketonex00",
-    group = 
-"""
-1 * C 0 {2,D} {3,S} {4,S}
-2   O 0 {1,D}
-3   C 0 {1,S}
-4   C 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Ketonex01",
-    group = 
-"""
-1 * C 0 {2,D} {3,S} {4,S}
-2   O 0 {1,D}
-3   C 0 {1,S}
-4   C 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Ketonex11",
-    group = 
-"""
-1 * C 0 {2,D} {3,S} {4,S}
-2   O 0 {1,D}
-3   C 1 {1,S}
-4   C 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Ketonex02",
-    group = 
-"""
-1 * C 0       {2,D} {3,S} {4,S}
-2   O 0       {1,D}
-3   C 0       {1,S}
-4   C {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Ketonex12",
-    group = 
-"""
-1 * C 0       {2,D} {3,S} {4,S}
-2   O 0       {1,D}
-3   C 1       {1,S}
-4   C {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Ketonex22",
-    group = 
-"""
-1 * C 0       {2,D} {3,S} {4,S}
-2   O 0       {1,D}
-3   C {2S,2T} {1,S}
-4   C {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x0000",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-5   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x1111",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 1 {1,S}
-3   R!H 1 {1,S}
-4   R!H 1 {1,S}
-5   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x2222",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   R!H {2S,2T} {1,S}
-5   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x0001",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-5   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x0002",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 0       {1,S}
-3   R!H 0       {1,S}
-4   R!H 0       {1,S}
-5   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x1110",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 1 {1,S}
-3   R!H 1 {1,S}
-4   R!H 1 {1,S}
-5   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x1112",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 1       {1,S}
-3   R!H 1       {1,S}
-4   R!H 1       {1,S}
-5   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x2220",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   R!H {2S,2T} {1,S}
-5   R!H 0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x2221",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   R!H {2S,2T} {1,S}
-5   R!H 1       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x0011",
-    group = 
-"""
-1 * C   0 {2,S} {3,S} {4,S} {5,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 1 {1,S}
-5   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x0022",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 0       {1,S}
-3   R!H 0       {1,S}
-4   R!H {2S,2T} {1,S}
-5   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x1122",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 1       {1,S}
-3   R!H 1       {1,S}
-4   R!H {2S,2T} {1,S}
-5   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x0012",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 0       {1,S}
-3   R!H 0       {1,S}
-4   R!H 1       {1,S}
-5   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x0112",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 0       {1,S}
-3   R!H 1       {1,S}
-4   R!H 1       {1,S}
-5   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCsR3x0122",
-    group = 
-"""
-1 * C   0       {2,S} {3,S} {4,S} {5,S}
-2   R!H 0       {1,S}
-3   R!H 1       {1,S}
-4   R!H {2S,2T} {1,S}
-5   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH2rx0",
-    group = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 0 {1,S}
-3   H   0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH2rx1",
-    group = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 1 {1,S}
-3   H   0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCH2rx2",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H {2S,2T} {1,S}
-3   H   0       {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCHrx0",
-    group = 
-"""
-1 * C   1 {2,D} {3,S}
-2   R!H 0 {1,D}
-3   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCHrx1",
-    group = 
-"""
-1 * C   1 {2,D} {3,S}
-2   R!H 1 {1,D}
-3   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCHrx2",
-    group = 
-"""
-1 * C   1       {2,D} {3,S}
-2   R!H {2S,2T} {1,D}
-3   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCrx0",
-    group = 
-"""
-1 * C 1 {2,T}
-2   C 0 {1,T}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CtCrx1",
-    group = 
-"""
-1 * C 1 {2,T}
-2   C 1 {1,T}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHrsRx00",
-    group = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHrsRx01",
-    group = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 0 {1,S}
-3   R!H 1 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHrsRx11",
-    group = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 1 {1,S}
-3   R!H 1 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHrsRx02",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H 0       {1,S}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHrsRx12",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H 1       {1,S}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHrsRx22",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "OdCrsRx0",
-    group = 
-"""
-1 * C   1 {2,D} {3,S}
-2   O   0 {1,D}
-3   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "OdCrsRx1",
-    group = 
-"""
-1 * C   1 {2,D} {3,S}
-2   O   0 {1,D}
-3   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "OdCrsRx2",
-    group = 
-"""
-1 * C   1       {2,D} {3,S}
-2   O   0       {1,D}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCrsRx00",
-    group = 
-"""
-1 * C   1 {2,D} {3,S}
-2   C   0 {1,D}
-3   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCrsRx01",
-    group = 
-"""
-1 * C   1 {2,D} {3,S}
-2   C   0 {1,D}
-3   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCrsRx10",
-    group = 
-"""
-1 * C   1 {2,D} {3,S}
-2   C   1 {1,D}
-3   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCrsRx11",
-    group = 
-"""
-1 * C   1 {2,D} {3,S}
-2   C   1 {1,D}
-3   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCrsRx02",
-    group = 
-"""
-1 * C   1       {2,D} {3,S}
-2   C   0       {1,D}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCrsRx20",
-    group = 
-"""
-1 * C   1       {2,D} {3,S}
-2   C   {2S,2T} {1,D}
-3   R!H 0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCrsRx12",
-    group = 
-"""
-1 * C   1       {2,D} {3,S}
-2   C   1       {1,D}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCrsRx21",
-    group = 
-"""
-1 * C   1       {2,D} {3,S}
-2   C   {2S,2T} {1,D}
-3   R!H 1       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "CdCrsRx22",
-    group = 
-"""
-1 * C   1       {2,D} {3,S}
-2   C   {2S,2T} {1,D}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x000",
-    group = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x111",
-    group = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 1 {1,S}
-3   R!H 1 {1,S}
-4   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x222",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x001",
-    group = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x002",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H 0       {1,S}
-3   R!H 0       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x110",
-    group = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 1 {1,S}
-3   R!H 1 {1,S}
-4   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x112",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H 1       {1,S}
-3   R!H 1       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x220",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   R!H 0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x221",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-4   R!H 1       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrsR2x012",
-    group = 
-"""
-1 * C   1       {2,S} {3,S} {4,S}
-2   R!H 0       {1,S}
-3   R!H 1       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHrrx0",
-    group = 
-"""
-1 * C   {2S,2T} {2,S} {3,S}
-2   R!H 0       {1,S}
-3   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHrrx1",
-    group = 
-"""
-1 * C   {2S,2T} {2,S} {3,S}
-2   R!H 1       {1,S}
-3   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCHrrx2",
-    group = 
-"""
-1 * C   {2S,2T} {2,S} {3,S}
-2   R!H {2S,2T} {1,S}
-3   H   0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCrrx0",
-    group = 
-"""
-1 * C   {2S,2T} {2,D}
-2   R!H 0       {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCrrx1",
-    group = 
-"""
-1 * C   {2S,2T} {2,D}
-2   R!H 1       {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RdCrrx2",
-    group = 
-"""
-1 * C   {2S,2T} {2,D}
-2   R!H {2S,2T} {1,D}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrrsRx00",
-    group = 
-"""
-1 * C   {2S,2T} {2,S} {3,S}
-2   R!H 0       {1,S}
-3   R!H 0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrrsRx01",
-    group = 
-"""
-1 * C   {2S,2T} {2,S} {3,S}
-2   R!H 0       {1,S}
-3   R!H 1       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrrsRx11",
-    group = 
-"""
-1 * C   {2S,2T} {2,S} {3,S}
-2   R!H 1       {1,S}
-3   R!H 1       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrrsRx02",
-    group = 
-"""
-1 * C   {2S,2T} {2,S} {3,S}
-2   R!H 0       {1,S}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrrsRx12",
-    group = 
-"""
-1 * C   {2S,2T} {2,S} {3,S}
-2   R!H 1       {1,S}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "RsCrrsRx22",
-    group = 
-"""
-1 * C   {2S,2T} {2,S} {3,S}
-2   R!H {2S,2T} {1,S}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Alcoholx0",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 0 {1,S}
-3   H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Alcoholx1",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 1 {1,S}
-3   H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Alcoholx2",
-    group = 
-"""
-1 * O 0       {2,S} {3,S}
-2   C {2S,2T} {1,S}
-3   H 0       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Etherx00",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 0 {1,S}
-3   C 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Etherx01",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 0 {1,S}
-3   C 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Etherx11",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 1 {1,S}
-3   C 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Etherx02",
-    group = 
-"""
-1 * O 0       {2,S} {3,S}
-2   C 0       {1,S}
-3   C {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Etherx12",
-    group = 
-"""
-1 * O 0       {2,S} {3,S}
-2   C 1       {1,S}
-3   C {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Etherx22",
-    group = 
-"""
-1 * O 0       {2,S} {3,S}
-2   C {2S,2T} {1,S}
-3   C {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "ROOHx0",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 0 {1,S}
-3   O 0 {1,S} {4,S}
-4   H 0 {3,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "ROOHx1",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 1 {1,S}
-3   O 0 {1,S} {4,S}
-4   H 0 {3,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "ROOHx2",
-    group = 
-"""
-1 * O 0       {2,S} {3,S}
-2   C {2S,2T} {1,S}
-3   O 0       {1,S} {4,S}
-4   H 0       {3,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "ROORx00",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 0 {1,S}
-3   O 0 {1,S} {4,S}
-4   C 0 {3,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "ROORx01",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 0 {1,S}
-3   O 0 {1,S} {4,S}
-4   C 1 {3,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "ROORx11",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 1 {1,S}
-3   O 0 {1,S} {4,S}
-4   C 1 {3,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "ROORx02",
-    group = 
-"""
-1 * O 0       {2,S} {3,S}
-2   C 0       {1,S}
-3   O 0       {1,S} {4,S}
-4   C {2S,2T} {3,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "ROORx12",
-    group = 
-"""
-1 * O 0       {2,S} {3,S}
-2   C 1       {1,S}
-3   O 0       {1,S} {4,S}
-4   C {2S,2T} {3,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "ROORx22",
-    group = 
-"""
-1 * O 0       {2,S} {3,S}
-2   C {2S,2T} {1,S}
-3   O 0       {1,S} {4,S}
-4   C {2S,2T} {3,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Peroxyx0",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 0 {1,S}
-3   O 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Peroxyx1",
-    group = 
-"""
-1 * O 0 {2,S} {3,S}
-2   C 1 {1,S}
-3   O 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Peroxyx2",
-    group = 
-"""
-1 * O 0       {2,S} {3,S}
-2   C {2S,2T} {1,S}
-3   O 1       {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Oxyx0",
-    group = 
-"""
-1 * O 1 {2,S}
-2   C 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Oxyx1",
-    group = 
-"""
-1 * O 1 {2,S}
-2   C 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Oxyx2",
-    group = 
-"""
-1 * O 1       {2,S}
-2   C {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-entry(
-    index = -1,
     label = "N_R0",
     group = 
 """
-1 * N 0
+1 * N u0
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -3807,15 +681,15 @@ entry(
     group = "OR{Amide_prix0}",
     statmech = GroupFrequencies(
         frequencies = [
-            (3480, 3540, 1), # asymmetric N-H stretch, (free) primary amides
-            (3380, 3420, 1), # symmetric N-H stretch, (free) primary amides
-            (1670, 1690, 1), # C=O stretch, known as amide I band, primary amides (dilute solution)
-            (1590, 1620, 1), # , primary amides (dilute solution)
-            (1400, 1420, 1), # C-N stretch, known as amide III band, primary amides
-            (1140, 1160, 1), # NH2 in-plane rocking vibration, primary amides
-            (600, 750, 1),   # br. NH2 deformation vibration, primary amides
-            (550, 600, 1),   # N-C=O deformation vibration, primary amides
-            (450, 500, 1),   # C-C=O deformation vibration, primary amides
+            (3480, 3540, 1),
+            (3380, 3420, 1),
+            (1670, 1690, 1),
+            (1590, 1620, 1),
+            (1400, 1420, 1),
+            (1140, 1160, 1),
+            (600, 750, 1),
+            (550, 600, 1),
+            (450, 500, 1),
         ],
         symmetry = 1,
     ),
@@ -3831,26 +705,6 @@ u"""
 (600, 750, 1),   # br. NH2 deformation vibration, primary amides
 (550, 600, 1),   # N-C=O deformation vibration, primary amides
 (450, 500, 1),   # C-C=O deformation vibration, primary amides
-""",
-)
-
-entry(
-    index = -1,
-    label = "Amide_prix0",
-    group = 
-"""
-1 * N   0 {2,S} {5,S} {6,S}
-2   C   0 {1,S} {3,S} {4,D}
-3   C   0 {2,S}
-4   O   0 {2,D}
-5   H   0 {1,S}
-6   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
 
 """,
 )
@@ -3861,11 +715,11 @@ entry(
     group = "OR{Amide_secx0}",
     statmech = GroupFrequencies(
         frequencies = [
-            (3420, 3460, 1), # N-H stretch, trans form (in dilute solution)
-            (1510, 1550, 1), # amide II band, trans form (in dilute solution)
-            (1665, 1700, 1), # C=O stretch, secondary amides (dilute solution)
-            (1200, 1305, 1), # amide III band, secondary amides (trans form)
-            (620, 770, 1),   # br. out-of-plane N-H, secondary amides (trans form)
+            (3420, 3460, 1),
+            (1510, 1550, 1),
+            (1665, 1700, 1),
+            (1200, 1305, 1),
+            (620, 770, 1),
         ],
         symmetry = 1,
     ),
@@ -3877,26 +731,6 @@ u"""
 (1665, 1700, 1), # C=O stretch, secondary amides (dilute solution)
 (1200, 1305, 1), # amide III band, secondary amides (trans form)
 (620, 770, 1),   # br. out-of-plane N-H, secondary amides (trans form)
-""",
-)
-
-entry(
-    index = -1,
-    label = "Amide_secx0",
-    group = 
-"""
-1 * N   0 {2,S} {5,S} {6,S}
-2   C   0 {1,S} {3,S} {4,D}
-3   C   0 {2,S}
-4   O   0 {2,D}
-5   C   0 {1,S}
-6   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
 
 """,
 )
@@ -3907,11 +741,11 @@ entry(
     group = "OR{Amide_terx0}",
     statmech = GroupFrequencies(
         frequencies = [
-            (1630, 1670, 1), # C=O stretch, tertiary amides (dilute solution or solid phase)
-            (700, 870, 1), # asymmetric CNC stretch, tertiary amides
-            (570, 620, 1), # , tertiary amides
-            (440, 480, 1), # , tertiary amides
-            (320, 390, 1), # , tertiary amides
+            (1630, 1670, 1),
+            (700, 870, 1),
+            (570, 620, 1),
+            (440, 480, 1),
+            (320, 390, 1),
         ],
         symmetry = 1,
     ),
@@ -3923,26 +757,6 @@ u"""
 (570, 620, 1), # , tertiary amides
 (440, 480, 1), # , tertiary amides
 (320, 390, 1), # , tertiary amides
-""",
-)
-
-entry(
-    index = -1,
-    label = "Amide_terx0",
-    group = 
-"""
-1 * N   0 {2,S} {5,S} {6,S}
-2   C   0 {1,S} {3,S} {4,D}
-3   C   0 {2,S}
-4   O   0 {2,D}
-5   C   0 {1,S}
-6   C   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
 
 """,
 )
@@ -3953,11 +767,11 @@ entry(
     group = "OR{Imidex0}",
     statmech = GroupFrequencies(
         frequencies = [
-            (3200, 3280, 1), # N-H stretch, Imides (solid phase)
-            (1670, 1740, 1), # C=O stretch, amide I band, Imides (solid phase)
-            (1500, 1510, 1), # br., amide II band, Imides (solid phase)
-            (1165, 1235, 1), # amide III band, Imides (solid phase)
-            (730, 740, 1),   # br. N-H wagging, amide II band, Imides (solid phase)
+            (3200, 3280, 1),
+            (1670, 1740, 1),
+            (1500, 1510, 1),
+            (1165, 1235, 1),
+            (730, 740, 1),
         ],
         symmetry = 1,
     ),
@@ -3969,28 +783,6 @@ u"""
 (1500, 1510, 1), # br., amide II band, Imides (solid phase)
 (1165, 1235, 1), # amide III band, Imides (solid phase)
 (730, 740, 1),   # br. N-H wagging, amide II band, Imides (solid phase)
-""",
-)
-
-entry(
-    index = -1,
-    label = "Imidex0",
-    group = 
-"""
-1 * N   0 {2,S} {3,S} {6,S}
-2   H   0 {1,S}
-3   C   0 {1,S} {4,D} {5,S}
-4   O   0 {3,D}
-5   R   0 {3,S}
-6   C   0 {1,S} {7,D} {8,S}
-7   O   0 {6,D}
-8   R   0 {6,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
 
 """,
 )
@@ -4001,11 +793,11 @@ entry(
     group = "OR{Amine_prix0}",
     statmech = GroupFrequencies(
         frequencies = [
-            (3330, 3550, 1), # asymmetric NH2 stretch, primary amines
-            (3250, 3450, 1), # symmetric NH2 stretch, primary amines
-            (1580, 1650, 1), # br. scissor vibration, saturated primary amines
-            (1145, 1295, 1), # NH2 rocking/twisting vibration, saturated primary amines
-            (650, 895, 1), # N-H bending out of plane, saturated primary amines
+            (3330, 3550, 1),
+            (3250, 3450, 1),
+            (1580, 1650, 1),
+            (1145, 1295, 1),
+            (650, 895, 1),
         ],
         symmetry = 1,
     ),
@@ -4017,24 +809,6 @@ u"""
 (1580, 1650, 1), # br. scissor vibration, saturated primary amines
 (1145, 1295, 1), # NH2 rocking/twisting vibration, saturated primary amines
 (650, 895, 1), # N-H bending out of plane, saturated primary amines
-""",
-)
-
-entry(
-    index = -1,
-    label = "Amine_prix0",
-    group = 
-"""
-1 * N   0 {2,S} {3,S} {4,S}
-2   C   0 {1,S}
-3   H   0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
 
 """,
 )
@@ -4045,9 +819,9 @@ entry(
     group = "OR{Amine_secx0}",
     statmech = GroupFrequencies(
         frequencies = [
-            (3400, 3450, 1), # , secondary amines
-            (1490, 1580, 1), # , secondary amines
-            (700, 750, 1), # br. N-H wagging vibration, secondary amines
+            (3400, 3450, 1),
+            (1490, 1580, 1),
+            (700, 750, 1),
         ],
         symmetry = 1,
     ),
@@ -4057,24 +831,6 @@ u"""
 (3400, 3450, 1), # , secondary amines
 (1490, 1580, 1), # , secondary amines
 (700, 750, 1), # br. N-H wagging vibration, secondary amines
-""",
-)
-
-entry(
-    index = -1,
-    label = "Amine_secx0",
-    group = 
-"""
-1 * N   0 {2,S} {3,S} {4,S}
-2   C   0 {1,S}
-3   C   0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
 
 """,
 )
@@ -4098,33 +854,14 @@ u"""
 )
 
 entry(
-    index = -1,
-    label = "Amine_terx0",
-    group = 
-"""
-1 * N   0 {2,S} {3,S} {4,S}
-2   C   0 {1,S}
-3   C   0 {1,S}
-4   C   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
     index = 32,
     label = "Nitrile",
     group = "OR{Nitrilex0}",
     statmech = GroupFrequencies(
         frequencies = [
-            (2230, 2260, 1), # C#N stretching, saturated aliphatic nitriles
-            (340, 390, 1),   # C#N deformation, aliphatic nitriles
-            (200, 160, 1),   # C#N deformation, aliphatic nitriles
+            (2230, 2260, 1),
+            (340, 390, 1),
+            (200, 160, 1),
         ],
         symmetry = 1,
     ),
@@ -4134,59 +871,6 @@ u"""
 (2230, 2260, 1), # C#N stretching, saturated aliphatic nitriles
 (340, 390, 1),   # C#N deformation, aliphatic nitriles
 (200, 160, 1),   # C#N deformation, aliphatic nitriles
-""",
-)
-
-entry(
-    index = -1,
-    label = "Nitrilex0",
-    group = 
-"""
-1 * N   0 {2,T}
-2   C   0 {1,T} {3,S}
-3   C   0 {2,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Nitrilex1",
-    group = 
-"""
-1 * N   0 {2,T}
-2   C   0 {1,T} {3,S}
-3   C   1 {2,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-)
-
-entry(
-    index = -1,
-    label = "Nitrilex2",
-    group = 
-"""
-1 * N   0       {2,T}
-2   C   0       {1,T} {3,S}
-3   C   {2S,2T} {2,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
 
 """,
 )
@@ -4197,8 +881,8 @@ entry(
     group = "OR{Nitrosox0, Nitrosox1, Nitrosox2}",
     statmech = GroupFrequencies(
         frequencies = [
-            (1330, 1425, 1), # aliphatic compounds
-            (1320, 1345, 1), # aliphatic compounds
+            (1330, 1425, 1),
+            (1320, 1345, 1),
         ],
         symmetry = 1,
     ),
@@ -4207,6 +891,3355 @@ entry(
 u"""
 (1330, 1425, 1), # aliphatic compounds
 (1320, 1345, 1), # aliphatic compounds
+
+""",
+)
+
+entry(
+    index = 34,
+    label = "Nitrites",
+    group = "OR{Nitritesx0}",
+    statmech = GroupFrequencies(
+        frequencies = [
+            (3220, 3360, 1),
+            (1650, 1680, 1),
+            (750, 815, 1),
+            (565, 625, 1),
+        ],
+        symmetry = 1,
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+(3220, 3360, 1), # Overtones of N=O stretch, nitrite compounds
+(1650, 1680, 1), # N=O stretch, nitrites, trans form
+(750, 815, 1),   # N-O stretch trans form, saturated primary and secondary aliphatic nitro compounds
+(565, 625, 1),   # O-N=O deformation vibration, saturated primary and secondary aliphatic nitro compounds
+
+""",
+)
+
+entry(
+    index = 35,
+    label = "Nitro",
+    group = "OR{Nitrox0, Nitrox1, Nitrox2}",
+    statmech = GroupFrequencies(
+        frequencies = [
+            (1545, 1555, 1),
+            (1360, 1385, 1),
+            (915, 1000, 1),
+            (850, 920, 1),
+            (605, 655, 1),
+            (470, 560, 1),
+        ],
+        symmetry = 2,
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+(1545, 1555, 1), # asymmetric NO2 stretch, saturated primary and secondary aliphatic nitro compounds
+(1360, 1385, 1), # symmetric NO2 stretch, saturated primary and secondary aliphatic nitro compounds
+(915, 1000, 1),  # C-N stretch trans form, saturated primary and secondary aliphatic nitro compounds
+(850, 920, 1),  # br. C-N stretch gauche form, saturated primary and secondary aliphatic nitro compounds
+(605, 655, 1),  # NO2 deformation vibration, saturated primary and secondary aliphatic nitro compounds
+(470, 560, 1),  # NO2 rocking vibration, saturated primary and secondary aliphatic nitro compounds
+
+""",
+)
+
+entry(
+    index = 36,
+    label = "Nitrates",
+    group = "OR{Nitratesx0}",
+    statmech = GroupFrequencies(
+        frequencies = [
+            (1615, 1660, 1),
+            (1250, 1300, 1),
+            (840, 870, 1),
+            (745, 765, 1),
+            (680, 720, 1),
+            (560, 610, 1),
+        ],
+        symmetry = 2,
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+(1615, 1660, 1), # asymmetric NO2 stretch, Nitrates, -ONO2
+(1250, 1300, 1), # symmetric NO2 stretch, Nitrates, -ONO2
+(840, 870, 1),   # br.N-O stretch, Nitrates, -ONO2
+(745, 765, 1),   # NO2 out-of-plane deformation vibration, Nitrates, -ONO2
+(680, 720, 1),   # NO2 deformation vibration, Nitrates, -ONO2
+(560, 610, 1),   # NO2 in-plane deformation vibration, Nitrates, -ONO2
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "R!Hx0",
+    group = 
+"""
+1 * R!H u0
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "R!Hx1",
+    group = 
+"""
+1 * R!H u1
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "R!Hx2",
+    group = 
+"""
+1 * R!H u2
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "R!Hx3",
+    group = 
+"""
+1 * R!H u3
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH3x0",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   H   u0 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH3x1",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   H   u0 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH3x2",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u2 {1,S}
+3   H   u0 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCH2x0",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u0 {1,D}
+3   H   u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCH2x1",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u1 {1,D}
+3   H   u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCH2x2",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u2 {1,D}
+3   H   u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCHx0",
+    group = 
+"""
+1 * C u0 {2,T} {3,S}
+2   C u0 {1,T}
+3   H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCHx1",
+    group = 
+"""
+1 * C u0 {2,T} {3,S}
+2   C u1 {1,T}
+3   H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH2sRx00",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH2sRx11",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH2sRx01",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u1 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH2sRx02",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH2sRx12",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH2sRx22",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Aldehydex0",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   O   u0 {1,D}
+3   R!H u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Aldehydex1",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   O   u0 {1,D}
+3   R!H u1 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Aldehydex2",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   O   u0 {1,D}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Ketenex0",
+    group = 
+"""
+1 * C   u0 {2,D} {3,D}
+2   O   u0 {1,D}
+3   R!H u0 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Ketenex1",
+    group = 
+"""
+1 * C   u0 {2,D} {3,D}
+2   O   u0 {1,D}
+3   R!H u1 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Ketenex2",
+    group = 
+"""
+1 * C   u0 {2,D} {3,D}
+2   O   u0 {1,D}
+3   R!H u2 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Cumulenex00",
+    group = 
+"""
+1 * C u0 {2,D} {3,D}
+2   C u0 {1,D}
+3   C u0 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Cumulenex01",
+    group = 
+"""
+1 * C u0 {2,D} {3,D}
+2   C u0 {1,D}
+3   C u1 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Cumulenex11",
+    group = 
+"""
+1 * C u0 {2,D} {3,D}
+2   C u1 {1,D}
+3   C u1 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Cumulenex02",
+    group = 
+"""
+1 * C u0 {2,D} {3,D}
+2   C u0 {1,D}
+3   C u2 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Cumulenex12",
+    group = 
+"""
+1 * C u0 {2,D} {3,D}
+2   C u1 {1,D}
+3   C u2 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Cumulenex22",
+    group = 
+"""
+1 * C u0 {2,D} {3,D}
+2   C u2 {1,D}
+3   C u2 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCHsRx00",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   C   u0 {1,D}
+3   R!H u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCHsRx01",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   C   u0 {1,D}
+3   R!H u1 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCHsRx10",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   C   u1 {1,D}
+3   R!H u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCHsRx11",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   C   u1 {1,D}
+3   R!H u1 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCHsRx02",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   C   u0 {1,D}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCHsRx20",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   C   u2 {1,D}
+3   R!H u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCHsRx12",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   C   u1 {1,D}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCHsRx21",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   C   u2 {1,D}
+3   R!H u1 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCHsRx22",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   C   u2 {1,D}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCsRx00",
+    group = 
+"""
+1 * C   u0 {2,T} {3,S}
+2   C   u0 {1,T}
+3   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCsRx01",
+    group = 
+"""
+1 * C   u0 {2,T} {3,S}
+2   C   u0 {1,T}
+3   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCsRx10",
+    group = 
+"""
+1 * C   u0 {2,T} {3,S}
+2   C   u1 {1,T}
+3   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCsRx11",
+    group = 
+"""
+1 * C   u0 {2,T} {3,S}
+2   C   u1 {1,T}
+3   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCsRx02",
+    group = 
+"""
+1 * C   u0 {2,T} {3,S}
+2   C   u0 {1,T}
+3   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCsRx12",
+    group = 
+"""
+1 * C   u0 {2,T} {3,S}
+2   C   u1 {1,T}
+3   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x000",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x111",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u1 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x222",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   R!H u2 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x001",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u1 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x002",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u2 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x110",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x112",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u2 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x220",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   R!H u0 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x221",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   R!H u1 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHsR2x012",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u1 {1,S}
+4   R!H u2 {1,S}
+5   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x000",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u0 {1,D}
+3   R!H u0 {1,S}
+4   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x001",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u0 {1,D}
+3   R!H u0 {1,S}
+4   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x011",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u0 {1,D}
+3   R!H u1 {1,S}
+4   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x002",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u0 {1,D}
+3   R!H u0 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x012",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u0 {1,D}
+3   R!H u1 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x022",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u0 {1,D}
+3   R!H u2 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x100",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u1 {1,D}
+3   R!H u0 {1,S}
+4   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x101",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u1 {1,D}
+3   R!H u0 {1,S}
+4   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x111",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u1 {1,D}
+3   R!H u1 {1,S}
+4   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x102",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u1 {1,D}
+3   R!H u0 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x112",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u1 {1,D}
+3   R!H u1 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x122",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u1 {1,D}
+3   R!H u2 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x200",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u2 {1,D}
+3   R!H u0 {1,S}
+4   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x201",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u2 {1,D}
+3   R!H u0 {1,S}
+4   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x211",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u2 {1,D}
+3   R!H u1 {1,S}
+4   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x202",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u2 {1,D}
+3   R!H u0 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x212",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u2 {1,D}
+3   R!H u1 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCsR2x222",
+    group = 
+"""
+1 * C   u0 {2,D} {3,S} {4,S}
+2   R!H u2 {1,D}
+3   R!H u2 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Ketonex00",
+    group = 
+"""
+1 * C u0 {2,D} {3,S} {4,S}
+2   O u0 {1,D}
+3   C u0 {1,S}
+4   C u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Ketonex01",
+    group = 
+"""
+1 * C u0 {2,D} {3,S} {4,S}
+2   O u0 {1,D}
+3   C u0 {1,S}
+4   C u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Ketonex11",
+    group = 
+"""
+1 * C u0 {2,D} {3,S} {4,S}
+2   O u0 {1,D}
+3   C u1 {1,S}
+4   C u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Ketonex02",
+    group = 
+"""
+1 * C u0 {2,D} {3,S} {4,S}
+2   O u0 {1,D}
+3   C u0 {1,S}
+4   C u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Ketonex12",
+    group = 
+"""
+1 * C u0 {2,D} {3,S} {4,S}
+2   O u0 {1,D}
+3   C u1 {1,S}
+4   C u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Ketonex22",
+    group = 
+"""
+1 * C u0 {2,D} {3,S} {4,S}
+2   O u0 {1,D}
+3   C u2 {1,S}
+4   C u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x0000",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u0 {1,S}
+5   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x1111",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u1 {1,S}
+5   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x2222",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   R!H u2 {1,S}
+5   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x0001",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u0 {1,S}
+5   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x0002",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u0 {1,S}
+5   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x1110",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u1 {1,S}
+5   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x1112",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u1 {1,S}
+5   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x2220",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   R!H u2 {1,S}
+5   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x2221",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   R!H u2 {1,S}
+5   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x0011",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u1 {1,S}
+5   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x0022",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u2 {1,S}
+5   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x1122",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u2 {1,S}
+5   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x0012",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u1 {1,S}
+5   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x0112",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u1 {1,S}
+4   R!H u1 {1,S}
+5   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCsR3x0122",
+    group = 
+"""
+1 * C   u0 {2,S} {3,S} {4,S} {5,S}
+2   R!H u0 {1,S}
+3   R!H u1 {1,S}
+4   R!H u2 {1,S}
+5   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH2rx0",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u0 {1,S}
+3   H   u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH2rx1",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u1 {1,S}
+3   H   u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCH2rx2",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u2 {1,S}
+3   H   u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCHrx0",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   R!H u0 {1,D}
+3   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCHrx1",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   R!H u1 {1,D}
+3   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCHrx2",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   R!H u2 {1,D}
+3   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCrx0",
+    group = 
+"""
+1 * C u1 {2,T}
+2   C u0 {1,T}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CtCrx1",
+    group = 
+"""
+1 * C u1 {2,T}
+2   C u1 {1,T}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHrsRx00",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHrsRx01",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u0 {1,S}
+3   R!H u1 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHrsRx11",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHrsRx02",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u0 {1,S}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHrsRx12",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u1 {1,S}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHrsRx22",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "OdCrsRx0",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   O   u0 {1,D}
+3   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "OdCrsRx1",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   O   u0 {1,D}
+3   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "OdCrsRx2",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   O   u0 {1,D}
+3   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCrsRx00",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   C   u0 {1,D}
+3   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCrsRx01",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   C   u0 {1,D}
+3   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCrsRx10",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   C   u1 {1,D}
+3   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCrsRx11",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   C   u1 {1,D}
+3   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCrsRx02",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   C   u0 {1,D}
+3   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCrsRx20",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   C   u2 {1,D}
+3   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCrsRx12",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   C   u1 {1,D}
+3   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCrsRx21",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   C   u2 {1,D}
+3   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "CdCrsRx22",
+    group = 
+"""
+1 * C   u1 {2,D} {3,S}
+2   C   u2 {1,D}
+3   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x000",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x111",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x222",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x001",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x002",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x110",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x112",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x220",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x221",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+4   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrsR2x012",
+    group = 
+"""
+1 * C   u1 {2,S} {3,S} {4,S}
+2   R!H u0 {1,S}
+3   R!H u1 {1,S}
+4   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHrrx0",
+    group = 
+"""
+1 * C   u2 {2,S} {3,S}
+2   R!H u0 {1,S}
+3   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHrrx1",
+    group = 
+"""
+1 * C   u2 {2,S} {3,S}
+2   R!H u1 {1,S}
+3   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCHrrx2",
+    group = 
+"""
+1 * C   u2 {2,S} {3,S}
+2   R!H u2 {1,S}
+3   H   u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCrrx0",
+    group = 
+"""
+1 * C   u2 {2,D}
+2   R!H u0 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCrrx1",
+    group = 
+"""
+1 * C   u2 {2,D}
+2   R!H u1 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RdCrrx2",
+    group = 
+"""
+1 * C   u2 {2,D}
+2   R!H u2 {1,D}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrrsRx00",
+    group = 
+"""
+1 * C   u2 {2,S} {3,S}
+2   R!H u0 {1,S}
+3   R!H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrrsRx01",
+    group = 
+"""
+1 * C   u2 {2,S} {3,S}
+2   R!H u0 {1,S}
+3   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrrsRx11",
+    group = 
+"""
+1 * C   u2 {2,S} {3,S}
+2   R!H u1 {1,S}
+3   R!H u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrrsRx02",
+    group = 
+"""
+1 * C   u2 {2,S} {3,S}
+2   R!H u0 {1,S}
+3   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrrsRx12",
+    group = 
+"""
+1 * C   u2 {2,S} {3,S}
+2   R!H u1 {1,S}
+3   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "RsCrrsRx22",
+    group = 
+"""
+1 * C   u2 {2,S} {3,S}
+2   R!H u2 {1,S}
+3   R!H u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Alcoholx0",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u0 {1,S}
+3   H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Alcoholx1",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u1 {1,S}
+3   H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Alcoholx2",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u2 {1,S}
+3   H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Etherx00",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u0 {1,S}
+3   C u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Etherx01",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u0 {1,S}
+3   C u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Etherx11",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u1 {1,S}
+3   C u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Etherx02",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u0 {1,S}
+3   C u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Etherx12",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u1 {1,S}
+3   C u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Etherx22",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u2 {1,S}
+3   C u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "ROOHx0",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u0 {1,S}
+3   O u0 {1,S} {4,S}
+4   H u0 {3,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "ROOHx1",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u1 {1,S}
+3   O u0 {1,S} {4,S}
+4   H u0 {3,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "ROOHx2",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u2 {1,S}
+3   O u0 {1,S} {4,S}
+4   H u0 {3,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "ROORx00",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u0 {1,S}
+3   O u0 {1,S} {4,S}
+4   C u0 {3,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "ROORx01",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u0 {1,S}
+3   O u0 {1,S} {4,S}
+4   C u1 {3,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "ROORx11",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u1 {1,S}
+3   O u0 {1,S} {4,S}
+4   C u1 {3,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "ROORx02",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u0 {1,S}
+3   O u0 {1,S} {4,S}
+4   C u2 {3,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "ROORx12",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u1 {1,S}
+3   O u0 {1,S} {4,S}
+4   C u2 {3,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "ROORx22",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u2 {1,S}
+3   O u0 {1,S} {4,S}
+4   C u2 {3,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Peroxyx0",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u0 {1,S}
+3   O u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Peroxyx1",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u1 {1,S}
+3   O u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Peroxyx2",
+    group = 
+"""
+1 * O u0 {2,S} {3,S}
+2   C u2 {1,S}
+3   O u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Oxyx0",
+    group = 
+"""
+1 * O u1 {2,S}
+2   C u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Oxyx1",
+    group = 
+"""
+1 * O u1 {2,S}
+2   C u1 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Oxyx2",
+    group = 
+"""
+1 * O u1 {2,S}
+2   C u2 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Amide_prix0",
+    group = 
+"""
+1 * N u0 {2,S} {5,S} {6,S}
+2   C u0 {1,S} {3,S} {4,D}
+3   C u0 {2,S}
+4   O u0 {2,D}
+5   H u0 {1,S}
+6   H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Amide_secx0",
+    group = 
+"""
+1 * N u0 {2,S} {5,S} {6,S}
+2   C u0 {1,S} {3,S} {4,D}
+3   C u0 {2,S}
+4   O u0 {2,D}
+5   C u0 {1,S}
+6   H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Amide_terx0",
+    group = 
+"""
+1 * N u0 {2,S} {5,S} {6,S}
+2   C u0 {1,S} {3,S} {4,D}
+3   C u0 {2,S}
+4   O u0 {2,D}
+5   C u0 {1,S}
+6   C u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Imidex0",
+    group = 
+"""
+1 * N u0 {2,S} {3,S} {6,S}
+2   H u0 {1,S}
+3   C u0 {1,S} {4,D} {5,S}
+4   O u0 {3,D}
+5   R u0 {3,S}
+6   C u0 {1,S} {7,D} {8,S}
+7   O u0 {6,D}
+8   R u0 {6,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Amine_prix0",
+    group = 
+"""
+1 * N u0 {2,S} {3,S} {4,S}
+2   C u0 {1,S}
+3   H u0 {1,S}
+4   H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Amine_secx0",
+    group = 
+"""
+1 * N u0 {2,S} {3,S} {4,S}
+2   C u0 {1,S}
+3   C u0 {1,S}
+4   H u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Amine_terx0",
+    group = 
+"""
+1 * N u0 {2,S} {3,S} {4,S}
+2   C u0 {1,S}
+3   C u0 {1,S}
+4   C u0 {1,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
+""",
+)
+
+entry(
+    index = -1,
+    label = "Nitrilex0",
+    group = 
+"""
+1 * N u0 {2,T}
+2   C u0 {1,T} {3,S}
+3   C u0 {2,S}
+""",
+    statmech = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+
 """,
 )
 
@@ -4215,9 +4248,9 @@ entry(
     label = "Nitrosox0",
     group = 
 """
-1 * N   0 {2,D} {3,S}
-2   O   0 {1,D}
-3   R!H 0 {1,S}
+1 * N   u0 {2,D} {3,S}
+2   O   u0 {1,D}
+3   R!H u0 {1,S}
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -4233,9 +4266,9 @@ entry(
     label = "Nitrosox1",
     group = 
 """
-1 * N   0 {2,D} {3,S}
-2   O   0 {1,D}
-3   R!H 1 {1,S}
+1 * N   u0 {2,D} {3,S}
+2   O   u0 {1,D}
+3   R!H u1 {1,S}
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -4251,9 +4284,9 @@ entry(
     label = "Nitrosox2",
     group = 
 """
-1 * N   0       {2,D} {3,S}
-2   O   0       {1,D}
-3   R!H {2S,2T} {1,S}
+1 * N   u0 {2,D} {3,S}
+2   O   u0 {1,D}
+3   R!H u2 {1,S}
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -4261,29 +4294,6 @@ entry(
 u"""
 
 
-""",
-)
-
-entry(
-    index = 34,
-    label = "Nitrites",
-    group = "OR{Nitritesx0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3220, 3360, 1), # Overtones of N=O stretch, nitrite compounds
-            (1650, 1680, 1), # N=O stretch, nitrites, trans form
-            (750, 815, 1),   # N-O stretch trans form, saturated primary and secondary aliphatic nitro compounds
-            (565, 625, 1),   # O-N=O deformation vibration, saturated primary and secondary aliphatic nitro compounds
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-(3220, 3360, 1), # Overtones of N=O stretch, nitrite compounds
-(1650, 1680, 1), # N=O stretch, nitrites, trans form
-(750, 815, 1),   # N-O stretch trans form, saturated primary and secondary aliphatic nitro compounds
-(565, 625, 1),   # O-N=O deformation vibration, saturated primary and secondary aliphatic nitro compounds
 """,
 )
 
@@ -4292,9 +4302,9 @@ entry(
     label = "Nitritesx0",
     group = 
 """
-1 * N 0 {2,D} {3,S}
-2   O 0 {1,D}
-3   O 0 {1,S}
+1 * N u0 {2,D} {3,S}
+2   O u0 {1,D}
+3   O u0 {1,S}
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -4306,41 +4316,14 @@ u"""
 )
 
 entry(
-    index = 35,
-    label = "Nitro",
-    group = "OR{Nitrox0, Nitrox1, Nitrox2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1545, 1555, 1), # asymmetric NO2 stretch, saturated primary and secondary aliphatic nitro compounds
-            (1360, 1385, 1), # symmetric NO2 stretch, saturated primary and secondary aliphatic nitro compounds
-            (915, 1000, 1),  # C-N stretch trans form, saturated primary and secondary aliphatic nitro compounds
-            (850, 920, 1),  # br. C-N stretch gauche form, saturated primary and secondary aliphatic nitro compounds
-            (605, 655, 1),  # NO2 deformation vibration, saturated primary and secondary aliphatic nitro compounds
-            (470, 560, 1),  # NO2 rocking vibration, saturated primary and secondary aliphatic nitro compounds
-        ],
-        symmetry = 2,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""  
-(1545, 1555, 1), # asymmetric NO2 stretch, saturated primary and secondary aliphatic nitro compounds
-(1360, 1385, 1), # symmetric NO2 stretch, saturated primary and secondary aliphatic nitro compounds
-(915, 1000, 1),  # C-N stretch trans form, saturated primary and secondary aliphatic nitro compounds
-(850, 920, 1),  # br. C-N stretch gauche form, saturated primary and secondary aliphatic nitro compounds
-(605, 655, 1),  # NO2 deformation vibration, saturated primary and secondary aliphatic nitro compounds
-(470, 560, 1),  # NO2 rocking vibration, saturated primary and secondary aliphatic nitro compounds
-""",
-)
-
-entry(
     index = -1,
     label = "Nitrox0",
     group = 
 """
-1 * N   0 {2,D} {3,S} {4,S}
-2   O   0 {1,D}
-3   O   0 {1,S}
-4   R!H 0 {1,S}
+1 * N   u0 {2,D} {3,S} {4,S}
+2   O   u0 {1,D}
+3   O   u0 {1,S}
+4   R!H u0 {1,S}
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -4356,10 +4339,10 @@ entry(
     label = "Nitrox1",
     group = 
 """
-1 * N   0 {2,D} {3,S} {4,S}
-2   O   0 {1,D}
-3   O   0 {1,S}
-4   R!H 1 {1,S}
+1 * N   u0 {2,D} {3,S} {4,S}
+2   O   u0 {1,D}
+3   O   u0 {1,S}
+4   R!H u1 {1,S}
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -4375,10 +4358,10 @@ entry(
     label = "Nitrox2",
     group = 
 """
-1 * N   0       {2,D} {3,S} {4,S}
-2   O   0       {1,D}
-3   O   0       {1,S}
-4   R!H {2S,2T} {1,S}
+1 * N   u0 {2,D} {3,S} {4,S}
+2   O   u0 {1,D}
+3   O   u0 {1,S}
+4   R!H u2 {1,S}
 """,
     statmech = None,
     shortDesc = u"""""",
@@ -4390,41 +4373,14 @@ u"""
 )
 
 entry(
-    index = 36,
-    label = "Nitrates",
-    group = "OR{Nitratesx0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1615, 1660, 1), # asymmetric NO2 stretch, Nitrates, -ONO2
-            (1250, 1300, 1), # symmetric NO2 stretch, Nitrates, -ONO2
-            (840, 870, 1),   # br.N-O stretch, Nitrates, -ONO2
-            (745, 765, 1),   # NO2 out-of-plane deformation vibration, Nitrates, -ONO2
-            (680, 720, 1),   # NO2 deformation vibration, Nitrates, -ONO2
-            (560, 610, 1),   # NO2 in-plane deformation vibration, Nitrates, -ONO2
-        ],
-        symmetry = 2,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-(1615, 1660, 1), # asymmetric NO2 stretch, Nitrates, -ONO2
-(1250, 1300, 1), # symmetric NO2 stretch, Nitrates, -ONO2
-(840, 870, 1),   # br.N-O stretch, Nitrates, -ONO2
-(745, 765, 1),   # NO2 out-of-plane deformation vibration, Nitrates, -ONO2
-(680, 720, 1),   # NO2 deformation vibration, Nitrates, -ONO2
-(560, 610, 1),   # NO2 in-plane deformation vibration, Nitrates, -ONO2
-""",
-)
-
-entry(
     index = -1,
     label = "Nitratesx0",
     group = 
 """
-1 * N 0 {2,D} {3,S} {4,S}
-2   O 0 {1,D}
-3   O 0 {1,S}
-4   O 0 {1,S}
+1 * N u0 {2,D} {3,S} {4,S}
+2   O u0 {1,D}
+3   O u0 {1,S}
+4   O u0 {1,S}
 """,
     statmech = None,
     shortDesc = u"""""",

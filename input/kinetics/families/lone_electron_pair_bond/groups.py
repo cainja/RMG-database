@@ -23,10 +23,10 @@ entry(
     label = "N3sRRR",
     group = 
 """
-1 *1 N3s 0 {2,S} {3,S} {4,S}
-2    R 0 {1,S}
-3    R 0 {1,S}
-4    R 0 {1,S}
+1 *1 N3s u0 {2,S} {3,S} {4,S}
+2    R   u0 {1,S}
+3    R   u0 {1,S}
+4    R   u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -41,7 +41,7 @@ entry(
     label = "O_atom_singlet",
     group = 
 """
-1 *2 O 2S
+1 *2 O u2
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -58,16 +58,12 @@ L1: O_atom_singlet
 """
 )
 
-
-
-
-
 forbidden(
     label = "OJJH",
     group = 
 """
-1    O 2T {2,S}
-2    R 0  {1,S}
+1 O u2 {2,S}
+2 R u0 {1,S}
 """,
     shortDesc = u"""""",
     longDesc = 
@@ -75,3 +71,4 @@ u"""
 
 """,
 )
+

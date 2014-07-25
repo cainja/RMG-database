@@ -11,30 +11,32 @@ entry(
     label = "1981BAT/BUR467:1",
     reactant1 = 
 """
-1 *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2 *1 O 1 {1,S}
-3 *3 H 0 {1,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+multiplicity 2
+1 *2 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 *1 O u1 p2 c0  {1,S}
+3 *3 H u0 p0 c0  {1,S}
+4    H u0 p0 c0  {1,S}
+5    H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
-1 *1 C 1 {2,S} {4,S} {5,S}
-2 *2 O 0 {1,S} {3,S}
-3 *3 H 0 {2,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+multiplicity 2
+1 *1 C u1 p0 c0  {2,S} {4,S} {5,S}
+2 *2 O u0 p2 c0  {1,S} {3,S}
+3 *3 H u0 p0 c0  {2,S}
+4    H u0 p0 c0  {1,S}
+5    H u0 p0 c0  {1,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (1e+13,"s^-1"),
+        A = (1e+13, 's^-1'),
         n = 0,
-        Ea = (108.92,"kJ/mol","+|-",9.811),
-        T0 = (1,"K"),
-        Tmin = (393,"K"),
-        Tmax = (473,"K"),
-        Pmin = (66700,"Pa"),
-        Pmax = (66700,"Pa"),
+        Ea = (108.92, 'kJ/mol', '+|-', 9.811),
+        T0 = (1, 'K'),
+        Tmin = (393, 'K'),
+        Tmax = (473, 'K'),
+        Pmin = (66700, 'Pa'),
+        Pmax = (66700, 'Pa'),
     ),
     reference = Article(
         authors = ["Batt, L.", "Burrows, J.P.", "Robinson, G.N."],

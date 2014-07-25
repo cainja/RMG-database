@@ -47,8 +47,8 @@ entry(
     label = "Cd_R",
     group = 
 """
-1 *1 C 0 {2,D}
-2 *2 R 0 {1,D}
+1 *1 C u0 {2,D}
+2 *2 R u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -63,8 +63,8 @@ entry(
     label = "Cdd_Od",
     group = 
 """
-1 *1 Cdd 0 {2,D}
-2 *2 Od  0 {1,D}
+1 *1 Cdd u0 {2,D}
+2 *2 Od  u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -79,9 +79,9 @@ entry(
     label = "CO2",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Od  0 {1,D}
-3    Od  0 {1,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Od  u0 {1,D}
+3    Od  u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -96,9 +96,9 @@ entry(
     label = "Ck_O",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Od  0 {1,D}
-3    C   0 {1,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Od  u0 {1,D}
+3    C   u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -113,9 +113,9 @@ entry(
     label = "C=S_O",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Od  0 {1,D}
-3    S   0 {1,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Od  u0 {1,D}
+3    S   u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -130,8 +130,8 @@ entry(
     label = "CO_O",
     group = 
 """
-1 *1 CO 0 {2,D}
-2 *2 Od 0 {1,D}
+1 *1 CO u0 {2,D}
+2 *2 Od u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -146,10 +146,10 @@ entry(
     label = "CO/H2_O",
     group = 
 """
-1 *1 CO 0 {2,D} {3,S} {4,S}
-2 *2 Od 0 {1,D}
-3    H  0 {1,S}
-4    H  0 {1,S}
+1 *1 CO u0 {2,D} {3,S} {4,S}
+2 *2 Od u0 {1,D}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -164,10 +164,10 @@ entry(
     label = "CO/H/Nd_O",
     group = 
 """
-1 *1 CO     0 {2,D} {3,S} {4,S}
-2 *2 Od     0 {1,D}
-3    H      0 {1,S}
-4    {Cs,O} 0 {1,S}
+1 *1 CO     u0 {2,D} {3,S} {4,S}
+2 *2 Od     u0 {1,D}
+3    H      u0 {1,S}
+4    [Cs,O] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -182,10 +182,10 @@ entry(
     label = "CO/H/Cs",
     group = 
 """
-1 *1 CO 0 {2,D} {3,S} {4,S}
-2 *2 Od 0 {1,D}
-3    H  0 {1,S}
-4    Cs 0 {1,S}
+1 *1 CO u0 {2,D} {3,S} {4,S}
+2 *2 Od u0 {1,D}
+3    H  u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -200,10 +200,10 @@ entry(
     label = "CO/H/De_O",
     group = 
 """
-1 *1 CO            0 {2,D} {3,S} {4,S}
-2 *2 Od            0 {1,D}
-3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+1 *1 CO                    u0 {2,D} {3,S} {4,S}
+2 *2 Od                    u0 {1,D}
+3    H                     u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -218,10 +218,10 @@ entry(
     label = "CO/Nd2_O",
     group = 
 """
-1 *1 CO     0 {2,D} {3,S} {4,S}
-2 *2 Od     0 {1,D}
-3    {Cs,O} 0 {1,S}
-4    {Cs,O} 0 {1,S}
+1 *1 CO     u0 {2,D} {3,S} {4,S}
+2 *2 Od     u0 {1,D}
+3    [Cs,O] u0 {1,S}
+4    [Cs,O] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -236,10 +236,10 @@ entry(
     label = "CO/Nd/De_O",
     group = 
 """
-1 *1 CO            0 {2,D} {3,S} {4,S}
-2 *2 Od            0 {1,D}
-3    {Cs,O}        0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+1 *1 CO                    u0 {2,D} {3,S} {4,S}
+2 *2 Od                    u0 {1,D}
+3    [Cs,O]                u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -254,10 +254,10 @@ entry(
     label = "CO/De2_O",
     group = 
 """
-1 *1 CO            0 {2,D} {3,S} {4,S}
-2 *2 Od            0 {1,D}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+1 *1 CO                    u0 {2,D} {3,S} {4,S}
+2 *2 Od                    u0 {1,D}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -272,9 +272,9 @@ entry(
     label = "Cdd_Sd",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Sd  0 {1,D}
-3    R   0 {1,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Sd  u0 {1,D}
+3    R   u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -289,9 +289,9 @@ entry(
     label = "Cdd-Sd_Sd",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Sd  0 {1,D}
-3    Sd  0 {1,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Sd  u0 {1,D}
+3    Sd  u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -306,10 +306,10 @@ entry(
     label = "Cds_Cdd",
     group = 
 """
-1 *1 Cd  0           {2,D} {3,S} {4,S}
-2 *2 Cdd 0           {1,D}
-3    R   {0,1,2S,2T} {1,S}
-4    R   {0,1,2S,2T} {1,S}
+1 *1 Cd  u0       {2,D} {3,S} {4,S}
+2 *2 Cdd u0       {1,D}
+3    R   u[0,1,2] {1,S}
+4    R   u[0,1,2] {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -324,11 +324,11 @@ entry(
     label = "Cds_Ca",
     group = 
 """
-1 *1 Cd  0           {2,D} {3,S} {4,S}
-2 *2 Cdd 0           {1,D} {5,D}
-3    R   {0,1,2S,2T} {1,S}
-4    R   {0,1,2S,2T} {1,S}
-5    C   0           {2,D}
+1 *1 Cd  u0       {2,D} {3,S} {4,S}
+2 *2 Cdd u0       {1,D} {5,D}
+3    R   u[0,1,2] {1,S}
+4    R   u[0,1,2] {1,S}
+5    C   u0       {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -343,11 +343,11 @@ entry(
     label = "Cds-HH_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    H   0 {1,S}
-4    H   0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    H   u0 {1,S}
+4    H   u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -362,11 +362,11 @@ entry(
     label = "Cds-CsH_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    H   0 {1,S}
-4    Cs  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    H   u0 {1,S}
+4    Cs  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -381,11 +381,11 @@ entry(
     label = "Cds-CsCs_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cs  0 {1,S}
-4    Cs  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cs  u0 {1,S}
+4    Cs  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -400,11 +400,11 @@ entry(
     label = "Cds-OneDeH_Ca",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cdd           0 {1,D} {5,D}
-3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-5    C             0 {2,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cdd                   u0 {1,D} {5,D}
+3    H                     u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+5    C                     u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -419,11 +419,11 @@ entry(
     label = "Cds-CtH_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    H   0 {1,S}
-4    Ct  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    H   u0 {1,S}
+4    Ct  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -438,11 +438,11 @@ entry(
     label = "Cds-CbH_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    H   0 {1,S}
-4    Cb  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    H   u0 {1,S}
+4    Cb  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -457,11 +457,11 @@ entry(
     label = "Cds-COH_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    H   0 {1,S}
-4    CO  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    H   u0 {1,S}
+4    CO  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -476,12 +476,12 @@ entry(
     label = "Cds-CdH_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    H   0 {1,S}
-4    Cd  0 {1,S} {6,D}
-5    C   0 {2,D}
-6    C   0 {4,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    H   u0 {1,S}
+4    Cd  u0 {1,S} {6,D}
+5    C   u0 {2,D}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -496,12 +496,12 @@ entry(
     label = "Cds-C=SH_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    H   0 {1,S}
-4    Cd  0 {1,S} {6,D}
-5    C   0 {2,D}
-6    Sd  0 {4,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    H   u0 {1,S}
+4    Cd  u0 {1,S} {6,D}
+5    C   u0 {2,D}
+6    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -516,11 +516,11 @@ entry(
     label = "Cds-OneDeCs_Ca",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cdd           0 {1,D} {5,D}
-3    Cs            0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-5    C             0 {2,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cdd                   u0 {1,D} {5,D}
+3    Cs                    u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+5    C                     u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -535,11 +535,11 @@ entry(
     label = "Cds-CtCs_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cs  0 {1,S}
-4    Ct  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cs  u0 {1,S}
+4    Ct  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -554,11 +554,11 @@ entry(
     label = "Cds-CbCs_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cs  0 {1,S}
-4    Cb  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cs  u0 {1,S}
+4    Cb  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -573,11 +573,11 @@ entry(
     label = "Cds-COCs_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cs  0 {1,S}
-4    CO  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cs  u0 {1,S}
+4    CO  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -592,12 +592,12 @@ entry(
     label = "Cds-CdCs_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cs  0 {1,S}
-4    Cd  0 {1,S} {6,D}
-5    C   0 {2,D}
-6    C   0 {4,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cs  u0 {1,S}
+4    Cd  u0 {1,S} {6,D}
+5    C   u0 {2,D}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -612,12 +612,12 @@ entry(
     label = "Cds-C=SCs_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cs  0 {1,S}
-4    Cd  0 {1,S} {6,D}
-5    C   0 {2,D}
-6    Sd  0 {4,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cs  u0 {1,S}
+4    Cd  u0 {1,S} {6,D}
+5    C   u0 {2,D}
+6    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -632,11 +632,11 @@ entry(
     label = "Cds-TwoDe_Ca",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cdd           0 {1,D} {5,D}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-5    C             0 {2,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cdd                   u0 {1,D} {5,D}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+5    C                     u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -651,11 +651,11 @@ entry(
     label = "Cds-CtCt_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Ct  0 {1,S}
-4    Ct  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Ct  u0 {1,S}
+4    Ct  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -670,11 +670,11 @@ entry(
     label = "Cds-CtCb_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Ct  0 {1,S}
-4    Cb  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Ct  u0 {1,S}
+4    Cb  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -689,11 +689,11 @@ entry(
     label = "Cds-CtCO_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Ct  0 {1,S}
-4    CO  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Ct  u0 {1,S}
+4    CO  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -708,11 +708,11 @@ entry(
     label = "Cds-CbCb_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cb  0 {1,S}
-4    Cb  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cb  u0 {1,S}
+4    Cb  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -727,11 +727,11 @@ entry(
     label = "Cds-CbCO_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cb  0 {1,S}
-4    CO  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cb  u0 {1,S}
+4    CO  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -746,11 +746,11 @@ entry(
     label = "Cds-COCO_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    CO  0 {1,S}
-4    CO  0 {1,S}
-5    C   0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    CO  u0 {1,S}
+4    CO  u0 {1,S}
+5    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -765,12 +765,12 @@ entry(
     label = "Cds-CdCt_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cd  0 {1,S} {6,D}
-4    Ct  0 {1,S}
-5    C   0 {2,D}
-6    C   0 {3,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cd  u0 {1,S} {6,D}
+4    Ct  u0 {1,S}
+5    C   u0 {2,D}
+6    C   u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -785,12 +785,12 @@ entry(
     label = "Cds-CdCb_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cd  0 {1,S} {6,D}
-4    Cb  0 {1,S}
-5    C   0 {2,D}
-6    C   0 {3,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cd  u0 {1,S} {6,D}
+4    Cb  u0 {1,S}
+5    C   u0 {2,D}
+6    C   u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -805,12 +805,12 @@ entry(
     label = "Cds-CdCO_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cd  0 {1,S} {6,D}
-4    CO  0 {1,S}
-5    C   0 {2,D}
-6    C   0 {3,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cd  u0 {1,S} {6,D}
+4    CO  u0 {1,S}
+5    C   u0 {2,D}
+6    C   u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -825,12 +825,12 @@ entry(
     label = "Cds-CtC=S_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Ct  0 {1,S}
-4    Cd  0 {1,S} {6,D}
-5    C   0 {2,D}
-6    Sd  0 {4,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Ct  u0 {1,S}
+4    Cd  u0 {1,S} {6,D}
+5    C   u0 {2,D}
+6    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -845,12 +845,12 @@ entry(
     label = "Cds-CbC=S_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cb  0 {1,S}
-4    Cd  0 {1,S} {6,D}
-5    C   0 {2,D}
-6    Sd  0 {4,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cb  u0 {1,S}
+4    Cd  u0 {1,S} {6,D}
+5    C   u0 {2,D}
+6    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -865,12 +865,12 @@ entry(
     label = "Cds-COC=S_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    CO  0 {1,S}
-4    Cd  0 {1,S} {6,D}
-5    C   0 {2,D}
-6    Sd  0 {4,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    CO  u0 {1,S}
+4    Cd  u0 {1,S} {6,D}
+5    C   u0 {2,D}
+6    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -885,13 +885,13 @@ entry(
     label = "Cds-CdCd_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cd  0 {1,S} {6,D}
-4    Cd  0 {1,S} {7,D}
-5    C   0 {2,D}
-6    C   0 {3,D}
-7    C   0 {4,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cd  u0 {1,S} {6,D}
+4    Cd  u0 {1,S} {7,D}
+5    C   u0 {2,D}
+6    C   u0 {3,D}
+7    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -906,13 +906,13 @@ entry(
     label = "Cds-CdC=S_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cd  0 {1,S} {7,D}
-4    Cd  0 {1,S} {6,D}
-5    C   0 {2,D}
-6    Sd  0 {4,D}
-7    C   0 {3,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cd  u0 {1,S} {7,D}
+4    Cd  u0 {1,S} {6,D}
+5    C   u0 {2,D}
+6    Sd  u0 {4,D}
+7    C   u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -927,13 +927,13 @@ entry(
     label = "Cds-C=SC=S_Ca",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cd  0 {1,S} {6,D}
-4    Cd  0 {1,S} {7,D}
-5    C   0 {2,D}
-6    Sd  0 {3,D}
-7    Sd  0 {4,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cd  u0 {1,S} {6,D}
+4    Cd  u0 {1,S} {7,D}
+5    C   u0 {2,D}
+6    Sd  u0 {3,D}
+7    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -948,11 +948,11 @@ entry(
     label = "Cds_Ck",
     group = 
 """
-1 *1 Cd  0           {2,D} {3,S} {4,S}
-2 *2 Cdd 0           {1,D} {5,D}
-3    R   {0,1,2S,2T} {1,S}
-4    R   {0,1,2S,2T} {1,S}
-5    Od  0           {2,D}
+1 *1 Cd  u0       {2,D} {3,S} {4,S}
+2 *2 Cdd u0       {1,D} {5,D}
+3    R   u[0,1,2] {1,S}
+4    R   u[0,1,2] {1,S}
+5    Od  u0       {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -967,11 +967,11 @@ entry(
     label = "Cds-HH_Ck",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    H   0 {1,S}
-4    H   0 {1,S}
-5    Od  0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    H   u0 {1,S}
+4    H   u0 {1,S}
+5    Od  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -986,11 +986,11 @@ entry(
     label = "Cds-CsH_Ck",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    H   0 {1,S}
-4    Cs  0 {1,S}
-5    Od  0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    H   u0 {1,S}
+4    Cs  u0 {1,S}
+5    Od  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1005,11 +1005,11 @@ entry(
     label = "Cds-CsCs_Ck",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 Cdd 0 {1,D} {5,D}
-3    Cs  0 {1,S}
-4    Cs  0 {1,S}
-5    Od  0 {2,D}
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 Cdd u0 {1,D} {5,D}
+3    Cs  u0 {1,S}
+4    Cs  u0 {1,S}
+5    Od  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1024,11 +1024,11 @@ entry(
     label = "Cds-OneDeH_Ck",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cdd           0 {1,D} {5,D}
-3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-5    Od            0 {2,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cdd                   u0 {1,D} {5,D}
+3    H                     u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+5    Od                    u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1043,11 +1043,11 @@ entry(
     label = "Cds-OneDeCs_Ck",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cdd           0 {1,D} {5,D}
-3    Cs            0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-5    Od            0 {2,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cdd                   u0 {1,D} {5,D}
+3    Cs                    u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+5    Od                    u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1062,11 +1062,11 @@ entry(
     label = "Cds-TwoDe_Ck",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cdd           0 {1,D} {5,D}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-5    Od            0 {2,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cdd                   u0 {1,D} {5,D}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+5    Od                    u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1081,10 +1081,10 @@ entry(
     label = "Cdd_Cds",
     group = 
 """
-1 *1 Cdd 0 {2,D}
-2 *2 Cd  0 {1,D} {3,S} {4,S}
-3    R   0 {2,S}
-4    R   0 {2,S}
+1 *1 Cdd u0 {2,D}
+2 *2 Cd  u0 {1,D} {3,S} {4,S}
+3    R   u0 {2,S}
+4    R   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1099,11 +1099,11 @@ entry(
     label = "Ca_Cds",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    R   0 {2,S}
-5    R   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    R   u0 {2,S}
+5    R   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1118,11 +1118,11 @@ entry(
     label = "Ca_Cds-HH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    H   0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    H   u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1137,11 +1137,11 @@ entry(
     label = "Ca_Cds-CsH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cs  0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cs  u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1156,11 +1156,11 @@ entry(
     label = "Ca_Cds-CsCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cs  0 {2,S}
-5    Cs  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cs  u0 {2,S}
+5    Cs  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1175,11 +1175,11 @@ entry(
     label = "Ca_Cds-OneDeH",
     group = 
 """
-1 *1 Cdd           0 {2,D} {3,D}
-2 *2 Cd            0 {1,D} {4,S} {5,S}
-3    C             0 {1,D}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-5    H             0 {2,S}
+1 *1 Cdd                   u0 {2,D} {3,D}
+2 *2 Cd                    u0 {1,D} {4,S} {5,S}
+3    C                     u0 {1,D}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+5    H                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1194,11 +1194,11 @@ entry(
     label = "Ca_Cds-CtH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Ct  0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Ct  u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1213,11 +1213,11 @@ entry(
     label = "Ca_Cds-CbH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cb  0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cb  u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1232,11 +1232,11 @@ entry(
     label = "Ca_Cds-COH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    CO  0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    CO  u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1251,12 +1251,12 @@ entry(
     label = "Ca_Cds-CdH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    H   0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    H   u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1271,12 +1271,12 @@ entry(
     label = "Ca_Cds-C=SH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    H   0 {2,S}
-6    Sd  0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    H   u0 {2,S}
+6    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1291,11 +1291,11 @@ entry(
     label = "Ca_Cds-OneDeCs",
     group = 
 """
-1 *1 Cdd           0 {2,D} {3,D}
-2 *2 Cd            0 {1,D} {4,S} {5,S}
-3    C             0 {1,D}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-5    Cs            0 {2,S}
+1 *1 Cdd                   u0 {2,D} {3,D}
+2 *2 Cd                    u0 {1,D} {4,S} {5,S}
+3    C                     u0 {1,D}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+5    Cs                    u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1310,11 +1310,11 @@ entry(
     label = "Ca_Cds-CtCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Ct  0 {2,S}
-5    Cs  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Ct  u0 {2,S}
+5    Cs  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1329,11 +1329,11 @@ entry(
     label = "Ca_Cds-CbCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cb  0 {2,S}
-5    Cs  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cb  u0 {2,S}
+5    Cs  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1348,11 +1348,11 @@ entry(
     label = "Ca_Cds-COCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    CO  0 {2,S}
-5    Cs  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    CO  u0 {2,S}
+5    Cs  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1367,12 +1367,12 @@ entry(
     label = "Ca_Cds-CdCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cs  0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cs  u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1387,12 +1387,12 @@ entry(
     label = "Ca_Cds-C=SCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cs  0 {2,S}
-6    Sd  0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cs  u0 {2,S}
+6    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1407,11 +1407,11 @@ entry(
     label = "Ca_Cds-TwoDe",
     group = 
 """
-1 *1 Cdd           0 {2,D} {3,D}
-2 *2 Cd            0 {1,D} {4,S} {5,S}
-3    C             0 {1,D}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cdd                   u0 {2,D} {3,D}
+2 *2 Cd                    u0 {1,D} {4,S} {5,S}
+3    C                     u0 {1,D}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1426,11 +1426,11 @@ entry(
     label = "Ca_Cds-CtCt",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Ct  0 {2,S}
-5    Ct  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Ct  u0 {2,S}
+5    Ct  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1445,11 +1445,11 @@ entry(
     label = "Ca_Cds-CtCb",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Ct  0 {2,S}
-5    Cb  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Ct  u0 {2,S}
+5    Cb  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1464,11 +1464,11 @@ entry(
     label = "Ca_Cds-CtCO",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Ct  0 {2,S}
-5    CO  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Ct  u0 {2,S}
+5    CO  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1483,11 +1483,11 @@ entry(
     label = "Ca_Cds-CbCb",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cb  0 {2,S}
-5    Cb  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cb  u0 {2,S}
+5    Cb  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1502,11 +1502,11 @@ entry(
     label = "Ca_Cds-CbCO",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cb  0 {2,S}
-5    CO  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cb  u0 {2,S}
+5    CO  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1521,11 +1521,11 @@ entry(
     label = "Ca_Cds-COCO",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    CO  0 {2,S}
-5    CO  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    CO  u0 {2,S}
+5    CO  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1540,12 +1540,12 @@ entry(
     label = "Ca_Cds-CdCt",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Ct  0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Ct  u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1560,12 +1560,12 @@ entry(
     label = "Ca_Cds-CdCb",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cb  0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cb  u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1580,12 +1580,12 @@ entry(
     label = "Ca_Cds-CdCO",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    CO  0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    CO  u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1600,12 +1600,12 @@ entry(
     label = "Ca_Cds-CtC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Ct  0 {2,S}
-5    Cd  0 {2,S} {6,D}
-6    Sd  0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Ct  u0 {2,S}
+5    Cd  u0 {2,S} {6,D}
+6    Sd  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1620,12 +1620,12 @@ entry(
     label = "Ca_Cds-CbC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cb  0 {2,S}
-5    Cd  0 {2,S} {6,D}
-6    Sd  0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cb  u0 {2,S}
+5    Cd  u0 {2,S} {6,D}
+6    Sd  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1640,12 +1640,12 @@ entry(
     label = "Ca_Cds-COC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    CO  0 {2,S}
-5    Cd  0 {2,S} {6,D}
-6    Sd  0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    CO  u0 {2,S}
+5    Cd  u0 {2,S} {6,D}
+6    Sd  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1660,13 +1660,13 @@ entry(
     label = "Ca_Cds-CdCd",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cd  0 {2,S} {7,D}
-6    C   0 {4,D}
-7    C   0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cd  u0 {2,S} {7,D}
+6    C   u0 {4,D}
+7    C   u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1681,13 +1681,13 @@ entry(
     label = "Ca_Cds-CdC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {7,D}
-5    Cd  0 {2,S} {6,D}
-6    Sd  0 {5,D}
-7    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {7,D}
+5    Cd  u0 {2,S} {6,D}
+6    Sd  u0 {5,D}
+7    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1702,13 +1702,13 @@ entry(
     label = "Ca_Cds-C=SC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    C   0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cd  0 {2,S} {7,D}
-6    Sd  0 {4,D}
-7    Sd  0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    C   u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cd  u0 {2,S} {7,D}
+6    Sd  u0 {4,D}
+7    Sd  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1723,11 +1723,11 @@ entry(
     label = "Ck_Cds",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    R   0 {2,S}
-5    R   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    R   u0 {2,S}
+5    R   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1742,11 +1742,11 @@ entry(
     label = "Ck_Cds-HH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    H   0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    H   u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1761,11 +1761,11 @@ entry(
     label = "Ck_Cds-CsH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cs  0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cs  u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1780,11 +1780,11 @@ entry(
     label = "Ck_Cds-CsCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cs  0 {2,S}
-5    Cs  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cs  u0 {2,S}
+5    Cs  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1799,11 +1799,11 @@ entry(
     label = "Ck_Cds-OneDeH",
     group = 
 """
-1 *1 Cdd           0 {2,D} {3,D}
-2 *2 Cd            0 {1,D} {4,S} {5,S}
-3    Od            0 {1,D}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-5    H             0 {2,S}
+1 *1 Cdd                   u0 {2,D} {3,D}
+2 *2 Cd                    u0 {1,D} {4,S} {5,S}
+3    Od                    u0 {1,D}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+5    H                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1818,11 +1818,11 @@ entry(
     label = "Ck_Cds-CtH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Ct  0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Ct  u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1837,11 +1837,11 @@ entry(
     label = "Ck_Cds-CbH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cb  0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cb  u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1856,11 +1856,11 @@ entry(
     label = "Ck_Cds-COH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    CO  0 {2,S}
-5    H   0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    CO  u0 {2,S}
+5    H   u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1875,12 +1875,12 @@ entry(
     label = "Ck_Cds-CdH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    H   0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    H   u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1895,12 +1895,12 @@ entry(
     label = "Ck_Cds-C=SH",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    H   0 {2,S}
-6    Sd  0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    H   u0 {2,S}
+6    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1915,11 +1915,11 @@ entry(
     label = "Ck_Cds-OneDeCs",
     group = 
 """
-1 *1 Cdd           0 {2,D} {3,D}
-2 *2 Cd            0 {1,D} {4,S} {5,S}
-3    Od            0 {1,D}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-5    Cs            0 {2,S}
+1 *1 Cdd                   u0 {2,D} {3,D}
+2 *2 Cd                    u0 {1,D} {4,S} {5,S}
+3    Od                    u0 {1,D}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+5    Cs                    u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1934,11 +1934,11 @@ entry(
     label = "Ck_Cds-CtCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Ct  0 {2,S}
-5    Cs  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Ct  u0 {2,S}
+5    Cs  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1953,11 +1953,11 @@ entry(
     label = "Ck_Cds-CbCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cb  0 {2,S}
-5    Cs  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cb  u0 {2,S}
+5    Cs  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1972,11 +1972,11 @@ entry(
     label = "Ck_Cds-COCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    CO  0 {2,S}
-5    Cs  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    CO  u0 {2,S}
+5    Cs  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -1991,12 +1991,12 @@ entry(
     label = "Ck_Cds-CdCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cs  0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cs  u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2011,12 +2011,12 @@ entry(
     label = "Ck_Cds-C=SCs",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cs  0 {2,S}
-6    Sd  0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cs  u0 {2,S}
+6    Sd  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2031,11 +2031,11 @@ entry(
     label = "Ck_Cds-TwoDe",
     group = 
 """
-1 *1 Cdd           0 {2,D} {3,D}
-2 *2 Cd            0 {1,D} {4,S} {5,S}
-3    Od            0 {1,D}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cdd                   u0 {2,D} {3,D}
+2 *2 Cd                    u0 {1,D} {4,S} {5,S}
+3    Od                    u0 {1,D}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2050,11 +2050,11 @@ entry(
     label = "Ck_Cds-CtCt",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Ct  0 {2,S}
-5    Ct  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Ct  u0 {2,S}
+5    Ct  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2069,11 +2069,11 @@ entry(
     label = "Ck_Cds-CtCb",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Ct  0 {2,S}
-5    Cb  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Ct  u0 {2,S}
+5    Cb  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2088,11 +2088,11 @@ entry(
     label = "Ck_Cds-CtCO",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Ct  0 {2,S}
-5    CO  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Ct  u0 {2,S}
+5    CO  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2107,11 +2107,11 @@ entry(
     label = "Ck_Cds-CbCb",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cb  0 {2,S}
-5    Cb  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cb  u0 {2,S}
+5    Cb  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2126,11 +2126,11 @@ entry(
     label = "Ck_Cds-CbCO",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cb  0 {2,S}
-5    CO  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cb  u0 {2,S}
+5    CO  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2145,11 +2145,11 @@ entry(
     label = "Ck_Cds-COCO",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    CO  0 {2,S}
-5    CO  0 {2,S}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    CO  u0 {2,S}
+5    CO  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2164,12 +2164,12 @@ entry(
     label = "Ck_Cds-CdCt",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Ct  0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Ct  u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2184,12 +2184,12 @@ entry(
     label = "Ck_Cds-CdCb",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cb  0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cb  u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2204,12 +2204,12 @@ entry(
     label = "Ck_Cds-CdCO",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    CO  0 {2,S}
-6    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    CO  u0 {2,S}
+6    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2224,12 +2224,12 @@ entry(
     label = "Ck_Cds-CtC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Ct  0 {2,S}
-5    Cd  0 {2,S} {6,D}
-6    Sd  0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Ct  u0 {2,S}
+5    Cd  u0 {2,S} {6,D}
+6    Sd  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2244,12 +2244,12 @@ entry(
     label = "Ck_Cds-CbC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cb  0 {2,S}
-5    Cd  0 {2,S} {6,D}
-6    Sd  0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cb  u0 {2,S}
+5    Cd  u0 {2,S} {6,D}
+6    Sd  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2264,12 +2264,12 @@ entry(
     label = "Ck_Cds-COC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    CO  0 {2,S}
-5    Cd  0 {2,S} {6,D}
-6    Sd  0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    CO  u0 {2,S}
+5    Cd  u0 {2,S} {6,D}
+6    Sd  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2284,13 +2284,13 @@ entry(
     label = "Ck_Cds-CdCd",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cd  0 {2,S} {7,D}
-6    C   0 {4,D}
-7    C   0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cd  u0 {2,S} {7,D}
+6    C   u0 {4,D}
+7    C   u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2305,13 +2305,13 @@ entry(
     label = "Ck_Cds-CdC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {7,D}
-5    Cd  0 {2,S} {6,D}
-6    Sd  0 {5,D}
-7    C   0 {4,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {7,D}
+5    Cd  u0 {2,S} {6,D}
+6    Sd  u0 {5,D}
+7    C   u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2326,13 +2326,13 @@ entry(
     label = "Ck_Cds-C=SC=S",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cd  0 {1,D} {4,S} {5,S}
-3    Od  0 {1,D}
-4    Cd  0 {2,S} {6,D}
-5    Cd  0 {2,S} {7,D}
-6    Sd  0 {4,D}
-7    Sd  0 {5,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cd  u0 {1,D} {4,S} {5,S}
+3    Od  u0 {1,D}
+4    Cd  u0 {2,S} {6,D}
+5    Cd  u0 {2,S} {7,D}
+6    Sd  u0 {4,D}
+7    Sd  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2347,10 +2347,10 @@ entry(
     label = "Cdd_Cdd",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cdd 0 {1,D} {4,D}
-3    R   0 {1,D}
-4    R   0 {2,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cdd u0 {1,D} {4,D}
+3    R   u0 {1,D}
+4    R   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2365,10 +2365,10 @@ entry(
     label = "Ca_Ca",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cdd 0 {1,D} {4,D}
-3    C   0 {1,D}
-4    C   0 {2,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cdd u0 {1,D} {4,D}
+3    C   u0 {1,D}
+4    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2383,10 +2383,10 @@ entry(
     label = "Ck_Ck",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cdd 0 {1,D} {4,D}
-3    Od  0 {1,D}
-4    Od  0 {2,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cdd u0 {1,D} {4,D}
+3    Od  u0 {1,D}
+4    Od  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2401,10 +2401,10 @@ entry(
     label = "Ca_Ck",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cdd 0 {1,D} {4,D}
-3    C   0 {1,D}
-4    Od  0 {2,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cdd u0 {1,D} {4,D}
+3    C   u0 {1,D}
+4    Od  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2419,10 +2419,10 @@ entry(
     label = "Ck_Ca",
     group = 
 """
-1 *1 Cdd 0 {2,D} {3,D}
-2 *2 Cdd 0 {1,D} {4,D}
-3    Od  0 {1,D}
-4    C   0 {2,D}
+1 *1 Cdd u0 {2,D} {3,D}
+2 *2 Cdd u0 {1,D} {4,D}
+3    Od  u0 {1,D}
+4    C   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2437,10 +2437,10 @@ entry(
     label = "Cds_Sd",
     group = 
 """
-1 *1 Cd 0           {2,D} {3,S} {4,S}
-2 *2 Sd 0           {1,D}
-3    R  {0,1,2S,2T} {1,S}
-4    R  {0,1,2S,2T} {1,S}
+1 *1 Cd u0       {2,D} {3,S} {4,S}
+2 *2 Sd u0       {1,D}
+3    R  u[0,1,2] {1,S}
+4    R  u[0,1,2] {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2455,10 +2455,10 @@ entry(
     label = "Cds-HH_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    H  0 {1,S}
-4    H  0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2473,10 +2473,10 @@ entry(
     label = "Cds-CsH_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2491,10 +2491,10 @@ entry(
     label = "Cds-CsCs_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2509,10 +2509,10 @@ entry(
     label = "Cds-OsH_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Os 0 {1,S}
-4    H  0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Os u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2527,10 +2527,10 @@ entry(
     label = "Cds-OsCs_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Os 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Os u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2545,10 +2545,10 @@ entry(
     label = "Cds-SsH_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Ss 0 {1,S}
-4    H  0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Ss u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2563,10 +2563,10 @@ entry(
     label = "Cds-SsCs_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Ss 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Ss u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2581,10 +2581,10 @@ entry(
     label = "Cds-OneDeH_Sd",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Sd            0 {1,D}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    H             0 {1,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Sd                    u0 {1,D}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    H                     u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2599,10 +2599,10 @@ entry(
     label = "Cds-CtH_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2617,10 +2617,10 @@ entry(
     label = "Cds-CbH_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2635,10 +2635,10 @@ entry(
     label = "Cds-COH_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    CO 0 {1,S}
-4    H  0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    CO u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2653,11 +2653,11 @@ entry(
     label = "Cds-CdH_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {5,D}
-4    H  0 {1,S}
-5    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {5,D}
+4    H  u0 {1,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2672,11 +2672,11 @@ entry(
     label = "Cds-C=SH_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {5,D}
-4    H  0 {1,S}
-5    Sd 0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {5,D}
+4    H  u0 {1,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2691,10 +2691,10 @@ entry(
     label = "Cds-OneDeCs_Sd",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Sd            0 {1,D}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    Cs            0 {1,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Sd                    u0 {1,D}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    Cs                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2709,10 +2709,10 @@ entry(
     label = "Cds-CtCs_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2727,10 +2727,10 @@ entry(
     label = "Cds-CbCs_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2745,10 +2745,10 @@ entry(
     label = "Cds-COCs_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    CO 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    CO u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2763,11 +2763,11 @@ entry(
     label = "Cds-CdCs_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {5,D}
-4    Cs 0 {1,S}
-5    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {5,D}
+4    Cs u0 {1,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2782,11 +2782,11 @@ entry(
     label = "Cds-C=SCs_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {5,D}
-4    Cs 0 {1,S}
-5    Sd 0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {5,D}
+4    Cs u0 {1,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2801,10 +2801,10 @@ entry(
     label = "Cds-TwoDe_Sd",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Sd            0 {1,D}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Sd                    u0 {1,D}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2819,10 +2819,10 @@ entry(
     label = "Cds-CtCt_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2837,10 +2837,10 @@ entry(
     label = "Cds-CtCb_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Ct 0 {1,S}
-4    Cb 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Ct u0 {1,S}
+4    Cb u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2855,10 +2855,10 @@ entry(
     label = "Cds-CtCO_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Ct 0 {1,S}
-4    CO 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Ct u0 {1,S}
+4    CO u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2873,10 +2873,10 @@ entry(
     label = "Cds-CbCb_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cb 0 {1,S}
-4    Cb 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cb u0 {1,S}
+4    Cb u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2891,10 +2891,10 @@ entry(
     label = "Cds-CbCO_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cb 0 {1,S}
-4    CO 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cb u0 {1,S}
+4    CO u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2909,10 +2909,10 @@ entry(
     label = "Cds-COCO_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    CO 0 {1,S}
-4    CO 0 {1,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    CO u0 {1,S}
+4    CO u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2927,11 +2927,11 @@ entry(
     label = "Cds-CdCt_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {5,D}
-4    Ct 0 {1,S}
-5    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {5,D}
+4    Ct u0 {1,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2946,11 +2946,11 @@ entry(
     label = "Cds-CdCb_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {5,D}
-4    Cb 0 {1,S}
-5    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {5,D}
+4    Cb u0 {1,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2965,11 +2965,11 @@ entry(
     label = "Cds-CdCO_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {5,D}
-4    CO 0 {1,S}
-5    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {5,D}
+4    CO u0 {1,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -2984,11 +2984,11 @@ entry(
     label = "Cds-CtC=S_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Ct 0 {1,S}
-4    Cd 0 {1,S} {5,D}
-5    Sd 0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Ct u0 {1,S}
+4    Cd u0 {1,S} {5,D}
+5    Sd u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3003,11 +3003,11 @@ entry(
     label = "Cds-CbC=S_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cb 0 {1,S}
-4    Cd 0 {1,S} {5,D}
-5    Sd 0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cb u0 {1,S}
+4    Cd u0 {1,S} {5,D}
+5    Sd u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3022,11 +3022,11 @@ entry(
     label = "Cds-COC=S_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    CO 0 {1,S}
-4    Cd 0 {1,S} {5,D}
-5    Sd 0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    CO u0 {1,S}
+4    Cd u0 {1,S} {5,D}
+5    Sd u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3041,12 +3041,12 @@ entry(
     label = "Cds-CdCd_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {5,D}
-4    Cd 0 {1,S} {6,D}
-5    C  0 {3,D}
-6    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {5,D}
+4    Cd u0 {1,S} {6,D}
+5    C  u0 {3,D}
+6    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3061,12 +3061,12 @@ entry(
     label = "Cds-CdC=S_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {6,D}
-4    Cd 0 {1,S} {5,D}
-5    Sd 0 {4,D}
-6    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {6,D}
+4    Cd u0 {1,S} {5,D}
+5    Sd u0 {4,D}
+6    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3081,12 +3081,98 @@ entry(
     label = "Cds-C=SC=S_Sd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Sd 0 {1,D}
-3    Cd 0 {1,S} {5,D}
-4    Cd 0 {1,S} {6,D}
-5    Sd 0 {3,D}
-6    Sd 0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Sd u0 {1,D}
+3    Cd u0 {1,S} {5,D}
+4    Cd u0 {1,S} {6,D}
+5    Sd u0 {3,D}
+6    Sd u0 {4,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 306,
+    label = "Cds_Nd",
+    group = 
+"""
+1 *1 Cd u0 {2,D}
+2 *2 N  u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 307,
+    label = "Cds_N3d",
+    group = 
+"""
+1 *1 Cd  u0 {2,D}
+2 *2 N3d u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 308,
+    label = "Cds-HH_N3d",
+    group = 
+"""
+1 *1 Cd  u0 {2,D} {3,S} {4,S}
+2 *2 N3d u0 {1,D}
+3    H   u0 {1,S}
+4    H   u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 309,
+    label = "Cds-NonDeH_N3d",
+    group = 
+"""
+1 *1 Cd                 u0 {2,D} {3,S} {4,S}
+2 *2 N3d                u0 {1,D}
+3    H                  u0 {1,S}
+4    [Cs,Os,N3s,N5s,Ss] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 310,
+    label = "Cds-NonDe2_N3d",
+    group = 
+"""
+1 *1 Cd                 u0 {2,D} {3,S} {4,S}
+2 *2 N3d                u0 {1,D}
+3    [Cs,Os,N3s,N5s,Ss] u0 {1,S}
+4    [Cs,Os,N3s,N5s,Ss] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3101,12 +3187,12 @@ entry(
     label = "Cds_Cds",
     group = 
 """
-1 *1 Cd 0           {2,D} {3,S} {4,S}
-2 *2 Cd 0           {1,D} {5,S} {6,S}
-3    R  {0,1,2S,2T} {1,S}
-4    R  {0,1,2S,2T} {1,S}
-5    R  0           {2,S}
-6    R  0           {2,S}
+1 *1 Cd u0       {2,D} {3,S} {4,S}
+2 *2 Cd u0       {1,D} {5,S} {6,S}
+3    R  u[0,1,2] {1,S}
+4    R  u[0,1,2] {1,S}
+5    R  u0       {2,S}
+6    R  u0       {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3121,12 +3207,12 @@ entry(
     label = "Cds-HH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3141,12 +3227,12 @@ entry(
     label = "Cds-HH_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3161,12 +3247,12 @@ entry(
     label = "Cds-HH_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3181,13 +3267,13 @@ entry(
     label = "Cds-HH_Cds-Cs\Os/H",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S} {7,S}
-6    H  0 {2,S}
-7    Os 0 {5,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S} {7,S}
+6    H  u0 {2,S}
+7    Os u0 {5,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3202,15 +3288,15 @@ entry(
     label = "Cds-HH_Cds-Cs\H3/H",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
-5    Cs 0 {2,S} {7,S} {8,S} {9,S}
-6    H 0 {2,S}
-7    H 0 {5,S}
-8    H 0 {5,S}
-9    H 0 {5,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S} {7,S} {8,S} {9,S}
+6    H  u0 {2,S}
+7    H  u0 {5,S}
+8    H  u0 {5,S}
+9    H  u0 {5,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3225,12 +3311,12 @@ entry(
     label = "Cds-HH_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3245,12 +3331,12 @@ entry(
     label = "Cds-HH_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3265,12 +3351,12 @@ entry(
     label = "Cds-HH_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3285,12 +3371,12 @@ entry(
     label = "Cds-HH_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3305,12 +3391,12 @@ entry(
     label = "Cds-HH_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3325,12 +3411,12 @@ entry(
     label = "Cds-HH_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3345,12 +3431,12 @@ entry(
     label = "Cds-HH_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3365,12 +3451,12 @@ entry(
     label = "Cds-HH_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3385,12 +3471,12 @@ entry(
     label = "Cds-HH_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    H                     u0 {1,S}
+4    H                     u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3405,12 +3491,12 @@ entry(
     label = "Cds-HH_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    H                     u0 {1,S}
+4    H                     u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3425,12 +3511,12 @@ entry(
     label = "Cds-HH_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3445,12 +3531,12 @@ entry(
     label = "Cds-HH_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3465,12 +3551,12 @@ entry(
     label = "Cds-HH_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3485,13 +3571,13 @@ entry(
     label = "Cds-HH_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3506,13 +3592,13 @@ entry(
     label = "Cds-HH_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3527,12 +3613,12 @@ entry(
     label = "Cds-HH_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    H                     u0 {1,S}
+4    H                     u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3547,12 +3633,12 @@ entry(
     label = "Cds-HH_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3567,12 +3653,12 @@ entry(
     label = "Cds-HH_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3587,12 +3673,12 @@ entry(
     label = "Cds-HH_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3607,13 +3693,13 @@ entry(
     label = "Cds-HH_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3628,13 +3714,13 @@ entry(
     label = "Cds-HH_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3649,12 +3735,12 @@ entry(
     label = "Cds-HH_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    H                     u0 {1,S}
+4    H                     u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3669,12 +3755,12 @@ entry(
     label = "Cds-HH_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3689,12 +3775,12 @@ entry(
     label = "Cds-HH_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3709,12 +3795,12 @@ entry(
     label = "Cds-HH_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3729,13 +3815,13 @@ entry(
     label = "Cds-HH_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3750,13 +3836,13 @@ entry(
     label = "Cds-HH_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3771,12 +3857,12 @@ entry(
     label = "Cds-HH_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    H                     u0 {1,S}
+4    H                     u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3791,12 +3877,12 @@ entry(
     label = "Cds-HH_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3811,12 +3897,12 @@ entry(
     label = "Cds-HH_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3831,12 +3917,12 @@ entry(
     label = "Cds-HH_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3851,13 +3937,13 @@ entry(
     label = "Cds-HH_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3872,13 +3958,13 @@ entry(
     label = "Cds-HH_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3893,12 +3979,12 @@ entry(
     label = "Cds-HH_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    H                     u0 {1,S}
+4    H                     u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3913,12 +3999,12 @@ entry(
     label = "Cds-HH_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3933,12 +4019,12 @@ entry(
     label = "Cds-HH_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3953,12 +4039,12 @@ entry(
     label = "Cds-HH_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3973,12 +4059,12 @@ entry(
     label = "Cds-HH_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -3993,12 +4079,12 @@ entry(
     label = "Cds-HH_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4013,12 +4099,12 @@ entry(
     label = "Cds-HH_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4033,13 +4119,13 @@ entry(
     label = "Cds-HH_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Ct 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Ct u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4054,13 +4140,13 @@ entry(
     label = "Cds-HH_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cb 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cb u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4075,13 +4161,13 @@ entry(
     label = "Cds-HH_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    CO 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    CO u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4096,13 +4182,13 @@ entry(
     label = "Cds-HH_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4117,13 +4203,13 @@ entry(
     label = "Cds-HH_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4138,13 +4224,13 @@ entry(
     label = "Cds-HH_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4159,14 +4245,14 @@ entry(
     label = "Cds-HH_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {5,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {5,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4181,14 +4267,14 @@ entry(
     label = "Cds-HH_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4203,14 +4289,14 @@ entry(
     label = "Cds-HH_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4225,12 +4311,12 @@ entry(
     label = "Cds-CsH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4245,12 +4331,12 @@ entry(
     label = "Cds-CsH_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4265,13 +4351,13 @@ entry(
     label = "Cds-Cs\Os/H_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S} {7,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-7    Os 0 {3,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S} {7,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
+7    Os u0 {3,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4286,12 +4372,12 @@ entry(
     label = "Cds-CsH_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4306,12 +4392,12 @@ entry(
     label = "Cds-CsH_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4326,12 +4412,12 @@ entry(
     label = "Cds-CsH_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4346,12 +4432,12 @@ entry(
     label = "Cds-CsH_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4366,12 +4452,12 @@ entry(
     label = "Cds-CsH_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4386,12 +4472,12 @@ entry(
     label = "Cds-CsH_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4406,12 +4492,12 @@ entry(
     label = "Cds-CsH_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4426,12 +4512,12 @@ entry(
     label = "Cds-CsH_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4446,12 +4532,12 @@ entry(
     label = "Cds-CsH_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4466,12 +4552,12 @@ entry(
     label = "Cds-CsH_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    H             0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    H                     u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4486,12 +4572,12 @@ entry(
     label = "Cds-CsH_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    H                     u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4506,12 +4592,12 @@ entry(
     label = "Cds-CsH_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4526,12 +4612,12 @@ entry(
     label = "Cds-CsH_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4546,12 +4632,12 @@ entry(
     label = "Cds-CsH_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4566,13 +4652,13 @@ entry(
     label = "Cds-CsH_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4587,13 +4673,13 @@ entry(
     label = "Cds-CsH_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4608,12 +4694,12 @@ entry(
     label = "Cds-CsH_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    H             0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    H                     u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4628,12 +4714,12 @@ entry(
     label = "Cds-CsH_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4648,12 +4734,12 @@ entry(
     label = "Cds-CsH_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4668,12 +4754,12 @@ entry(
     label = "Cds-CsH_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4688,13 +4774,13 @@ entry(
     label = "Cds-CsH_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4709,13 +4795,13 @@ entry(
     label = "Cds-CsH_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4730,12 +4816,12 @@ entry(
     label = "Cds-CsH_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    H             0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    H                     u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4750,12 +4836,12 @@ entry(
     label = "Cds-CsH_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4770,12 +4856,12 @@ entry(
     label = "Cds-CsH_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4790,12 +4876,12 @@ entry(
     label = "Cds-CsH_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4810,13 +4896,13 @@ entry(
     label = "Cds-CsH_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4831,13 +4917,13 @@ entry(
     label = "Cds-CsH_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4852,12 +4938,12 @@ entry(
     label = "Cds-CsH_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    H             0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    H                     u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4872,12 +4958,12 @@ entry(
     label = "Cds-CsH_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4892,12 +4978,12 @@ entry(
     label = "Cds-CsH_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4912,12 +4998,12 @@ entry(
     label = "Cds-CsH_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4932,13 +5018,13 @@ entry(
     label = "Cds-CsH_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4953,13 +5039,13 @@ entry(
     label = "Cds-CsH_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4974,12 +5060,12 @@ entry(
     label = "Cds-CsH_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    H                     u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -4994,12 +5080,12 @@ entry(
     label = "Cds-CsH_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5014,12 +5100,12 @@ entry(
     label = "Cds-CsH_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5034,12 +5120,12 @@ entry(
     label = "Cds-CsH_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5054,12 +5140,12 @@ entry(
     label = "Cds-CsH_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5074,12 +5160,12 @@ entry(
     label = "Cds-CsH_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5094,12 +5180,12 @@ entry(
     label = "Cds-CsH_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5114,13 +5200,13 @@ entry(
     label = "Cds-CsH_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Ct 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Ct u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5135,13 +5221,13 @@ entry(
     label = "Cds-CsH_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cb 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cb u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5156,13 +5242,13 @@ entry(
     label = "Cds-CsH_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    CO 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    CO u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5177,13 +5263,13 @@ entry(
     label = "Cds-CsH_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5198,13 +5284,13 @@ entry(
     label = "Cds-CsH_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5219,13 +5305,13 @@ entry(
     label = "Cds-CsH_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5240,14 +5326,14 @@ entry(
     label = "Cds-CsH_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {5,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {5,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5262,14 +5348,14 @@ entry(
     label = "Cds-CsH_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5284,14 +5370,14 @@ entry(
     label = "Cds-CsH_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5306,12 +5392,12 @@ entry(
     label = "Cds-CsCs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5326,12 +5412,12 @@ entry(
     label = "Cds-CsCs_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5346,12 +5432,12 @@ entry(
     label = "Cds-CsCs_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5366,12 +5452,12 @@ entry(
     label = "Cds-CsCs_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5386,12 +5472,12 @@ entry(
     label = "Cds-CsCs_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5406,12 +5492,12 @@ entry(
     label = "Cds-CsCs_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5426,12 +5512,12 @@ entry(
     label = "Cds-CsCs_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5446,12 +5532,12 @@ entry(
     label = "Cds-CsCs_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5466,12 +5552,12 @@ entry(
     label = "Cds-CsCs_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5486,12 +5572,12 @@ entry(
     label = "Cds-CsCs_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5506,12 +5592,12 @@ entry(
     label = "Cds-CsCs_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5526,12 +5612,12 @@ entry(
     label = "Cds-CsCs_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    Cs            0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5546,12 +5632,12 @@ entry(
     label = "Cds-CsCs_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    Cs            0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5566,12 +5652,12 @@ entry(
     label = "Cds-CsCs_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5586,12 +5672,12 @@ entry(
     label = "Cds-CsCs_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5606,12 +5692,12 @@ entry(
     label = "Cds-CsCs_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5626,13 +5712,13 @@ entry(
     label = "Cds-CsCs_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5647,13 +5733,13 @@ entry(
     label = "Cds-CsCs_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5668,12 +5754,12 @@ entry(
     label = "Cds-CsCs_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    Cs            0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5688,12 +5774,12 @@ entry(
     label = "Cds-CsCs_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5708,12 +5794,12 @@ entry(
     label = "Cds-CsCs_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5728,12 +5814,12 @@ entry(
     label = "Cds-CsCs_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5748,13 +5834,13 @@ entry(
     label = "Cds-CsCs_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5769,13 +5855,13 @@ entry(
     label = "Cds-CsCs_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5790,12 +5876,12 @@ entry(
     label = "Cds-CsCs_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    Cs            0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5810,12 +5896,12 @@ entry(
     label = "Cds-CsCs_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5830,12 +5916,12 @@ entry(
     label = "Cds-CsCs_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5850,12 +5936,12 @@ entry(
     label = "Cds-CsCs_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5870,13 +5956,13 @@ entry(
     label = "Cds-CsCs_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5891,13 +5977,13 @@ entry(
     label = "Cds-CsCs_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5912,12 +5998,12 @@ entry(
     label = "Cds-CsCs_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    Cs            0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5932,12 +6018,12 @@ entry(
     label = "Cds-CsCs_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5952,12 +6038,12 @@ entry(
     label = "Cds-CsCs_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5972,12 +6058,12 @@ entry(
     label = "Cds-CsCs_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -5992,13 +6078,13 @@ entry(
     label = "Cds-CsCs_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6013,13 +6099,13 @@ entry(
     label = "Cds-CsCs_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6034,12 +6120,12 @@ entry(
     label = "Cds-CsCs_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cs            0 {1,S}
-4    Cs            0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cs                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6054,12 +6140,12 @@ entry(
     label = "Cds-CsCs_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6074,12 +6160,12 @@ entry(
     label = "Cds-CsCs_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6094,12 +6180,12 @@ entry(
     label = "Cds-CsCs_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6114,12 +6200,12 @@ entry(
     label = "Cds-CsCs_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6134,12 +6220,12 @@ entry(
     label = "Cds-CsCs_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6154,12 +6240,12 @@ entry(
     label = "Cds-CsCs_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6174,13 +6260,13 @@ entry(
     label = "Cds-CsCs_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Ct 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Ct u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6195,13 +6281,13 @@ entry(
     label = "Cds-CsCs_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cb 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cb u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6216,13 +6302,13 @@ entry(
     label = "Cds-CsCs_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    CO 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    CO u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6237,13 +6323,13 @@ entry(
     label = "Cds-CsCs_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6258,13 +6344,13 @@ entry(
     label = "Cds-CsCs_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6279,13 +6365,13 @@ entry(
     label = "Cds-CsCs_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6300,14 +6386,14 @@ entry(
     label = "Cds-CsCs_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {5,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {5,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6322,14 +6408,14 @@ entry(
     label = "Cds-CsCs_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6344,14 +6430,14 @@ entry(
     label = "Cds-CsCs_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6366,12 +6452,12 @@ entry(
     label = "Cds-SsH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ss 0 {1,S}
-4    H  0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ss u0 {1,S}
+4    H  u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6386,12 +6472,12 @@ entry(
     label = "Cds-SsCs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ss 0 {1,S}
-4    Cs 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ss u0 {1,S}
+4    Cs u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6406,12 +6492,12 @@ entry(
     label = "Cds-SsSs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ss 0 {1,S}
-4    Ss 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ss u0 {1,S}
+4    Ss u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6426,12 +6512,12 @@ entry(
     label = "Cds-OsH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Os 0 {1,S}
-4    H  0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Os u0 {1,S}
+4    H  u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6446,12 +6532,12 @@ entry(
     label = "Cds-OsH_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Os 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Os u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6466,12 +6552,12 @@ entry(
     label = "Cds-OsCs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Os 0 {1,S}
-4    Cs 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Os u0 {1,S}
+4    Cs u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6486,12 +6572,12 @@ entry(
     label = "Cds-OsOs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Os 0 {1,S}
-4    Os 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Os u0 {1,S}
+4    Os u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6506,12 +6592,12 @@ entry(
     label = "Cds-OsSs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Os 0 {1,S}
-4    Ss 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Os u0 {1,S}
+4    Ss u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6526,12 +6612,12 @@ entry(
     label = "Cds-OneDe_Cds",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    R             0 {1,S}
-5    R             0 {2,S}
-6    R             0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    R                     u0 {1,S}
+5    R                     u0 {2,S}
+6    R                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6546,12 +6632,12 @@ entry(
     label = "Cds-OneDeH_Cds",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    H             0 {1,S}
-5    R             0 {2,S}
-6    R             0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    H                     u0 {1,S}
+5    R                     u0 {2,S}
+6    R                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6566,12 +6652,12 @@ entry(
     label = "Cds-CtH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6586,12 +6672,12 @@ entry(
     label = "Cds-CtH_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6606,12 +6692,12 @@ entry(
     label = "Cds-CtH_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6626,12 +6712,12 @@ entry(
     label = "Cds-CtH_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6646,12 +6732,12 @@ entry(
     label = "Cds-CtH_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6666,12 +6752,12 @@ entry(
     label = "Cds-CtH_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6686,12 +6772,12 @@ entry(
     label = "Cds-CtH_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6706,12 +6792,12 @@ entry(
     label = "Cds-CtH_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6726,12 +6812,12 @@ entry(
     label = "Cds-CtH_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6746,12 +6832,12 @@ entry(
     label = "Cds-CtH_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6766,12 +6852,12 @@ entry(
     label = "Cds-CtH_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6786,12 +6872,12 @@ entry(
     label = "Cds-CtH_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    H             0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    H                     u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6806,12 +6892,12 @@ entry(
     label = "Cds-CtH_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    H                     u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6826,12 +6912,12 @@ entry(
     label = "Cds-CtH_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6846,12 +6932,12 @@ entry(
     label = "Cds-CtH_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6866,12 +6952,12 @@ entry(
     label = "Cds-CtH_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6886,13 +6972,13 @@ entry(
     label = "Cds-CtH_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6907,13 +6993,13 @@ entry(
     label = "Cds-CtH_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6928,12 +7014,12 @@ entry(
     label = "Cds-CtH_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    H             0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    H                     u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6948,12 +7034,12 @@ entry(
     label = "Cds-CtH_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6968,12 +7054,12 @@ entry(
     label = "Cds-CtH_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -6988,12 +7074,12 @@ entry(
     label = "Cds-CtH_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7008,13 +7094,13 @@ entry(
     label = "Cds-CtH_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7029,13 +7115,13 @@ entry(
     label = "Cds-CtH_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7050,12 +7136,12 @@ entry(
     label = "Cds-CtH_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    H             0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    H                     u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7070,12 +7156,12 @@ entry(
     label = "Cds-CtH_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7090,12 +7176,12 @@ entry(
     label = "Cds-CtH_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7110,12 +7196,12 @@ entry(
     label = "Cds-CtH_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7130,13 +7216,13 @@ entry(
     label = "Cds-CtH_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7151,13 +7237,13 @@ entry(
     label = "Cds-CtH_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7172,12 +7258,12 @@ entry(
     label = "Cds-CtH_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    H             0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    H                     u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7192,12 +7278,12 @@ entry(
     label = "Cds-CtH_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7212,12 +7298,12 @@ entry(
     label = "Cds-CtH_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7232,12 +7318,12 @@ entry(
     label = "Cds-CtH_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7252,13 +7338,13 @@ entry(
     label = "Cds-CtH_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7273,13 +7359,13 @@ entry(
     label = "Cds-CtH_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7294,12 +7380,12 @@ entry(
     label = "Cds-CtH_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    H                     u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7314,12 +7400,12 @@ entry(
     label = "Cds-CtH_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7334,12 +7420,12 @@ entry(
     label = "Cds-CtH_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7354,12 +7440,12 @@ entry(
     label = "Cds-CtH_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7374,12 +7460,12 @@ entry(
     label = "Cds-CtH_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7394,12 +7480,12 @@ entry(
     label = "Cds-CtH_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7414,12 +7500,12 @@ entry(
     label = "Cds-CtH_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7434,13 +7520,13 @@ entry(
     label = "Cds-CtH_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Ct 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Ct u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7455,13 +7541,13 @@ entry(
     label = "Cds-CtH_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cb 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cb u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7476,13 +7562,13 @@ entry(
     label = "Cds-CtH_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    CO 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    CO u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7497,13 +7583,13 @@ entry(
     label = "Cds-CtH_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7518,13 +7604,13 @@ entry(
     label = "Cds-CtH_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7539,13 +7625,13 @@ entry(
     label = "Cds-CtH_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7560,14 +7646,14 @@ entry(
     label = "Cds-CtH_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {5,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {5,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7582,14 +7668,14 @@ entry(
     label = "Cds-CtH_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7604,14 +7690,14 @@ entry(
     label = "Cds-CtH_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7626,12 +7712,12 @@ entry(
     label = "Cds-CbH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7646,12 +7732,12 @@ entry(
     label = "Cds-CbH_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7666,12 +7752,12 @@ entry(
     label = "Cds-CbH_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7686,12 +7772,12 @@ entry(
     label = "Cds-CbH_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7706,12 +7792,12 @@ entry(
     label = "Cds-CbH_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7726,12 +7812,12 @@ entry(
     label = "Cds-CbH_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7746,12 +7832,12 @@ entry(
     label = "Cds-CbH_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7766,12 +7852,12 @@ entry(
     label = "Cds-CbH_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7786,12 +7872,12 @@ entry(
     label = "Cds-CbH_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7806,12 +7892,12 @@ entry(
     label = "Cds-CbH_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7826,12 +7912,12 @@ entry(
     label = "Cds-CbH_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7846,12 +7932,12 @@ entry(
     label = "Cds-CbH_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    H             0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    H                     u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7866,12 +7952,12 @@ entry(
     label = "Cds-CbH_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    H                     u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7886,12 +7972,12 @@ entry(
     label = "Cds-CbH_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7906,12 +7992,12 @@ entry(
     label = "Cds-CbH_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7926,12 +8012,12 @@ entry(
     label = "Cds-CbH_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7946,13 +8032,13 @@ entry(
     label = "Cds-CbH_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7967,13 +8053,13 @@ entry(
     label = "Cds-CbH_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -7988,12 +8074,12 @@ entry(
     label = "Cds-CbH_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    H             0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    H                     u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8008,12 +8094,12 @@ entry(
     label = "Cds-CbH_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8028,12 +8114,12 @@ entry(
     label = "Cds-CbH_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8048,12 +8134,12 @@ entry(
     label = "Cds-CbH_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8068,13 +8154,13 @@ entry(
     label = "Cds-CbH_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8089,13 +8175,13 @@ entry(
     label = "Cds-CbH_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8110,12 +8196,12 @@ entry(
     label = "Cds-CbH_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    H             0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    H                     u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8130,12 +8216,12 @@ entry(
     label = "Cds-CbH_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8150,12 +8236,12 @@ entry(
     label = "Cds-CbH_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8170,12 +8256,12 @@ entry(
     label = "Cds-CbH_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8190,13 +8276,13 @@ entry(
     label = "Cds-CbH_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8211,13 +8297,13 @@ entry(
     label = "Cds-CbH_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8232,12 +8318,12 @@ entry(
     label = "Cds-CbH_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    H             0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    H                     u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8252,12 +8338,12 @@ entry(
     label = "Cds-CbH_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8272,12 +8358,12 @@ entry(
     label = "Cds-CbH_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8292,12 +8378,12 @@ entry(
     label = "Cds-CbH_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8312,13 +8398,13 @@ entry(
     label = "Cds-CbH_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8333,13 +8419,13 @@ entry(
     label = "Cds-CbH_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8354,12 +8440,12 @@ entry(
     label = "Cds-CbH_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    H                     u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8374,12 +8460,12 @@ entry(
     label = "Cds-CbH_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8394,12 +8480,12 @@ entry(
     label = "Cds-CbH_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8414,12 +8500,12 @@ entry(
     label = "Cds-CbH_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8434,12 +8520,12 @@ entry(
     label = "Cds-CbH_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8454,12 +8540,12 @@ entry(
     label = "Cds-CbH_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8474,12 +8560,12 @@ entry(
     label = "Cds-CbH_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8494,13 +8580,13 @@ entry(
     label = "Cds-CbH_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Ct 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Ct u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8515,13 +8601,13 @@ entry(
     label = "Cds-CbH_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cb 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cb u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8536,13 +8622,13 @@ entry(
     label = "Cds-CbH_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    CO 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    CO u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8557,13 +8643,13 @@ entry(
     label = "Cds-CbH_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8578,13 +8664,13 @@ entry(
     label = "Cds-CbH_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8599,13 +8685,13 @@ entry(
     label = "Cds-CbH_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8620,14 +8706,14 @@ entry(
     label = "Cds-CbH_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {5,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {5,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8642,14 +8728,14 @@ entry(
     label = "Cds-CbH_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8664,14 +8750,14 @@ entry(
     label = "Cds-CbH_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8686,12 +8772,12 @@ entry(
     label = "Cds-COH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    CO 0 {1,S}
-4    H  0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    CO u0 {1,S}
+4    H  u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8706,13 +8792,13 @@ entry(
     label = "Cds-CdH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8727,13 +8813,13 @@ entry(
     label = "Cds-CdH_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8748,13 +8834,13 @@ entry(
     label = "Cds-CdH_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8769,13 +8855,13 @@ entry(
     label = "Cds-CdH_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8790,13 +8876,13 @@ entry(
     label = "Cds-CdH_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8811,13 +8897,13 @@ entry(
     label = "Cds-CdH_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8832,13 +8918,13 @@ entry(
     label = "Cds-CdH_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8853,13 +8939,13 @@ entry(
     label = "Cds-CdH_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8874,13 +8960,13 @@ entry(
     label = "Cds-CdH_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8895,13 +8981,13 @@ entry(
     label = "Cds-CdH_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8916,13 +9002,13 @@ entry(
     label = "Cds-CdH_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8937,13 +9023,13 @@ entry(
     label = "Cds-CdH_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    H             0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    H                     u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8958,13 +9044,13 @@ entry(
     label = "Cds-CdH_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    H                     u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -8979,13 +9065,13 @@ entry(
     label = "Cds-CdH_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9000,13 +9086,13 @@ entry(
     label = "Cds-CdH_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9021,13 +9107,13 @@ entry(
     label = "Cds-CdH_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9042,14 +9128,14 @@ entry(
     label = "Cds-CdH_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9064,14 +9150,14 @@ entry(
     label = "Cds-CdH_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9086,13 +9172,13 @@ entry(
     label = "Cds-CdH_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    H             0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    H                     u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9107,13 +9193,13 @@ entry(
     label = "Cds-CdH_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9128,13 +9214,13 @@ entry(
     label = "Cds-CdH_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9149,13 +9235,13 @@ entry(
     label = "Cds-CdH_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9170,14 +9256,14 @@ entry(
     label = "Cds-CdH_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9192,14 +9278,14 @@ entry(
     label = "Cds-CdH_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9214,13 +9300,13 @@ entry(
     label = "Cds-CdH_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    H             0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    H                     u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9235,13 +9321,13 @@ entry(
     label = "Cds-CdH_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9256,13 +9342,13 @@ entry(
     label = "Cds-CdH_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9277,13 +9363,13 @@ entry(
     label = "Cds-CdH_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9298,14 +9384,14 @@ entry(
     label = "Cds-CdH_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9320,14 +9406,14 @@ entry(
     label = "Cds-CdH_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    H  0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    H  u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9342,13 +9428,13 @@ entry(
     label = "Cds-CdH_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    H             0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    H                     u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9363,13 +9449,13 @@ entry(
     label = "Cds-CdH_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9384,13 +9470,13 @@ entry(
     label = "Cds-CdH_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9405,13 +9491,13 @@ entry(
     label = "Cds-CdH_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9426,14 +9512,14 @@ entry(
     label = "Cds-CdH_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9448,14 +9534,14 @@ entry(
     label = "Cds-CdH_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    H  0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    H  u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9470,13 +9556,13 @@ entry(
     label = "Cds-CdH_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    H                     u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9491,13 +9577,13 @@ entry(
     label = "Cds-CdH_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9512,13 +9598,13 @@ entry(
     label = "Cds-CdH_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9533,13 +9619,13 @@ entry(
     label = "Cds-CdH_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9554,13 +9640,13 @@ entry(
     label = "Cds-CdH_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9575,13 +9661,13 @@ entry(
     label = "Cds-CdH_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9596,13 +9682,13 @@ entry(
     label = "Cds-CdH_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9617,14 +9703,14 @@ entry(
     label = "Cds-CdH_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9639,14 +9725,14 @@ entry(
     label = "Cds-CdH_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9661,14 +9747,14 @@ entry(
     label = "Cds-CdH_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9683,14 +9769,14 @@ entry(
     label = "Cds-CdH_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    H  0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    H  u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9705,14 +9791,14 @@ entry(
     label = "Cds-CdH_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    H  0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    H  u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9727,14 +9813,14 @@ entry(
     label = "Cds-CdH_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    H  0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    H  u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9749,15 +9835,15 @@ entry(
     label = "Cds-CdH_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {9,D}
-7    C  0 {3,D}
-8    C  0 {5,D}
-9    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {9,D}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
+9    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9772,15 +9858,15 @@ entry(
     label = "Cds-CdH_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {9,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {9,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9795,15 +9881,15 @@ entry(
     label = "Cds-CdH_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {9,D}
-4    H  0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
-9    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {9,D}
+4    H  u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
+9    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9818,13 +9904,13 @@ entry(
     label = "Cds-C=SH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {6,S} {7,S}
-3    Cd 0 {1,S} {5,D}
-4    H  0 {1,S}
-5    Sd 0 {3,D}
-6    R  0 {2,S}
-7    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {6,S} {7,S}
+3    Cd u0 {1,S} {5,D}
+4    H  u0 {1,S}
+5    Sd u0 {3,D}
+6    R  u0 {2,S}
+7    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9839,12 +9925,12 @@ entry(
     label = "Cds-OneDeCs_Cds",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    Cs            0 {1,S}
-5    R             0 {2,S}
-6    R             0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    Cs                    u0 {1,S}
+5    R                     u0 {2,S}
+6    R                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9859,12 +9945,12 @@ entry(
     label = "Cds-CtCs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9879,12 +9965,12 @@ entry(
     label = "Cds-CtCs_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9899,12 +9985,12 @@ entry(
     label = "Cds-CtCs_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9919,12 +10005,12 @@ entry(
     label = "Cds-CtCs_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9939,12 +10025,12 @@ entry(
     label = "Cds-CtCs_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9959,12 +10045,12 @@ entry(
     label = "Cds-CtCs_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9979,12 +10065,12 @@ entry(
     label = "Cds-CtCs_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -9999,12 +10085,12 @@ entry(
     label = "Cds-CtCs_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10019,12 +10105,12 @@ entry(
     label = "Cds-CtCs_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10039,12 +10125,12 @@ entry(
     label = "Cds-CtCs_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10059,12 +10145,12 @@ entry(
     label = "Cds-CtCs_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10079,12 +10165,12 @@ entry(
     label = "Cds-CtCs_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Cs            0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10099,12 +10185,12 @@ entry(
     label = "Cds-CtCs_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Cs            0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10119,12 +10205,12 @@ entry(
     label = "Cds-CtCs_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10139,12 +10225,12 @@ entry(
     label = "Cds-CtCs_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10159,12 +10245,12 @@ entry(
     label = "Cds-CtCs_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10179,13 +10265,13 @@ entry(
     label = "Cds-CtCs_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10200,13 +10286,13 @@ entry(
     label = "Cds-CtCs_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10221,12 +10307,12 @@ entry(
     label = "Cds-CtCs_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Cs            0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10241,12 +10327,12 @@ entry(
     label = "Cds-CtCs_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10261,12 +10347,12 @@ entry(
     label = "Cds-CtCs_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10281,12 +10367,12 @@ entry(
     label = "Cds-CtCs_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10301,13 +10387,13 @@ entry(
     label = "Cds-CtCs_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10322,13 +10408,13 @@ entry(
     label = "Cds-CtCs_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10343,12 +10429,12 @@ entry(
     label = "Cds-CtCs_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Cs            0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10363,12 +10449,12 @@ entry(
     label = "Cds-CtCs_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10383,12 +10469,12 @@ entry(
     label = "Cds-CtCs_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10403,12 +10489,12 @@ entry(
     label = "Cds-CtCs_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10423,13 +10509,13 @@ entry(
     label = "Cds-CtCs_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10444,13 +10530,13 @@ entry(
     label = "Cds-CtCs_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10465,12 +10551,12 @@ entry(
     label = "Cds-CtCs_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Cs            0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10485,12 +10571,12 @@ entry(
     label = "Cds-CtCs_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10505,12 +10591,12 @@ entry(
     label = "Cds-CtCs_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10525,12 +10611,12 @@ entry(
     label = "Cds-CtCs_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10545,13 +10631,13 @@ entry(
     label = "Cds-CtCs_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10566,13 +10652,13 @@ entry(
     label = "Cds-CtCs_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10587,12 +10673,12 @@ entry(
     label = "Cds-CtCs_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Cs            0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10607,12 +10693,12 @@ entry(
     label = "Cds-CtCs_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10627,12 +10713,12 @@ entry(
     label = "Cds-CtCs_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10647,12 +10733,12 @@ entry(
     label = "Cds-CtCs_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10667,12 +10753,12 @@ entry(
     label = "Cds-CtCs_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10687,12 +10773,12 @@ entry(
     label = "Cds-CtCs_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10707,12 +10793,12 @@ entry(
     label = "Cds-CtCs_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10727,13 +10813,13 @@ entry(
     label = "Cds-CtCs_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Ct 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Ct u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10748,13 +10834,13 @@ entry(
     label = "Cds-CtCs_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cb 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cb u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10769,13 +10855,13 @@ entry(
     label = "Cds-CtCs_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    CO 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    CO u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10790,13 +10876,13 @@ entry(
     label = "Cds-CtCs_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10811,13 +10897,13 @@ entry(
     label = "Cds-CtCs_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10832,13 +10918,13 @@ entry(
     label = "Cds-CtCs_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10853,14 +10939,14 @@ entry(
     label = "Cds-CtCs_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {5,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {5,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10875,14 +10961,14 @@ entry(
     label = "Cds-CtCs_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10897,14 +10983,14 @@ entry(
     label = "Cds-CtCs_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10919,12 +11005,12 @@ entry(
     label = "Cds-CbCs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10939,12 +11025,12 @@ entry(
     label = "Cds-CbCs_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10959,12 +11045,12 @@ entry(
     label = "Cds-CbCs_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10979,12 +11065,12 @@ entry(
     label = "Cds-CbCs_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -10999,12 +11085,12 @@ entry(
     label = "Cds-CbCs_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11019,12 +11105,12 @@ entry(
     label = "Cds-CbCs_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11039,12 +11125,12 @@ entry(
     label = "Cds-CbCs_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11059,12 +11145,12 @@ entry(
     label = "Cds-CbCs_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11079,12 +11165,12 @@ entry(
     label = "Cds-CbCs_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11099,12 +11185,12 @@ entry(
     label = "Cds-CbCs_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11119,12 +11205,12 @@ entry(
     label = "Cds-CbCs_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11139,12 +11225,12 @@ entry(
     label = "Cds-CbCs_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    Cs            0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11159,12 +11245,12 @@ entry(
     label = "Cds-CbCs_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    Cs            0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11179,12 +11265,12 @@ entry(
     label = "Cds-CbCs_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11199,12 +11285,12 @@ entry(
     label = "Cds-CbCs_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11219,12 +11305,12 @@ entry(
     label = "Cds-CbCs_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11239,13 +11325,13 @@ entry(
     label = "Cds-CbCs_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11260,13 +11346,13 @@ entry(
     label = "Cds-CbCs_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11281,12 +11367,12 @@ entry(
     label = "Cds-CbCs_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    Cs            0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11301,12 +11387,12 @@ entry(
     label = "Cds-CbCs_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11321,12 +11407,12 @@ entry(
     label = "Cds-CbCs_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11341,12 +11427,12 @@ entry(
     label = "Cds-CbCs_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11361,13 +11447,13 @@ entry(
     label = "Cds-CbCs_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11382,13 +11468,13 @@ entry(
     label = "Cds-CbCs_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11403,12 +11489,12 @@ entry(
     label = "Cds-CbCs_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    Cs            0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11423,12 +11509,12 @@ entry(
     label = "Cds-CbCs_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11443,12 +11529,12 @@ entry(
     label = "Cds-CbCs_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11463,12 +11549,12 @@ entry(
     label = "Cds-CbCs_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11483,13 +11569,13 @@ entry(
     label = "Cds-CbCs_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11504,13 +11590,13 @@ entry(
     label = "Cds-CbCs_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11525,12 +11611,12 @@ entry(
     label = "Cds-CbCs_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    Cs            0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11545,12 +11631,12 @@ entry(
     label = "Cds-CbCs_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11565,12 +11651,12 @@ entry(
     label = "Cds-CbCs_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11585,12 +11671,12 @@ entry(
     label = "Cds-CbCs_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11605,13 +11691,13 @@ entry(
     label = "Cds-CbCs_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11626,13 +11712,13 @@ entry(
     label = "Cds-CbCs_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11647,12 +11733,12 @@ entry(
     label = "Cds-CbCs_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cb            0 {1,S}
-4    Cs            0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cb                    u0 {1,S}
+4    Cs                    u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11667,12 +11753,12 @@ entry(
     label = "Cds-CbCs_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11687,12 +11773,12 @@ entry(
     label = "Cds-CbCs_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11707,12 +11793,12 @@ entry(
     label = "Cds-CbCs_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11727,12 +11813,12 @@ entry(
     label = "Cds-CbCs_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11747,12 +11833,12 @@ entry(
     label = "Cds-CbCs_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11767,12 +11853,12 @@ entry(
     label = "Cds-CbCs_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11787,13 +11873,13 @@ entry(
     label = "Cds-CbCs_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Ct 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Ct u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11808,13 +11894,13 @@ entry(
     label = "Cds-CbCs_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cb 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cb u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11829,13 +11915,13 @@ entry(
     label = "Cds-CbCs_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    CO 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    CO u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11850,13 +11936,13 @@ entry(
     label = "Cds-CbCs_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11871,13 +11957,13 @@ entry(
     label = "Cds-CbCs_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11892,13 +11978,13 @@ entry(
     label = "Cds-CbCs_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11913,14 +11999,14 @@ entry(
     label = "Cds-CbCs_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {5,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {5,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11935,14 +12021,14 @@ entry(
     label = "Cds-CbCs_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11957,14 +12043,14 @@ entry(
     label = "Cds-CbCs_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11979,12 +12065,12 @@ entry(
     label = "Cds-COCs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    CO 0 {1,S}
-4    Cs 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    CO u0 {1,S}
+4    Cs u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -11999,13 +12085,13 @@ entry(
     label = "Cds-CdCs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12020,13 +12106,13 @@ entry(
     label = "Cds-CdCs_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12041,13 +12127,13 @@ entry(
     label = "Cds-CdCs_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12062,13 +12148,13 @@ entry(
     label = "Cds-CdCs_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12083,13 +12169,13 @@ entry(
     label = "Cds-CdCs_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12104,13 +12190,13 @@ entry(
     label = "Cds-CdCs_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12125,13 +12211,13 @@ entry(
     label = "Cds-CdCs_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12146,13 +12232,13 @@ entry(
     label = "Cds-CdCs_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12167,13 +12253,13 @@ entry(
     label = "Cds-CdCs_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12188,13 +12274,13 @@ entry(
     label = "Cds-CdCs_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12209,13 +12295,13 @@ entry(
     label = "Cds-CdCs_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12230,13 +12316,13 @@ entry(
     label = "Cds-CdCs_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cs            0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cs                    u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12251,13 +12337,13 @@ entry(
     label = "Cds-CdCs_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cs            0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cs                    u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12272,13 +12358,13 @@ entry(
     label = "Cds-CdCs_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12293,13 +12379,13 @@ entry(
     label = "Cds-CdCs_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12314,13 +12400,13 @@ entry(
     label = "Cds-CdCs_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12335,14 +12421,14 @@ entry(
     label = "Cds-CdCs_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12357,14 +12443,14 @@ entry(
     label = "Cds-CdCs_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12379,13 +12465,13 @@ entry(
     label = "Cds-CdCs_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cs            0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cs                    u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12400,13 +12486,13 @@ entry(
     label = "Cds-CdCs_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12421,13 +12507,13 @@ entry(
     label = "Cds-CdCs_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12442,13 +12528,13 @@ entry(
     label = "Cds-CdCs_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12463,14 +12549,14 @@ entry(
     label = "Cds-CdCs_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12485,14 +12571,14 @@ entry(
     label = "Cds-CdCs_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cs 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cs u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12507,13 +12593,13 @@ entry(
     label = "Cds-CdCs_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cs            0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cs                    u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12528,13 +12614,13 @@ entry(
     label = "Cds-CdCs_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12549,13 +12635,13 @@ entry(
     label = "Cds-CdCs_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12570,13 +12656,13 @@ entry(
     label = "Cds-CdCs_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12591,14 +12677,14 @@ entry(
     label = "Cds-CdCs_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12613,14 +12699,14 @@ entry(
     label = "Cds-CdCs_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cs 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cs u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12635,13 +12721,13 @@ entry(
     label = "Cds-CdCs_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cs            0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cs                    u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12656,13 +12742,13 @@ entry(
     label = "Cds-CdCs_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12677,13 +12763,13 @@ entry(
     label = "Cds-CdCs_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12698,13 +12784,13 @@ entry(
     label = "Cds-CdCs_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12719,14 +12805,14 @@ entry(
     label = "Cds-CdCs_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12741,14 +12827,14 @@ entry(
     label = "Cds-CdCs_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cs 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cs u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12763,13 +12849,13 @@ entry(
     label = "Cds-CdCs_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cs            0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cs                    u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12784,13 +12870,13 @@ entry(
     label = "Cds-CdCs_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12805,13 +12891,13 @@ entry(
     label = "Cds-CdCs_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12826,13 +12912,13 @@ entry(
     label = "Cds-CdCs_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12847,13 +12933,13 @@ entry(
     label = "Cds-CdCs_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12868,13 +12954,13 @@ entry(
     label = "Cds-CdCs_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12889,13 +12975,13 @@ entry(
     label = "Cds-CdCs_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12910,14 +12996,14 @@ entry(
     label = "Cds-CdCs_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12932,14 +13018,14 @@ entry(
     label = "Cds-CdCs_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12954,14 +13040,14 @@ entry(
     label = "Cds-CdCs_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12976,14 +13062,14 @@ entry(
     label = "Cds-CdCs_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cs 0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cs u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -12998,14 +13084,14 @@ entry(
     label = "Cds-CdCs_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cs 0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cs u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13020,14 +13106,14 @@ entry(
     label = "Cds-CdCs_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cs 0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cs u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13042,15 +13128,15 @@ entry(
     label = "Cds-CdCs_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {9,D}
-7    C  0 {3,D}
-8    C  0 {5,D}
-9    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {9,D}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
+9    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13065,15 +13151,15 @@ entry(
     label = "Cds-CdCs_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {9,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {9,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13088,15 +13174,15 @@ entry(
     label = "Cds-CdCs_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {9,D}
-4    Cs 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
-9    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {9,D}
+4    Cs u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
+9    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13111,13 +13197,13 @@ entry(
     label = "Cds-C=SCs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {6,S} {7,S}
-3    Cd 0 {1,S} {5,D}
-4    Cs 0 {1,S}
-5    Sd 0 {3,D}
-6    R  0 {2,S}
-7    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {6,S} {7,S}
+3    Cd u0 {1,S} {5,D}
+4    Cs u0 {1,S}
+5    Sd u0 {3,D}
+6    R  u0 {2,S}
+7    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13132,12 +13218,12 @@ entry(
     label = "Cds-OneDeSs_Cds",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    Ss            0 {1,S}
-5    R             0 {2,S}
-6    R             0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    Ss                    u0 {1,S}
+5    R                     u0 {2,S}
+6    R                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13152,12 +13238,12 @@ entry(
     label = "Cds-CtSs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ss 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ss u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13172,12 +13258,12 @@ entry(
     label = "Cds-CbSs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Ss 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Ss u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13192,12 +13278,12 @@ entry(
     label = "Cds-COSs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    CO 0 {1,S}
-4    Ss 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    CO u0 {1,S}
+4    Ss u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13212,13 +13298,13 @@ entry(
     label = "Cds-CdSs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ss 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ss u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13233,13 +13319,13 @@ entry(
     label = "Cds-C=SSs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {6,S} {7,S}
-3    Cd 0 {1,S} {5,D}
-4    Ss 0 {1,S}
-5    Sd 0 {3,D}
-6    R  0 {2,S}
-7    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {6,S} {7,S}
+3    Cd u0 {1,S} {5,D}
+4    Ss u0 {1,S}
+5    Sd u0 {3,D}
+6    R  u0 {2,S}
+7    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13254,12 +13340,12 @@ entry(
     label = "Cds-OneDeOs_Cds",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    Os            0 {1,S}
-5    R             0 {2,S}
-6    R             0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    Os                    u0 {1,S}
+5    R                     u0 {2,S}
+6    R                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13274,12 +13360,12 @@ entry(
     label = "Cds-CtOs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Os 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Os u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13294,12 +13380,12 @@ entry(
     label = "Cds-CbOs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Os 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Os u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13314,12 +13400,12 @@ entry(
     label = "Cds-COOs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    CO 0 {1,S}
-4    Os 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    CO u0 {1,S}
+4    Os u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13334,13 +13420,13 @@ entry(
     label = "Cds-CdOs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Os 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Os u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13355,13 +13441,13 @@ entry(
     label = "Cds-C=SOs_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {6,S} {7,S}
-3    Cd 0 {1,S} {5,D}
-4    Os 0 {1,S}
-5    Sd 0 {3,D}
-6    R  0 {2,S}
-7    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {6,S} {7,S}
+3    Cd u0 {1,S} {5,D}
+4    Os u0 {1,S}
+5    Sd u0 {3,D}
+6    R  u0 {2,S}
+7    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13376,12 +13462,12 @@ entry(
     label = "Cds-TwoDe_Cds",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-5    R             0 {2,S}
-6    R             0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+5    R                     u0 {2,S}
+6    R                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13396,12 +13482,12 @@ entry(
     label = "Cds-CtCt_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13416,12 +13502,12 @@ entry(
     label = "Cds-CtCt_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13436,12 +13522,12 @@ entry(
     label = "Cds-CtCt_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13456,12 +13542,12 @@ entry(
     label = "Cds-CtCt_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13476,12 +13562,12 @@ entry(
     label = "Cds-CtCt_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13496,12 +13582,12 @@ entry(
     label = "Cds-CtCt_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13516,12 +13602,12 @@ entry(
     label = "Cds-CtCt_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13536,12 +13622,12 @@ entry(
     label = "Cds-CtCt_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13556,12 +13642,12 @@ entry(
     label = "Cds-CtCt_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13576,12 +13662,12 @@ entry(
     label = "Cds-CtCt_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13596,12 +13682,12 @@ entry(
     label = "Cds-CtCt_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13616,12 +13702,12 @@ entry(
     label = "Cds-CtCt_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Ct            0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Ct                    u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13636,12 +13722,12 @@ entry(
     label = "Cds-CtCt_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Ct            0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Ct                    u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13656,12 +13742,12 @@ entry(
     label = "Cds-CtCt_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13676,12 +13762,12 @@ entry(
     label = "Cds-CtCt_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13696,12 +13782,12 @@ entry(
     label = "Cds-CtCt_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13716,13 +13802,13 @@ entry(
     label = "Cds-CtCt_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13737,13 +13823,13 @@ entry(
     label = "Cds-CtCt_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13758,12 +13844,12 @@ entry(
     label = "Cds-CtCt_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Ct            0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Ct                    u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13778,12 +13864,12 @@ entry(
     label = "Cds-CtCt_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13798,12 +13884,12 @@ entry(
     label = "Cds-CtCt_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13818,12 +13904,12 @@ entry(
     label = "Cds-CtCt_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13838,13 +13924,13 @@ entry(
     label = "Cds-CtCt_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13859,13 +13945,13 @@ entry(
     label = "Cds-CtCt_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13880,12 +13966,12 @@ entry(
     label = "Cds-CtCt_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Ct            0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Ct                    u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13900,12 +13986,12 @@ entry(
     label = "Cds-CtCt_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13920,12 +14006,12 @@ entry(
     label = "Cds-CtCt_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13940,12 +14026,12 @@ entry(
     label = "Cds-CtCt_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13960,13 +14046,13 @@ entry(
     label = "Cds-CtCt_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -13981,13 +14067,13 @@ entry(
     label = "Cds-CtCt_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14002,12 +14088,12 @@ entry(
     label = "Cds-CtCt_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Ct            0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Ct                    u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14022,12 +14108,12 @@ entry(
     label = "Cds-CtCt_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14042,12 +14128,12 @@ entry(
     label = "Cds-CtCt_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14062,12 +14148,12 @@ entry(
     label = "Cds-CtCt_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14082,13 +14168,13 @@ entry(
     label = "Cds-CtCt_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14103,13 +14189,13 @@ entry(
     label = "Cds-CtCt_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14124,12 +14210,12 @@ entry(
     label = "Cds-CtCt_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Ct            0 {1,S}
-4    Ct            0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Ct                    u0 {1,S}
+4    Ct                    u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14144,12 +14230,12 @@ entry(
     label = "Cds-CtCt_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14164,12 +14250,12 @@ entry(
     label = "Cds-CtCt_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14184,12 +14270,12 @@ entry(
     label = "Cds-CtCt_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14204,12 +14290,12 @@ entry(
     label = "Cds-CtCt_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14224,12 +14310,12 @@ entry(
     label = "Cds-CtCt_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14244,12 +14330,12 @@ entry(
     label = "Cds-CtCt_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14264,13 +14350,13 @@ entry(
     label = "Cds-CtCt_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Ct 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Ct u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14285,13 +14371,13 @@ entry(
     label = "Cds-CtCt_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cb 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cb u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14306,13 +14392,13 @@ entry(
     label = "Cds-CtCt_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    CO 0 {2,S}
-7    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    CO u0 {2,S}
+7    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14327,13 +14413,13 @@ entry(
     label = "Cds-CtCt_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14348,13 +14434,13 @@ entry(
     label = "Cds-CtCt_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14369,13 +14455,13 @@ entry(
     label = "Cds-CtCt_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14390,14 +14476,14 @@ entry(
     label = "Cds-CtCt_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {5,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {5,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14412,14 +14498,14 @@ entry(
     label = "Cds-CtCt_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14434,14 +14520,14 @@ entry(
     label = "Cds-CtCt_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14456,12 +14542,12 @@ entry(
     label = "Cds-CtCb_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    Cb 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    Cb u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14476,12 +14562,12 @@ entry(
     label = "Cds-CtCO_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Ct 0 {1,S}
-4    CO 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Ct u0 {1,S}
+4    CO u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14496,12 +14582,12 @@ entry(
     label = "Cds-CbCb_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    Cb 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    Cb u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14516,12 +14602,12 @@ entry(
     label = "Cds-CbCO_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cb 0 {1,S}
-4    CO 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cb u0 {1,S}
+4    CO u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14536,12 +14622,12 @@ entry(
     label = "Cds-COCO_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    CO 0 {1,S}
-4    CO 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    CO u0 {1,S}
+4    CO u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14556,13 +14642,13 @@ entry(
     label = "Cds-CdCt_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14577,13 +14663,13 @@ entry(
     label = "Cds-CdCt_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14598,13 +14684,13 @@ entry(
     label = "Cds-CdCt_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14619,13 +14705,13 @@ entry(
     label = "Cds-CdCt_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14640,13 +14726,13 @@ entry(
     label = "Cds-CdCt_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14661,13 +14747,13 @@ entry(
     label = "Cds-CdCt_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14682,13 +14768,13 @@ entry(
     label = "Cds-CdCt_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14703,13 +14789,13 @@ entry(
     label = "Cds-CdCt_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14724,13 +14810,13 @@ entry(
     label = "Cds-CdCt_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14745,13 +14831,13 @@ entry(
     label = "Cds-CdCt_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14766,13 +14852,13 @@ entry(
     label = "Cds-CdCt_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14787,13 +14873,13 @@ entry(
     label = "Cds-CdCt_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Ct            0 {1,S}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Ct                    u0 {1,S}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14808,13 +14894,13 @@ entry(
     label = "Cds-CdCt_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Ct            0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Ct                    u0 {1,S}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14829,13 +14915,13 @@ entry(
     label = "Cds-CdCt_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14850,13 +14936,13 @@ entry(
     label = "Cds-CdCt_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14871,13 +14957,13 @@ entry(
     label = "Cds-CdCt_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14892,14 +14978,14 @@ entry(
     label = "Cds-CdCt_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14914,14 +15000,14 @@ entry(
     label = "Cds-CdCt_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Ct 0 {1,S}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Ct u0 {1,S}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14936,13 +15022,13 @@ entry(
     label = "Cds-CdCt_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Ct            0 {1,S}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Ct                    u0 {1,S}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14957,13 +15043,13 @@ entry(
     label = "Cds-CdCt_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14978,13 +15064,13 @@ entry(
     label = "Cds-CdCt_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -14999,13 +15085,13 @@ entry(
     label = "Cds-CdCt_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15020,14 +15106,14 @@ entry(
     label = "Cds-CdCt_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15042,14 +15128,14 @@ entry(
     label = "Cds-CdCt_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Ct 0 {1,S}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Ct u0 {1,S}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15064,13 +15150,13 @@ entry(
     label = "Cds-CdCt_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Ct            0 {1,S}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Ct                    u0 {1,S}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15085,13 +15171,13 @@ entry(
     label = "Cds-CdCt_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15106,13 +15192,13 @@ entry(
     label = "Cds-CdCt_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15127,13 +15213,13 @@ entry(
     label = "Cds-CdCt_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15148,14 +15234,14 @@ entry(
     label = "Cds-CdCt_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15170,14 +15256,14 @@ entry(
     label = "Cds-CdCt_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Ct 0 {1,S}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Ct u0 {1,S}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15192,13 +15278,13 @@ entry(
     label = "Cds-CdCt_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Ct            0 {1,S}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Ct                    u0 {1,S}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15213,13 +15299,13 @@ entry(
     label = "Cds-CdCt_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15234,13 +15320,13 @@ entry(
     label = "Cds-CdCt_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15255,13 +15341,13 @@ entry(
     label = "Cds-CdCt_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15276,14 +15362,14 @@ entry(
     label = "Cds-CdCt_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {8,D}
-7    C  0 {3,D}
-8    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {8,D}
+7    C  u0 {3,D}
+8    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15298,14 +15384,14 @@ entry(
     label = "Cds-CdCt_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Ct 0 {1,S}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Ct u0 {1,S}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15320,13 +15406,13 @@ entry(
     label = "Cds-CdCt_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Ct            0 {1,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Ct                    u0 {1,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15341,13 +15427,13 @@ entry(
     label = "Cds-CdCt_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15362,13 +15448,13 @@ entry(
     label = "Cds-CdCt_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15383,13 +15469,13 @@ entry(
     label = "Cds-CdCt_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15404,13 +15490,13 @@ entry(
     label = "Cds-CdCt_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15425,13 +15511,13 @@ entry(
     label = "Cds-CdCt_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15446,13 +15532,13 @@ entry(
     label = "Cds-CdCt_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15467,14 +15553,14 @@ entry(
     label = "Cds-CdCt_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15489,14 +15575,14 @@ entry(
     label = "Cds-CdCt_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15511,14 +15597,14 @@ entry(
     label = "Cds-CdCt_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15533,14 +15619,14 @@ entry(
     label = "Cds-CdCt_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Ct 0 {1,S}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Ct u0 {1,S}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15555,14 +15641,14 @@ entry(
     label = "Cds-CdCt_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Ct 0 {1,S}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Ct u0 {1,S}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15577,14 +15663,14 @@ entry(
     label = "Cds-CdCt_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Ct 0 {1,S}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Ct u0 {1,S}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15599,15 +15685,15 @@ entry(
     label = "Cds-CdCt_Cds-CdCd",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {8,D}
-6    Cd 0 {2,S} {9,D}
-7    C  0 {3,D}
-8    C  0 {5,D}
-9    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {8,D}
+6    Cd u0 {2,S} {9,D}
+7    C  u0 {3,D}
+8    C  u0 {5,D}
+9    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15622,15 +15708,15 @@ entry(
     label = "Cds-CdCt_Cds-CdC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {9,D}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {9,D}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15645,15 +15731,15 @@ entry(
     label = "Cds-CdCt_Cds-C=SC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {9,D}
-4    Ct 0 {1,S}
-5    Cd 0 {2,S} {7,D}
-6    Cd 0 {2,S} {8,D}
-7    Sd 0 {5,D}
-8    Sd 0 {6,D}
-9    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {9,D}
+4    Ct u0 {1,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {2,S} {8,D}
+7    Sd u0 {5,D}
+8    Sd u0 {6,D}
+9    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15668,13 +15754,13 @@ entry(
     label = "Cds-CdCb_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cb 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cb u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15689,13 +15775,13 @@ entry(
     label = "Cds-CdCO_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    CO 0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
-7    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    CO u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
+7    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15710,13 +15796,13 @@ entry(
     label = "Cds-CtC=S_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {6,S} {7,S}
-3    Ct 0 {1,S}
-4    Cd 0 {1,S} {5,D}
-5    Sd 0 {4,D}
-6    R  0 {2,S}
-7    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {6,S} {7,S}
+3    Ct u0 {1,S}
+4    Cd u0 {1,S} {5,D}
+5    Sd u0 {4,D}
+6    R  u0 {2,S}
+7    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15731,13 +15817,13 @@ entry(
     label = "Cds-CbC=S_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {6,S} {7,S}
-3    Cb 0 {1,S}
-4    Cd 0 {1,S} {5,D}
-5    Sd 0 {4,D}
-6    R  0 {2,S}
-7    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {6,S} {7,S}
+3    Cb u0 {1,S}
+4    Cd u0 {1,S} {5,D}
+5    Sd u0 {4,D}
+6    R  u0 {2,S}
+7    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15752,13 +15838,13 @@ entry(
     label = "Cds-COC=S_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {6,S} {7,S}
-3    CO 0 {1,S}
-4    Cd 0 {1,S} {5,D}
-5    Sd 0 {4,D}
-6    R  0 {2,S}
-7    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {6,S} {7,S}
+3    CO u0 {1,S}
+4    Cd u0 {1,S} {5,D}
+5    Sd u0 {4,D}
+6    R  u0 {2,S}
+7    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15773,14 +15859,14 @@ entry(
     label = "Cds-CdCd_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    R  0 {2,S}
-6    R  0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15795,14 +15881,14 @@ entry(
     label = "Cds-CdCd_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    H  0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15817,14 +15903,14 @@ entry(
     label = "Cds-CdCd_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15839,14 +15925,14 @@ entry(
     label = "Cds-CdCd_Cds-CsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cs 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cs u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15861,14 +15947,14 @@ entry(
     label = "Cds-CdCd_Cds-OsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Os 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Os u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15883,14 +15969,14 @@ entry(
     label = "Cds-CdCd_Cds-OsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Os 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Os u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15905,14 +15991,14 @@ entry(
     label = "Cds-CdCd_Cds-OsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Os 0 {2,S}
-6    Os 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Os u0 {2,S}
+6    Os u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15927,14 +16013,14 @@ entry(
     label = "Cds-CdCd_Cds-SsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ss 0 {2,S}
-6    H  0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ss u0 {2,S}
+6    H  u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15949,14 +16035,14 @@ entry(
     label = "Cds-CdCd_Cds-SsCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ss 0 {2,S}
-6    Cs 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ss u0 {2,S}
+6    Cs u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15971,14 +16057,14 @@ entry(
     label = "Cds-CdCd_Cds-SsOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ss 0 {2,S}
-6    Os 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ss u0 {2,S}
+6    Os u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -15993,14 +16079,14 @@ entry(
     label = "Cds-CdCd_Cds-SsSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ss 0 {2,S}
-6    Ss 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ss u0 {2,S}
+6    Ss u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16015,14 +16101,14 @@ entry(
     label = "Cds-CdCd_Cds-OneDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cd            0 {1,S} {8,D}
-5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
-8    C             0 {4,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cd                    u0 {1,S} {8,D}
+5    R                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
+8    C                     u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16037,14 +16123,14 @@ entry(
     label = "Cds-CdCd_Cds-OneDeH",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cd            0 {1,S} {8,D}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
-8    C             0 {4,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cd                    u0 {1,S} {8,D}
+5    H                     u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
+8    C                     u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16059,14 +16145,14 @@ entry(
     label = "Cds-CdCd_Cds-CtH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    H  0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    H  u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16081,14 +16167,14 @@ entry(
     label = "Cds-CdCd_Cds-CbH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    H  0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    H  u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16103,14 +16189,14 @@ entry(
     label = "Cds-CdCd_Cds-COH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    H  0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    H  u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16125,15 +16211,15 @@ entry(
     label = "Cds-CdCd_Cds-CdH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {9,D}
-7    C  0 {3,D}
-8    C  0 {4,D}
-9    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {9,D}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
+9    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16148,15 +16234,15 @@ entry(
     label = "Cds-CdCd_Cds-C=SH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cd 0 {1,S} {9,D}
-5    H  0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cd u0 {1,S} {9,D}
+5    H  u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16171,14 +16257,14 @@ entry(
     label = "Cds-CdCd_Cds-OneDeCs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cd            0 {1,S} {8,D}
-5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
-8    C             0 {4,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cd                    u0 {1,S} {8,D}
+5    Cs                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
+8    C                     u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16193,14 +16279,14 @@ entry(
     label = "Cds-CdCd_Cds-CtCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cs 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cs u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16215,14 +16301,14 @@ entry(
     label = "Cds-CdCd_Cds-CbCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cs 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cs u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16237,14 +16323,14 @@ entry(
     label = "Cds-CdCd_Cds-COCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cs 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cs u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16259,15 +16345,15 @@ entry(
     label = "Cds-CdCd_Cds-CdCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {9,D}
-7    C  0 {3,D}
-8    C  0 {4,D}
-9    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {9,D}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
+9    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16282,15 +16368,15 @@ entry(
     label = "Cds-CdCd_Cds-C=SCs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cd 0 {1,S} {9,D}
-5    Cs 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cd u0 {1,S} {9,D}
+5    Cs u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16305,14 +16391,14 @@ entry(
     label = "Cds-CdCd_Cds-OneDeOs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cd            0 {1,S} {8,D}
-5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
-8    C             0 {4,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cd                    u0 {1,S} {8,D}
+5    Os                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
+8    C                     u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16327,14 +16413,14 @@ entry(
     label = "Cds-CdCd_Cds-CtOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Os 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Os u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16349,14 +16435,14 @@ entry(
     label = "Cds-CdCd_Cds-CbOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Os 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Os u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16371,14 +16457,14 @@ entry(
     label = "Cds-CdCd_Cds-COOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Os 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Os u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16393,15 +16479,15 @@ entry(
     label = "Cds-CdCd_Cds-CdOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {9,D}
-7    C  0 {3,D}
-8    C  0 {4,D}
-9    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {9,D}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
+9    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16416,15 +16502,15 @@ entry(
     label = "Cds-CdCd_Cds-C=SOs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cd 0 {1,S} {9,D}
-5    Os 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cd u0 {1,S} {9,D}
+5    Os u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16439,14 +16525,14 @@ entry(
     label = "Cds-CdCd_Cds-OneDeSs",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cd            0 {1,S} {8,D}
-5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
-8    C             0 {4,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cd                    u0 {1,S} {8,D}
+5    Ss                    u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
+8    C                     u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16461,14 +16547,14 @@ entry(
     label = "Cds-CdCd_Cds-CtSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ss 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ss u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16483,14 +16569,14 @@ entry(
     label = "Cds-CdCd_Cds-CbSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ss 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ss u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16505,14 +16591,14 @@ entry(
     label = "Cds-CdCd_Cds-COSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ss 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ss u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16527,15 +16613,15 @@ entry(
     label = "Cds-CdCd_Cds-CdSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {9,D}
-7    C  0 {3,D}
-8    C  0 {4,D}
-9    C  0 {6,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {9,D}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
+9    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16550,15 +16636,15 @@ entry(
     label = "Cds-CdCd_Cds-C=SSs",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cd 0 {1,S} {9,D}
-5    Ss 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cd u0 {1,S} {9,D}
+5    Ss u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16573,14 +16659,14 @@ entry(
     label = "Cds-CdCd_Cds-TwoDe",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    Cd            0 {1,S} {7,D}
-4    Cd            0 {1,S} {8,D}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-7    C             0 {3,D}
-8    C             0 {4,D}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    Cd                    u0 {1,S} {7,D}
+4    Cd                    u0 {1,S} {8,D}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+6    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+7    C                     u0 {3,D}
+8    C                     u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16595,14 +16681,14 @@ entry(
     label = "Cds-CdCd_Cds-CtCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ct 0 {2,S}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ct u0 {2,S}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16617,14 +16703,14 @@ entry(
     label = "Cds-CdCd_Cds-CtCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ct 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ct u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16639,14 +16725,14 @@ entry(
     label = "Cds-CdCd_Cds-CtCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Ct 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Ct u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16661,14 +16747,14 @@ entry(
     label = "Cds-CdCd_Cds-CbCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cb 0 {2,S}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cb u0 {2,S}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16683,14 +16769,14 @@ entry(
     label = "Cds-CdCd_Cds-CbCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cb 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cb u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16705,14 +16791,14 @@ entry(
     label = "Cds-CdCd_Cds-COCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    CO 0 {2,S}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    CO u0 {2,S}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16727,15 +16813,15 @@ entry(
     label = "Cds-CdCd_Cds-CdCt",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cd 0 {2,S} {9,D}
-6    Ct 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
-9    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cd u0 {2,S} {9,D}
+6    Ct u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
+9    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16750,15 +16836,15 @@ entry(
     label = "Cds-CdCd_Cds-CdCb",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cd 0 {2,S} {9,D}
-6    Cb 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
-9    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cd u0 {2,S} {9,D}
+6    Cb u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
+9    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16773,15 +16859,15 @@ entry(
     label = "Cds-CdCd_Cds-CdCO",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {7,D}
-4    Cd 0 {1,S} {8,D}
-5    Cd 0 {2,S} {9,D}
-6    CO 0 {2,S}
-7    C  0 {3,D}
-8    C  0 {4,D}
-9    C  0 {5,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cd u0 {1,S} {8,D}
+5    Cd u0 {2,S} {9,D}
+6    CO u0 {2,S}
+7    C  u0 {3,D}
+8    C  u0 {4,D}
+9    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16796,15 +16882,15 @@ entry(
     label = "Cds-CdCd_Cds-CtC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cd 0 {1,S} {9,D}
-5    Ct 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cd u0 {1,S} {9,D}
+5    Ct u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16819,15 +16905,15 @@ entry(
     label = "Cds-CdCd_Cds-CbC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cd 0 {1,S} {9,D}
-5    Cb 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cd u0 {1,S} {9,D}
+5    Cb u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16842,15 +16928,15 @@ entry(
     label = "Cds-CdCd_Cds-COC=S",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {8,D}
-4    Cd 0 {1,S} {9,D}
-5    CO 0 {2,S}
-6    Cd 0 {2,S} {7,D}
-7    Sd 0 {6,D}
-8    C  0 {3,D}
-9    C  0 {4,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cd u0 {1,S} {9,D}
+5    CO u0 {2,S}
+6    Cd u0 {2,S} {7,D}
+7    Sd u0 {6,D}
+8    C  u0 {3,D}
+9    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16865,16 +16951,16 @@ entry(
     label = "Cds-CdCd_Cds-CdCd",
     group = 
 """
-1  *1 Cd 0 {2,D} {3,S} {4,S}
-2  *2 Cd 0 {1,D} {5,S} {6,S}
-3     Cd 0 {1,S} {7,D}
-4     Cd 0 {1,S} {8,D}
-5     Cd 0 {2,S} {9,D}
-6     Cd 0 {2,S} {10,D}
-7     C  0 {3,D}
-8     C  0 {4,D}
-9     C  0 {5,D}
-10    C  0 {6,D}
+1  *1 Cd u0 {2,D} {3,S} {4,S}
+2  *2 Cd u0 {1,D} {5,S} {6,S}
+3     Cd u0 {1,S} {7,D}
+4     Cd u0 {1,S} {8,D}
+5     Cd u0 {2,S} {9,D}
+6     Cd u0 {2,S} {10,D}
+7     C  u0 {3,D}
+8     C  u0 {4,D}
+9     C  u0 {5,D}
+10    C  u0 {6,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16889,16 +16975,16 @@ entry(
     label = "Cds-CdCd_Cds-CdC=S",
     group = 
 """
-1  *1 Cd 0 {2,D} {3,S} {4,S}
-2  *2 Cd 0 {1,D} {5,S} {6,S}
-3     Cd 0 {1,S} {8,D}
-4     Cd 0 {1,S} {9,D}
-5     Cd 0 {2,S} {10,D}
-6     Cd 0 {2,S} {7,D}
-7     Sd 0 {6,D}
-8     C  0 {3,D}
-9     C  0 {4,D}
-10    C  0 {5,D}
+1  *1 Cd u0 {2,D} {3,S} {4,S}
+2  *2 Cd u0 {1,D} {5,S} {6,S}
+3     Cd u0 {1,S} {8,D}
+4     Cd u0 {1,S} {9,D}
+5     Cd u0 {2,S} {10,D}
+6     Cd u0 {2,S} {7,D}
+7     Sd u0 {6,D}
+8     C  u0 {3,D}
+9     C  u0 {4,D}
+10    C  u0 {5,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16913,16 +16999,16 @@ entry(
     label = "Cds-CdCd_Cds-C=SC=S",
     group = 
 """
-1  *1 Cd 0 {2,D} {3,S} {4,S}
-2  *2 Cd 0 {1,D} {5,S} {6,S}
-3     Cd 0 {1,S} {9,D}
-4     Cd 0 {1,S} {10,D}
-5     Cd 0 {2,S} {7,D}
-6     Cd 0 {2,S} {8,D}
-7     Sd 0 {5,D}
-8     Sd 0 {6,D}
-9     C  0 {3,D}
-10    C  0 {4,D}
+1  *1 Cd u0 {2,D} {3,S} {4,S}
+2  *2 Cd u0 {1,D} {5,S} {6,S}
+3     Cd u0 {1,S} {9,D}
+4     Cd u0 {1,S} {10,D}
+5     Cd u0 {2,S} {7,D}
+6     Cd u0 {2,S} {8,D}
+7     Sd u0 {5,D}
+8     Sd u0 {6,D}
+9     C  u0 {3,D}
+10    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16937,14 +17023,14 @@ entry(
     label = "Cds-CdC=S_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {6,S} {7,S}
-3    Cd 0 {1,S} {8,D}
-4    Cd 0 {1,S} {5,D}
-5    Sd 0 {4,D}
-6    R  0 {2,S}
-7    R  0 {2,S}
-8    C  0 {3,D}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {6,S} {7,S}
+3    Cd u0 {1,S} {8,D}
+4    Cd u0 {1,S} {5,D}
+5    Sd u0 {4,D}
+6    R  u0 {2,S}
+7    R  u0 {2,S}
+8    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16959,14 +17045,14 @@ entry(
     label = "Cds-C=SC=S_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {7,S} {8,S}
-3    Cd 0 {1,S} {5,D}
-4    Cd 0 {1,S} {6,D}
-5    Sd 0 {3,D}
-6    Sd 0 {4,D}
-7    R  0 {2,S}
-8    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {7,S} {8,S}
+3    Cd u0 {1,S} {5,D}
+4    Cd u0 {1,S} {6,D}
+5    Sd u0 {3,D}
+6    Sd u0 {4,D}
+7    R  u0 {2,S}
+8    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -16981,12 +17067,12 @@ entry(
     label = "Cds-OJH_Cds",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    O  1 {1,S}
-4    H  0 {1,S}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    O  u1 {1,S}
+4    H  u0 {1,S}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17001,12 +17087,12 @@ entry(
     label = "Cds-OJH_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    O  1 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    O  u1 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17021,12 +17107,12 @@ entry(
     label = "Cds-OJH_Cds-CsH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    O  1 {1,S}
-4    H  0 {1,S}
-5    Cs 0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    O  u1 {1,S}
+4    H  u0 {1,S}
+5    Cs u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17041,12 +17127,12 @@ entry(
     label = "Cds-OJNonDe_Cds",
     group = 
 """
-1 *1 Cd         0 {2,D} {3,S} {4,S}
-2 *2 Cd         0 {1,D} {5,S} {6,S}
-3    O          1 {1,S}
-4    {Cs,Os,Ss,N3s,N5s} 0 {1,S}
-5    R          0 {2,S}
-6    R          0 {2,S}
+1 *1 Cd                 u0 {2,D} {3,S} {4,S}
+2 *2 Cd                 u0 {1,D} {5,S} {6,S}
+3    O                  u1 {1,S}
+4    [Cs,Os,Ss,N3s,N5s] u0 {1,S}
+5    R                  u0 {2,S}
+6    R                  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17061,12 +17147,12 @@ entry(
     label = "Cds-OJCs_Cds-HH",
     group = 
 """
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    O  1 {1,S}
-4    Cs 0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
+1 *1 Cd u0 {2,D} {3,S} {4,S}
+2 *2 Cd u0 {1,D} {5,S} {6,S}
+3    O  u1 {1,S}
+4    Cs u0 {1,S}
+5    H  u0 {2,S}
+6    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17081,12 +17167,12 @@ entry(
     label = "Cds-OJDe_Cds",
     group = 
 """
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    O             1 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-5    R             0 {2,S}
-6    R             0 {2,S}
+1 *1 Cd                    u0 {2,D} {3,S} {4,S}
+2 *2 Cd                    u0 {1,D} {5,S} {6,S}
+3    O                     u1 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+5    R                     u0 {2,S}
+6    R                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17101,8 +17187,8 @@ entry(
     label = "Ct_R",
     group = 
 """
-1 *1 Ct 0 {2,T}
-2 *2 R  0 {1,T}
+1 *1 Ct u0 {2,T}
+2 *2 R  u0 {1,T}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17117,8 +17203,8 @@ entry(
     label = "Ct_Ct",
     group = 
 """
-1 *1 Ct 0 {2,T}
-2 *2 Ct 0 {1,T}
+1 *1 Ct u0 {2,T}
+2 *2 Ct u0 {1,T}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17133,10 +17219,10 @@ entry(
     label = "Ct-H_Ct-H",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    H  u0 {1,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17151,10 +17237,10 @@ entry(
     label = "Ct-H_Ct-Cs",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    H  0 {1,S}
-4    Cs 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    H  u0 {1,S}
+4    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17169,10 +17255,10 @@ entry(
     label = "Ct-Cs_Ct-H",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cs 0 {1,S}
-4    H  0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cs u0 {1,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17187,10 +17273,10 @@ entry(
     label = "Ct-Cs_Ct-Cs",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cs 0 {1,S}
-4    Cs 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cs u0 {1,S}
+4    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17205,10 +17291,10 @@ entry(
     label = "Ct-H_Ct-De",
     group = 
 """
-1 *1 Ct            0 {2,T} {3,S}
-2 *2 Ct            0 {1,T} {4,S}
-3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Ct                    u0 {2,T} {3,S}
+2 *2 Ct                    u0 {1,T} {4,S}
+3    H                     u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17223,10 +17309,10 @@ entry(
     label = "Ct-H_Ct-Ct",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    H  0 {1,S}
-4    Ct 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    H  u0 {1,S}
+4    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17241,10 +17327,10 @@ entry(
     label = "Ct-H_Ct-Cb",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    H  0 {1,S}
-4    Cb 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    H  u0 {1,S}
+4    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17259,10 +17345,10 @@ entry(
     label = "Ct-H_Ct-CO",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    H  0 {1,S}
-4    CO 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    H  u0 {1,S}
+4    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17277,11 +17363,11 @@ entry(
     label = "Ct-H_Ct-Cd",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    H  0 {1,S}
-4    Cd 0 {2,S} {5,D}
-5    C  0 {4,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    H  u0 {1,S}
+4    Cd u0 {2,S} {5,D}
+5    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17296,11 +17382,11 @@ entry(
     label = "Ct-H_Ct-C=S",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    H  0 {1,S}
-4    Cd 0 {2,S} {5,D}
-5    Sd 0 {4,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    H  u0 {1,S}
+4    Cd u0 {2,S} {5,D}
+5    Sd u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17315,10 +17401,10 @@ entry(
     label = "Ct-Cs_Ct-De",
     group = 
 """
-1 *1 Ct            0 {2,T} {3,S}
-2 *2 Ct            0 {1,T} {4,S}
-3    Cs            0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Ct                    u0 {2,T} {3,S}
+2 *2 Ct                    u0 {1,T} {4,S}
+3    Cs                    u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17333,10 +17419,10 @@ entry(
     label = "Ct-Cs_Ct-Ct",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cs 0 {1,S}
-4    Ct 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cs u0 {1,S}
+4    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17351,10 +17437,10 @@ entry(
     label = "Ct-Cs_Ct-Cb",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cs 0 {1,S}
-4    Cb 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cs u0 {1,S}
+4    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17369,10 +17455,10 @@ entry(
     label = "Ct-Cs_Ct-CO",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cs 0 {1,S}
-4    CO 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cs u0 {1,S}
+4    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17387,11 +17473,11 @@ entry(
     label = "Ct-Cs_Ct-Cd",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cs 0 {1,S}
-4    Cd 0 {2,S} {5,D}
-5    C  0 {4,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cs u0 {1,S}
+4    Cd u0 {2,S} {5,D}
+5    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17406,11 +17492,11 @@ entry(
     label = "Ct-Cs_Ct-C=S",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cs 0 {1,S}
-4    Cd 0 {2,S} {5,D}
-5    Sd 0 {4,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cs u0 {1,S}
+4    Cd u0 {2,S} {5,D}
+5    Sd u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17425,10 +17511,10 @@ entry(
     label = "Ct-De_Ct-H",
     group = 
 """
-1 *1 Ct            0 {2,T} {3,S}
-2 *2 Ct            0 {1,T} {4,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    H             0 {2,S}
+1 *1 Ct                    u0 {2,T} {3,S}
+2 *2 Ct                    u0 {1,T} {4,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    H                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17443,10 +17529,10 @@ entry(
     label = "Ct-Cb_Ct-H",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cb 0 {1,S}
-4    H  0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cb u0 {1,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17461,10 +17547,10 @@ entry(
     label = "Ct-CO_Ct-H",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    CO 0 {1,S}
-4    H  0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    CO u0 {1,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17479,11 +17565,11 @@ entry(
     label = "Ct-Cd_Ct-H",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cd 0 {1,S} {5,D}
-4    H  0 {2,S}
-5    C  0 {3,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cd u0 {1,S} {5,D}
+4    H  u0 {2,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17498,11 +17584,11 @@ entry(
     label = "Ct-Ct_Ct-H",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Ct 0 {1,S} {5,T}
-4    H  0 {2,S}
-5    Ct  0 {3,T}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Ct u0 {1,S} {5,T}
+4    H  u0 {2,S}
+5    Ct u0 {3,T}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17517,11 +17603,11 @@ entry(
     label = "Ct-C=S_Ct-H",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cd 0 {1,S} {5,D}
-4    H  0 {2,S}
-5    Sd 0 {3,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cd u0 {1,S} {5,D}
+4    H  u0 {2,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17536,10 +17622,10 @@ entry(
     label = "Ct-De_Ct-Cs",
     group = 
 """
-1 *1 Ct            0 {2,T} {3,S}
-2 *2 Ct            0 {1,T} {4,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    Cs            0 {2,S}
+1 *1 Ct                    u0 {2,T} {3,S}
+2 *2 Ct                    u0 {1,T} {4,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    Cs                    u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17554,10 +17640,10 @@ entry(
     label = "Ct-Cb_Ct-Cs",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cb 0 {1,S}
-4    Cs 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cb u0 {1,S}
+4    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17572,10 +17658,10 @@ entry(
     label = "Ct-CO_Ct-Cs",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    CO 0 {1,S}
-4    Cs 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    CO u0 {1,S}
+4    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17590,11 +17676,11 @@ entry(
     label = "Ct-Cd_Ct-Cs",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Ct 0 {1,S} {5,T}
-4    Cs 0 {2,S}
-5    Ct  0 {3,T}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Ct u0 {1,S} {5,T}
+4    Cs u0 {2,S}
+5    Ct u0 {3,T}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17609,11 +17695,11 @@ entry(
     label = "Ct-Ct_Ct-Cs",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cd 0 {1,S} {5,D}
-4    Cs 0 {2,S}
-5    C  0 {3,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cd u0 {1,S} {5,D}
+4    Cs u0 {2,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17628,11 +17714,11 @@ entry(
     label = "Ct-C=S_Ct-Cs",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cd 0 {1,S} {5,D}
-4    Cs 0 {2,S}
-5    Sd 0 {3,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cd u0 {1,S} {5,D}
+4    Cs u0 {2,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17647,10 +17733,10 @@ entry(
     label = "Ct-De_Ct-De",
     group = 
 """
-1 *1 Ct            0 {2,T} {3,S}
-2 *2 Ct            0 {1,T} {4,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Ct                    u0 {2,T} {3,S}
+2 *2 Ct                    u0 {1,T} {4,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17665,10 +17751,10 @@ entry(
     label = "Ct-Ct_Ct-Ct",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Ct 0 {1,S}
-4    Ct 0 {2,S}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Ct u0 {1,S}
+4    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17683,11 +17769,11 @@ entry(
     label = "Ct-Cd_Ct-Ct",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cd 0 {1,S} {5,D}
-4    Ct 0 {2,S}
-5    C  0 {3,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cd u0 {1,S} {5,D}
+4    Ct u0 {2,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17702,11 +17788,11 @@ entry(
     label = "Ct-Ct_Ct-Cd",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Ct 0 {1,S}
-4    Cd 0 {2,S} {5,D}
-5    C  0 {4,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Ct u0 {1,S}
+4    Cd u0 {2,S} {5,D}
+5    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17721,12 +17807,111 @@ entry(
     label = "Ct-Cd_Ct-Cd",
     group = 
 """
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    Cd 0 {1,S} {5,D}
-4    Cd 0 {2,S} {6,D}
-5    C  0 {3,D}
-6    C  0 {4,D}
+1 *1 Ct u0 {2,T} {3,S}
+2 *2 Ct u0 {1,T} {4,S}
+3    Cd u0 {1,S} {5,D}
+4    Cd u0 {2,S} {6,D}
+5    C  u0 {3,D}
+6    C  u0 {4,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 300,
+    label = "Ct_Nt",
+    group = 
+"""
+1 *1 Ct        u0 {2,T}
+2 *2 [N3t,N5t] u0 {1,T}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 301,
+    label = "Ct_N3t",
+    group = 
+"""
+1 *1 Ct  u0 {2,T}
+2 *2 N3t u0 {1,T}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 303,
+    label = "Ct-H_N3t",
+    group = 
+"""
+1 *1 Ct  u0 {2,T} {3,S}
+2 *2 N3t u0 {1,T}
+3    H   u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 304,
+    label = "Ct-NonDe_N3t",
+    group = 
+"""
+1 *1 Ct                 u0 {2,T} {3,S}
+2 *2 N3t                u0 {1,T}
+3    [Cs,N3s,N5s,Os,Ss] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 305,
+    label = "Ct-OneDe_N3t",
+    group = 
+"""
+1 *1 Ct                    u0 {2,T} {3,S}
+2 *2 N3t                   u0 {1,T}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 302,
+    label = "Ct_N5t",
+    group = 
+"""
+1 *1 Ct  u0 {2,T}
+2 *2 N5t u0 {1,T}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17741,8 +17926,8 @@ entry(
     label = "Od_R",
     group = 
 """
-1 *1 Od    0 {2,D}
-2 *2 R!H 0 {1,D}
+1 *1 Od  u0 {2,D}
+2 *2 R!H u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17757,9 +17942,9 @@ entry(
     label = "Od_Cdd",
     group = 
 """
-1 *1 Od 0 {2,D}
-2 *2 C  0 {1,D} {3,D}
-3    R  0 {2,D}
+1 *1 Od u0 {2,D}
+2 *2 C  u0 {1,D} {3,D}
+3    R  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17774,9 +17959,9 @@ entry(
     label = "Od_Cdd-Od",
     group = 
 """
-1 *1 Od 0 {2,D}
-2 *2 C  0 {1,D} {3,D}
-3    O  0 {2,D}
+1 *1 Od u0 {2,D}
+2 *2 C  u0 {1,D} {3,D}
+3    O  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17791,10 +17976,10 @@ entry(
     label = "Od_Cd",
     group = 
 """
-1 *1 Od 0 {2,D}
-2 *2 C  0 {1,D} {3,S} {4,S}
-3    R  0 {2,S}
-4    R  0 {2,S}
+1 *1 Od u0 {2,D}
+2 *2 C  u0 {1,D} {3,S} {4,S}
+3    R  u0 {2,S}
+4    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17809,10 +17994,613 @@ entry(
     label = "Od_Cd-CsH",
     group = 
 """
-1 *1 Od 0 {2,D}
-2 *2 CO 0 {1,D} {3,S} {4,S}
-3    Cs 0 {2,S}
-4    H  0 {2,S}
+1 *1 Od u0 {2,D}
+2 *2 CO u0 {1,D} {3,S} {4,S}
+3    Cs u0 {2,S}
+4    H  u0 {2,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 311,
+    label = "Od_Nd",
+    group = 
+"""
+1 *1 Od u0 {2,D}
+2 *2 N  u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 312,
+    label = "Od_N3d",
+    group = 
+"""
+1 *1 Od  u0 {2,D}
+2 *2 N3d u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 313,
+    label = "Od_N5d",
+    group = 
+"""
+1 *1 Od  u0 {2,D}
+2 *2 N5d u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 314,
+    label = "Nd_R",
+    group = "OR{N1d_R, N3d_R}",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 394,
+    label = "N1d_R",
+    group = 
+"""
+1 *1 N1d u0 p2 {2,D}
+2 *2 R!H u0 p0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 316,
+    label = "N3d_R",
+    group = 
+"""
+1 *1 N3d u0 {2,D}
+2 *2 R!H u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 317,
+    label = "N3d_Cd",
+    group = 
+"""
+1 *1 N3d      u0 {2,D}
+2 *2 [Cd,Cdd] u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 318,
+    label = "N3d_Cds",
+    group = 
+"""
+1 *1 N3d u0 {2,D}
+2 *2 Cd  u0 {1,D} {3,S} {4,S}
+3    R   u0 {2,S}
+4    R   u0 {2,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 319,
+    label = "N3d-H_Cds",
+    group = 
+"""
+1 *1 N3d u0 {2,D} {5,S}
+2 *2 Cd  u0 {1,D} {3,S} {4,S}
+3    R   u0 {2,S}
+4    R   u0 {2,S}
+5    H   u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 320,
+    label = "N3d-H_Cds-HH",
+    group = 
+"""
+1 *1 N3d u0 {2,D} {5,S}
+2 *2 Cd  u0 {1,D} {3,S} {4,S}
+3    H   u0 {2,S}
+4    H   u0 {2,S}
+5    H   u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 321,
+    label = "N3d-H_Cds-NonDeH",
+    group = 
+"""
+1 *1 N3d                u0 {2,D} {5,S}
+2 *2 Cd                 u0 {1,D} {3,S} {4,S}
+3    [Cs,Os,Ss,N3s,N5s] u0 {2,S}
+4    H                  u0 {2,S}
+5    H                  u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 322,
+    label = "N3d-H_Cds-NonDe2",
+    group = 
+"""
+1 *1 N3d                u0 {2,D} {5,S}
+2 *2 Cd                 u0 {1,D} {3,S} {4,S}
+3    [Cs,Os,Ss,N3s,N5s] u0 {2,S}
+4    [Cs,Os,Ss,N3s,N5s] u0 {2,S}
+5    H                  u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 323,
+    label = "N3d-NonDe_Cds",
+    group = 
+"""
+1 *1 N3d                u0 {2,D} {5,S}
+2 *2 Cd                 u0 {1,D} {3,S} {4,S}
+3    R!H                u0 {2,S}
+4    R!H                u0 {2,S}
+5    [Cs,N3s,N5s,Os,Ss] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 324,
+    label = "N3d-OneDe_Cds",
+    group = 
+"""
+1 *1 N3d                   u0 {2,D} {5,S}
+2 *2 Cd                    u0 {1,D} {3,S} {4,S}
+3    R!H                   u0 {2,S}
+4    R!H                   u0 {2,S}
+5    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 325,
+    label = "N3d_Cdd",
+    group = 
+"""
+1 *1 N3d u0 {2,D}
+2 *2 Cdd u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 326,
+    label = "N3d_Od",
+    group = 
+"""
+1 *1 N3d u0 {2,D}
+2 *2 Od  u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 327,
+    label = "N3d-H_Od",
+    group = 
+"""
+1 *1 N3d u0 {2,D} {3,S}
+2 *2 Od  u0 {1,D}
+3    H   u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 328,
+    label = "N3d-NonDe_Od",
+    group = 
+"""
+1 *1 N3d            u0 {2,D} {3,S}
+2 *2 Od             u0 {1,D}
+3    [Cs,N3s,Os,Ss] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 329,
+    label = "N3d-OneDe_Od",
+    group = 
+"""
+1 *1 N3d                   u0 {2,D} {3,S}
+2 *2 Od                    u0 {1,D}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 330,
+    label = "N3d_Nd",
+    group = 
+"""
+1 *1 N3d u0 {2,D}
+2 *2 N   u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 330,
+    label = "N3d_N3d",
+    group = 
+"""
+1 *1 N3d u0 {2,D}
+2 *2 N3d u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 331,
+    label = "N3d-H_N3d",
+    group = 
+"""
+1 *1 N3d u0 {2,D} {3,S}
+2 *2 N3d u0 {1,D}
+3    H   u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 332,
+    label = "N3d-H_N3d-H",
+    group = 
+"""
+1 *1 N3d u0 {2,D} {3,S}
+2 *2 N3d u0 {1,D} {4,S}
+3    H   u0 {1,S}
+4    H   u0 {2,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 333,
+    label = "N3d-H_N3d-NonDe",
+    group = 
+"""
+1 *1 N3d            u0 {2,D} {3,S}
+2 *2 N3d            u0 {1,D} {4,S}
+3    H              u0 {1,S}
+4    [Cs,N3s,Os,Ss] u0 {2,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 334,
+    label = "N3d-H_N3d-OneDe",
+    group = 
+"""
+1 *1 N3d                   u0 {2,D} {3,S}
+2 *2 N3d                   u0 {1,D} {4,S}
+3    H                     u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 335,
+    label = "N3d-NonDe_N3d",
+    group = 
+"""
+1 *1 N3d            u0 {2,D} {3,S}
+2 *2 N3d            u0 {1,D}
+3    [Cs,N3s,Os,Ss] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 336,
+    label = "N3d-OneDe_N3d",
+    group = 
+"""
+1 *1 N3d                   u0 {2,D} {3,S}
+2 *2 N3d                   u0 {1,D}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 337,
+    label = "N3d_N5d",
+    group = 
+"""
+1 *1 N3d       u0 {2,D}
+2 *2 [N5d,N5t] u0 {1,D}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 314,
+    label = "Nt_R",
+    group = "OR{N3t_R, N5t_R}",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 338,
+    label = "N3t_R",
+    group = 
+"""
+1 *1 N3t u0 {2,T}
+2 *2 R!H u0 {1,T}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 339,
+    label = "N3t_Ct",
+    group = 
+"""
+1 *1 N3t u0 {2,T}
+2 *2 Ct  u0 {1,T}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 339,
+    label = "N3t_Ct-H",
+    group = 
+"""
+1 *1 N3t u0 {2,T}
+2 *2 Ct  u0 {1,T} {3,S}
+3    H   u0 {2,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 340,
+    label = "N3t_Ct-NonDe",
+    group = 
+"""
+1 *1 N3t                u0 {2,T}
+2 *2 Ct                 u0 {1,T} {3,S}
+3    [Cs,N3s,N5s,Os,Ss] u0 {2,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 341,
+    label = "N3t_Ct-OneDe",
+    group = 
+"""
+1 *1 N3t                   u0 {2,T}
+2 *2 Ct                    u0 {1,T} {3,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 342,
+    label = "N3t_N3t",
+    group = 
+"""
+1 *1 N3t u0 {2,T}
+2 *2 N3t u0 {1,T}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 343,
+    label = "N5t_R",
+    group = 
+"""
+1 *1 N5t u0 {2,T}
+2 *2 R   u0 {1,T}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17827,8 +18615,8 @@ entry(
     label = "Sd_R",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 R  0 {1,D}
+1 *1 Sd u0 {2,D}
+2 *2 R  u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17843,9 +18631,9 @@ entry(
     label = "Sd_Cdd",
     group = 
 """
-1 *1 Sd  0 {2,D}
-2 *2 Cdd 0 {1,D} {3,D}
-3    R   0 {2,D}
+1 *1 Sd  u0 {2,D}
+2 *2 Cdd u0 {1,D} {3,D}
+3    R   u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17860,9 +18648,9 @@ entry(
     label = "Sd_Cdd-Sd",
     group = 
 """
-1 *1 Sd  0 {2,D}
-2 *2 Cdd 0 {1,D} {3,D}
-3    Sd  0 {2,D}
+1 *1 Sd  u0 {2,D}
+2 *2 Cdd u0 {1,D} {3,D}
+3    Sd  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17877,10 +18665,10 @@ entry(
     label = "Sd_Cd",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    R  0 {2,S}
-4    R  0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    R  u0 {2,S}
+4    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17895,10 +18683,10 @@ entry(
     label = "Sd_Cds-HH",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    H  0 {2,S}
-4    H  0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    H  u0 {2,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17913,10 +18701,10 @@ entry(
     label = "Sd_Cds-CsH",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cs 0 {2,S}
-4    H  0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cs u0 {2,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17931,10 +18719,10 @@ entry(
     label = "Sd_Cds-OsH",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Os 0 {2,S}
-4    H  0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Os u0 {2,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17949,10 +18737,10 @@ entry(
     label = "Sd_Cds-OsCs",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Os 0 {2,S}
-4    Cs 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Os u0 {2,S}
+4    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17967,10 +18755,10 @@ entry(
     label = "Sd_Cds-CsCs",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cs 0 {2,S}
-4    Cs 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cs u0 {2,S}
+4    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -17985,10 +18773,10 @@ entry(
     label = "Sd_Cds-OneDeH",
     group = 
 """
-1 *1 Sd            0 {2,D}
-2 *2 Cd            0 {1,D} {3,S} {4,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-4    H             0 {2,S}
+1 *1 Sd                    u0 {2,D}
+2 *2 Cd                    u0 {1,D} {3,S} {4,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+4    H                     u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18003,10 +18791,10 @@ entry(
     label = "Sd_Cds-CtH",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Ct 0 {2,S}
-4    H  0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Ct u0 {2,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18021,10 +18809,10 @@ entry(
     label = "Sd_Cds-CbH",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cb 0 {2,S}
-4    H  0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cb u0 {2,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18039,10 +18827,10 @@ entry(
     label = "Sd_Cds-COH",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    CO 0 {2,S}
-4    H  0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    CO u0 {2,S}
+4    H  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18057,11 +18845,11 @@ entry(
     label = "Sd_Cds-CdH",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {5,D}
-4    H  0 {2,S}
-5    C  0 {3,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {5,D}
+4    H  u0 {2,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18076,11 +18864,11 @@ entry(
     label = "Sd_Cds-C=SH",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {5,D}
-4    H  0 {2,S}
-5    Sd 0 {3,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {5,D}
+4    H  u0 {2,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18095,10 +18883,10 @@ entry(
     label = "Sd_Cds-OneDeCs",
     group = 
 """
-1 *1 Sd            0 {2,D}
-2 *2 Cd            0 {1,D} {3,S} {4,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-4    Cs            0 {2,S}
+1 *1 Sd                    u0 {2,D}
+2 *2 Cd                    u0 {1,D} {3,S} {4,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+4    Cs                    u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18113,10 +18901,10 @@ entry(
     label = "Sd_Cds-CtCs",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Ct 0 {2,S}
-4    Cs 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Ct u0 {2,S}
+4    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18131,10 +18919,10 @@ entry(
     label = "Sd_Cds-CbCs",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cb 0 {2,S}
-4    Cs 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cb u0 {2,S}
+4    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18149,10 +18937,10 @@ entry(
     label = "Sd_Cds-COCs",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    CO 0 {2,S}
-4    Cs 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    CO u0 {2,S}
+4    Cs u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18167,11 +18955,11 @@ entry(
     label = "Sd_Cds-CdCs",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {5,D}
-4    Cs 0 {2,S}
-5    C  0 {3,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {5,D}
+4    Cs u0 {2,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18186,11 +18974,11 @@ entry(
     label = "Sd_Cds-C=SCs",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {5,D}
-4    Cs 0 {2,S}
-5    Sd 0 {3,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {5,D}
+4    Cs u0 {2,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18205,10 +18993,10 @@ entry(
     label = "Sd_Cds-TwoDe",
     group = 
 """
-1 *1 Sd            0 {2,D}
-2 *2 Cd            0 {1,D} {3,S} {4,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+1 *1 Sd                    u0 {2,D}
+2 *2 Cd                    u0 {1,D} {3,S} {4,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18223,10 +19011,10 @@ entry(
     label = "Sd_Cds-CtCt",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Ct 0 {2,S}
-4    Ct 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Ct u0 {2,S}
+4    Ct u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18241,10 +19029,10 @@ entry(
     label = "Sd_Cds-CtCb",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Ct 0 {2,S}
-4    Cb 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Ct u0 {2,S}
+4    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18259,10 +19047,10 @@ entry(
     label = "Sd_Cds-CtCO",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Ct 0 {2,S}
-4    CO 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Ct u0 {2,S}
+4    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18277,10 +19065,10 @@ entry(
     label = "Sd_Cds-CbCb",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cb 0 {2,S}
-4    Cb 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cb u0 {2,S}
+4    Cb u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18295,10 +19083,10 @@ entry(
     label = "Sd_Cds-CbCO",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cb 0 {2,S}
-4    CO 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cb u0 {2,S}
+4    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18313,10 +19101,10 @@ entry(
     label = "Sd_Cds-COCO",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    CO 0 {2,S}
-4    CO 0 {2,S}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    CO u0 {2,S}
+4    CO u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18331,11 +19119,11 @@ entry(
     label = "Sd_Cds-CdCt",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {5,D}
-4    Ct 0 {2,S}
-5    C  0 {3,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {5,D}
+4    Ct u0 {2,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18350,11 +19138,11 @@ entry(
     label = "Sd_Cds-CdCb",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {5,D}
-4    Cb 0 {2,S}
-5    C  0 {3,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {5,D}
+4    Cb u0 {2,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18369,11 +19157,11 @@ entry(
     label = "Sd_Cds-CdCO",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {5,D}
-4    CO 0 {2,S}
-5    C  0 {3,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {5,D}
+4    CO u0 {2,S}
+5    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18388,11 +19176,11 @@ entry(
     label = "Sd_Cds-CtC=S",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Ct 0 {2,S}
-4    Cd 0 {2,S} {5,D}
-5    Sd 0 {4,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Ct u0 {2,S}
+4    Cd u0 {2,S} {5,D}
+5    Sd u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18407,11 +19195,11 @@ entry(
     label = "Sd_Cds-CbC=S",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cb 0 {2,S}
-4    Cd 0 {2,S} {5,D}
-5    Sd 0 {4,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cb u0 {2,S}
+4    Cd u0 {2,S} {5,D}
+5    Sd u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18426,11 +19214,11 @@ entry(
     label = "Sd_Cds-COC=S",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    CO 0 {2,S}
-4    Cd 0 {2,S} {5,D}
-5    Sd 0 {4,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    CO u0 {2,S}
+4    Cd u0 {2,S} {5,D}
+5    Sd u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18445,12 +19233,12 @@ entry(
     label = "Sd_Cds-CdCd",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {5,D}
-4    Cd 0 {2,S} {6,D}
-5    C  0 {3,D}
-6    C  0 {4,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {5,D}
+4    Cd u0 {2,S} {6,D}
+5    C  u0 {3,D}
+6    C  u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18465,12 +19253,12 @@ entry(
     label = "Sd_Cds-CdC=S",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {6,D}
-4    Cd 0 {2,S} {5,D}
-5    Sd 0 {4,D}
-6    C  0 {3,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {6,D}
+4    Cd u0 {2,S} {5,D}
+5    Sd u0 {4,D}
+6    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18485,12 +19273,12 @@ entry(
     label = "Sd_Cds-C=SC=S",
     group = 
 """
-1 *1 Sd 0 {2,D}
-2 *2 Cd 0 {1,D} {3,S} {4,S}
-3    Cd 0 {2,S} {5,D}
-4    Cd 0 {2,S} {6,D}
-5    Sd 0 {3,D}
-6    Sd 0 {4,D}
+1 *1 Sd u0 {2,D}
+2 *2 Cd u0 {1,D} {3,S} {4,S}
+3    Cd u0 {2,S} {5,D}
+4    Cd u0 {2,S} {6,D}
+5    Sd u0 {3,D}
+6    Sd u0 {4,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18505,7 +19293,7 @@ entry(
     label = "HJ",
     group = 
 """
-1 *3 H 1
+1 *3 H u1
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18520,7 +19308,7 @@ entry(
     label = "CJ",
     group = 
 """
-1 *3 C 1
+1 *3 C u1
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18535,7 +19323,7 @@ entry(
     label = "CbJ",
     group = 
 """
-1 *3 Cb 1
+1 *3 Cb u1
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18550,8 +19338,40 @@ entry(
     label = "CtJ",
     group = 
 """
-1 *3 Ct 1 {2,T}
-2    R  0 {1,T}
+1 *3 Ct u1 {2,T}
+2    R  u0 {1,T}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 355,
+    label = "CtJ_Ct",
+    group = 
+"""
+1 *3 Ct u1 {2,T}
+2    Ct u0 {1,T}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 356,
+    label = "CtJ_N3t",
+    group = 
+"""
+1 *3 Ct  u1 {2,T}
+2    N3t u0 {1,T}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18566,8 +19386,8 @@ entry(
     label = "C2b",
     group = 
 """
-1 *3 C 1 {2,T}
-2    C 1 {1,T}
+1 *3 C u1 {2,T}
+2    C u1 {1,T}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18582,9 +19402,9 @@ entry(
     label = "C=SJ",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    R  0 {1,S}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    R  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18599,9 +19419,9 @@ entry(
     label = "C=SJ-H",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    H  0 {1,S}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18616,9 +19436,9 @@ entry(
     label = "C=SJ-Cs",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    Cs 0 {1,S}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18633,9 +19453,9 @@ entry(
     label = "C=SJ-Ct",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    Ct 0 {1,S}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    Ct u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18650,9 +19470,9 @@ entry(
     label = "C=SJ-Cb",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    Cb 0 {1,S}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    Cb u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18667,9 +19487,9 @@ entry(
     label = "C=SJ-CO",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    CO 0 {1,S}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    CO u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18684,9 +19504,9 @@ entry(
     label = "C=SJ-Os",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    Os 0 {1,S}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    Os u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18701,9 +19521,9 @@ entry(
     label = "C=SJ-Ss",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    Ss 0 {1,S}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    Ss u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18718,10 +19538,10 @@ entry(
     label = "C=SJ-Cd",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    Cd 0 {1,S} {4,D}
-4    C  0 {3,D}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    Cd u0 {1,S} {4,D}
+4    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18736,10 +19556,10 @@ entry(
     label = "C=SJ-C=S",
     group = 
 """
-1 *3 Cd 1 {2,D} {3,S}
-2    Sd 0 {1,D}
-3    Cd 0 {1,S} {4,D}
-4    Sd 0 {3,D}
+1 *3 Cd u1 {2,D} {3,S}
+2    Sd u0 {1,D}
+3    Cd u0 {1,S} {4,D}
+4    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18754,9 +19574,9 @@ entry(
     label = "CO_rad",
     group = 
 """
-1 *3 C 1 {2,D} {3,S}
-2    O 0 {1,D}
-3    R 0 {1,S}
+1 *3 C u1 {2,D} {3,S}
+2    O u0 {1,D}
+3    R u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18771,9 +19591,9 @@ entry(
     label = "CO_pri_rad",
     group = 
 """
-1 *3 C 1 {2,D} {3,S}
-2    O 0 {1,D}
-3    H 0 {1,S}
+1 *3 C u1 {2,D} {3,S}
+2    O u0 {1,D}
+3    H u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18788,9 +19608,9 @@ entry(
     label = "CO_sec_rad",
     group = 
 """
-1 *3 C   1 {2,D} {3,S}
-2    O   0 {1,D}
-3    R!H 0 {1,S}
+1 *3 C   u1 {2,D} {3,S}
+2    O   u0 {1,D}
+3    R!H u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18805,9 +19625,9 @@ entry(
     label = "CO_rad/NonDe",
     group = 
 """
-1 *3 C      1 {2,D} {3,S}
-2    O      0 {1,D}
-3    {Cs,Ss,N3s,N5s,Os} 0 {1,S}
+1 *3 C                  u1 {2,D} {3,S}
+2    O                  u0 {1,D}
+3    [Cs,Ss,N3s,N5s,Os] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18822,9 +19642,9 @@ entry(
     label = "CO_rad/OneDe",
     group = 
 """
-1 *3 C             1 {2,D} {3,S}
-2    O             0 {1,D}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+1 *3 C                     u1 {2,D} {3,S}
+2    O                     u0 {1,D}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18839,10 +19659,10 @@ entry(
     label = "CsJ",
     group = 
 """
-1 *3 C 1 {2,S} {3,S} {4,S}
-2    R 0 {1,S}
-3    R 0 {1,S}
-4    R 0 {1,S}
+1 *3 C u1 {2,S} {3,S} {4,S}
+2    R u0 {1,S}
+3    R u0 {1,S}
+4    R u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18857,10 +19677,10 @@ entry(
     label = "CsJ-HHH",
     group = 
 """
-1 *3 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *3 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18875,10 +19695,10 @@ entry(
     label = "CsJ-CsHH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cs 0 {1,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cs u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18893,10 +19713,10 @@ entry(
     label = "CsJ-CsCsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cs 0 {1,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cs u0 {1,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18911,10 +19731,10 @@ entry(
     label = "CsJ-CsCsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cs 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cs u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18929,10 +19749,10 @@ entry(
     label = "CsJ-OsHH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Os 0 {1,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Os u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18947,10 +19767,10 @@ entry(
     label = "CsJ-OsCsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Os 0 {1,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Os u0 {1,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18965,10 +19785,10 @@ entry(
     label = "CsJ-OsCsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Os 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Os u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -18983,10 +19803,10 @@ entry(
     label = "CsJ-OsOsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Os 0 {1,S}
-3    Os 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Os u0 {1,S}
+3    Os u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19001,10 +19821,10 @@ entry(
     label = "CsJ-OsOsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Os 0 {1,S}
-3    Os 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Os u0 {1,S}
+3    Os u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19019,10 +19839,10 @@ entry(
     label = "CsJ-OsOsOs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Os 0 {1,S}
-3    Os 0 {1,S}
-4    Os 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Os u0 {1,S}
+3    Os u0 {1,S}
+4    Os u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19037,10 +19857,10 @@ entry(
     label = "CsJ-SsHH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ss 0 {1,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ss u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19055,10 +19875,10 @@ entry(
     label = "CsJ-SsCsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ss 0 {1,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ss u0 {1,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19073,10 +19893,10 @@ entry(
     label = "CsJ-SsCsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ss 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ss u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19091,10 +19911,10 @@ entry(
     label = "CsJ-SsSsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ss 0 {1,S}
-3    Ss 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ss u0 {1,S}
+3    Ss u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19109,10 +19929,10 @@ entry(
     label = "CsJ-SsSsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ss 0 {1,S}
-3    Ss 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ss u0 {1,S}
+3    Ss u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19127,10 +19947,46 @@ entry(
     label = "CsJ-SsSsSs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ss 0 {1,S}
-3    Ss 0 {1,S}
-4    Ss 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ss u0 {1,S}
+3    Ss u0 {1,S}
+4    Ss u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 361,
+    label = "CsJ-NsHH",
+    group = 
+"""
+1 *3 C         u1 {2,S} {3,S} {4,S}
+2    H         u0 {1,S}
+3    H         u0 {1,S}
+4    [N3s,N5s] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 362,
+    label = "CsJ-NsCsH",
+    group = 
+"""
+1 *3 C         u1 {2,S} {3,S} {4,S}
+2    H         u0 {1,S}
+3    [N3s,N5s] u0 {1,S}
+4    Cs        u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19145,10 +20001,10 @@ entry(
     label = "CsJ-OneDe",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    {H,Cs,Os,Ss,N3s,N5s}  0 {1,S}
-4    {H,Cs,Os,Ss,N3s,N5s}  0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    [H,Cs,Os,Ss,N3s,N5s]  u0 {1,S}
+4    [H,Cs,Os,Ss,N3s,N5s]  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19163,10 +20019,10 @@ entry(
     label = "CsJ-OneDeHH",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    H                     u0 {1,S}
+4    H                     u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19181,10 +20037,10 @@ entry(
     label = "CsJ-CtHH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19199,10 +20055,10 @@ entry(
     label = "CsJ-CbHH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cb 0 {1,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cb u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19217,10 +20073,10 @@ entry(
     label = "CsJ-COHH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    CO 0 {1,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    CO u0 {1,S}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19235,11 +20091,11 @@ entry(
     label = "CsJ-CdHH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    C  0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19254,11 +20110,11 @@ entry(
     label = "CsJ-C=SHH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    Sd 0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    H  u0 {1,S}
+4    H  u0 {1,S}
+5    Sd u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19273,10 +20129,10 @@ entry(
     label = "CsJ-OneDeCsH",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Cs            0 {1,S}
-4    H             0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Cs                    u0 {1,S}
+4    H                     u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19291,10 +20147,10 @@ entry(
     label = "CsJ-CtCsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19309,10 +20165,10 @@ entry(
     label = "CsJ-CbCsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cb 0 {1,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cb u0 {1,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19327,10 +20183,10 @@ entry(
     label = "CsJ-COCsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    CO 0 {1,S}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    CO u0 {1,S}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19345,11 +20201,11 @@ entry(
     label = "CsJ-CdCsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    C  0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19364,11 +20220,11 @@ entry(
     label = "CsJ-C=SCsH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cs 0 {1,S}
-4    H  0 {1,S}
-5    Sd 0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cs u0 {1,S}
+4    H  u0 {1,S}
+5    Sd u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19383,10 +20239,10 @@ entry(
     label = "CsJ-OneDeOsH",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Os            0 {1,S}
-4    H             0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Os                    u0 {1,S}
+4    H                     u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19401,10 +20257,10 @@ entry(
     label = "CsJ-OneDeSsH",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Ss            0 {1,S}
-4    H             0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Ss                    u0 {1,S}
+4    H                     u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19419,10 +20275,10 @@ entry(
     label = "CsJ-OneDeCsCs",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Cs            0 {1,S}
-4    Cs            0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Cs                    u0 {1,S}
+4    Cs                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19437,10 +20293,10 @@ entry(
     label = "CsJ-CtCsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19455,10 +20311,10 @@ entry(
     label = "CsJ-CbCsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cb 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cb u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19473,10 +20329,10 @@ entry(
     label = "CsJ-COCsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    CO 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    CO u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19491,11 +20347,11 @@ entry(
     label = "CsJ-CdCsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    C  0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19510,11 +20366,11 @@ entry(
     label = "CsJ-C=SCsCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
-5    Sd 0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
+5    Sd u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19529,10 +20385,10 @@ entry(
     label = "CsJ-OneDeOsCs",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Os            0 {1,S}
-4    Cs            0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Os                    u0 {1,S}
+4    Cs                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19547,10 +20403,10 @@ entry(
     label = "CsJ-OneDeSsCs",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Ss            0 {1,S}
-4    Cs            0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Ss                    u0 {1,S}
+4    Cs                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19565,10 +20421,10 @@ entry(
     label = "CsJ-OneDeOsOs",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Os            0 {1,S}
-4    Os            0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Os                    u0 {1,S}
+4    Os                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19583,10 +20439,10 @@ entry(
     label = "CsJ-OneDeOsSs",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Os            0 {1,S}
-4    Ss            0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Os                    u0 {1,S}
+4    Ss                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19601,10 +20457,46 @@ entry(
     label = "CsJ-OneDeSsSs",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Ss            0 {1,S}
-4    Ss            0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Ss                    u0 {1,S}
+4    Ss                    u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 363,
+    label = "CsJ-OneDeNsH",
+    group = 
+"""
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    H                     u0 {1,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    [N3s,N5s]             u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 394,
+    label = "CsJ-OneDeNsCs",
+    group = 
+"""
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Cs                    u0 {1,S}
+4    [N3s,N5s]             u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19619,10 +20511,10 @@ entry(
     label = "CsJ-TwoDe",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    {H,Cs,Os,Ss}  0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    [H,Cs,Os,Ss]          u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19637,10 +20529,10 @@ entry(
     label = "CsJ-TwoDeH",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    H             0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    H                     u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19655,10 +20547,10 @@ entry(
     label = "CsJ-CtCtH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19673,10 +20565,10 @@ entry(
     label = "CsJ-CtCbH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19691,10 +20583,10 @@ entry(
     label = "CsJ-CtCOH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    CO 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    CO u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19709,10 +20601,10 @@ entry(
     label = "CsJ-CbCbH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cb 0 {1,S}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cb u0 {1,S}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19727,10 +20619,10 @@ entry(
     label = "CsJ-CbCOH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cb 0 {1,S}
-3    CO 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cb u0 {1,S}
+3    CO u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19745,10 +20637,10 @@ entry(
     label = "CsJ-COCOH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    CO 0 {1,S}
-3    CO 0 {1,S}
-4    H  0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    CO u0 {1,S}
+3    CO u0 {1,S}
+4    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19763,11 +20655,11 @@ entry(
     label = "CsJ-CdCtH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Ct 0 {1,S}
-4    H  0 {1,S}
-5    C  0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Ct u0 {1,S}
+4    H  u0 {1,S}
+5    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19782,11 +20674,11 @@ entry(
     label = "CsJ-CdCbH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cb 0 {1,S}
-4    H  0 {1,S}
-5    C  0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cb u0 {1,S}
+4    H  u0 {1,S}
+5    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19801,11 +20693,11 @@ entry(
     label = "CsJ-CdCOH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    CO 0 {1,S}
-4    H  0 {1,S}
-5    C  0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    CO u0 {1,S}
+4    H  u0 {1,S}
+5    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19820,11 +20712,11 @@ entry(
     label = "CsJ-CtC=SH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    Cd 0 {1,S} {5,D}
-4    H  0 {1,S}
-5    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    Cd u0 {1,S} {5,D}
+4    H  u0 {1,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19839,11 +20731,11 @@ entry(
     label = "CsJ-CbC=SH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cb 0 {1,S}
-3    Cd 0 {1,S} {5,D}
-4    H  0 {1,S}
-5    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cb u0 {1,S}
+3    Cd u0 {1,S} {5,D}
+4    H  u0 {1,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19858,11 +20750,11 @@ entry(
     label = "CsJ-COC=SH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    CO 0 {1,S}
-3    Cd 0 {1,S} {5,D}
-4    H  0 {1,S}
-5    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    CO u0 {1,S}
+3    Cd u0 {1,S} {5,D}
+4    H  u0 {1,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19877,12 +20769,12 @@ entry(
     label = "CsJ-CdCdH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cd 0 {1,S} {6,D}
-4    H  0 {1,S}
-5    C  0 {2,D}
-6    C  0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cd u0 {1,S} {6,D}
+4    H  u0 {1,S}
+5    C  u0 {2,D}
+6    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19897,12 +20789,12 @@ entry(
     label = "CsJ-CdC=SH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cd 0 {1,S} {6,D}
-4    H  0 {1,S}
-5    C  0 {2,D}
-6    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cd u0 {1,S} {6,D}
+4    H  u0 {1,S}
+5    C  u0 {2,D}
+6    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19917,12 +20809,12 @@ entry(
     label = "CsJ-C=SC=SH",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cd 0 {1,S} {6,D}
-4    H  0 {1,S}
-5    Sd 0 {2,D}
-6    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cd u0 {1,S} {6,D}
+4    H  u0 {1,S}
+5    Sd u0 {2,D}
+6    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19937,10 +20829,10 @@ entry(
     label = "CsJ-TwoDeCs",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    Cs            0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    Cs                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19955,10 +20847,10 @@ entry(
     label = "CsJ-CtCtCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19973,10 +20865,10 @@ entry(
     label = "CsJ-CtCbCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -19991,10 +20883,10 @@ entry(
     label = "CsJ-CtCOCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    CO 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    CO u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20009,10 +20901,10 @@ entry(
     label = "CsJ-CbCbCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cb 0 {1,S}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cb u0 {1,S}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20027,10 +20919,10 @@ entry(
     label = "CsJ-CbCOCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cb 0 {1,S}
-3    CO 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cb u0 {1,S}
+3    CO u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20045,10 +20937,10 @@ entry(
     label = "CsJ-COCOCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    CO 0 {1,S}
-3    CO 0 {1,S}
-4    Cs 0 {1,S}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    CO u0 {1,S}
+3    CO u0 {1,S}
+4    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20063,11 +20955,11 @@ entry(
     label = "CsJ-CdCtCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Ct 0 {1,S}
-4    Cs 0 {1,S}
-5    C  0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Ct u0 {1,S}
+4    Cs u0 {1,S}
+5    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20082,11 +20974,11 @@ entry(
     label = "CsJ-CdCbCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cb 0 {1,S}
-4    Cs 0 {1,S}
-5    C  0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cb u0 {1,S}
+4    Cs u0 {1,S}
+5    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20101,11 +20993,11 @@ entry(
     label = "CsJ-CdCOCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    CO 0 {1,S}
-4    Cs 0 {1,S}
-5    C  0 {2,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    CO u0 {1,S}
+4    Cs u0 {1,S}
+5    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20120,11 +21012,11 @@ entry(
     label = "CsJ-CtC=SCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Ct 0 {1,S}
-3    Cd 0 {1,S} {5,D}
-4    Cs 0 {1,S}
-5    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Ct u0 {1,S}
+3    Cd u0 {1,S} {5,D}
+4    Cs u0 {1,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20139,11 +21031,11 @@ entry(
     label = "CsJ-CbC=SCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cb 0 {1,S}
-3    Cd 0 {1,S} {5,D}
-4    Cs 0 {1,S}
-5    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cb u0 {1,S}
+3    Cd u0 {1,S} {5,D}
+4    Cs u0 {1,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20158,11 +21050,11 @@ entry(
     label = "CsJ-COC=SCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    CO 0 {1,S}
-3    Cd 0 {1,S} {5,D}
-4    Cs 0 {1,S}
-5    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    CO u0 {1,S}
+3    Cd u0 {1,S} {5,D}
+4    Cs u0 {1,S}
+5    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20177,12 +21069,12 @@ entry(
     label = "CsJ-CdCdCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cd 0 {1,S} {6,D}
-4    Cs 0 {1,S}
-5    C  0 {2,D}
-6    C  0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cd u0 {1,S} {6,D}
+4    Cs u0 {1,S}
+5    C  u0 {2,D}
+6    C  u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20197,12 +21089,12 @@ entry(
     label = "CsJ-CdC=SCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cd 0 {1,S} {6,D}
-4    Cs 0 {1,S}
-5    C  0 {2,D}
-6    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cd u0 {1,S} {6,D}
+4    Cs u0 {1,S}
+5    C  u0 {2,D}
+6    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20217,12 +21109,12 @@ entry(
     label = "CsJ-C=SC=SCs",
     group = 
 """
-1 *3 C  1 {2,S} {3,S} {4,S}
-2    Cd 0 {1,S} {5,D}
-3    Cd 0 {1,S} {6,D}
-4    Cs 0 {1,S}
-5    Sd 0 {2,D}
-6    Sd 0 {3,D}
+1 *3 C  u1 {2,S} {3,S} {4,S}
+2    Cd u0 {1,S} {5,D}
+3    Cd u0 {1,S} {6,D}
+4    Cs u0 {1,S}
+5    Sd u0 {2,D}
+6    Sd u0 {3,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20237,10 +21129,10 @@ entry(
     label = "CsJ-TwoDeOs",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    Os            0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    Os                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20255,10 +21147,10 @@ entry(
     label = "CsJ-TwoDeSs",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    Ss            0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    Ss                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20273,10 +21165,10 @@ entry(
     label = "CsJ-ThreeDe",
     group = 
 """
-1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+1 *3 C                     u1 {2,S} {3,S} {4,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+4    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20291,10 +21183,10 @@ entry(
     label = "CdsJ=Cdd",
     group = 
 """
-1 *3 C 1 {2,D} {3,S}
-2    C 0 {1,D} {4,D}
-3    R 0 {1,S}
-4    R 0 {2,D}
+1 *3 C u1 {2,D} {3,S}
+2    C u0 {1,D} {4,D}
+3    R u0 {1,S}
+4    R u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20309,11 +21201,11 @@ entry(
     label = "CdsJ",
     group = 
 """
-1 *3 C 1 {2,D} {3,S}
-2    C 0 {1,D} {4,S} {5,S}
-3    R 0 {1,S}
-4    R 0 {2,S}
-5    R 0 {2,S}
+1 *3 C u1 {2,D} {3,S}
+2    C u0 {1,D} {4,S} {5,S}
+3    R u0 {1,S}
+4    R u0 {2,S}
+5    R u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20328,11 +21220,11 @@ entry(
     label = "CdsJ-H",
     group = 
 """
-1 *3 C 1 {2,D} {3,S}
-2    C 0 {1,D} {4,S} {5,S}
-3    H 0 {1,S}
-4    R 0 {2,S}
-5    R 0 {2,S}
+1 *3 C u1 {2,D} {3,S}
+2    C u0 {1,D} {4,S} {5,S}
+3    H u0 {1,S}
+4    R u0 {2,S}
+5    R u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20347,11 +21239,11 @@ entry(
     label = "CdsJ-Cs",
     group = 
 """
-1 *3 C  1 {2,D} {3,S}
-2    C  0 {1,D} {4,S} {5,S}
-3    Cs 0 {1,S}
-4    R  0 {2,S}
-5    R  0 {2,S}
+1 *3 C  u1 {2,D} {3,S}
+2    C  u0 {1,D} {4,S} {5,S}
+3    Cs u0 {1,S}
+4    R  u0 {2,S}
+5    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20366,11 +21258,11 @@ entry(
     label = "CdsJ-Ct",
     group = 
 """
-1 *3 C  1 {2,D} {3,S}
-2    C  0 {1,D} {4,S} {5,S}
-3    Ct 0 {1,S}
-4    R  0 {2,S}
-5    R  0 {2,S}
+1 *3 C  u1 {2,D} {3,S}
+2    C  u0 {1,D} {4,S} {5,S}
+3    Ct u0 {1,S}
+4    R  u0 {2,S}
+5    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20385,11 +21277,11 @@ entry(
     label = "CdsJ-Cb",
     group = 
 """
-1 *3 C  1 {2,D} {3,S}
-2    C  0 {1,D} {4,S} {5,S}
-3    Cb 0 {1,S}
-4    R  0 {2,S}
-5    R  0 {2,S}
+1 *3 C  u1 {2,D} {3,S}
+2    C  u0 {1,D} {4,S} {5,S}
+3    Cb u0 {1,S}
+4    R  u0 {2,S}
+5    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20404,11 +21296,11 @@ entry(
     label = "CdsJ-CO",
     group = 
 """
-1 *3 C  1 {2,D} {3,S}
-2    C  0 {1,D} {4,S} {5,S}
-3    CO 0 {1,S}
-4    R  0 {2,S}
-5    R  0 {2,S}
+1 *3 C  u1 {2,D} {3,S}
+2    C  u0 {1,D} {4,S} {5,S}
+3    CO u0 {1,S}
+4    R  u0 {2,S}
+5    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20423,11 +21315,11 @@ entry(
     label = "CdsJ-Os",
     group = 
 """
-1 *3 C  1 {2,D} {3,S}
-2    C  0 {1,D} {4,S} {5,S}
-3    Os 0 {1,S}
-4    R  0 {2,S}
-5    R  0 {2,S}
+1 *3 C  u1 {2,D} {3,S}
+2    C  u0 {1,D} {4,S} {5,S}
+3    Os u0 {1,S}
+4    R  u0 {2,S}
+5    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20442,11 +21334,11 @@ entry(
     label = "CdsJ-Ss",
     group = 
 """
-1 *3 C  1 {2,D} {3,S}
-2    C  0 {1,D} {4,S} {5,S}
-3    Ss 0 {1,S}
-4    R  0 {2,S}
-5    R  0 {2,S}
+1 *3 C  u1 {2,D} {3,S}
+2    C  u0 {1,D} {4,S} {5,S}
+3    Ss u0 {1,S}
+4    R  u0 {2,S}
+5    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20461,12 +21353,12 @@ entry(
     label = "CdsJ-Cd",
     group = 
 """
-1 *3 C  1 {2,D} {3,S}
-2    C  0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {4,D}
-4    C  0 {3,D}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *3 C  u1 {2,D} {3,S}
+2    C  u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {4,D}
+4    C  u0 {3,D}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20481,12 +21373,12 @@ entry(
     label = "CdsJ-C=S",
     group = 
 """
-1 *3 C  1 {2,D} {3,S}
-2    C  0 {1,D} {5,S} {6,S}
-3    Cd 0 {1,S} {4,D}
-4    Sd 0 {3,D}
-5    R  0 {2,S}
-6    R  0 {2,S}
+1 *3 C  u1 {2,D} {3,S}
+2    C  u0 {1,D} {5,S} {6,S}
+3    Cd u0 {1,S} {4,D}
+4    Sd u0 {3,D}
+5    R  u0 {2,S}
+6    R  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20513,8 +21405,8 @@ entry(
     label = "OJ_pri",
     group = 
 """
-1 *3 O 1 {2,S}
-2    H 0 {1,S}
+1 *3 O u1 {2,S}
+2    H u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20529,8 +21421,8 @@ entry(
     label = "OJ_sec",
     group = 
 """
-1 *3 O   1 {2,S}
-2    R!H 0 {1,S}
+1 *3 O   u1 {2,S}
+2    R!H u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20545,8 +21437,24 @@ entry(
     label = "OJ-NonDe",
     group = 
 """
-1 *3 O          1 {2,S}
-2    {Cs,Os,Ss,N3s,N5s} 0 {1,S}
+1 *3 O                  u1 {2,S}
+2    [Cs,Os,Ss,N3s,N5s] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 3960,
+    label = "O_rad/NonDe",
+    group = 
+"""
+1 *3 O          u1 {2,S}
+2    [Cs,Os,Ss] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20561,8 +21469,8 @@ entry(
     label = "OJ-Cs",
     group = 
 """
-1 *3 O  1 {2,S}
-2    Cs 0 {1,S}
+1 *3 O  u1 {2,S}
+2    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20577,8 +21485,89 @@ entry(
     label = "OJ-Os",
     group = 
 """
-1 *3 O 1 {2,S}
-2    Os 0 {1,S}
+1 *3 O  u1 {2,S}
+2    Os u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 357,
+    label = "OJ-Ns",
+    group = 
+"""
+1 *3 O         u1 {2,S}
+2    [N3s,N5s] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 358,
+    label = "OJ-OneDe",
+    group = 
+"""
+1 *3 O                     u1 {2,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 3950,
+    label = "O_rad/OneDe",
+    group = 
+"""
+1 *3 O             u1 {2,S}
+2    [Cd,Ct,Cb,CO] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 359,
+    label = "OJ-OneDeN",
+    group = 
+"""
+1 *3 O         u1 {2,S}
+2    [N3d,N5d] u0 {1,S}
+""",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 360,
+    label = "OJ-NO",
+    group = 
+"""
+1 *3 O         u1 {2,S}
+2    [N3d,N5d] u0 {1,S} {3,D}
+3    Od        u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20593,55 +21582,8 @@ entry(
     label = "O2b",
     group = 
 """
-1 *3 O 1 {2,S}
-2    O 1 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1034,
-    label = "O_atom_triplet",
-    group = 
-"""
-1 *3 O 2T
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1035,
-    label = "SJJ",
-    group = 
-"""
-1 *3 S 2T
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1036,
-    label = "CH2_triplet",
-    group = 
-"""
-1 *3 C 2T {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
+1 *3 O u1 {2,S}
+2    O u1 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20656,8 +21598,8 @@ entry(
     label = "SJ",
     group = 
 """
-1 *3 S 1 {2,S}
-2    R  0 {1,S}
+1 *3 S u1 {2,S}
+2    R u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20672,8 +21614,8 @@ entry(
     label = "SsJ",
     group = 
 """
-1 *3 Ss 1 {2,S}
-2    R  0 {1,S}
+1 *3 Ss u1 {2,S}
+2    R  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20688,8 +21630,8 @@ entry(
     label = "SsJ-H",
     group = 
 """
-1 *3 Ss 1 {2,S}
-2    H  0 {1,S}
+1 *3 Ss u1 {2,S}
+2    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20704,8 +21646,8 @@ entry(
     label = "SsJ-Cs",
     group = 
 """
-1 *3 Ss 1 {2,S}
-2    Cs 0 {1,S}
+1 *3 Ss u1 {2,S}
+2    Cs u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20720,8 +21662,8 @@ entry(
     label = "SsJ-Ss",
     group = 
 """
-1 *3 Ss 1 {2,S}
-2    Ss 0 {1,S}
+1 *3 Ss u1 {2,S}
+2    Ss u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20736,8 +21678,8 @@ entry(
     label = "SsJ-OneDe",
     group = 
 """
-1 *3 Ss            1 {2,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+1 *3 Ss                    u1 {2,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20752,8 +21694,8 @@ entry(
     label = "SsJ-Ct",
     group = 
 """
-1 *3 Ss 1 {2,S}
-2    Ct 0 {1,S}
+1 *3 Ss u1 {2,S}
+2    Ct u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20768,8 +21710,8 @@ entry(
     label = "SsJ-Cb",
     group = 
 """
-1 *3 Ss 1 {2,S}
-2    Cb 0 {1,S}
+1 *3 Ss u1 {2,S}
+2    Cb u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20784,8 +21726,8 @@ entry(
     label = "SsJ-CO",
     group = 
 """
-1 *3 Ss 1 {2,S}
-2    CO 0 {1,S}
+1 *3 Ss u1 {2,S}
+2    CO u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20800,9 +21742,9 @@ entry(
     label = "SsJ-Cd",
     group = 
 """
-1 *3 Ss 1 {2,S}
-2    Cd 0 {1,S} {3,D}
-3    C  0 {2,D}
+1 *3 Ss u1 {2,S}
+2    Cd u0 {1,S} {3,D}
+3    C  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20817,9 +21759,9 @@ entry(
     label = "SsJ-C=S",
     group = 
 """
-1 *3 Ss 1 {2,S}
-2    Cd 0 {1,S} {3,D}
-3    Sd 0 {2,D}
+1 *3 Ss u1 {2,S}
+2    Cd u0 {1,S} {3,D}
+3    Sd u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20830,12 +21772,23 @@ u"""
 )
 
 entry(
-    index = 300,
-    label = "Ct_Nt",
+    index = 395,
+    label = "NJ",
+    group = "OR{N3J}",
+    kinetics = None,
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 364,
+    label = "N3J",
     group = 
 """
-1 *1 Ct        0 {2,T}
-2 *2 {N3t,N5t} 0 {1,T}
+1 *3 [N3s,N3d] u1
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20846,12 +21799,11 @@ u"""
 )
 
 entry(
-    index = 301,
-    label = "Ct_N3t",
+    index = 365,
+    label = "N3sJ",
     group = 
 """
-1 *1 Ct  0 {2,T}
-2 *2 N3t 0 {1,T}
+1 *3 N3s u1
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20862,12 +21814,13 @@ u"""
 )
 
 entry(
-    index = 302,
-    label = "Ct_N5t",
+    index = 366,
+    label = "NH2J",
     group = 
 """
-1 *1 Ct  0 {2,T}
-2 *2 N5t 0 {1,T}
+1 *3 N3s u1 {2,S} {3,S}
+2    H   u0 {1,S}
+3    H   u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20878,13 +21831,13 @@ u"""
 )
 
 entry(
-    index = 303,
-    label = "Ct-H_N3t",
+    index = 367,
+    label = "N3sJ-NonDeH",
     group = 
 """
-1 *1 Ct  0 {2,T} {3,S}
-2 *2 N3t 0 {1,T}
-3    H   0 {1,S}
+1 *3 N3s                u1 {2,S} {3,S}
+2    [Os,Ss,N3s,N5s,Cs] u0 {1,S}
+3    H                  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20895,13 +21848,13 @@ u"""
 )
 
 entry(
-    index = 304,
-    label = "Ct-NonDe_N3t",
+    index = 369,
+    label = "N3sJ-CsH",
     group = 
 """
-1 *1 Ct          0 {2,T} {3,S}
-2 *2 N3t         0 {1,T}
-3    {Cs,N3s,N5s,Os,Ss} 0 {1,S}
+1 *3 N3s u1 {2,S} {3,S}
+2    Cs  u0 {1,S}
+3    H   u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20912,13 +21865,13 @@ u"""
 )
 
 entry(
-    index = 305,
-    label = "Ct-OneDe_N3t",
+    index = 370,
+    label = "N3sJ-OsH",
     group = 
 """
-1 *1 Ct                    0 {2,T} {3,S}
-2 *2 N3t                   0 {1,T}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+1 *3 N3s u1 {2,S} {3,S}
+2    Os  u0 {1,S}
+3    H   u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20929,12 +21882,13 @@ u"""
 )
 
 entry(
-    index = 306,
-    label = "Cds_Nd",
+    index = 371,
+    label = "N3sJ-NsH",
     group = 
 """
-1 *1 Cd 0 {2,D}
-2 *2 N  0 {1,D}
+1 *3 N3s       u1 {2,S} {3,S}
+2    [N3s,N5s] u0 {1,S}
+3    H         u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20945,12 +21899,13 @@ u"""
 )
 
 entry(
-    index = 307,
-    label = "Cds_N3d",
+    index = 373,
+    label = "N3sJ-NonDe2",
     group = 
 """
-1 *1 Cd  0 {2,D}
-2 *2 N3d 0 {1,D}
+1 *3 N3s                u1 {2,S} {3,S}
+2    [Os,Cs,N3s,N5s,Ss] u0 {1,S}
+3    [Os,Cs,N3s,N5s,Ss] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20961,14 +21916,13 @@ u"""
 )
 
 entry(
-    index = 308,
-    label = "Cds-HH_N3d",
+    index = 374,
+    label = "N3sJ-OneDeH",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 N3d 0 {1,D}
-3    H   0 {1,S}
-4    H   0 {1,S}
+1 *3 N3s                   u1 {2,S} {3,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    H                     u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20979,14 +21933,13 @@ u"""
 )
 
 entry(
-    index = 309,
-    label = "Cds-NonDeH_N3d",
+    index = 375,
+    label = "N3sJ-OneDeCs",
     group = 
 """
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 N3d 0 {1,D}
-3    H   0 {1,S}
-4    {Cs,Os,N3s,N5s,Ss} 0 {1,S}
+1 *3 N3s                   u1 {2,S} {3,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    Cs                    u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -20996,32 +21949,14 @@ u"""
 """,
 )
 
-
 entry(
-    index = 310,
-    label = "Cds-NonDe2_N3d",
-    group =
-"""
-1 *1 Cd  0 {2,D} {3,S} {4,S}
-2 *2 N3d 0 {1,D}
-3    {Cs,Os,N3s,N5s,Ss}   0 {1,S}
-4    {Cs,Os,N3s,N5s,Ss} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc =
-u"""
-
-""",
-)
-
-entry(
-    index = 311,
-    label = "Od_Nd",
+    index = 376,
+    label = "N3sJ-TwoDe",
     group = 
 """
-1 *1 Od 0 {2,D}
-2 *2 N  0 {1,D}
+1 *3 N3s                   u1 {2,S} {3,S}
+2    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
+3    [Cd,Ct,Cb,CO,N3d,N5d] u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21032,12 +21967,11 @@ u"""
 )
 
 entry(
-    index = 312,
-    label = "Od_N3d",
+    index = 377,
+    label = "N3dJ",
     group = 
 """
-1 *1 Od  0 {2,D}
-2 *2 N3d 0 {1,D}
+1 *3 N3d u1
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21048,12 +21982,12 @@ u"""
 )
 
 entry(
-    index = 313,
-    label = "Od_N5d",
+    index = 378,
+    label = "N3dJ_C",
     group = 
 """
-1 *1 Od  0 {2,D}
-2 *2 N5d 0 {1,D}
+1 *3 N3d u1 {2,D}
+2    C   u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21064,36 +21998,12 @@ u"""
 )
 
 entry(
-    index = 314,
-    label = "Nd_R",
-    group = "OR{N1d_R,N3d_R}",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 314,
-    label = "Nt_R",
-    group = "OR{N3t_R, N5t_R}",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 316,
-    label = "N3d_R",
+    index = 379,
+    label = "N3dJ_O",
     group = 
 """
-1 *1 N3d 0 {2,D}
-2 *2 R!H 0 {1,D}
+1 *3 N3d u1 {2,D}
+2    Od  u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21104,12 +22014,12 @@ u"""
 )
 
 entry(
-    index = 317,
-    label = "N3d_Cd",
+    index = 380,
+    label = "N3dJ_N",
     group = 
 """
-1 *1 N3d      0 {2,D}
-2 *2 {Cd,Cdd} 0 {1,D}
+1 *3 N3d u1 {2,D}
+2    N   u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21120,14 +22030,11 @@ u"""
 )
 
 entry(
-    index = 318,
-    label = "N3d_Cds",
+    index = 350,
+    label = "Y_1centerbirad",
     group = 
 """
-1 *1 N3d 0 {2,D}
-2 *2 Cd  0 {1,D} {3,S} {4,S}
-3    R   0 {2,S}
-4    R   0 {2,S}
+1 *3 R!H u2
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21138,15 +22045,11 @@ u"""
 )
 
 entry(
-    index = 319,
-    label = "N3d-H_Cds",
+    index = 1034,
+    label = "O_atom_triplet",
     group = 
 """
-1 *1 N3d 0 {2,D} {5,S}
-2 *2 Cd  0 {1,D} {3,S} {4,S}
-3    R   0 {2,S}
-4    R   0 {2,S}
-5    H   0 {1,S}
+1 *3 O u2
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21157,15 +22060,11 @@ u"""
 )
 
 entry(
-    index = 320,
-    label = "N3d-H_Cds-HH",
+    index = 1035,
+    label = "SJJ",
     group = 
 """
-1 *1 N3d 0 {2,D} {5,S}
-2 *2 Cd  0 {1,D} {3,S} {4,S}
-3    H   0 {2,S}
-4    H   0 {2,S}
-5    H   0 {1,S}
+1 *3 S u2
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21176,15 +22075,13 @@ u"""
 )
 
 entry(
-    index = 321,
-    label = "N3d-H_Cds-NonDeH",
+    index = 1036,
+    label = "CH2_triplet",
     group = 
 """
-1 *1 N3d 0 {2,D} {5,S}
-2 *2 Cd  0 {1,D} {3,S} {4,S}
-3    {Cs,Os,Ss,N3s,N5s} 0 {2,S}
-4    H   0 {2,S}
-5    H   0 {1,S}
+1 *3 C u2 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21195,15 +22092,12 @@ u"""
 )
 
 entry(
-    index = 322,
-    label = "N3d-H_Cds-NonDe2",
+    index = 351,
+    label = "CO_birad",
     group = 
 """
-1 *1 N3d 0 {2,D} {5,S}
-2 *2 Cd  0 {1,D} {3,S} {4,S}
-3    {Cs,Os,Ss,N3s,N5s} 0 {2,S}
-4    {Cs,Os,Ss,N3s,N5s} 0 {2,S}
-5    H   0 {1,S}
+1 *3 C  u2 {2,D}
+2    Od u0 {1,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21214,385 +22108,12 @@ u"""
 )
 
 entry(
-    index = 323,
-    label = "N3d-NonDe_Cds",
+    index = 354,
+    label = "NH_triplet",
     group = 
 """
-1 *1 N3d         0 {2,D} {5,S}
-2 *2 Cd          0 {1,D} {3,S} {4,S}
-3    R!H         0 {2,S}
-4    R!H         0 {2,S}
-5    {Cs,N3s,N5s,Os,Ss} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 324,
-    label = "N3d-OneDe_Cds",
-    group = 
-"""
-1 *1 N3d                   0 {2,D} {5,S}
-2 *2 Cd                    0 {1,D} {3,S} {4,S}
-3    R!H                   0 {2,S}
-4    R!H                   0 {2,S}
-5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 325,
-    label = "N3d_Cdd",
-    group = 
-"""
-1 *1 N3d 0 {2,D}
-2 *2 Cdd 0 {1,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 326,
-    label = "N3d_Od",
-    group = 
-"""
-1 *1 N3d 0 {2,D}
-2 *2 Od  0 {1,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 327,
-    label = "N3d-H_Od",
-    group = 
-"""
-1 *1 N3d 0 {2,D} {3,S}
-2 *2 Od  0 {1,D}
-3    H   0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 328,
-    label = "N3d-NonDe_Od",
-    group = 
-"""
-1 *1 N3d         0 {2,D} {3,S}
-2 *2 Od          0 {1,D}
-3    {Cs,N3s,Os,Ss} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 329,
-    label = "N3d-OneDe_Od",
-    group = 
-"""
-1 *1 N3d                   0 {2,D} {3,S}
-2 *2 Od                    0 {1,D}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 330,
-    label = "N3d_Nd",
-    group = 
-"""
-1 *1 N3d 0 {2,D}
-2 *2 N   0 {1,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 330,
-    label = "N3d_N3d",
-    group = 
-"""
-1 *1 N3d 0 {2,D}
-2 *2 N3d 0 {1,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 331,
-    label = "N3d-H_N3d",
-    group = 
-"""
-1 *1 N3d 0 {2,D} {3,S}
-2 *2 N3d 0 {1,D}
-3    H   0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 332,
-    label = "N3d-H_N3d-H",
-    group = 
-"""
-1 *1 N3d 0 {2,D} {3,S}
-2 *2 N3d 0 {1,D} {4,S}
-3    H   0 {1,S}
-4    H   0 {2,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 333,
-    label = "N3d-H_N3d-NonDe",
-    group = 
-"""
-1 *1 N3d         0 {2,D} {3,S}
-2 *2 N3d         0 {1,D} {4,S}
-3    H           0 {1,S}
-4    {Cs,N3s,Os,Ss} 0 {2,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 334,
-    label = "N3d-H_N3d-OneDe",
-    group = 
-"""
-1 *1 N3d                   0 {2,D} {3,S}
-2 *2 N3d                   0 {1,D} {4,S}
-3    H                     0 {1,S}
-4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 335,
-    label = "N3d-NonDe_N3d",
-    group = 
-"""
-1 *1 N3d         0 {2,D} {3,S}
-2 *2 N3d         0 {1,D}
-3    {Cs,N3s,Os,Ss} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 336,
-    label = "N3d-OneDe_N3d",
-    group = 
-"""
-1 *1 N3d                   0 {2,D} {3,S}
-2 *2 N3d                   0 {1,D}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 337,
-    label = "N3d_N5d",
-    group = 
-"""
-1 *1 N3d       0 {2,D}
-2 *2 {N5d,N5t} 0 {1,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 338,
-    label = "N3t_R",
-    group = 
-"""
-1 *1 N3t 0 {2,T}
-2 *2 R!H 0 {1,T}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 339,
-    label = "N3t_Ct",
-    group = 
-"""
-1 *1 N3t 0 {2,T}
-2 *2 Ct  0 {1,T}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 339,
-    label = "N3t_Ct-H",
-    group = 
-"""
-1 *1 N3t 0 {2,T}
-2 *2 Ct  0 {1,T} {3,S}
-3    H   0 {2,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 340,
-    label = "N3t_Ct-NonDe",
-    group = 
-"""
-1 *1 N3t         0 {2,T}
-2 *2 Ct          0 {1,T} {3,S}
-3    {Cs,N3s,N5s,Os,Ss} 0 {2,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 341,
-    label = "N3t_Ct-OneDe",
-    group = 
-"""
-1 *1 N3t                   0 {2,T}
-2 *2 Ct                    0 {1,T} {3,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 342,
-    label = "N3t_N3t",
-    group = 
-"""
-1 *1 N3t 0 {2,T}
-2 *2 N3t 0 {1,T}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 343,
-    label = "N5t_R",
-    group = 
-"""
-1 *1 N5t 0 {2,T}
-2 *2 R   0 {1,T}
+1 *3 N3s u2 {2,S}
+2    H   u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -21615,547 +22136,11 @@ u"""
 )
 
 entry(
-    index = 350,
-    label = "Y_1centerbirad",
-    group = 
-"""
-1 *3 R!H 2T
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 351,
-    label = "CO_birad",
-    group = 
-"""
-1 *3 C  2T {2,D}
-2    Od 0 {1,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 354,
-    label = "NH_triplet",
-    group = 
-"""
-1 *3 N3s 2T {2,S}
-2    H   0  {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 355,
-    label = "CtJ_Ct",
-    group = 
-"""
-1 *3 Ct 1 {2,T}
-2    Ct 0 {1,T}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 356,
-    label = "CtJ_N3t",
-    group = 
-"""
-1 *3 Ct  1 {2,T}
-2    N3t 0 {1,T}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 357,
-    label = "OJ-Ns",
-    group = 
-"""
-1 *3 O   1 {2,S}
-2    {N3s,N5s}  0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 358,
-    label = "OJ-OneDe",
-    group = 
-"""
-1 *3 O                     1 {2,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 359,
-    label = "OJ-OneDeN",
-    group = 
-"""
-1 *3 O         1 {2,S}
-2    {N3d,N5d} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 360,
-    label = "OJ-NO",
-    group = 
-"""
-1 *3 O         1 {2,S}
-2    {N3d,N5d} 0 {1,S} {3,D}
-3    Od        0 {2,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 361,
-    label = "CsJ-NsHH",
-    group = 
-"""
-1 *3 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    {N3s,N5s} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 362,
-    label = "CsJ-NsCsH",
-    group = 
-"""
-1 *3 C   1 {2,S} {3,S} {4,S}
-2    H   0 {1,S}
-3    {N3s,N5s}  0 {1,S}
-4    Cs  0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 363,
-    label = "CsJ-OneDeNsH",
-    group = 
-"""
-1 *3 C                        1 {2,S} {3,S} {4,S}
-2    H                        0 {1,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d}    0 {1,S}
-4    {N3s,N5s}                0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 394,
-    label = "CsJ-OneDeNsCs",
-    group =
-"""
-1 *3 C                        1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Cs                        0 {1,S}
-4    {N3s,N5s}                0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc =
-u"""
-
-""",
-)
-
-entry(
-    index = 395,
-    label = "NJ",
-    group = "OR{N3J}",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc =
-u"""
-
-""",
-)
-
-entry(
-    index = 364,
-    label = "N3J",
-    group = 
-"""
-1 *3 {N3s,N3d} 1
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 365,
-    label = "N3sJ",
-    group = 
-"""
-1 *3 N3s 1
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 366,
-    label = "NH2J",
-    group = 
-"""
-1 *3 N3s 1 {2,S} {3,S}
-2    H   0 {1,S}
-3    H   0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 367,
-    label = "N3sJ-NonDeH",
-    group = 
-"""
-1 *3 N3s 1 {2,S} {3,S}
-2    {Os,Ss,N3s,N5s,Cs} 0 {1,S}
-3    H   0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 369,
-    label = "N3sJ-CsH",
-    group = 
-"""
-1 *3 N3s 1 {2,S} {3,S}
-2    Cs  0 {1,S}
-3    H   0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 370,
-    label = "N3sJ-OsH",
-    group = 
-"""
-1 *3 N3s 1 {2,S} {3,S}
-2    Os  0 {1,S}
-3    H   0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 371,
-    label = "N3sJ-NsH",
-    group = 
-"""
-1 *3 N3s 1 {2,S} {3,S}
-2    {N3s,N5s}  0 {1,S}
-3    H   0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 372,
-    label = "N3sJ-OneDeH",
-    group = 
-"""
-1 *3 N3s                      1 {2,S} {3,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    H                        0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 373,
-    label = "N3sJ-NonDe2",
-    group = 
-"""
-1 *3 N3s 1 {2,S} {3,S}
-2    {Os,Cs,N3s,N5s,Ss} 0 {1,S}
-3    {Os,Cs,N3s,N5s,Ss} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 374,
-    label = "N3sJ-OneDeH",
-    group = 
-"""
-1 *3 N3s                      1 {2,S} {3,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    H 		              0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 375,
-    label = "N3sJ-OneDeCs",
-    group =
-"""
-1 *3 N3s                      1 {2,S} {3,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    Cs                        0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc =
-u"""
-
-""",
-)
-
-entry(
-    index = 376,
-    label = "N3sJ-TwoDe",
-    group = 
-"""
-1 *3 N3s                      1 {2,S} {3,S}
-2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 377,
-    label = "N3dJ",
-    group = 
-"""
-1 *3 N3d 1
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 378,
-    label = "N3dJ_C",
-    group = 
-"""
-1 *3 N3d 1 {2,D}
-2    C  0 {1,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 379,
-    label = "N3dJ_O",
-    group = 
-"""
-1 *3 N3d 1 {2,D}
-2    Od  0 {1,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 380,
-    label = "N3dJ_N",
-    group = 
-"""
-1 *3 N3d 1 {2,D}
-2    N   0 {1,D}
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 383,
-    label = "C_quintet",
-    group = 
-"""
-1 *3 C 4V
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 384,
-    label = "C_triplet",
-    group = 
-"""
-1 *3 C 4T
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 385,
-    label = "C_singlet",
-    group = 
-"""
-1 *3 C 4S
-""",
-    kinetics = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
     index = 386,
     label = "N_atom_quartet",
     group = 
 """
-1 *3 N 3Q
+1 *3 N u3
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -22170,7 +22155,7 @@ entry(
     label = "N_atom_doublet",
     group = 
 """
-1 *3 N 3D
+1 *3 N u3
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -22185,8 +22170,8 @@ entry(
     label = "CH_quartet",
     group = 
 """
-1 *3 Cs 3Q {2,S}
-2    H 0  {1,S}
+1 *3 Cs u3 {2,S}
+2    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -22201,8 +22186,8 @@ entry(
     label = "CH_doublet",
     group = 
 """
-1 *3 C 3D {2,S}
-2    H 0  {1,S}
+1 *3 C u3 {2,S}
+2    H u0 {1,S}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -22225,12 +22210,11 @@ u"""
 )
 
 entry(
-    index = 394,
-    label = "N1d_R",
+    index = 383,
+    label = "C_quintet",
     group = 
 """
-1 *1 N1d 0 2 {2,D}
-2 *2 R!H 0 0 {1,D}
+1 *3 C u4
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -22241,12 +22225,11 @@ u"""
 )
 
 entry(
-    index = 3950,
-    label = "O_rad/OneDe",
+    index = 384,
+    label = "C_triplet",
     group = 
 """
-1 *3 O             1 {2,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+1 *3 C u4
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -22257,12 +22240,11 @@ u"""
 )
 
 entry(
-    index = 3960,
-    label = "O_rad/NonDe",
+    index = 385,
+    label = "C_singlet",
     group = 
 """
-1 *3 O          1 {2,S}
-2    {Cs,Os,Ss} 0 {1,S}
+1 *3 C u4
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -22271,6 +22253,7 @@ u"""
 
 """,
 )
+
 tree(
 """
 L1: R_R
@@ -22436,7 +22419,7 @@ L1: R_R
                 L5: Cds-CdC=S_Sd
                 L5: Cds-C=SC=S_Sd
         L3: Cds_Nd
-	    L4: Cds_N3d
+            L4: Cds_N3d
                 L5: Cds-HH_N3d
                 L5: Cds-NonDeH_N3d
                 L5: Cds-NonDe2_N3d
@@ -23195,7 +23178,7 @@ L1: R_R
                 L5: N3t_Ct-NonDe
                 L5: N3t_Ct-OneDe
             L4: N3t_N3t
-        L3: N5t_R        
+        L3: N5t_R
     L2: Sd_R
         L3: Sd_Cdd
             L4: Sd_Cdd-Sd
@@ -23238,8 +23221,8 @@ L1: YJ
     L2: CJ
         L3: CbJ
         L3: CtJ
-			L4: CtJ_Ct
-			L4: CtJ_N3t
+            L4: CtJ_Ct
+            L4: CtJ_N3t
         L3: C2b
         L3: C=SJ
             L4: C=SJ-H
@@ -23354,12 +23337,12 @@ L1: YJ
         L3: OJ_pri
         L3: OJ_sec
             L4: OJ-NonDe
-				L5: O_rad/NonDe
-					L6: OJ-Cs
-					L6: OJ-Os
+                L5: O_rad/NonDe
+                    L6: OJ-Cs
+                    L6: OJ-Os
                 L5: OJ-Ns
             L4: OJ-OneDe
-				L5: O_rad/OneDe
+                L5: O_rad/OneDe
                 L5: OJ-OneDeN
                     L6: OJ-NO
         L3: O2b
@@ -23385,7 +23368,7 @@ L1: YJ
                 L5: N3sJ-NonDe2
                 L5: N3sJ-OneDeH
                 L5: N3sJ-OneDeCs
-                L5: N3sJ-TwoDe	
+                L5: N3sJ-TwoDe
             L4: N3dJ
                 L5: N3dJ_C
                 L5: N3dJ_O
@@ -23412,8 +23395,8 @@ forbidden(
     label = "O2d",
     group = 
 """
-1 *1 O 0 {2,D}
-2 *2 O 0 {1,D}
+1 *1 O u0 {2,D}
+2 *2 O u0 {1,D}
 """,
     shortDesc = u"""""",
     longDesc = 
@@ -23424,14 +23407,14 @@ u"""
 
 forbidden(
     label = "Ycentersinglet_birad",
-    group =
+    group = 
 """
-1 *3 R!H 2S
+1 *3 R!H u2
 """,
     shortDesc = u"""""",
-    longDesc =
+    longDesc = 
 u"""
 
 """,
-
 )
+

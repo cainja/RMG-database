@@ -11,32 +11,30 @@ entry(
     index = 1,
     reactant1 = 
 """
-1   C 0 0 {2,S} {4,S} {5,S} {6,S}
-2   O 0 2 {1,S} {3,S}
-3   O 1 2 {2,S}
-4   H 0 0 {1,S}
-5   H 0 0 {1,S}
-6   H 0 0 {1,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {4,S} {5,S} {6,S}
+2 O u0 p2 c0  {1,S} {3,S}
+3 O u1 p2 c0  {2,S}
+4 H u0 p0 c0  {1,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
-1 * O 1 2 {2,S}
-2   O 1 2 {1,S}
+multiplicity 3
+1 * O u1 p2 c0  {2,S}
+2   O u1 p2 c0  {1,S}
 """,
     product2 = 
 """
-1 * C 1 0 {2,S} {3,S} {4,S}
-2   H 0 0 {1,S}
-3   H 0 0 {1,S}
-4   H 0 0 {1,S}
+multiplicity 2
+1 * C u1 p0 c0  {2,S} {3,S} {4,S}
+2   H u0 p0 c0  {1,S}
+3   H u0 p0 c0  {1,S}
+4   H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
-    kinetics = Arrhenius(
-        A = (109000000000000.0, 's^-1'),
-        n = 0.25,
-        Ea = (33.3, 'kcal/mol'),
-        T0 = (1, 'K'),
-    ),
+    kinetics = Arrhenius(A=(1.09e+14, 's^-1'), n=0.25, Ea=(33.3, 'kcal/mol'), T0=(1, 'K')),
     shortDesc = u"""Method CBS-QB3 w/ 1-d Hindered rotor corrections""",
     longDesc = 
 u"""
@@ -53,30 +51,33 @@ entry(
     index = 2,
     reactant1 = 
 """
-1   C 0 0 {2,S} {3,S} {5,S} {6,S}
-2   C 0 0 {1,S} {7,S} {8,S} {9,S}
-3   O 0 2 {1,S} {4,S}
-4   O 1 2 {3,S}
-5   H 0 0 {1,S}
-6   H 0 0 {1,S}
-7   H 0 0 {2,S}
-8   H 0 0 {2,S}
-9   H 0 0 {2,S}
+multiplicity 2
+1 C u0 p0 c0  {2,S} {3,S} {5,S} {6,S}
+2 C u0 p0 c0  {1,S} {7,S} {8,S} {9,S}
+3 O u0 p2 c0  {1,S} {4,S}
+4 O u1 p2 c0  {3,S}
+5 H u0 p0 c0  {1,S}
+6 H u0 p0 c0  {1,S}
+7 H u0 p0 c0  {2,S}
+8 H u0 p0 c0  {2,S}
+9 H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
-1 * O 1 2 {2,S}
-2   O 1 2 {1,S}
+multiplicity 3
+1 * O u1 p2 c0  {2,S}
+2   O u1 p2 c0  {1,S}
 """,
     product2 = 
 """
-1   C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 * C 1 0 {1,S} {6,S} {7,S}
-3   H 0 0 {1,S}
-4   H 0 0 {1,S}
-5   H 0 0 {1,S}
-6   H 0 0 {2,S}
-7   H 0 0 {2,S}
+multiplicity 2
+1   C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 * C u1 p0 c0  {1,S} {6,S} {7,S}
+3   H u0 p0 c0  {1,S}
+4   H u0 p0 c0  {1,S}
+5   H u0 p0 c0  {1,S}
+6   H u0 p0 c0  {2,S}
+7   H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(A=(9.49e+21, 's^-1'), n=-2.41, Ea=(35.8, 'kcal/mol'), T0=(1, 'K')),
@@ -96,36 +97,39 @@ entry(
     index = 3,
     reactant1 = 
 """
-1   C 0 0 {3,S} {4,S} {6,S} {7,S}
-2   C 0 0 {4,S} {8,S} {9,S} {10,S}
-3   O 0 2 {1,S} {5,S}
-4   C 0 0 {1,S} {2,S} {11,S} {12,S}
-5   O 1 2 {3,S}
-6   H 0 0 {1,S}
-7   H 0 0 {1,S}
-8   H 0 0 {2,S}
-9   H 0 0 {2,S}
-10  H 0 0 {2,S}
-11  H 0 0 {4,S}
-12  H 0 0 {4,S}
+multiplicity 2
+1  C u0 p0 c0  {3,S} {4,S} {6,S} {7,S}
+2  C u0 p0 c0  {4,S} {8,S} {9,S} {10,S}
+3  O u0 p2 c0  {1,S} {5,S}
+4  C u0 p0 c0  {1,S} {2,S} {11,S} {12,S}
+5  O u1 p2 c0  {3,S}
+6  H u0 p0 c0  {1,S}
+7  H u0 p0 c0  {1,S}
+8  H u0 p0 c0  {2,S}
+9  H u0 p0 c0  {2,S}
+10 H u0 p0 c0  {2,S}
+11 H u0 p0 c0  {4,S}
+12 H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1 * O 1 2 {2,S}
-2   O 1 2 {1,S}
+multiplicity 3
+1 * O u1 p2 c0  {2,S}
+2   O u1 p2 c0  {1,S}
 """,
     product2 = 
 """
-1   C 0 0 {2,S} {3,S} {4,S} {5,S}
-2   C 0 0 {1,S} {6,S} {7,S} {8,S}
-3 * C 1 0 {1,S} {9,S} {10,S}
-4   H 0 0 {1,S}
-5   H 0 0 {1,S}
-6   H 0 0 {2,S}
-7   H 0 0 {2,S}
-8   H 0 0 {2,S}
-9   H 0 0 {3,S}
-10  H 0 0 {3,S}
+multiplicity 2
+1    C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2    C u0 p0 c0  {1,S} {6,S} {7,S} {8,S}
+3  * C u1 p0 c0  {1,S} {9,S} {10,S}
+4    H u0 p0 c0  {1,S}
+5    H u0 p0 c0  {1,S}
+6    H u0 p0 c0  {2,S}
+7    H u0 p0 c0  {2,S}
+8    H u0 p0 c0  {2,S}
+9    H u0 p0 c0  {3,S}
+10   H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.52e+23, 's^-1'), n=-2.71, Ea=(36.4, 'kcal/mol'), T0=(1, 'K')),
@@ -145,30 +149,33 @@ entry(
     index = 4,
     reactant1 = 
 """
-1   C 0 0 {2,S} {3,S}
-2   C 0 0 {1,S} {4,S}
-3   C 0 0 {1,S}
-4 * C 1 0 {2,S} {5,S}
-5   O 0 2 {4,S}
+multiplicity 2
+1   C u0 p0 c+2 {2,S} {3,S}
+2   C u0 p0 c+2 {1,S} {4,S}
+3   C u0 p0 c+3 {1,S}
+4 * C u1 p0 c+1 {2,S} {5,S}
+5   O u0 p2 c+1 {4,S}
 """,
     reactant2 = 
 """
-1 * O 1 2 {2,S}
-2   O 1 2 {1,S}
+multiplicity 3
+1 * O u1 p2 c0  {2,S}
+2   O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
-1 C 0 0 {2,S} {3,S}
-2 C 0 0 {1,S} {4,S}
-3 C 0 0 {1,S} {5,S} {6,S}
-4 C 0 0 {2,S}
-5 O 0 0 {3,S}
-6 O 0 0 {3,S} {7,S}
-7 O 1 0 {6,S}
+multiplicity 2
+1 C u0 p0 c+2 {2,S} {3,S}
+2 C u0 p0 c+2 {1,S} {4,S}
+3 C u0 p0 c+1 {1,S} {5,S} {6,S}
+4 C u0 p0 c+3 {2,S}
+5 O u0 p0 c+5 {3,S}
+6 O u0 p0 c+4 {3,S} {7,S}
+7 O u1 p0 c+4 {6,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (8360000000000.0, 'cm^3/(mol*s)'),
+        A = (8.36e+12, 'cm^3/(mol*s)'),
         n = -0.085,
         Ea = (-567.2, 'cal/mol'),
         T0 = (1, 'K'),
@@ -186,37 +193,37 @@ entry(
     label = "1988BOR/COB4377-4384:1",
     reactant1 = 
 """
-1 * N 1 0 {2,S} {3,D}
-2   O 0 3 {1,S}
-3   O 0 2 {1,D}
+multiplicity 2
+1 * N u1 p0 c+1 {2,S} {3,D}
+2   O u0 p3 c-1 {1,S}
+3   O u0 p2 c0  {1,D}
 """,
     reactant2 = 
 """
-NO2
-1 * N 1 0 {2,D} {3,S}
-2   O 0 2 {1,D}
-3   O 0 3 {1,S}
+multiplicity 2
+1 * N u1 p0 c+1 {2,D} {3,S}
+2   O u0 p2 c0  {1,D}
+3   O u0 p3 c-1 {1,S}
 """,
     product1 = 
 """
-NO2NO2
-1 N 0 0 {2,S} {3,S} {4,D}
-2 N 0 0 {1,S} {5,D} {6,S}
-3 O 0 3 {1,S}
-4 O 0 2 {1,D}
-5 O 0 2 {2,D}
-6 O 0 3 {2,S}
+1 N u0 p0 c+1 {2,S} {3,S} {4,D}
+2 N u0 p0 c+1 {1,S} {5,D} {6,S}
+3 O u0 p3 c-1 {1,S}
+4 O u0 p2 c0  {1,D}
+5 O u0 p2 c0  {2,D}
+6 O u0 p3 c-1 {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (263000000.0, 'm^3/(mol*s)', '+|-', 31600000.0),
+        A = (2.63e+08, 'm^3/(mol*s)', '+|-', 3.16e+07),
         n = -1.1,
         Ea = (0, 'kJ/mol'),
         T0 = (1, 'K'),
         Tmin = (300, 'K'),
         Tmax = (600, 'K'),
         Pmin = (101000, 'Pa'),
-        Pmax = (20900000.0, 'Pa'),
+        Pmax = (2.09e+07, 'Pa'),
     ),
     reference = Article(
         authors = ["Borrell, P.", "Cobos, C.J.", "Luther, K."],
@@ -242,20 +249,23 @@ entry(
     label = "1962ASH/BUR253:5",
     reactant1 = 
 """
-1 * N 1 1 {2,D}
-2   O 0 2 {1,D}
+multiplicity 2
+1 * N u1 p1 c0  {2,D}
+2   O u0 p2 c0  {1,D}
 """,
     reactant2 = 
 """
-1 * O 1 2 {2,S}
-2   O 1 2 {1,S}
+multiplicity 3
+1 * O u1 p2 c0  {2,S}
+2   O u1 p2 c0  {1,S}
 """,
     product1 = 
 """
-1 N 0 1 {2,S} {3,D}
-2 O 0 2 {1,S} {4,S}
-3 O 0 2 {1,D}
-4 O 1 2 {2,S}
+multiplicity 2
+1 N u0 p1 c0  {2,S} {3,D}
+2 O u0 p2 c0  {1,S} {4,S}
+3 O u0 p2 c0  {1,D}
+4 O u1 p2 c0  {2,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
@@ -293,26 +303,28 @@ entry(
     label = "2000HAH/LUT5098-5104:4",
     reactant1 = 
 """
-1 * N 1 0 {2,D} {3,S}
-2   O 0 2 {1,D}
-3   O 0 3 {1,S}
+multiplicity 2
+1 * N u1 p0 c+1 {2,D} {3,S}
+2   O u0 p2 c0  {1,D}
+3   O u0 p3 c-1 {1,S}
 """,
     reactant2 = 
 """
-1   N 0 0 {2,D} {3,S} {4,S}
-2   O 0 2 {1,D}
-3 * O 1 2 {1,S}
-4   O 0 3 {1,S}
+multiplicity 2
+1   N u0 p0 c+1 {2,D} {3,S} {4,S}
+2   O u0 p2 c0  {1,D}
+3 * O u1 p2 c0  {1,S}
+4   O u0 p3 c-1 {1,S}
 """,
     product1 = 
 """
-1 N 0 0 {3,S} {4,D} {5,S}
-2 N 0 0 {3,S} {6,D} {7,S}
-3 O 0 2 {1,S} {2,S}
-4 O 0 2 {1,D}
-5 O 0 3 {1,S}
-6 O 0 2 {2,D}
-7 O 0 3 {2,S}
+1 N u0 p0 c+1 {3,S} {4,D} {5,S}
+2 N u0 p0 c+1 {3,S} {6,D} {7,S}
+3 O u0 p2 c0  {1,S} {2,S}
+4 O u0 p2 c0  {1,D}
+5 O u0 p3 c-1 {1,S}
+6 O u0 p2 c0  {2,D}
+7 O u0 p3 c-1 {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
@@ -323,7 +335,7 @@ entry(
         Tmin = (300, 'K'),
         Tmax = (400, 'K'),
         Pmin = (100000, 'Pa'),
-        Pmax = (90000000.0, 'Pa'),
+        Pmax = (9e+07, 'Pa'),
     ),
     reference = Article(
         authors = ["Hahn, J.", "Luther, K.", "Troe, J."],
@@ -343,7 +355,7 @@ Excitation technique: Flash photolysis (laser or conventional)
 Time resolution: In real time
 Analytical technique: Vis-UV absorption
 
-Theoretical modeling of k0, k∞ and Fc=0.38 exp(-T/4900K) led to consistency with the experimental data.
+Theoretical modeling of k0, k and Fc=0.38 exp(-T/4900K) led to consistency with the experimental data.
 """,
 )
 
@@ -352,26 +364,28 @@ entry(
     label = "2007WIL/POG154321:2",
     reactant1 = 
 """
-1 * N 1 0 {2,D} {3,S}
-2   O 0 2 {1,D}
-3   O 0 3 {1,S}
+multiplicity 2
+1 * N u1 p0 c+1 {2,D} {3,S}
+2   O u0 p2 c0  {1,D}
+3   O u0 p3 c-1 {1,S}
 """,
     reactant2 = 
 """
-1 * O 1 2 {2,S}
-2   H 0 0 {1,S}
+multiplicity 2
+1 * O u1 p2 c0  {2,S}
+2   H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
-1 N 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 O 0 3 {1,S}
-5 H 0 0 {2,S}
+1 N u0 p0 c+1 {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 O u0 p3 c-1 {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (24100000.0, 'm^3/(mol*s)'),
+        A = (2.41e+07, 'm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'kJ/mol'),
         T0 = (1, 'K'),
@@ -402,26 +416,28 @@ entry(
     label = "2007WIL/POG154321:4",
     reactant1 = 
 """
-1   N 0 1 {2,D} {3,S}
-2   O 0 2 {1,D}
-3 * O 1 2 {1,S}
+multiplicity 2
+1   N u0 p1 c0  {2,D} {3,S}
+2   O u0 p2 c0  {1,D}
+3 * O u1 p2 c0  {1,S}
 """,
     reactant2 = 
 """
-1 * O 1 2 {2,S}
-2   H 0 0 {1,S}
+multiplicity 2
+1 * O u1 p2 c0  {2,S}
+2   H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
-1 N 0 0 {2,S} {3,D} {4,S}
-2 O 0 2 {1,S} {5,S}
-3 O 0 2 {1,D}
-4 O 0 3 {1,S}
-5 H 0 0 {2,S}
+1 N u0 p0 c+1 {2,S} {3,D} {4,S}
+2 O u0 p2 c0  {1,S} {5,S}
+3 O u0 p2 c0  {1,D}
+4 O u0 p3 c-1 {1,S}
+5 H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1205000.0, 'm^3/(mol*s)'),
+        A = (1.205e+06, 'm^3/(mol*s)'),
         n = 0,
         Ea = (0, 'kJ/mol'),
         T0 = (1, 'K'),

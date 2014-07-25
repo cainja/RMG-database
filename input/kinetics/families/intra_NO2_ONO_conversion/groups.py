@@ -23,10 +23,10 @@ entry(
     label = "RNO2",
     group = 
 """
-1 *1 R   0 {2,S}
-2 *2 N5d 0 {1,S} {3,S} {4,D}
-3 *3 Os  0 {2,S}
-4    Od  0 {2,D}
+1 *1 R   u0 {2,S}
+2 *2 N5d u0 {1,S} {3,S} {4,D}
+3 *3 Os  u0 {2,S}
+4    Od  u0 {2,D}
 """,
     kinetics = None,
     shortDesc = u"""""",
@@ -41,5 +41,4 @@ tree(
 L1: RNO2
 """
 )
-
 

@@ -10,9 +10,9 @@ entry(
     index = 485,
     label = "Y_rad_birad_trirad_quadrad;XH_Rrad_birad",
     group1 = "OR{Y_1centerquadrad, Y_1centertrirad, Y_2centerbirad, Y_1centerbirad, Y_rad, H_rad}",
-    group2 ="OR{XH_Rrad, XH_Rbirad}",
+    group2 = "OR{XH_Rrad, XH_Rbirad}",
     kinetics = ArrheniusEP(
-        A = (300000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+11, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -32,19 +32,19 @@ entry(
     label = "O2b;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (7230000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (7.23e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (15.99, 'kcal/mol'),
@@ -79,20 +79,20 @@ entry(
     label = "CH2_triplet;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 C 2T {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
+1 *1 C u2 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (30100000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (3.01e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -121,18 +121,18 @@ entry(
     label = "H_rad;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3610000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (3.61e+12, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -160,18 +160,18 @@ entry(
     label = "H_rad;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1810000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.81e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -199,21 +199,21 @@ entry(
     label = "C_methyl;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (219000000000000.0, 'cm^3/(mol*s)', '*|/', 1.1),
+        A = (2.19e+14, 'cm^3/(mol*s)', '*|/', 1.1),
         n = -0.68,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -257,21 +257,21 @@ entry(
     label = "C_rad/H2/Cs;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (23000000000000.0, 'cm^3/(mol*s)', '*|/', 1.1),
+        A = (2.3e+13, 'cm^3/(mol*s)', '*|/', 1.1),
         n = -0.35,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -301,21 +301,21 @@ entry(
     label = "C_rad/H2/Cd;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cd 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cd u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (22900000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (2.29e+13, 'cm^3/(mol*s)', '*|/', 3),
         n = -0.35,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -346,21 +346,21 @@ entry(
     label = "C_rad/H2/O;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    O 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2890000000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (2.89e+12, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -388,21 +388,21 @@ entry(
     label = "C_rad/H/NonDeC;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (211000000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (2.11e+14, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.7,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -431,21 +431,21 @@ entry(
     label = "C_rad/Cs3;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    Cs 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    Cs u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2860000000000000.0, 'cm^3/(mol*s)', '*|/', 1.7),
+        A = (2.86e+15, 'cm^3/(mol*s)', '*|/', 1.7),
         n = -1.1,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -475,20 +475,20 @@ entry(
     label = "Cd_pri_rad;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,D} {3,S}
-2    C 0 {1,D}
-3    H 0 {1,S}
+1 *1 C u1 {2,D} {3,S}
+2    C u0 {1,D}
+3    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (152000000000000.0, 'cm^3/(mol*s)', '*|/', 1.5),
+        A = (1.52e+14, 'cm^3/(mol*s)', '*|/', 1.5),
         n = -0.7,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -518,19 +518,19 @@ entry(
     label = "Ct_rad/Ct;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 Ct 1 {2,T}
-2    Ct 0 {1,T}
+1 *1 Ct u1 {2,T}
+2    Ct u0 {1,T}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3610000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (3.61e+12, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -558,19 +558,19 @@ entry(
     label = "O_pri_rad;Cmethyl_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C  0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {1,S}
+1 *2 C  u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
+4    H  u0 {1,S}
+5    H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (24100000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (2.41e+13, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -598,18 +598,18 @@ entry(
     label = "H_rad;Cmethyl_Orad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2 *3 O 1 {1,S}
-3 *4 H 0 {1,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+1 *2 C u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 O u1 {1,S}
+3 *4 H u0 {1,S}
+4    H u0 {1,S}
+5    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (18100000000000.0, 'cm^3/(mol*s)', '*|/', 3.16),
+        A = (1.81e+13, 'cm^3/(mol*s)', '*|/', 3.16),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -636,19 +636,19 @@ entry(
     label = "O2b;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (4582500000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (4.5825e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (14.85, 'kcal/mol'),
@@ -682,20 +682,20 @@ entry(
     label = "CH2_triplet;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 C 2T {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
+1 *1 C u2 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1810000000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (1.81e+12, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -725,18 +725,18 @@ entry(
     label = "H_rad;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1810000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (1.81e+12, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -764,21 +764,21 @@ entry(
     label = "C_methyl;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (11500000000000.0, 'cm^3/(mol*s)', '*|/', 1.7),
+        A = (1.15e+13, 'cm^3/(mol*s)', '*|/', 1.7),
         n = -0.32,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -810,21 +810,21 @@ entry(
     label = "C_rad/H2/Cs;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1450000000000.0, 'cm^3/(mol*s)', '*|/', 1.4),
+        A = (1.45e+12, 'cm^3/(mol*s)', '*|/', 1.4),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -856,21 +856,21 @@ entry(
     label = "C_rad/H2/Cd;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cd 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cd u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1450000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.45e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -901,21 +901,21 @@ entry(
     label = "C_rad/H2/O;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    O 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (482000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (4.82e+11, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -944,21 +944,21 @@ entry(
     label = "C_rad/H/NonDeC;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (51300000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (5.13e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.35,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -989,21 +989,21 @@ entry(
     label = "C_rad/Cs3;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    Cs 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    Cs u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (216000000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (2.16e+14, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.75,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1034,20 +1034,20 @@ entry(
     label = "Cd_pri_rad;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,D} {3,S}
-2    C 0 {1,D}
-3    H 0 {1,S}
+1 *1 C u1 {2,D} {3,S}
+2    C u0 {1,D}
+3    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1210000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.21e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1075,19 +1075,19 @@ entry(
     label = "Ct_rad/Ct;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 Ct 1 {2,T}
-2    Ct 0 {1,T}
+1 *1 Ct u1 {2,T}
+2    Ct u0 {1,T}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (6030000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (6.03e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1116,19 +1116,19 @@ entry(
     label = "O_pri_rad;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (24100000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (2.41e+13, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1156,19 +1156,19 @@ entry(
     label = "O2b;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (12044000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (1.2044e+10, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1200,19 +1200,19 @@ entry(
     label = "Ct_rad/Ct;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 Ct 1 {2,T}
-2    Ct 0 {1,T}
+1 *1 Ct u1 {2,T}
+2    Ct u0 {1,T}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (6030000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (6.03e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1242,18 +1242,18 @@ entry(
     label = "H_rad;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (904000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (9.04e+11, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1284,21 +1284,21 @@ entry(
     label = "C_methyl;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (6020000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (6.02e+12, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.32,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1327,21 +1327,21 @@ entry(
     label = "C_rad/H2/Cs;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (843000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (8.43e+11, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1372,21 +1372,21 @@ entry(
     label = "C_rad/H2/O;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    O 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (241000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (2.41e+11, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1420,21 +1420,21 @@ entry(
     label = "C_rad/H2/Cd;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cd 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cd u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (783000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (7.83e+11, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -1464,21 +1464,21 @@ entry(
     label = "C_rad/H/NonDeC;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (25600000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (2.56e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.35,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1511,21 +1511,21 @@ entry(
     label = "C_rad/Cs3;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    Cs 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    Cs u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (108000000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (1.08e+14, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.75,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1559,20 +1559,20 @@ entry(
     label = "Cd_pri_rad;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,D} {3,S}
-2    C 0 {1,D}
-3    H 0 {1,S}
+1 *1 C u1 {2,D} {3,S}
+2    C u0 {1,D}
+3    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (843000000000.0, 'cm^3/(mol*s)', '*|/', 4),
+        A = (8.43e+11, 'cm^3/(mol*s)', '*|/', 4),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1600,19 +1600,19 @@ entry(
     label = "O_pri_rad;C/H/NdNd_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    {Cs,O,S} 0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    [Cs,O,S] u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (12100000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.21e+13, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1641,17 +1641,17 @@ entry(
     label = "O2b;Cdpri_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = 
 """
-1 *2 Cd 0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 Cd u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (602200000000.0, 'cm^3/(mol*s)'),
+        A = (6.022e+11, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (13.55, 'kcal/mol'),
@@ -1689,16 +1689,16 @@ entry(
     label = "H_rad;Cdpri_Csrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 Cd 0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 Cd u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (18100000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.81e+13, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1726,19 +1726,19 @@ entry(
     label = "C_methyl;Cdpri_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 Cd 0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 Cd u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3010000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (3.01e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = -0.32,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -1775,19 +1775,19 @@ entry(
     label = "C_rad/H2/Cs;Cdpri_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 Cd 0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 Cd u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (964000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (9.64e+11, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -1817,19 +1817,19 @@ entry(
     label = "C_rad/H2/Cd;Cdpri_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cd 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cd u0 {1,S}
 """,
     group2 = 
 """
-1 *2 Cd 0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 Cd u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (84300000000.0, 'cm^3/(mol*s)', '*|/', 2.5),
+        A = (8.43e+10, 'cm^3/(mol*s)', '*|/', 2.5),
         n = 0,
         alpha = 0,
         E0 = (-0.26, 'kcal/mol'),
@@ -1859,19 +1859,19 @@ entry(
     label = "C_rad/H/NonDeC;Cdpri_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 Cd 0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 Cd u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (4580000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (4.58e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = -0.35,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -1902,19 +1902,19 @@ entry(
     label = "C_rad/Cs3;Cdpri_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    Cs 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    Cs u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 Cd 0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 Cd u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (28900000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (2.89e+13, 'cm^3/(mol*s)', '*|/', 3),
         n = -0.75,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -1945,18 +1945,18 @@ entry(
     label = "Cd_pri_rad;Cdpri_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,D} {3,S}
-2    C 0 {1,D}
-3    H 0 {1,S}
+1 *1 C u1 {2,D} {3,S}
+2    C u0 {1,D}
+3    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 Cd 0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 Cd u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2410000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (2.41e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1984,17 +1984,17 @@ entry(
     label = "O_pri_rad;Cdpri_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 Cd 0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 Cd u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (6030000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (6.03e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2022,17 +2022,17 @@ entry(
     label = "O2b;O_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (5720900000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (5.7209e+12, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2060,17 +2060,17 @@ entry(
     label = "O2b;O_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2920670000000.0, 'cm^3/(mol*s)', '*|/', 1.3),
+        A = (2.92067e+12, 'cm^3/(mol*s)', '*|/', 1.3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2098,17 +2098,17 @@ entry(
     label = "O2b;O_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2740010000000.0, 'cm^3/(mol*s)', '*|/', 1.3),
+        A = (2.74001e+12, 'cm^3/(mol*s)', '*|/', 1.3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol', '+|-', 0.4),
@@ -2138,16 +2138,16 @@ entry(
     label = "O_atom_triplet;O_Csrad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (90400000000000.0, 'cm^3/(mol*s)', '+|-', 30100000000000.0),
+        A = (9.04e+13, 'cm^3/(mol*s)', '+|-', 3.01e+13),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2177,18 +2177,18 @@ entry(
     label = "CH2_triplet;O_Csrad",
     group1 = 
 """
-1 *1 C 2T {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
+1 *1 C u2 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1210000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.21e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2217,16 +2217,16 @@ entry(
     label = "H_rad;O_Csrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (20000000000000.0, 'cm^3/(mol*s)', '+|-', 10000000000000.0),
+        A = (2e+13, 'cm^3/(mol*s)', '+|-', 1e+13),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2259,16 +2259,16 @@ entry(
     label = "H_rad;O_Csrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (6030000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (6.03e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2298,19 +2298,19 @@ entry(
     label = "C_methyl;O_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (84900000000000.0, 'cm^3/(mol*s)'),
+        A = (8.49e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2344,19 +2344,19 @@ entry(
     label = "C_methyl;O_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2410000000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (2.41e+12, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2386,19 +2386,19 @@ entry(
     label = "C_rad/H2/Cs;O_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2410000000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (2.41e+12, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2428,19 +2428,19 @@ entry(
     label = "C_rad/H2/Cd;O_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-4    Cd 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    H  u0 {1,S}
+4    Cd u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (18100000000000.0, 'cm^3/(mol*s)', '*|/', 2.5),
+        A = (1.81e+13, 'cm^3/(mol*s)', '*|/', 2.5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2470,19 +2470,19 @@ entry(
     label = "C_rad/H2/O;O_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    O 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (4820000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (4.82e+12, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2519,19 +2519,19 @@ entry(
     label = "C_rad/H/NonDeC;O_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2350000000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (2.35e+12, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2559,19 +2559,19 @@ entry(
     label = "C_rad/Cs3;O_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    Cs 0 {1,S}
-3    Cs 0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    Cs u0 {1,S}
+3    Cs u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (347000000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (3.47e+14, 'cm^3/(mol*s)', '*|/', 3),
         n = -0.75,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2604,18 +2604,18 @@ entry(
     label = "Cd_pri_rad;O_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,D} {3,S}
-2    C 0 {1,D}
-3    H 0 {1,S}
+1 *1 C u1 {2,D} {3,S}
+2    C u0 {1,D}
+3    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (30100000000000.0, 'cm^3/(mol*s)', '*|/', 2.5),
+        A = (3.01e+13, 'cm^3/(mol*s)', '*|/', 2.5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2645,18 +2645,18 @@ entry(
     label = "CO_pri_rad;O_Csrad",
     group1 = 
 """
-1 *1 C 1 {2,D} {3,S}
-2    O 0 {1,D}
-3    H 0 {1,S}
+1 *1 C u1 {2,D} {3,S}
+2    O u0 {1,D}
+3    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (181000000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.81e+14, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2686,17 +2686,17 @@ entry(
     label = "O_pri_rad;O_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (24100000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (2.41e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2726,17 +2726,17 @@ entry(
     label = "O_rad/NonDeC;O_Csrad",
     group1 = 
 """
-1 *1 O  1 {2,S}
-2    Cs 0 {1,S}
+1 *1 O  u1 {2,S}
+2    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (24100000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (2.41e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2766,17 +2766,17 @@ entry(
     label = "O_rad/NonDeO;O_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 0 {1,S}
+1 *1 O u1 {2,S}
+2    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (12100000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (1.21e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2806,19 +2806,19 @@ entry(
     label = "S_rad/NonDeC;Cmethyl_Srad",
     group1 = 
 """
-1 *1 S  1 {2,S}
-2    Cs 0 {1,S}
+1 *1 S  u1 {2,S}
+2    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2 *3 S 1 {1,S}
-3 *4 H 0 {1,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+1 *2 C u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 S u1 {1,S}
+3 *4 H u0 {1,S}
+4    H u0 {1,S}
+5    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (979000000000.0, 'cm^3/(mol*s)'),
+        A = (9.79e+11, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2837,18 +2837,18 @@ entry(
     label = "C_rad/H/CsS;C/H2/Nd_Csrad",
     group1 = 
 """
-1 *1 C  1 {2,S} {3,S} {4,S}
-2    H  0 {1,S}
-3    S  0 {1,S}
-4    Cs 0 {1,S}
+1 *1 C  u1 {2,S} {3,S} {4,S}
+2    H  u0 {1,S}
+3    S  u0 {1,S}
+4    Cs u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C        0 {2,S} {3,S} {4,S} {5,S}
-2 *3 Cs       1 {1,S}
-3 *4 H        0 {1,S}
-4    H        0 {1,S}
-5    {Cs,O,S} 0 {1,S}
+1 *2 C        u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 Cs       u1 {1,S}
+3 *4 H        u0 {1,S}
+4    H        u0 {1,S}
+5    [Cs,O,S] u0 {1,S}
 """,
     kinetics = ArrheniusEP(
         A = (3.37e-06, 'cm^3/(mol*s)'),
@@ -2871,17 +2871,17 @@ entry(
     label = "O2b;O_Csrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = 
 """
-1 *2 O  0 {2,S} {3,S}
-2 *3 Cs 1 {1,S}
-3 *4 H  0 {1,S}
+1 *2 O  u0 {2,S} {3,S}
+2 *3 Cs u1 {1,S}
+3 *4 H  u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (234130000000.0, 'cm^3/(mol*s)'),
+        A = (2.3413e+11, 'cm^3/(mol*s)'),
         n = 0.3321,
         alpha = 0,
         E0 = (-1.0635, 'kcal/mol'),
@@ -2932,12 +2932,12 @@ entry(
     label = "O2b;XH_Rrad_birad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = "OR{XH_Rrad, XH_Rbirad}",
     kinetics = ArrheniusEP(
-        A = (300000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+11, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2957,18 +2957,18 @@ entry(
     label = "NH2_rad;O_Orad",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    H   0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    H   u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 O 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 O u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (9.20e+5, 'cm^3/(mol*s)'),
+        A = (920000, 'cm^3/(mol*s)'),
         n = 1.94,
         alpha = 0,
         E0 = (-1.15, 'kcal/mol'),
@@ -2976,7 +2976,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NH2 + HO2 = NH3 + O2 (B&D #14d) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -2988,17 +2988,17 @@ entry(
     label = "O2b;N3d/H_d_Nrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 1 {1,S}
+1 *1 O u1 {2,S}
+2    O u1 {1,S}
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 N   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 N   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.20e+12, 'cm^3/(mol*s)'),
+        A = (1.2e+12, 'cm^3/(mol*s)'),
         n = -0.34,
         alpha = 0,
         E0 = (0.15, 'kcal/mol'),
@@ -3006,7 +3006,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NNH + O2 = N2 + HO2 (B&D #28b1) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3018,16 +3018,16 @@ entry(
     label = "H_rad;N3d/H_d_Nrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 N   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 N   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+8, 'cm^3/(mol*s)'),
+        A = (2.4e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -3035,7 +3035,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NNH + H = N2 + H2 (B&D #28c) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3047,25 +3047,25 @@ entry(
     label = "O_pri_rad;N3d/H_d_Nrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 N   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 N   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.20e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (1.2e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NNH + OH = N2 + H2O (B&D #28d2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3077,16 +3077,16 @@ entry(
     label = "O_atom_triplet;N3d/H_d_Nrad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 N   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 N   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.70e+8, 'cm^3/(mol*s)'),
+        A = (1.7e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -3094,7 +3094,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NNH + O = N2 + OH (B&D #28e2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3106,18 +3106,18 @@ entry(
     label = "NH2_rad;N3d/H_d_Nrad",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    H   0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    H   u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 N   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 N   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (9.20e+5, 'cm^3/(mol*s)'),
+        A = (920000, 'cm^3/(mol*s)'),
         n = 1.94,
         alpha = 0,
         E0 = (-1.15, 'kcal/mol'),
@@ -3125,7 +3125,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NNH + NH2 = N2 + NH3 (B&D #28f) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3137,25 +3137,25 @@ entry(
     label = "O_rad/NonDeO;N3d/H_d_Nrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 0 {1,S}
+1 *1 O u1 {2,S}
+2    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 N   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 N   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.40e+4, 'cm^3/(mol*s)'),
+        A = (14000, 'cm^3/(mol*s)'),
         n = 2.69,
         alpha = 0,
-        E0 = (-1.60, 'kcal/mol'),
+        E0 = (-1.6, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NNH + HO2 = N2 + H2O2 (B&D #28g1) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3167,25 +3167,25 @@ entry(
     label = "N3d_rad/O;N3d/H_d_Nrad",
     group1 = 
 """
-1 *1 N3d 1 {2,D}
-2    Od  0 {1,D}
+1 *1 N3d u1 {2,D}
+2    Od  u0 {1,D}
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 N   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 N   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.20e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (1.2e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NNH + NO = N2 + HNO (B&D #28h) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3197,17 +3197,17 @@ entry(
     label = "H_rad;N3s/H2_s_Nbirad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   2 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u2 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (4.80e+8, 'cm^3/(mol*s)'),
+        A = (4.8e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -3215,7 +3215,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2NN + H = NNH + H2 (B&D #30c2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3227,17 +3227,17 @@ entry(
     label = "O_atom_triplet;N3s/H2_s_Nbirad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   2 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u2 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3.30e+8, 'cm^3/(mol*s)'),
+        A = (3.3e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -3245,7 +3245,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2NN + O = NNH + OH (B&D #30d2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3257,26 +3257,26 @@ entry(
     label = "O_pri_rad;N3s/H2_s_Nbirad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   2 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u2 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (2.4e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2NN + OH = NNH + H2O (B&D #30e2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3288,20 +3288,20 @@ entry(
     label = "C_methyl;N3s/H2_s_Nbirad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   2 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u2 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.60e+6, 'cm^3/(mol*s)'),
+        A = (1.6e+06, 'cm^3/(mol*s)'),
         n = 1.87,
         alpha = 0,
         E0 = (0.13, 'kcal/mol'),
@@ -3309,7 +3309,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2NN + CH3 = NNH + CH4 (B&D #30f3) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3321,19 +3321,19 @@ entry(
     label = "NH2_rad;N3s/H2_s_Nbirad",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    H   0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    H   u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   2 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u2 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.80e+6, 'cm^3/(mol*s)'),
+        A = (1.8e+06, 'cm^3/(mol*s)'),
         n = 1.94,
         alpha = 0,
         E0 = (-1.15, 'kcal/mol'),
@@ -3341,7 +3341,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2NN + NH2 = NNH + NH3 (B&D #30g2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3353,26 +3353,26 @@ entry(
     label = "O_rad/NonDeO;N3s/H2_s_Nbirad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 0 {1,S}
+1 *1 O u1 {2,S}
+2    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   2 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u2 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.90e+4, 'cm^3/(mol*s)'),
+        A = (29000, 'cm^3/(mol*s)'),
         n = 2.69,
         alpha = 0,
-        E0 = (-1.60, 'kcal/mol'),
+        E0 = (-1.6, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2NN + HO2 = NNH + H2O2 (B&D #30h2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3384,25 +3384,25 @@ entry(
     label = "H_rad;N3s/H2_s_Nrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+8, 'cm^3/(mol*s)'),
+        A = (2.4e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
-        E0 = (0.0, 'kcal/mol'),
+        E0 = (0, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: N2H3 + H = N2H2 + H2 (B&D #31b) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3414,17 +3414,17 @@ entry(
     label = "O_atom_triplet;N3s/H2_s_Nrad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.70e+8, 'cm^3/(mol*s)'),
+        A = (1.7e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.65, 'kcal/mol'),
@@ -3432,7 +3432,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: N2H3 + O = N2H2 + OH (B&D #31c3) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3444,26 +3444,26 @@ entry(
     label = "O_pri_rad;N3s/H2_s_Nrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.20e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (1.2e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: N2H3 + OH = N2H2 + H2O (B&D #31d1) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3475,20 +3475,20 @@ entry(
     label = "C_methyl;N3s/H2_s_Nrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (8.20e+5, 'cm^3/(mol*s)'),
+        A = (820000, 'cm^3/(mol*s)'),
         n = 1.87,
         alpha = 0,
         E0 = (1.82, 'kcal/mol'),
@@ -3496,7 +3496,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: N2H3 + CH3 = N2H2 + CH4 (B&D #31e1) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3508,19 +3508,19 @@ entry(
     label = "NH2_rad;N3s/H2_s_Nrad",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    H   0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    H   u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (9.20e+5, 'cm^3/(mol*s)'),
+        A = (920000, 'cm^3/(mol*s)'),
         n = 1.94,
         alpha = 0,
         E0 = (-1.15, 'kcal/mol'),
@@ -3528,7 +3528,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: N2H3 + NH2 = N2H2 + NH3 (B&D #31f1) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3540,26 +3540,26 @@ entry(
     label = "O_rad/NonDeO;N3s/H2_s_Nrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 0 {1,S}
+1 *1 O u1 {2,S}
+2    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 N   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 N   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.90e+4, 'cm^3/(mol*s)'),
+        A = (29000, 'cm^3/(mol*s)'),
         n = 2.69,
         alpha = 0,
-        E0 = (-1.60, 'kcal/mol'),
+        E0 = (-1.6, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: N2H3 + HO2 = N2H2 + H2O2 (B&D #31g2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3571,18 +3571,18 @@ entry(
     label = "N3s_rad/H/NonDeN;O_Orad",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    N3s 0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    N3s u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 O 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 O u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (9.20e+5, 'cm^3/(mol*s)'),
+        A = (920000, 'cm^3/(mol*s)'),
         n = 1.94,
         alpha = 0,
         E0 = (2.13, 'kcal/mol'),
@@ -3590,7 +3590,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: N2H3 + HO2 = N2H4 + O2 (B&D #31g3) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3602,17 +3602,17 @@ entry(
     label = "H_rad;N3s/H2_s_Orad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 O   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 O   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (4.80e+8, 'cm^3/(mol*s)'),
+        A = (4.8e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (1.56, 'kcal/mol'),
@@ -3620,7 +3620,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NH2O + H = HNO + H2 (B&D #37c2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3632,17 +3632,17 @@ entry(
     label = "O_atom_triplet;N3s/H2_s_Orad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 O   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 O   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3.30e+8, 'cm^3/(mol*s)'),
+        A = (3.3e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (0.49, 'kcal/mol'),
@@ -3650,7 +3650,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NH2O + O = HNO + OH (B&D #37d) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3662,26 +3662,26 @@ entry(
     label = "O_pri_rad;N3s/H2_s_Orad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 O   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 O   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (2.4e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NH2O + OH = HNO + H2O (B&D #37e) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3693,20 +3693,20 @@ entry(
     label = "C_methyl;N3s/H2_s_Orad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 O   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 O   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.60e+6, 'cm^3/(mol*s)'),
+        A = (1.6e+06, 'cm^3/(mol*s)'),
         n = 1.87,
         alpha = 0,
         E0 = (2.96, 'kcal/mol'),
@@ -3714,7 +3714,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NH2O + CH3 = CH4 + HNO (B&D #37f2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3726,19 +3726,19 @@ entry(
     label = "NH2_rad;N3s/H2_s_Orad",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    H   0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    H   u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 O   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 O   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.80e+6, 'cm^3/(mol*s)'),
+        A = (1.8e+06, 'cm^3/(mol*s)'),
         n = 1.94,
         alpha = 0,
         E0 = (-1.15, 'kcal/mol'),
@@ -3746,7 +3746,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NH2O + NH2 = HNO + NH3 (B&D #37g) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3758,26 +3758,26 @@ entry(
     label = "O_rad/NonDeO;N3s/H2_s_Orad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 0 {1,S}
+1 *1 O u1 {2,S}
+2    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 O   1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 O   u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.90e+4, 'cm^3/(mol*s)'),
+        A = (29000, 'cm^3/(mol*s)'),
         n = 2.69,
         alpha = 0,
-        E0 = (-1.60, 'kcal/mol'),
+        E0 = (-1.6, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NH2O + HO2 = HNO + H2O2 (B&D #37h1) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3789,25 +3789,25 @@ entry(
     label = "O_rad/NonDeN;O_Orad",
     group1 = 
 """
-1 *1 O   1 {2,S}
-2    N3s 0 {1,S}
+1 *1 O   u1 {2,S}
+2    N3s u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 O 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 O u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.90e+4, 'cm^3/(mol*s)'),
+        A = (29000, 'cm^3/(mol*s)'),
         n = 2.69,
         alpha = 0,
-        E0 = (-1.60, 'kcal/mol'),
+        E0 = (-1.6, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: NH2O + HO2 = NH2OH + O2 (B&D #37h2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3819,16 +3819,16 @@ entry(
     label = "H_rad;O_Nrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (4.80e+8, 'cm^3/(mol*s)'),
+        A = (4.8e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (0.38, 'kcal/mol'),
@@ -3836,7 +3836,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HNOH + H = HNO + H2 (B&D #38b2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3848,16 +3848,16 @@ entry(
     label = "O_atom_triplet;O_Nrad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3.30e+8, 'cm^3/(mol*s)'),
+        A = (3.3e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.36, 'kcal/mol'),
@@ -3865,7 +3865,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HNOH + O = HNO + OH (B&D #38c2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3877,25 +3877,25 @@ entry(
     label = "O_pri_rad;O_Nrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (2.4e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HNOH + OH = HNO + H2O (B&D #38d) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3907,27 +3907,27 @@ entry(
     label = "C_methyl;O_Nrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.60e+6, 'cm^3/(mol*s)'),
+        A = (1.6e+06, 'cm^3/(mol*s)'),
         n = 1.87,
         alpha = 0,
-        E0 = (2.10, 'kcal/mol'),
+        E0 = (2.1, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HNOH + CH3 = CH4 + HNO (B&D #38e2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3939,18 +3939,18 @@ entry(
     label = "NH2_rad;O_Nrad",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    H   0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    H   u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.80e+6, 'cm^3/(mol*s)'),
+        A = (1.8e+06, 'cm^3/(mol*s)'),
         n = 1.94,
         alpha = 0,
         E0 = (-1.15, 'kcal/mol'),
@@ -3958,7 +3958,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HNOH + NH2 = HNO + NH3 (B&D #38f3)  in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -3970,25 +3970,25 @@ entry(
     label = "O_rad/NonDeO;O_Nrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 0 {1,S}
+1 *1 O u1 {2,S}
+2    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.94e+4, 'cm^3/(mol*s)'),
+        A = (29400, 'cm^3/(mol*s)'),
         n = 2.69,
         alpha = 0,
-        E0 = (-1.60, 'kcal/mol'),
+        E0 = (-1.6, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HNOH + HO2 = HNO + H2O2 (B&D #38g2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4000,26 +4000,26 @@ entry(
     label = "N3s_rad/H/NonDeO;O_Orad",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    Os  0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    Os  u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 O 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 O u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.90e+4, 'cm^3/(mol*s)'),
+        A = (29000, 'cm^3/(mol*s)'),
         n = 2.69,
         alpha = 0,
-        E0 = (-1.60, 'kcal/mol'),
+        E0 = (-1.6, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HNOH + HO2 = NH2OH + O2 (B&D #38g3) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4031,18 +4031,18 @@ entry(
     label = "O_rad/NonDeO;Cds/H2_d_N3rad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    O 0 {1,S}
+1 *1 O u1 {2,S}
+2    O u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C   0 {2,D} {3,S} {4,S}
-2 *3 N3d 1 {1,D}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 C   u0 {2,D} {3,S} {4,S}
+2 *3 N3d u1 {1,D}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.40e+4, 'cm^3/(mol*s)'),
+        A = (14000, 'cm^3/(mol*s)'),
         n = 2.69,
         alpha = 0,
         E0 = (-1.61, 'kcal/mol'),
@@ -4050,7 +4050,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2CN + HO2 = HCN + H2O2 (B&D #45b1) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4062,17 +4062,17 @@ entry(
     label = "N3d_rad/C;O_Orad",
     group1 = 
 """
-1 *1 N3d 1 {2,D}
-2    C   0 {1,D}
+1 *1 N3d u1 {2,D}
+2    C   u0 {1,D}
 """,
     group2 = 
 """
-1 *2 O 0 {2,S} {3,S}
-2 *3 O 1 {1,S}
-3 *4 H 0 {1,S}
+1 *2 O u0 {2,S} {3,S}
+2 *3 O u1 {1,S}
+3 *4 H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.40e+4, 'cm^3/(mol*s)'),
+        A = (14000, 'cm^3/(mol*s)'),
         n = 2.69,
         alpha = 0,
         E0 = (-1.61, 'kcal/mol'),
@@ -4080,7 +4080,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2CN + HO2 = H2CNH + O2 (B&D #45b2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4092,20 +4092,20 @@ entry(
     label = "C_methyl;Cds/H2_d_N3rad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C   0 {2,D} {3,S} {4,S}
-2 *3 N3d 1 {1,D}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 C   u0 {2,D} {3,S} {4,S}
+2 *3 N3d u1 {1,D}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (8.10e+5, 'cm^3/(mol*s)'),
+        A = (810000, 'cm^3/(mol*s)'),
         n = 1.87,
         alpha = 0,
         E0 = (-1.11, 'kcal/mol'),
@@ -4113,7 +4113,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2CN + CH3 = HCN + CH4 (B&D #45d) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4125,26 +4125,26 @@ entry(
     label = "O_pri_rad;Cds/H2_d_N3rad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C   0 {2,D} {3,S} {4,S}
-2 *3 N3d 1 {1,D}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 C   u0 {2,D} {3,S} {4,S}
+2 *3 N3d u1 {1,D}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.20e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (1.2e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2CN + OH = HCN + H2O (B&D #45e2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4156,17 +4156,17 @@ entry(
     label = "H_rad;Cds/H2_d_N3rad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 C   0 {2,D} {3,S} {4,S}
-2 *3 N3d 1 {1,D}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 C   u0 {2,D} {3,S} {4,S}
+2 *3 N3d u1 {1,D}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+8, 'cm^3/(mol*s)'),
+        A = (2.4e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -4174,7 +4174,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2CN + H = HCN + H2 (B&D #45g) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4186,19 +4186,19 @@ entry(
     label = "NH2_rad;Cds/H2_d_N3rad",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    H   0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    H   u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C   0 {2,D} {3,S} {4,S}
-2 *3 N3d 1 {1,D}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 C   u0 {2,D} {3,S} {4,S}
+2 *3 N3d u1 {1,D}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (9.20e+5, 'cm^3/(mol*s)'),
+        A = (920000, 'cm^3/(mol*s)'),
         n = 1.94,
         alpha = 0,
         E0 = (-1.15, 'kcal/mol'),
@@ -4206,7 +4206,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2CN + NH2 = HCN + NH3 (B&D #45h) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4218,17 +4218,17 @@ entry(
     label = "O_atom_triplet;Cds/H2_d_N3rad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 C   0 {2,D} {3,S} {4,S}
-2 *3 N3d 1 {1,D}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 C   u0 {2,D} {3,S} {4,S}
+2 *3 N3d u1 {1,D}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.70e+8, 'cm^3/(mol*s)'),
+        A = (1.7e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -4236,7 +4236,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: H2CN + O = HCN + OH (B&D #45i1) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4248,16 +4248,16 @@ entry(
     label = "H_rad;N3d/H_d_Crad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 C   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 C   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+8, 'cm^3/(mol*s)'),
+        A = (2.4e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -4265,7 +4265,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HCNH + H = HCN + H2 (B&D #46a2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4277,16 +4277,16 @@ entry(
     label = "O_atom_triplet;N3d/H_d_Crad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 C   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 C   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.70e+8, 'cm^3/(mol*s)'),
+        A = (1.7e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -4294,7 +4294,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HCNH + O = HCN + OH (B&D #46b2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4306,25 +4306,25 @@ entry(
     label = "O_pri_rad;N3d/H_d_Crad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 C   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 C   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.20e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (1.2e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HCNH + OH = HCN + H2O (B&D #46c) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4336,19 +4336,19 @@ entry(
     label = "C_methyl;N3d/H_d_Crad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3d 0 {2,D} {3,S}
-2 *3 C   1 {1,D}
-3 *4 H   0 {1,S}
+1 *2 N3d u0 {2,D} {3,S}
+2 *3 C   u1 {1,D}
+3 *4 H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (8.20e+5, 'cm^3/(mol*s)'),
+        A = (820000, 'cm^3/(mol*s)'),
         n = 1.87,
         alpha = 0,
         E0 = (-1.11, 'kcal/mol'),
@@ -4356,7 +4356,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: HCNH + CH3 = HCN + CH4 (B&D #46d) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4368,18 +4368,18 @@ entry(
     label = "H_rad;Cmethyl_Nrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+1 *2 C u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
+4    H u0 {1,S}
+5    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (7.20e+8, 'cm^3/(mol*s)'),
+        A = (7.2e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -4387,7 +4387,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH3NH + H = H2CNH + H2 (B&D #49b) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4399,18 +4399,18 @@ entry(
     label = "O_atom_triplet;Cmethyl_Nrad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+1 *2 C u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
+4    H u0 {1,S}
+5    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (5.00e+8, 'cm^3/(mol*s)'),
+        A = (5e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -4418,7 +4418,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH3NH + O = H2CNH + OH (B&D #49c) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4430,27 +4430,27 @@ entry(
     label = "O_pri_rad;Cmethyl_Nrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+1 *2 C u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
+4    H u0 {1,S}
+5    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3.60e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (3.6e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH3NH + OH = H2CNH + H2O (B&D #49d) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4462,21 +4462,21 @@ entry(
     label = "C_methyl;Cmethyl_Nrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2 *3 N 1 {1,S}
-3 *4 H 0 {1,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+1 *2 C u0 {2,S} {3,S} {4,S} {5,S}
+2 *3 N u1 {1,S}
+3 *4 H u0 {1,S}
+4    H u0 {1,S}
+5    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+6, 'cm^3/(mol*s)'),
+        A = (2.4e+06, 'cm^3/(mol*s)'),
         n = 1.87,
         alpha = 0,
         E0 = (-1.11, 'kcal/mol'),
@@ -4484,7 +4484,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH3NH + CH3 = H2CNH + CH4 (B&D #49e) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4496,17 +4496,17 @@ entry(
     label = "H_rad;N3s/H2_s_Cssrad",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 Cs  1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 Cs  u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (4.00e+8, 'cm^3/(mol*s)'),
+        A = (4e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -4514,7 +4514,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH2NH2 + H = H2CNH + H2 (B&D #50b) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4526,17 +4526,17 @@ entry(
     label = "O_atom_triplet;N3s/H2_s_Cssrad",
     group1 = 
 """
-1 *1 O 2T
+1 *1 O u2
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 Cs  1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 Cs  u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (3.30e+8, 'cm^3/(mol*s)'),
+        A = (3.3e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -4544,7 +4544,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH2NH2 + O = H2CNH + OH (B&D #50c2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4556,26 +4556,26 @@ entry(
     label = "O_pri_rad;N3s/H2_s_Cssrad",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 Cs  1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 Cs  u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (2.4e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH2NH2 + OH = H2CNH + H2O (B&D #50d2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4587,20 +4587,20 @@ entry(
     label = "C_methyl;N3s/H2_s_Cssrad",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 N3s 0 {2,S} {3,S} {4,S}
-2 *3 Cs  1 {1,S}
-3 *4 H   0 {1,S}
-4    H   0 {1,S}
+1 *2 N3s u0 {2,S} {3,S} {4,S}
+2 *3 Cs  u1 {1,S}
+3 *4 H   u0 {1,S}
+4    H   u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1.60e+6, 'cm^3/(mol*s)'),
+        A = (1.6e+06, 'cm^3/(mol*s)'),
         n = 1.87,
         alpha = 0,
         E0 = (-0.63, 'kcal/mol'),
@@ -4608,7 +4608,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH2NH2 + CH3 = H2CNH + CH4 (B&D #50e2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4620,18 +4620,18 @@ entry(
     label = "H_rad;Cds/H2_d_N5ddrad/O",
     group1 = 
 """
-1 *1 H 1
+1 *1 H u1
 """,
     group2 = 
 """
-1 *2 C    0 {2,D} {3,S} {4,S}
-2 *3 N5dd 1 {1,D} {5,D}
-3 *4 H    0 {1,S}
-4    H    0 {1,S}
-5    O    0 {2,D}
+1 *2 C    u0 {2,D} {3,S} {4,S}
+2 *3 N5dd u1 {1,D} {5,D}
+3 *4 H    u0 {1,S}
+4    H    u0 {1,S}
+5    O    u0 {2,D}
 """,
     kinetics = ArrheniusEP(
-        A = (4.80e+8, 'cm^3/(mol*s)'),
+        A = (4.8e+08, 'cm^3/(mol*s)'),
         n = 1.5,
         alpha = 0,
         E0 = (-0.89, 'kcal/mol'),
@@ -4639,7 +4639,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH2NO + H = HCNO + H2 (B&D #57c2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4651,27 +4651,27 @@ entry(
     label = "O_pri_rad;Cds/H2_d_N5ddrad/O",
     group1 = 
 """
-1 *1 O 1 {2,S}
-2    H 0 {1,S}
+1 *1 O u1 {2,S}
+2    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C    0 {2,D} {3,S} {4,S}
-2 *3 N5dd 1 {1,D} {5,D}
-3 *4 H    0 {1,S}
-4    H    0 {1,S}
-5    O    0 {2,D}
+1 *2 C    u0 {2,D} {3,S} {4,S}
+2 *3 N5dd u1 {1,D} {5,D}
+3 *4 H    u0 {1,S}
+4    H    u0 {1,S}
+5    O    u0 {2,D}
 """,
     kinetics = ArrheniusEP(
-        A = (2.40e+6, 'cm^3/(mol*s)'),
-        n = 2.0,
+        A = (2.4e+06, 'cm^3/(mol*s)'),
+        n = 2,
         alpha = 0,
         E0 = (-1.19, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH2NO + OH = HCNO + H2O (B&D #57e2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4683,21 +4683,21 @@ entry(
     label = "C_methyl;Cds/H2_d_N5ddrad/O",
     group1 = 
 """
-1 *1 C 1 {2,S} {3,S} {4,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
-4    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S} {4,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
+4    H u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C    0 {2,D} {3,S} {4,S}
-2 *3 N5dd 1 {1,D} {5,D}
-3 *4 H    0 {1,S}
-4    H    0 {1,S}
-5    O    0 {2,D}
+1 *2 C    u0 {2,D} {3,S} {4,S}
+2 *3 N5dd u1 {1,D} {5,D}
+3 *4 H    u0 {1,S}
+4    H    u0 {1,S}
+5    O    u0 {2,D}
 """,
     kinetics = ArrheniusEP(
-        A = (1.60e+6, 'cm^3/(mol*s)'),
+        A = (1.6e+06, 'cm^3/(mol*s)'),
         n = 1.87,
         alpha = 0,
         E0 = (-1.11, 'kcal/mol'),
@@ -4705,7 +4705,7 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH2NO + CH3 = HCNO + CH4 (B&D #57f2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
@@ -4717,20 +4717,20 @@ entry(
     label = "NH2_rad;Cds/H2_d_N5ddrad/O",
     group1 = 
 """
-1 *1 N3s 1 {2,S} {3,S}
-2    H   0 {1,S}
-3    H   0 {1,S}
+1 *1 N3s u1 {2,S} {3,S}
+2    H   u0 {1,S}
+3    H   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 C    0 {2,D} {3,S} {4,S}
-2 *3 N5dd 1 {1,D} {5,D}
-3 *4 H    0 {1,S}
-4    H    0 {1,S}
-5    O    0 {2,D}
+1 *2 C    u0 {2,D} {3,S} {4,S}
+2 *3 N5dd u1 {1,D} {5,D}
+3 *4 H    u0 {1,S}
+4    H    u0 {1,S}
+5    O    u0 {2,D}
 """,
     kinetics = ArrheniusEP(
-        A = (1.80e+6, 'cm^3/(mol*s)'),
+        A = (1.8e+06, 'cm^3/(mol*s)'),
         n = 1.94,
         alpha = 0,
         E0 = (-1.15, 'kcal/mol'),
@@ -4738,11 +4738,10 @@ entry(
         Tmax = (2500, 'K'),
     ),
     rank = 1,
-    shortDesc = u"Added by Beat Buesser",
+    shortDesc = u"""Added by Beat Buesser""",
     longDesc = 
 u"""
 Added by Beat Buesser, value for reaction: CH2NO + NH2 = HCNO + NH3 (B&D #57g2) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
 """,
 )
-
 

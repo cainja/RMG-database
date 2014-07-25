@@ -11,31 +11,31 @@ entry(
     index = 1,
     reactant1 = 
 """
-acetylperoxy
-1    O 0 2 {5,D}
-2 *2 C 0 0 {3,S} {5,S} {7,S} {8,S}
-3 *3 H 0 0 {2,S}
-4 *4 O 0 2 {5,S} {6,S}
-5 *5 C 0 0 {1,D} {2,S} {4,S}
-6 *1 O 1 2 {4,S}
-7    H 0 0 {2,S}
-8    H 0 0 {2,S}
+multiplicity 2
+1    O u0 p2 c0  {5,D}
+2 *2 C u0 p0 c0  {3,S} {5,S} {7,S} {8,S}
+3 *3 H u0 p0 c0  {2,S}
+4 *4 O u0 p2 c0  {5,S} {6,S}
+5 *5 C u0 p0 c0  {1,D} {2,S} {4,S}
+6 *1 O u1 p2 c0  {4,S}
+7    H u0 p0 c0  {2,S}
+8    H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
-hydroperoxyl-vinoxy
-1 *4 C 0 0 {2,S} {3,S} {5,D}
-2 *1 C 1 0 {1,S} {7,S} {8,S}
-3 *5 O 0 2 {1,S} {4,S}
-4 *2 O 0 2 {3,S} {6,S}
-5    O 0 2 {1,D}
-6 *3 H 0 0 {4,S}
-7    H 0 0 {2,S}
-8    H 0 0 {2,S}
+multiplicity 2
+1 *4 C u0 p0 c0  {2,S} {3,S} {5,D}
+2 *1 C u1 p0 c0  {1,S} {7,S} {8,S}
+3 *5 O u0 p2 c0  {1,S} {4,S}
+4 *2 O u0 p2 c0  {3,S} {6,S}
+5    O u0 p2 c0  {1,D}
+6 *3 H u0 p0 c0  {4,S}
+7    H u0 p0 c0  {2,S}
+8    H u0 p0 c0  {2,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (2300000000.0, 's^-1', '*|/', 2.51189),
+        A = (2.3e+09, 's^-1', '*|/', 2.51189),
         n = 0.75,
         Ea = (23.2, 'kcal/mol'),
         T0 = (1, 'K'),

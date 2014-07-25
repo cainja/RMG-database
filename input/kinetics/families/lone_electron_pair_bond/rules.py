@@ -26,14 +26,14 @@ entry(
     label = "N3sRRR;O_atom_singlet",
     group1 = 
 """
-1 *1 N3s 0 {2,S} {3,S} {4,S}
-2    R 0 {1,S}
-3    R 0 {1,S}
-4    R 0 {1,S}
+1 *1 N3s u0 {2,S} {3,S} {4,S}
+2    R   u0 {1,S}
+3    R   u0 {1,S}
+4    R   u0 {1,S}
 """,
     group2 = 
 """
-1 *2 O 2S
+1 *2 O u2
 """,
     kinetics = ArrheniusEP(
         A = (100000, 'cm^3/(mol*s)'),
@@ -47,8 +47,7 @@ entry(
     shortDesc = u"""Default""",
     longDesc = 
 u"""
+
 """,
 )
-
-
 

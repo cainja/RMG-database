@@ -12,14 +12,14 @@ entry(
     group1 = "OR{R3, R4, R5, R6}",
     group2 = 
 """
-1 *1 R!H 1
+1 *1 R!H u1
 """,
     group3 = 
 """
-1 *2 R!H 1
+1 *2 R!H u1
 """,
     kinetics = ArrheniusEP(
-        A = (500000000000.0, 's^-1'),
+        A = (5e+11, 's^-1'),
         n = 0,
         alpha = 0,
         E0 = (30, 'kcal/mol'),
@@ -39,27 +39,27 @@ entry(
     label = "R6_SSSDS;C_rad_out_H/OneDe;Cpri_rad_out_2H",
     group1 = 
 """
-1 *1 {Cs,Cd,CO,Os,Ss} 1 {2,S}
-2 *3 {Cs,Cd,CO,Os,Ss} 0 {1,S} {3,S}
-3    {Cs,Cd,CO,Os,Ss} 0 {2,S} {4,S}
-4    Cd               0 {3,S} {5,D}
-5 *4 Cd               0 {4,D} {6,S}
-6 *2 {Cs,Cd,CO,Os,Ss} 1 {5,S}
+1 *1 [Cs,Cd,CO,Os,Ss] u1 {2,S}
+2 *3 [Cs,Cd,CO,Os,Ss] u0 {1,S} {3,S}
+3    [Cs,Cd,CO,Os,Ss] u0 {2,S} {4,S}
+4    Cd               u0 {3,S} {5,D}
+5 *4 Cd               u0 {4,D} {6,S}
+6 *2 [Cs,Cd,CO,Os,Ss] u1 {5,S}
 """,
     group2 = 
 """
-1 *1 C             1 {2,S} {3,S}
-2    H             0 {1,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+1 *1 C             u1 {2,S} {3,S}
+2    H             u0 {1,S}
+3    [Cd,Ct,Cb,CO] u0 {1,S}
 """,
     group3 = 
 """
-1 *2 C 1 {2,S} {3,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
+1 *2 C u1 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (2000000000000.0, 's^-1'),
+        A = (2e+12, 's^-1'),
         n = 0,
         alpha = 0,
         E0 = (1.8, 'kcal/mol', '+|-', 1),
@@ -88,25 +88,25 @@ entry(
     label = "R4_SSS;C_rad_out_2H;Cpri_rad_out_2H",
     group1 = 
 """
-1 *1 {Cs,Cd,CO,Os,Ss} 1 {2,S}
-2 *3 {Cs,Cd,CO,Os,Ss} 0 {1,S} {3,S}
-3 *4 {Cs,Cd,CO,Os,Ss} 0 {2,S} {4,S}
-4 *2 {Cs,Cd,CO,Os,Ss} 1 {3,S}
+1 *1 [Cs,Cd,CO,Os,Ss] u1 {2,S}
+2 *3 [Cs,Cd,CO,Os,Ss] u0 {1,S} {3,S}
+3 *4 [Cs,Cd,CO,Os,Ss] u0 {2,S} {4,S}
+4 *2 [Cs,Cd,CO,Os,Ss] u1 {3,S}
 """,
     group2 = 
 """
-1 *1 C 1 {2,S} {3,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     group3 = 
 """
-1 *2 C 1 {2,S} {3,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
+1 *2 C u1 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1620000000000.0, 's^-1'),
+        A = (1.62e+12, 's^-1'),
         n = -0.305,
         alpha = 0,
         E0 = (1.98, 'kcal/mol'),
@@ -132,26 +132,26 @@ entry(
     label = "R5_SSSS;C_rad_out_2H;Cpri_rad_out_2H",
     group1 = 
 """
-1 *1 {Cs,Cd,CO,Os,Ss} 1 {2,S}
-2 *3 {Cs,Cd,CO,Os,Ss} 0 {1,S} {3,S}
-3    {Cs,Cd,CO,Os,Ss} 0 {2,S} {4,S}
-4 *4 {Cs,Cd,CO,Os,Ss} 0 {3,S} {5,S}
-5 *2 {Cs,Cd,CO,Os,Ss} 1 {4,S}
+1 *1 [Cs,Cd,CO,Os,Ss] u1 {2,S}
+2 *3 [Cs,Cd,CO,Os,Ss] u0 {1,S} {3,S}
+3    [Cs,Cd,CO,Os,Ss] u0 {2,S} {4,S}
+4 *4 [Cs,Cd,CO,Os,Ss] u0 {3,S} {5,S}
+5 *2 [Cs,Cd,CO,Os,Ss] u1 {4,S}
 """,
     group2 = 
 """
-1 *1 C 1 {2,S} {3,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     group3 = 
 """
-1 *2 C 1 {2,S} {3,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
+1 *2 C u1 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (7760000000.0, 's^-1'),
+        A = (7.76e+09, 's^-1'),
         n = 0.311,
         alpha = 0,
         E0 = (1.7, 'kcal/mol'),
@@ -179,27 +179,27 @@ entry(
     label = "R6_SSSSS;C_rad_out_2H;Cpri_rad_out_2H",
     group1 = 
 """
-1 *1 {Cs,Cd,CO,Os,Ss} 1 {2,S}
-2 *3 {Cs,Cd,CO,Os,Ss} 0 {1,S} {3,S}
-3    {Cs,Cd,CO,Os,Ss} 0 {2,S} {4,S}
-4    {Cs,Cd,CO,Os,Ss} 0 {3,S} {5,S}
-5 *4 {Cs,Cd,CO,Os,Ss} 0 {4,S} {6,S}
-6 *2 {Cs,Cd,CO,Os,Ss} 1 {5,S}
+1 *1 [Cs,Cd,CO,Os,Ss] u1 {2,S}
+2 *3 [Cs,Cd,CO,Os,Ss] u0 {1,S} {3,S}
+3    [Cs,Cd,CO,Os,Ss] u0 {2,S} {4,S}
+4    [Cs,Cd,CO,Os,Ss] u0 {3,S} {5,S}
+5 *4 [Cs,Cd,CO,Os,Ss] u0 {4,S} {6,S}
+6 *2 [Cs,Cd,CO,Os,Ss] u1 {5,S}
 """,
     group2 = 
 """
-1 *1 C 1 {2,S} {3,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
+1 *1 C u1 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     group3 = 
 """
-1 *2 C 1 {2,S} {3,S}
-2    H 0 {1,S}
-3    H 0 {1,S}
+1 *2 C u1 {2,S} {3,S}
+2    H u0 {1,S}
+3    H u0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (32100000000.0, 's^-1'),
+        A = (3.21e+10, 's^-1'),
         n = 0.137,
         alpha = 0,
         E0 = (2.12, 'kcal/mol'),
@@ -219,17 +219,17 @@ entry(
     label = "R3_SS;S_rad;Spri_rad",
     group1 = 
 """
-1 *1 {Cs,Cd,CO,Os,Ss} 1 {2,S}
-2 *3 {Cs,Cd,CO,Os,Ss} 0 {1,S} {3,S}
-3 *2 {Cs,Cd,CO,Os,Ss} 1 {2,S}
+1 *1 [Cs,Cd,CO,Os,Ss] u1 {2,S}
+2 *3 [Cs,Cd,CO,Os,Ss] u0 {1,S} {3,S}
+3 *2 [Cs,Cd,CO,Os,Ss] u1 {2,S}
 """,
     group2 = 
 """
-1 *1 Ss 1
+1 *1 Ss u1
 """,
     group3 = 
 """
-1 *2 Ss 1
+1 *2 Ss u1
 """,
     kinetics = ArrheniusEP(
         A = (2.18e+16, 's^-1'),

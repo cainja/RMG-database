@@ -11,30 +11,32 @@ entry(
     label = "1981BAT/BUR467:1",
     reactant1 = 
 """
-1 *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2 *1 O 1 {1,S}
-3 *3 H 0 {1,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+multiplicity 2
+1 *2 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2 *1 O u1 p2 c0  {1,S}
+3 *3 H u0 p0 c0  {1,S}
+4    H u0 p0 c0  {1,S}
+5    H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
-1 *1 C 1 {2,S} {4,S} {5,S}
-2 *2 O 0 {1,S} {3,S}
-3 *3 H 0 {2,S}
-4    H 0 {1,S}
-5    H 0 {1,S}
+multiplicity 2
+1 *1 C u1 p0 c0  {2,S} {4,S} {5,S}
+2 *2 O u0 p2 c0  {1,S} {3,S}
+3 *3 H u0 p0 c0  {2,S}
+4    H u0 p0 c0  {1,S}
+5    H u0 p0 c0  {1,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (1e+13,"s^-1"),
+        A = (1e+13, 's^-1'),
         n = 0,
-        Ea = (108.92,"kJ/mol","+|-",9.811),
-        T0 = (1,"K"),
-        Tmin = (393,"K"),
-        Tmax = (473,"K"),
-        Pmin = (66700,"Pa"),
-        Pmax = (66700,"Pa"),
+        Ea = (108.92, 'kJ/mol', '+|-', 9.811),
+        T0 = (1, 'K'),
+        Tmin = (393, 'K'),
+        Tmax = (473, 'K'),
+        Pmin = (66700, 'Pa'),
+        Pmax = (66700, 'Pa'),
     ),
     reference = Article(
         authors = ["Batt, L.", "Burrows, J.P.", "Robinson, G.N."],
@@ -61,38 +63,40 @@ entry(
     label = "2003MAT/GRE95-119:4",
     reactant1 = 
 """
-1  *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {7,S} {8,S}
-3  *1 C 1 {1,S} {9,S} {10,S}
-4  *3 H 0 {1,S}
-5     H 0 {1,S}
-6     H 0 {2,S}
-7     H 0 {2,S}
-8     H 0 {2,S}
-9     H 0 {3,S}
-10    H 0 {3,S}
+multiplicity 2
+1  *2 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {7,S} {8,S}
+3  *1 C u1 p0 c0  {1,S} {9,S} {10,S}
+4  *3 H u0 p0 c0  {1,S}
+5     H u0 p0 c0  {1,S}
+6     H u0 p0 c0  {2,S}
+7     H u0 p0 c0  {2,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
-1     C 0 {3,S} {5,S} {6,S} {7,S}
-2  *2 C 0 {3,S} {4,S} {8,S} {9,S}
-3  *1 C 1 {1,S} {2,S} {10,S}
-4  *3 H 0 {2,S}
-5     H 0 {1,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {2,S}
-10    H 0 {3,S}
+multiplicity 2
+1     C u0 p0 c0  {3,S} {5,S} {6,S} {7,S}
+2  *2 C u0 p0 c0  {3,S} {4,S} {8,S} {9,S}
+3  *1 C u1 p0 c0  {1,S} {2,S} {10,S}
+4  *3 H u0 p0 c0  {2,S}
+5     H u0 p0 c0  {1,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {3,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (3.56e+10,"s^-1"),
+        A = (3.56e+10, 's^-1'),
         n = 0.88,
-        Ea = (156.063,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (156.063, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = Article(
         authors = ["Matheu, D.M.", "Green, W.H.", "Grenda, J.M."],
@@ -120,32 +124,34 @@ entry(
     label = "1975COL/NAE223:3",
     reactant1 = 
 """
-1 *1 C 1 {2,S} {5,S} {6,S}
-2 *2 C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4 *3 H 0 {2,S}
-5    H 0 {1,S}
-6    H 0 {1,S}
+multiplicity 2
+1 *1 C u1 p0 c0  {2,S} {5,S} {6,S}
+2 *2 C u0 p0 c0  {1,S} {3,D} {4,S}
+3    O u0 p2 c0  {2,D}
+4 *3 H u0 p0 c0  {2,S}
+5    H u0 p0 c0  {1,S}
+6    H u0 p0 c0  {1,S}
 """,
     product1 = 
 """
-1 *2 C 0 {2,S} {3,S} {5,S} {6,S}
-2 *1 C 1 {1,S} {4,D}
-3 *3 H 0 {1,S}
-4    O 0 {2,D}
-5    H 0 {1,S}
-6    H 0 {1,S}
+multiplicity 2
+1 *2 C u0 p0 c0  {2,S} {3,S} {5,S} {6,S}
+2 *1 C u1 p0 c0  {1,S} {4,D}
+3 *3 H u0 p0 c0  {1,S}
+4    O u0 p2 c0  {2,D}
+5    H u0 p0 c0  {1,S}
+6    H u0 p0 c0  {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1e+13,"s^-1"),
+        A = (1e+13, 's^-1'),
         n = 0,
-        Ea = (197.053,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (800,"K"),
-        Tmax = (1220,"K"),
-        Pmin = (101000,"Pa"),
-        Pmax = (101000,"Pa"),
+        Ea = (197.053, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (800, 'K'),
+        Tmax = (1220, 'K'),
+        Pmin = (101000, 'Pa'),
+        Pmax = (101000, 'Pa'),
     ),
     reference = Article(
         authors = ["Colket, M.B., III", "Naegeli, D.W.", "Glassman, I."],
@@ -171,34 +177,36 @@ entry(
     label = "1986OND/ZIE1127:2",
     reactant1 = 
 """
-1 *2 C 0 {3,S} {4,S} {5,S} {6,S}
-2    C 0 {3,D} {7,S} {8,S}
-3 *1 C 1 {1,S} {2,D}
-4 *3 H 0 {1,S}
-5    H 0 {1,S}
-6    H 0 {1,S}
-7    H 0 {2,S}
-8    H 0 {2,S}
+multiplicity 2
+1 *2 C u0 p0 c0  {3,S} {4,S} {5,S} {6,S}
+2    C u0 p0 c0  {3,D} {7,S} {8,S}
+3 *1 C u1 p0 c0  {1,S} {2,D}
+4 *3 H u0 p0 c0  {1,S}
+5    H u0 p0 c0  {1,S}
+6    H u0 p0 c0  {1,S}
+7    H u0 p0 c0  {2,S}
+8    H u0 p0 c0  {2,S}
 """,
     product1 = 
 """
-1 *2 C 0 {2,S} {3,D} {4,S}
-2 *1 C 1 {1,S} {5,S} {6,S}
-3    C 0 {1,D} {7,S} {8,S}
-4 *3 H 0 {1,S}
-5    H 0 {2,S}
-6    H 0 {2,S}
-7    H 0 {3,S}
-8    H 0 {3,S}
+multiplicity 2
+1 *2 C u0 p0 c0  {2,S} {3,D} {4,S}
+2 *1 C u1 p0 c0  {1,S} {5,S} {6,S}
+3    C u0 p0 c0  {1,D} {7,S} {8,S}
+4 *3 H u0 p0 c0  {1,S}
+5    H u0 p0 c0  {2,S}
+6    H u0 p0 c0  {2,S}
+7    H u0 p0 c0  {3,S}
+8    H u0 p0 c0  {3,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (2e+13,"s^-1"),
+        A = (2e+13, 's^-1'),
         n = 0,
-        Ea = (197.053,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (298,"K"),
-        Tmax = (302,"K"),
+        Ea = (197.053, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (298, 'K'),
+        Tmax = (302, 'K'),
     ),
     reference = Article(
         authors = ["Ondruschka, B.", "Ziegler, U.", "Zimmermann, G."],
@@ -223,34 +231,36 @@ entry(
     label = "1986OND/ZIE1127:1",
     reactant1 = 
 """
-1 *2 C 0 {2,D} {3,S} {4,S}
-2    C 0 {1,D} {5,S} {6,S}
-3 *1 C 1 {1,S} {7,S} {8,S}
-4 *3 H 0 {1,S}
-5    H 0 {2,S}
-6    H 0 {2,S}
-7    H 0 {3,S}
-8    H 0 {3,S}
+multiplicity 2
+1 *2 C u0 p0 c0  {2,D} {3,S} {4,S}
+2    C u0 p0 c0  {1,D} {5,S} {6,S}
+3 *1 C u1 p0 c0  {1,S} {7,S} {8,S}
+4 *3 H u0 p0 c0  {1,S}
+5    H u0 p0 c0  {2,S}
+6    H u0 p0 c0  {2,S}
+7    H u0 p0 c0  {3,S}
+8    H u0 p0 c0  {3,S}
 """,
     product1 = 
 """
-1 *2 C 0 {3,S} {4,S} {5,S} {6,S}
-2    C 0 {3,D} {7,S} {8,S}
-3 *1 C 1 {1,S} {2,D}
-4 *3 H 0 {1,S}
-5    H 0 {1,S}
-6    H 0 {1,S}
-7    H 0 {2,S}
-8    H 0 {2,S}
+multiplicity 2
+1 *2 C u0 p0 c0  {3,S} {4,S} {5,S} {6,S}
+2    C u0 p0 c0  {3,D} {7,S} {8,S}
+3 *1 C u1 p0 c0  {1,S} {2,D}
+4 *3 H u0 p0 c0  {1,S}
+5    H u0 p0 c0  {1,S}
+6    H u0 p0 c0  {1,S}
+7    H u0 p0 c0  {2,S}
+8    H u0 p0 c0  {2,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (7.94e+12,"s^-1"),
+        A = (7.94e+12, 's^-1'),
         n = 0,
-        Ea = (147.166,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (298,"K"),
-        Tmax = (302,"K"),
+        Ea = (147.166, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (298, 'K'),
+        Tmax = (302, 'K'),
     ),
     reference = Article(
         authors = ["Ondruschka, B.", "Ziegler, U.", "Zimmermann, G."],
@@ -275,46 +285,48 @@ entry(
     label = "1988GIE/GAW435:4",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {6,S} {7,S}
-2  *2 C 0 {1,S} {4,S} {5,S} {8,S}
-3     C 0 {1,S} {9,S} {10,S} {11,S}
-4  *1 C 1 {2,S} {12,S} {13,S}
-5  *3 H 0 {2,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {3,S}
-10    H 0 {3,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {6,S} {7,S}
+2  *2 C u0 p0 c0  {1,S} {4,S} {5,S} {8,S}
+3     C u0 p0 c0  {1,S} {9,S} {10,S} {11,S}
+4  *1 C u1 p0 c0  {2,S} {12,S} {13,S}
+5  *3 H u0 p0 c0  {2,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {3,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {4,S} {6,S} {7,S}
-2     C 0 {1,S} {8,S} {9,S} {10,S}
-3  *2 C 0 {4,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {1,S} {3,S} {13,S}
-5  *3 H 0 {3,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {6,S} {7,S}
+2     C u0 p0 c0  {1,S} {8,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {4,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {1,S} {3,S} {13,S}
+5  *3 H u0 p0 c0  {3,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (1.32e+12,"s^-1"),
+        A = (1.32e+12, 's^-1'),
         n = 0,
-        Ea = (137.189,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (295,"K"),
-        Tmax = (305,"K"),
-        Pmin = (1333,"Pa"),
-        Pmax = (120000,"Pa"),
+        Ea = (137.189, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (295, 'K'),
+        Tmax = (305, 'K'),
+        Pmin = (1333, 'Pa'),
+        Pmax = (120000, 'Pa'),
     ),
     reference = Article(
         authors = ["Gierczak, T.", "Gawlowski, J.", "Niedzielski, J."],
@@ -341,46 +353,48 @@ entry(
     label = "1966LIN/BAC2369:4",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {6,S} {7,S}
-2  *2 C 0 {1,S} {4,S} {5,S} {8,S}
-3     C 0 {1,S} {9,S} {10,S} {11,S}
-4  *1 C 1 {2,S} {12,S} {13,S}
-5  *3 H 0 {2,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {3,S}
-10    H 0 {3,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {6,S} {7,S}
+2  *2 C u0 p0 c0  {1,S} {4,S} {5,S} {8,S}
+3     C u0 p0 c0  {1,S} {9,S} {10,S} {11,S}
+4  *1 C u1 p0 c0  {2,S} {12,S} {13,S}
+5  *3 H u0 p0 c0  {2,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {3,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {4,S} {6,S} {7,S}
-2     C 0 {1,S} {8,S} {9,S} {10,S}
-3  *2 C 0 {4,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {1,S} {3,S} {13,S}
-5  *3 H 0 {3,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {6,S} {7,S}
+2     C u0 p0 c0  {1,S} {8,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {4,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {1,S} {3,S} {13,S}
+5  *3 H u0 p0 c0  {3,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (5.2e+14,"s^-1"),
+        A = (5.2e+14, 's^-1'),
         n = 0,
-        Ea = (171.278,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (823,"K"),
-        Tmax = (999,"K"),
-        Pmin = (1333,"Pa"),
-        Pmax = (80000,"Pa"),
+        Ea = (171.278, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (823, 'K'),
+        Tmax = (999, 'K'),
+        Pmin = (1333, 'Pa'),
+        Pmax = (80000, 'Pa'),
     ),
     reference = Article(
         authors = ["Lin, M.C.", "Back, M.H."],
@@ -408,44 +422,46 @@ entry(
     label = "2003MAT/GRE95-119:8",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {6,S} {7,S}
-2  *2 C 0 {1,S} {4,S} {5,S} {8,S}
-3     C 0 {1,S} {9,S} {10,S} {11,S}
-4  *1 C 1 {2,S} {12,S} {13,S}
-5  *3 H 0 {2,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {3,S}
-10    H 0 {3,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {6,S} {7,S}
+2  *2 C u0 p0 c0  {1,S} {4,S} {5,S} {8,S}
+3     C u0 p0 c0  {1,S} {9,S} {10,S} {11,S}
+4  *1 C u1 p0 c0  {2,S} {12,S} {13,S}
+5  *3 H u0 p0 c0  {2,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {3,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {4,S} {6,S} {7,S}
-2     C 0 {1,S} {8,S} {9,S} {10,S}
-3  *2 C 0 {4,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {1,S} {3,S} {13,S}
-5  *3 H 0 {3,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {6,S} {7,S}
+2     C u0 p0 c0  {1,S} {8,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {4,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {1,S} {3,S} {13,S}
+5  *3 H u0 p0 c0  {3,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (3.8e+10,"s^-1"),
+        A = (3.8e+10, 's^-1'),
         n = 0.67,
-        Ea = (153.134,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (153.134, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = Article(
         authors = ["Matheu, D.M.", "Green, W.H.", "Grenda, J.M."],
@@ -474,44 +490,46 @@ entry(
     label = "2003MAT/GRE95-119:7",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {6,S} {7,S}
-2  *2 C 0 {1,S} {4,S} {5,S} {8,S}
-3     C 0 {1,S} {9,S} {10,S} {11,S}
-4  *1 C 1 {2,S} {12,S} {13,S}
-5  *3 H 0 {2,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {3,S}
-10    H 0 {3,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {6,S} {7,S}
+2  *2 C u0 p0 c0  {1,S} {4,S} {5,S} {8,S}
+3     C u0 p0 c0  {1,S} {9,S} {10,S} {11,S}
+4  *1 C u1 p0 c0  {2,S} {12,S} {13,S}
+5  *3 H u0 p0 c0  {2,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {3,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {4,S} {6,S} {7,S}
-2     C 0 {1,S} {8,S} {9,S} {10,S}
-3  *2 C 0 {4,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {1,S} {3,S} {13,S}
-5  *3 H 0 {3,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {6,S} {7,S}
+2     C u0 p0 c0  {1,S} {8,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {4,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {1,S} {3,S} {13,S}
+5  *3 H u0 p0 c0  {3,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (3.56e+10,"s^-1"),
+        A = (3.56e+10, 's^-1'),
         n = 0.88,
-        Ea = (156.063,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (156.063, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = Article(
         authors = ["Matheu, D.M.", "Green, W.H.", "Grenda, J.M."],
@@ -540,46 +558,48 @@ entry(
     label = "1988GIE/GAW435:2",
     reactant1 = 
 """
-1     C 0 {2,S} {4,S} {6,S} {7,S}
-2     C 0 {1,S} {8,S} {9,S} {10,S}
-3  *2 C 0 {4,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {1,S} {3,S} {13,S}
-5  *3 H 0 {3,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {6,S} {7,S}
+2     C u0 p0 c0  {1,S} {8,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {4,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {1,S} {3,S} {13,S}
+5  *3 H u0 p0 c0  {3,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {6,S} {7,S}
-2  *2 C 0 {1,S} {4,S} {5,S} {8,S}
-3     C 0 {1,S} {9,S} {10,S} {11,S}
-4  *1 C 1 {2,S} {12,S} {13,S}
-5  *3 H 0 {2,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {3,S}
-10    H 0 {3,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {6,S} {7,S}
+2  *2 C u0 p0 c0  {1,S} {4,S} {5,S} {8,S}
+3     C u0 p0 c0  {1,S} {9,S} {10,S} {11,S}
+4  *1 C u1 p0 c0  {2,S} {12,S} {13,S}
+5  *3 H u0 p0 c0  {2,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {3,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (2e+12,"s^-1"),
+        A = (2e+12, 's^-1'),
         n = 0,
-        Ea = (153.818,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (295,"K"),
-        Tmax = (305,"K"),
-        Pmin = (1333,"Pa"),
-        Pmax = (120000,"Pa"),
+        Ea = (153.818, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (295, 'K'),
+        Tmax = (305, 'K'),
+        Pmin = (1333, 'Pa'),
+        Pmax = (120000, 'Pa'),
     ),
     reference = Article(
         authors = ["Gierczak, T.", "Gawlowski, J.", "Niedzielski, J."],
@@ -606,40 +626,42 @@ entry(
     label = "2003MAT/GRE95-119:6",
     reactant1 = 
 """
-1  *1 C 1 {2,S} {6,S} {7,S}
-2  *2 C 0 {1,S} {3,S} {4,S} {8,S}
-3  *3 H 0 {2,S}
-4     C 0 {2,S} {5,D} {9,S}
-5     C 0 {4,D} {10,S} {11,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {4,S}
-10    H 0 {5,S}
-11    H 0 {5,S}
+multiplicity 2
+1  *1 C u1 p0 c0  {2,S} {6,S} {7,S}
+2  *2 C u0 p0 c0  {1,S} {3,S} {4,S} {8,S}
+3  *3 H u0 p0 c0  {2,S}
+4     C u0 p0 c0  {2,S} {5,D} {9,S}
+5     C u0 p0 c0  {4,D} {10,S} {11,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {4,S}
+10    H u0 p0 c0  {5,S}
+11    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1  *1 C 0 {2,S} {3,S} {6,S} {7,S}
-2  *2 C 0 {1,S} {4,D} {8,S}
-3  *3 H 0 {1,S}
-4     C 0 {2,D} {5,S} {9,S}
-5     C 1 {4,S} {10,S} {11,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {4,S}
-10    H 0 {5,S}
-11    H 0 {5,S}
+multiplicity 2
+1  *1 C u0 p0 c0  {2,S} {3,S} {6,S} {7,S}
+2  *2 C u0 p0 c0  {1,S} {4,D} {8,S}
+3  *3 H u0 p0 c0  {1,S}
+4     C u0 p0 c0  {2,D} {5,S} {9,S}
+5     C u1 p0 c0  {4,S} {10,S} {11,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {4,S}
+10    H u0 p0 c0  {5,S}
+11    H u0 p0 c0  {5,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (3.56e+10,"s^-1"),
+        A = (3.56e+10, 's^-1'),
         n = 0.88,
-        Ea = (123.846,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (123.846, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = Article(
         authors = ["Matheu, D.M.", "Green, W.H.", "Grenda, J.M."],
@@ -667,44 +689,46 @@ entry(
     label = "2003MAT/GRE95-119:5",
     reactant1 = 
 """
-1  *2 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {7,S} {8,S}
-3     C 0 {1,S} {9,S} {10,S} {11,S}
-4  *1 C 1 {1,S} {12,S} {13,S}
-5  *3 H 0 {1,S}
-6     H 0 {2,S}
-7     H 0 {2,S}
-8     H 0 {2,S}
-9     H 0 {3,S}
-10    H 0 {3,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
+multiplicity 2
+1  *2 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {7,S} {8,S}
+3     C u0 p0 c0  {1,S} {9,S} {10,S} {11,S}
+4  *1 C u1 p0 c0  {1,S} {12,S} {13,S}
+5  *3 H u0 p0 c0  {1,S}
+6     H u0 p0 c0  {2,S}
+7     H u0 p0 c0  {2,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {3,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {4,S} {6,S} {7,S} {8,S}
-2     C 0 {4,S} {9,S} {10,S} {11,S}
-3  *2 C 0 {4,S} {5,S} {12,S} {13,S}
-4  *1 C 1 {1,S} {2,S} {3,S}
-5  *3 H 0 {3,S}
-6     H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
+multiplicity 2
+1     C u0 p0 c0  {4,S} {6,S} {7,S} {8,S}
+2     C u0 p0 c0  {4,S} {9,S} {10,S} {11,S}
+3  *2 C u0 p0 c0  {4,S} {5,S} {12,S} {13,S}
+4  *1 C u1 p0 c0  {1,S} {2,S} {3,S}
+5  *3 H u0 p0 c0  {3,S}
+6     H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (3.56e+10,"s^-1"),
+        A = (3.56e+10, 's^-1'),
         n = 0.88,
-        Ea = (144.766,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (144.766, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = Article(
         authors = ["Matheu, D.M.", "Green, W.H.", "Grenda, J.M."],
@@ -732,52 +756,54 @@ entry(
     label = "1990MAR935-950:3",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {5,S} {6,S} {11,S}
-4     C 0 {2,S} {12,S} {13,S} {14,S}
-5  *1 C 1 {3,S} {15,S} {16,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {5,S} {6,S} {11,S}
+4     C u0 p0 c0  {2,S} {12,S} {13,S} {14,S}
+5  *1 C u1 p0 c0  {3,S} {15,S} {16,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *2 C 0 {5,S} {6,S} {14,S} {15,S}
-5  *1 C 1 {2,S} {4,S} {16,S}
-6  *3 H 0 {4,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {5,S} {6,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {2,S} {4,S} {16,S}
+6  *3 H u0 p0 c0  {4,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (1.2e+11,"s^-1"),
+        A = (1.2e+11, 's^-1'),
         n = 0,
-        Ea = (83.976,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (438,"K"),
-        Tmax = (923,"K"),
-        Pmin = (6666,"Pa"),
-        Pmax = (26700,"Pa"),
+        Ea = (83.976, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (438, 'K'),
+        Tmax = (923, 'K'),
+        Pmin = (6666, 'Pa'),
+        Pmax = (26700, 'Pa'),
     ),
     reference = Article(
         authors = ["Marshall, R.M."],
@@ -802,52 +828,54 @@ entry(
     label = "1990MAR935-950:4",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {5,S} {6,S} {11,S}
-4     C 0 {2,S} {12,S} {13,S} {14,S}
-5  *1 C 1 {3,S} {15,S} {16,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {5,S} {6,S} {11,S}
+4     C u0 p0 c0  {2,S} {12,S} {13,S} {14,S}
+5  *1 C u1 p0 c0  {3,S} {15,S} {16,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *2 C 0 {5,S} {6,S} {14,S} {15,S}
-5  *1 C 1 {2,S} {4,S} {16,S}
-6  *3 H 0 {4,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {5,S} {6,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {2,S} {4,S} {16,S}
+6  *3 H u0 p0 c0  {4,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (9.12e+11,"s^-1","*|/",10),
+        A = (9.12e+11, 's^-1', '*|/', 10),
         n = 0,
-        Ea = (98.111,"kJ/mol","+|-",8.813),
-        T0 = (1,"K"),
-        Tmin = (737,"K"),
-        Tmax = (923,"K"),
-        Pmin = (6666,"Pa"),
-        Pmax = (26700,"Pa"),
+        Ea = (98.111, 'kJ/mol', '+|-', 8.813),
+        T0 = (1, 'K'),
+        Tmin = (737, 'K'),
+        Tmax = (923, 'K'),
+        Pmin = (6666, 'Pa'),
+        Pmax = (26700, 'Pa'),
     ),
     reference = Article(
         authors = ["Marshall, R.M."],
@@ -875,52 +903,54 @@ entry(
     label = "1971WAT6355:4",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {5,S} {6,S} {11,S}
-4     C 0 {2,S} {12,S} {13,S} {14,S}
-5  *1 C 1 {3,S} {15,S} {16,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {5,S} {6,S} {11,S}
+4     C u0 p0 c0  {2,S} {12,S} {13,S} {14,S}
+5  *1 C u1 p0 c0  {3,S} {15,S} {16,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *2 C 0 {5,S} {6,S} {14,S} {15,S}
-5  *1 C 1 {2,S} {4,S} {16,S}
-6  *3 H 0 {4,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {5,S} {6,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {2,S} {4,S} {16,S}
+6  *3 H u0 p0 c0  {4,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (3.3e+08,"s^-1"),
+        A = (3.3e+08, 's^-1'),
         n = 0,
-        Ea = (63.19,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (297,"K"),
-        Tmax = (435,"K"),
-        Pmin = (13.33,"Pa"),
-        Pmax = (3960,"Pa"),
+        Ea = (63.19, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (297, 'K'),
+        Tmax = (435, 'K'),
+        Pmin = (13.33, 'Pa'),
+        Pmax = (3960, 'Pa'),
     ),
     reference = Article(
         authors = ["Watkins, K.W."],
@@ -947,52 +977,54 @@ entry(
     label = "1966END/LER4081:2",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {5,S} {6,S} {11,S}
-4     C 0 {2,S} {12,S} {13,S} {14,S}
-5  *1 C 1 {3,S} {15,S} {16,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {5,S} {6,S} {11,S}
+4     C u0 p0 c0  {2,S} {12,S} {13,S} {14,S}
+5  *1 C u1 p0 c0  {3,S} {15,S} {16,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *2 C 0 {5,S} {6,S} {14,S} {15,S}
-5  *1 C 1 {2,S} {4,S} {16,S}
-6  *3 H 0 {4,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {5,S} {6,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {2,S} {4,S} {16,S}
+6  *3 H u0 p0 c0  {4,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (1.4e+07,"s^-1"),
+        A = (1.4e+07, 's^-1'),
         n = 0,
-        Ea = (45.148,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (439,"K"),
-        Tmax = (503,"K"),
-        Pmin = (8933,"Pa"),
-        Pmax = (8933,"Pa"),
+        Ea = (45.148, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (439, 'K'),
+        Tmax = (503, 'K'),
+        Pmin = (8933, 'Pa'),
+        Pmax = (8933, 'Pa'),
     ),
     reference = Article(
         authors = ["Endrenyi, L.", "Le Roy, D.J."],
@@ -1020,50 +1052,52 @@ entry(
     label = "2003MAT/GRE95-119:9",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {5,S} {6,S} {11,S}
-4     C 0 {2,S} {12,S} {13,S} {14,S}
-5  *1 C 1 {3,S} {15,S} {16,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {5,S} {6,S} {11,S}
+4     C u0 p0 c0  {2,S} {12,S} {13,S} {14,S}
+5  *1 C u1 p0 c0  {3,S} {15,S} {16,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *2 C 0 {5,S} {6,S} {14,S} {15,S}
-5  *1 C 1 {2,S} {4,S} {16,S}
-6  *3 H 0 {4,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {5,S} {6,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {2,S} {4,S} {16,S}
+6  *3 H u0 p0 c0  {4,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (3.56e+10,"s^-1"),
+        A = (3.56e+10, 's^-1'),
         n = 0.88,
-        Ea = (156.063,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (156.063, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = Article(
         authors = ["Matheu, D.M.", "Green, W.H.", "Grenda, J.M."],
@@ -1092,50 +1126,52 @@ entry(
     label = "2003MAT/GRE95-119:11",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {5,S} {6,S} {11,S}
-4     C 0 {2,S} {12,S} {13,S} {14,S}
-5  *1 C 1 {3,S} {15,S} {16,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {5,S} {6,S} {11,S}
+4     C u0 p0 c0  {2,S} {12,S} {13,S} {14,S}
+5  *1 C u1 p0 c0  {3,S} {15,S} {16,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *2 C 0 {5,S} {6,S} {14,S} {15,S}
-5  *1 C 1 {2,S} {4,S} {16,S}
-6  *3 H 0 {4,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {5,S} {6,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {2,S} {4,S} {16,S}
+6  *3 H u0 p0 c0  {4,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (7.85e+11,"s^-1"),
+        A = (7.85e+11, 's^-1'),
         n = -0.12,
-        Ea = (86.19,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (86.19, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = Article(
         authors = ["Matheu, D.M.", "Green, W.H.", "Grenda, J.M."],
@@ -1164,50 +1200,52 @@ entry(
     label = "1999YAM/MIY2723-2733:1",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {5,S} {6,S} {11,S}
-4     C 0 {2,S} {12,S} {13,S} {14,S}
-5  *1 C 1 {3,S} {15,S} {16,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {5,S} {6,S} {11,S}
+4     C u0 p0 c0  {2,S} {12,S} {13,S} {14,S}
+5  *1 C u1 p0 c0  {3,S} {15,S} {16,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *2 C 0 {5,S} {6,S} {14,S} {15,S}
-5  *1 C 1 {2,S} {4,S} {16,S}
-6  *3 H 0 {4,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {5,S} {6,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {2,S} {4,S} {16,S}
+6  *3 H u0 p0 c0  {4,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (4.88e+08,"s^-1"),
+        A = (4.88e+08, 's^-1'),
         n = 0.85,
-        Ea = (81.731,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (350,"K"),
-        Tmax = (1300,"K"),
+        Ea = (81.731, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (350, 'K'),
+        Tmax = (1300, 'K'),
     ),
     reference = Article(
         authors = ["Yamauchi, N.", "Miyoshi, A.", "Kosaka, K.", "Koshi, M.", "Matsui, H."],
@@ -1233,50 +1271,52 @@ entry(
     label = "1972WAT3738:1",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {5,S} {6,S} {11,S}
-4     C 0 {2,S} {12,S} {13,S} {14,S}
-5  *1 C 1 {3,S} {15,S} {16,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {5,S} {6,S} {11,S}
+4     C u0 p0 c0  {2,S} {12,S} {13,S} {14,S}
+5  *1 C u1 p0 c0  {3,S} {15,S} {16,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *2 C 0 {5,S} {6,S} {14,S} {15,S}
-5  *1 C 1 {2,S} {4,S} {16,S}
-6  *3 H 0 {4,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {5,S} {6,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {2,S} {4,S} {16,S}
+6  *3 H u0 p0 c0  {4,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (5.01e+11,"s^-1"),
+        A = (5.01e+11, 's^-1'),
         n = 0,
-        Ea = (88.133,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (438,"K"),
-        Tmax = (502,"K"),
+        Ea = (88.133, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (438, 'K'),
+        Tmax = (502, 'K'),
     ),
     reference = Article(
         authors = ["Watkins, K.W."],
@@ -1300,50 +1340,52 @@ entry(
     label = "2003MAT/GRE95-119:10",
     reactant1 = 
 """
-1  *2 C 0 {2,S} {3,S} {6,S} {7,S}
-2     C 0 {1,S} {4,S} {8,S} {9,S}
-3  *4 C 0 {1,S} {5,S} {10,S} {11,S}
-4     C 0 {2,S} {12,S} {13,S} {14,S}
-5  *1 C 1 {3,S} {15,S} {16,S}
-6  *3 H 0 {1,S}
-7     H 0 {1,S}
-8     H 0 {2,S}
-9     H 0 {2,S}
-10    H 0 {3,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
+multiplicity 2
+1  *2 C u0 p0 c0  {2,S} {3,S} {6,S} {7,S}
+2     C u0 p0 c0  {1,S} {4,S} {8,S} {9,S}
+3  *4 C u0 p0 c0  {1,S} {5,S} {10,S} {11,S}
+4     C u0 p0 c0  {2,S} {12,S} {13,S} {14,S}
+5  *1 C u1 p0 c0  {3,S} {15,S} {16,S}
+6  *3 H u0 p0 c0  {1,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {2,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {3,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {3,S} {5,S} {7,S} {8,S}
-2  *4 C 0 {4,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {6,S} {14,S} {15,S}
-5  *1 C 1 {1,S} {2,S} {16,S}
-6  *3 H 0 {4,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {3,S} {5,S} {7,S} {8,S}
+2  *4 C u0 p0 c0  {4,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {6,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {1,S} {2,S} {16,S}
+6  *3 H u0 p0 c0  {4,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (3.8e+10,"s^-1"),
+        A = (3.8e+10, 's^-1'),
         n = 0.67,
-        Ea = (153.134,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (153.134, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = Article(
         authors = ["Matheu, D.M.", "Green, W.H.", "Grenda, J.M."],
@@ -1373,46 +1415,48 @@ entry(
     label = "1977BAL/BAR2483:6",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {6,S} {11,S} {12,S}
-4  *4 C 0 {2,S} {5,S} {13,S} {14,S}
-5  *1 O 1 {4,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {6,S} {11,S} {12,S}
+4  *4 C u0 p0 c0  {2,S} {5,S} {13,S} {14,S}
+5  *1 O u1 p2 c0  {4,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2  *4 C 0 {1,S} {4,S} {9,S} {10,S}
-3  *5 C 0 {1,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {2,S} {13,S} {14,S}
-5  *2 O 0 {3,S} {6,S}
-6  *3 H 0 {5,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2  *4 C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *5 C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {2,S} {13,S} {14,S}
+5  *2 O u0 p2 c0  {3,S} {6,S}
+6  *3 H u0 p0 c0  {5,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (2.51e+11,"s^-1"),
+        A = (2.51e+11, 's^-1'),
         n = 0,
-        Ea = (32.26,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (298,"K"),
-        Tmax = (450,"K"),
+        Ea = (32.26, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (298, 'K'),
+        Tmax = (450, 'K'),
     ),
     reference = Article(
         authors = ["Baldwin, A.C.", "Barker, J.R.", "Golden, D.M.", "Hendry, D.G."],
@@ -1438,46 +1482,48 @@ entry(
     label = "1978BAL/GOL108:3",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {6,S} {11,S} {12,S}
-4  *4 C 0 {2,S} {5,S} {13,S} {14,S}
-5  *1 O 1 {4,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {6,S} {11,S} {12,S}
+4  *4 C u0 p0 c0  {2,S} {5,S} {13,S} {14,S}
+5  *1 O u1 p2 c0  {4,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2  *4 C 0 {1,S} {4,S} {9,S} {10,S}
-3  *5 C 0 {1,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {2,S} {13,S} {14,S}
-5  *2 O 0 {3,S} {6,S}
-6  *3 H 0 {5,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2  *4 C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *5 C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {2,S} {13,S} {14,S}
+5  *2 O u0 p2 c0  {3,S} {6,S}
+6  *3 H u0 p0 c0  {5,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (2.51e+11,"s^-1"),
+        A = (2.51e+11, 's^-1'),
         n = 0,
-        Ea = (32.26,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (590,"K"),
-        Tmax = (750,"K"),
+        Ea = (32.26, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (590, 'K'),
+        Tmax = (750, 'K'),
     ),
     reference = Article(
         authors = ["Baldwin, A.C.", "Golden, D.M."],
@@ -1503,48 +1549,50 @@ entry(
     label = "1987MOR/HEI2641:3",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {6,S} {11,S} {12,S}
-4  *4 C 0 {2,S} {5,S} {13,S} {14,S}
-5  *1 O 1 {4,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {6,S} {11,S} {12,S}
+4  *4 C u0 p0 c0  {2,S} {5,S} {13,S} {14,S}
+5  *1 O u1 p2 c0  {4,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2  *4 C 0 {1,S} {4,S} {9,S} {10,S}
-3  *5 C 0 {1,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {2,S} {13,S} {14,S}
-5  *2 O 0 {3,S} {6,S}
-6  *3 H 0 {5,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2  *4 C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *5 C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {2,S} {13,S} {14,S}
+5  *2 O u0 p2 c0  {3,S} {6,S}
+6  *3 H u0 p0 c0  {5,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (1.78e+11,"s^-1","*|/",5),
+        A = (1.78e+11, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (33.341,"kJ/mol","+|-",4.34),
-        T0 = (1,"K"),
-        Tmin = (265,"K"),
-        Tmax = (393,"K"),
-        Pmin = (53300,"Pa"),
-        Pmax = (53300,"Pa"),
+        Ea = (33.341, 'kJ/mol', '+|-', 4.34),
+        T0 = (1, 'K'),
+        Tmin = (265, 'K'),
+        Tmax = (393, 'K'),
+        Pmin = (53300, 'Pa'),
+        Pmax = (53300, 'Pa'),
     ),
     reference = Article(
         authors = ["Morabito, P.", "Heicklen, J."],
@@ -1573,46 +1621,48 @@ entry(
     label = "2003MER/RAY4828-4833:1",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {6,S} {11,S} {12,S}
-4  *4 C 0 {2,S} {5,S} {13,S} {14,S}
-5  *1 O 1 {4,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {6,S} {11,S} {12,S}
+4  *4 C u0 p0 c0  {2,S} {5,S} {13,S} {14,S}
+5  *1 O u1 p2 c0  {4,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2  *4 C 0 {1,S} {4,S} {9,S} {10,S}
-3  *5 C 0 {1,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {2,S} {13,S} {14,S}
-5  *2 O 0 {3,S} {6,S}
-6  *3 H 0 {5,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2  *4 C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *5 C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {2,S} {13,S} {14,S}
+5  *2 O u0 p2 c0  {3,S} {6,S}
+6  *3 H u0 p0 c0  {5,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (2.5e+12,"s^-1","*|/",5),
+        A = (2.5e+12, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (40.585,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (298,"K"),
-        Tmax = (298,"K"),
+        Ea = (40.585, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (298, 'K'),
+        Tmax = (298, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -1653,46 +1703,48 @@ entry(
     label = "2003VER/PEE5159-5170:2",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {7,S} {8,S}
-2     C 0 {1,S} {4,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {6,S} {11,S} {12,S}
-4  *4 C 0 {2,S} {5,S} {13,S} {14,S}
-5  *1 O 1 {4,S}
-6  *3 H 0 {3,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2     C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {6,S} {11,S} {12,S}
+4  *4 C u0 p0 c0  {2,S} {5,S} {13,S} {14,S}
+5  *1 O u1 p2 c0  {4,S}
+6  *3 H u0 p0 c0  {3,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {8,S}
-2  *4 C 0 {1,S} {4,S} {9,S} {10,S}
-3  *5 C 0 {1,S} {5,S} {11,S} {12,S}
-4  *1 C 1 {2,S} {13,S} {14,S}
-5  *2 O 0 {3,S} {6,S}
-6  *3 H 0 {5,S}
-7     H 0 {1,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {8,S}
+2  *4 C u0 p0 c0  {1,S} {4,S} {9,S} {10,S}
+3  *5 C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+4  *1 C u1 p0 c0  {2,S} {13,S} {14,S}
+5  *2 O u0 p2 c0  {3,S} {6,S}
+6  *3 H u0 p0 c0  {5,S}
+7     H u0 p0 c0  {1,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (1.43e+11,"s^-1"),
+        A = (1.43e+11, 's^-1'),
         n = 0,
-        Ea = (34.183,"kJ/mol"),
-        T0 = (1,"K"),
-        Pmin = (101000,"Pa"),
-        Pmax = (101000,"Pa"),
+        Ea = (34.183, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Pmin = (101000, 'Pa'),
+        Pmax = (101000, 'Pa'),
     ),
     reference = Article(
         authors = ["Vereecken, L.", "Peeters, J."],
@@ -1720,58 +1772,60 @@ entry(
     label = "2007TSA/WAL141-148:2",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {6,S} {7,S} {14,S}
-5     C 0 {3,S} {15,S} {16,S} {17,S}
-6  *1 C 1 {4,S} {18,S} {19,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {6,S} {7,S} {14,S}
+5     C u0 p0 c0  {3,S} {15,S} {16,S} {17,S}
+6  *1 C u1 p0 c0  {4,S} {18,S} {19,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {6,S} {12,S} {13,S}
-4     C 0 {2,S} {14,S} {15,S} {16,S}
-5  *2 C 0 {6,S} {7,S} {17,S} {18,S}
-6  *1 C 1 {3,S} {5,S} {19,S}
-7  *3 H 0 {5,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+4     C u0 p0 c0  {2,S} {14,S} {15,S} {16,S}
+5  *2 C u0 p0 c0  {6,S} {7,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {3,S} {5,S} {19,S}
+7  *3 H u0 p0 c0  {5,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (183,"s^-1","*|/",1.5),
+        A = (183, 's^-1', '*|/', 1.5),
         n = 2.55,
-        Ea = (45.863,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (500,"K"),
-        Tmax = (1900,"K"),
-        Pmin = (150000,"Pa"),
-        Pmax = (500000,"Pa"),
+        Ea = (45.863, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (500, 'K'),
+        Tmax = (1900, 'K'),
+        Pmin = (150000, 'Pa'),
+        Pmax = (500000, 'Pa'),
     ),
     reference = Article(
         authors = ["Tsang, W.", "Walker, J.A.", "Manion, J.A."],
@@ -1808,58 +1862,60 @@ entry(
     label = "1987DOB/BER895:1",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {6,S} {7,S} {14,S}
-5     C 0 {3,S} {15,S} {16,S} {17,S}
-6  *1 C 1 {4,S} {18,S} {19,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {6,S} {7,S} {14,S}
+5     C u0 p0 c0  {3,S} {15,S} {16,S} {17,S}
+6  *1 C u1 p0 c0  {4,S} {18,S} {19,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {6,S} {12,S} {13,S}
-4     C 0 {2,S} {14,S} {15,S} {16,S}
-5  *2 C 0 {6,S} {7,S} {17,S} {18,S}
-6  *1 C 1 {3,S} {5,S} {19,S}
-7  *3 H 0 {5,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+4     C u0 p0 c0  {2,S} {14,S} {15,S} {16,S}
+5  *2 C u0 p0 c0  {6,S} {7,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {3,S} {5,S} {19,S}
+7  *3 H u0 p0 c0  {5,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (3.16e+09,"s^-1","*|/",2),
+        A = (3.16e+09, 's^-1', '*|/', 2),
         n = 0,
-        Ea = (48.557,"kJ/mol","+|-",1.455),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (453,"K"),
-        Pmin = (14500,"Pa"),
-        Pmax = (28000,"Pa"),
+        Ea = (48.557, 'kJ/mol', '+|-', 1.455),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (453, 'K'),
+        Pmin = (14500, 'Pa'),
+        Pmax = (28000, 'Pa'),
     ),
     reference = Article(
         authors = ["Dobe, S.", "Berces, T.", "Reti, F.", "Marta, F."],
@@ -1887,58 +1943,60 @@ entry(
     label = "1969WAT/OST2080:1",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {6,S} {7,S} {14,S}
-5     C 0 {3,S} {15,S} {16,S} {17,S}
-6  *1 C 1 {4,S} {18,S} {19,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {6,S} {7,S} {14,S}
+5     C u0 p0 c0  {3,S} {15,S} {16,S} {17,S}
+6  *1 C u1 p0 c0  {4,S} {18,S} {19,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {6,S} {12,S} {13,S}
-4     C 0 {2,S} {14,S} {15,S} {16,S}
-5  *2 C 0 {6,S} {7,S} {17,S} {18,S}
-6  *1 C 1 {3,S} {5,S} {19,S}
-7  *3 H 0 {5,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+4     C u0 p0 c0  {2,S} {14,S} {15,S} {16,S}
+5  *2 C u0 p0 c0  {6,S} {7,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {3,S} {5,S} {19,S}
+7  *3 H u0 p0 c0  {5,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (2e+07,"s^-1"),
+        A = (2e+07, 's^-1'),
         n = 0,
-        Ea = (34.754,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (352,"K"),
-        Tmax = (400,"K"),
-        Pmin = (6133,"Pa"),
-        Pmax = (6133,"Pa"),
+        Ea = (34.754, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (352, 'K'),
+        Tmax = (400, 'K'),
+        Pmin = (6133, 'Pa'),
+        Pmax = (6133, 'Pa'),
     ),
     reference = Article(
         authors = ["Watkins, K.W.", "Ostreko, L.A."],
@@ -1966,56 +2024,58 @@ entry(
     label = "1999YAM/MIY2723-2733:2",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {6,S} {7,S} {14,S}
-5     C 0 {3,S} {15,S} {16,S} {17,S}
-6  *1 C 1 {4,S} {18,S} {19,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {6,S} {7,S} {14,S}
+5     C u0 p0 c0  {3,S} {15,S} {16,S} {17,S}
+6  *1 C u1 p0 c0  {4,S} {18,S} {19,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {6,S} {12,S} {13,S}
-4     C 0 {2,S} {14,S} {15,S} {16,S}
-5  *2 C 0 {6,S} {7,S} {17,S} {18,S}
-6  *1 C 1 {3,S} {5,S} {19,S}
-7  *3 H 0 {5,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+4     C u0 p0 c0  {2,S} {14,S} {15,S} {16,S}
+5  *2 C u0 p0 c0  {6,S} {7,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {3,S} {5,S} {19,S}
+7  *3 H u0 p0 c0  {5,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (6.65e+07,"s^-1"),
+        A = (6.65e+07, 's^-1'),
         n = 0.82,
-        Ea = (52.049,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (350,"K"),
-        Tmax = (1300,"K"),
+        Ea = (52.049, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (350, 'K'),
+        Tmax = (1300, 'K'),
     ),
     reference = Article(
         authors = ["Yamauchi, N.", "Miyoshi, A.", "Kosaka, K.", "Koshi, M.", "Matsui, H."],
@@ -2041,58 +2101,60 @@ entry(
     label = "1987IMB/MAR81:6",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {6,S} {7,S} {14,S}
-5     C 0 {3,S} {15,S} {16,S} {17,S}
-6  *1 C 1 {4,S} {18,S} {19,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {6,S} {7,S} {14,S}
+5     C u0 p0 c0  {3,S} {15,S} {16,S} {17,S}
+6  *1 C u1 p0 c0  {4,S} {18,S} {19,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {6,S} {12,S} {13,S}
-4     C 0 {2,S} {14,S} {15,S} {16,S}
-5  *2 C 0 {6,S} {7,S} {17,S} {18,S}
-6  *1 C 1 {3,S} {5,S} {19,S}
-7  *3 H 0 {5,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+4     C u0 p0 c0  {2,S} {14,S} {15,S} {16,S}
+5  *2 C u0 p0 c0  {6,S} {7,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {3,S} {5,S} {19,S}
+7  *3 H u0 p0 c0  {5,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (3.16e+10,"s^-1"),
+        A = (3.16e+10, 's^-1'),
         n = 0,
-        Ea = (71.172,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (723,"K"),
-        Tmax = (823,"K"),
-        Pmin = (1333,"Pa"),
-        Pmax = (13300,"Pa"),
+        Ea = (71.172, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (723, 'K'),
+        Tmax = (823, 'K'),
+        Pmin = (1333, 'Pa'),
+        Pmax = (13300, 'Pa'),
     ),
     reference = Article(
         authors = ["Imbert, F.E.", "Marshall, R.M."],
@@ -2117,58 +2179,60 @@ entry(
     label = "1987IMB/MAR81:5",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {6,S} {12,S} {13,S}
-4     C 0 {2,S} {14,S} {15,S} {16,S}
-5  *2 C 0 {6,S} {7,S} {17,S} {18,S}
-6  *1 C 1 {3,S} {5,S} {19,S}
-7  *3 H 0 {5,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+4     C u0 p0 c0  {2,S} {14,S} {15,S} {16,S}
+5  *2 C u0 p0 c0  {6,S} {7,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {3,S} {5,S} {19,S}
+7  *3 H u0 p0 c0  {5,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {6,S} {7,S} {14,S}
-5     C 0 {3,S} {15,S} {16,S} {17,S}
-6  *1 C 1 {4,S} {18,S} {19,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {6,S} {7,S} {14,S}
+5     C u0 p0 c0  {3,S} {15,S} {16,S} {17,S}
+6  *1 C u1 p0 c0  {4,S} {18,S} {19,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (2.51e+10,"s^-1"),
+        A = (2.51e+10, 's^-1'),
         n = 0,
-        Ea = (88.133,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (723,"K"),
-        Tmax = (823,"K"),
-        Pmin = (1333,"Pa"),
-        Pmax = (13300,"Pa"),
+        Ea = (88.133, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (723, 'K'),
+        Tmax = (823, 'K'),
+        Pmin = (1333, 'Pa'),
+        Pmax = (13300, 'Pa'),
     ),
     reference = Article(
         authors = ["Imbert, F.E.", "Marshall, R.M."],
@@ -2193,50 +2257,52 @@ entry(
     label = "2003MER/RAY4828-4833:4",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {8,S} {9,S}
-2  *2 C 0 {1,S} {4,S} {6,S} {10,S}
-3     C 0 {1,S} {5,S} {11,S} {12,S}
-4     C 0 {2,S} {13,S} {14,S} {15,S}
-5  *4 C 0 {3,S} {7,S} {16,S} {17,S}
-6  *3 H 0 {2,S}
-7  *1 O 1 {5,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *2 C u0 p0 c0  {1,S} {4,S} {6,S} {10,S}
+3     C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+4     C u0 p0 c0  {2,S} {13,S} {14,S} {15,S}
+5  *4 C u0 p0 c0  {3,S} {7,S} {16,S} {17,S}
+6  *3 H u0 p0 c0  {2,S}
+7  *1 O u1 p2 c0  {5,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2  *4 C 0 {1,S} {5,S} {10,S} {11,S}
-3  *5 C 0 {1,S} {6,S} {12,S} {13,S}
-4     C 0 {5,S} {14,S} {15,S} {16,S}
-5  *1 C 1 {2,S} {4,S} {17,S}
-6  *2 O 0 {3,S} {7,S}
-7  *3 H 0 {6,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *4 C u0 p0 c0  {1,S} {5,S} {10,S} {11,S}
+3  *5 C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+4     C u0 p0 c0  {5,S} {14,S} {15,S} {16,S}
+5  *1 C u1 p0 c0  {2,S} {4,S} {17,S}
+6  *2 O u0 p2 c0  {3,S} {7,S}
+7  *3 H u0 p0 c0  {6,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1.7e+12,"s^-1","*|/",5),
+        A = (1.7e+12, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (33.054,"kJ/mol"),
-        T0 = (1,"K"),
+        Ea = (33.054, 'kJ/mol'),
+        T0 = (1, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -2277,50 +2343,52 @@ entry(
     label = "2003MER/RAY4828-4833:2",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {4,S} {8,S}
-2  *5 C 0 {1,S} {5,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4  *4 C 0 {1,S} {6,S} {14,S} {15,S}
-5  *2 C 0 {2,S} {7,S} {16,S} {17,S}
-6  *1 O 1 {4,S}
-7  *3 H 0 {5,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {4,S} {8,S}
+2  *5 C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4  *4 C u0 p0 c0  {1,S} {6,S} {14,S} {15,S}
+5  *2 C u0 p0 c0  {2,S} {7,S} {16,S} {17,S}
+6  *1 O u1 p2 c0  {4,S}
+7  *3 H u0 p0 c0  {5,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {4,S} {8,S}
-2  *4 C 0 {1,S} {5,S} {9,S} {10,S}
-3  *5 C 0 {1,S} {6,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5  *1 C 1 {2,S} {16,S} {17,S}
-6  *2 O 0 {3,S} {7,S}
-7  *3 H 0 {6,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {4,S} {8,S}
+2  *4 C u0 p0 c0  {1,S} {5,S} {9,S} {10,S}
+3  *5 C u0 p0 c0  {1,S} {6,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {2,S} {16,S} {17,S}
+6  *2 O u0 p2 c0  {3,S} {7,S}
+7  *3 H u0 p0 c0  {6,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (3.1e+12,"s^-1","*|/",5),
+        A = (3.1e+12, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (40.585,"kJ/mol"),
-        T0 = (1,"K"),
+        Ea = (40.585, 'kJ/mol'),
+        T0 = (1, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -2361,54 +2429,56 @@ entry(
     label = "1995HAN/WAL1431-1438:10",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2  *5 C 0 {1,S} {4,S} {10,S} {11,S}
-3  *4 C 0 {1,S} {5,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {6,D} {7,S}
-5  *1 C 1 {3,S} {14,S} {15,S}
-6     C 0 {4,D} {16,S} {17,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {5,S}
-15    H 0 {5,S}
-16    H 0 {6,S}
-17    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *5 C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3  *4 C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {6,D} {7,S}
+5  *1 C u1 p0 c0  {3,S} {14,S} {15,S}
+6     C u0 p0 c0  {4,D} {16,S} {17,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {5,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {6,S}
+17    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2  *5 C 0 {1,S} {4,S} {10,S} {11,S}
-3  *4 C 0 {1,S} {6,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {7,S} {14,S} {15,S}
-5     C 0 {6,D} {16,S} {17,S}
-6  *1 C 1 {3,S} {5,D}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *5 C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3  *4 C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {7,S} {14,S} {15,S}
+5     C u0 p0 c0  {6,D} {16,S} {17,S}
+6  *1 C u1 p0 c0  {3,S} {5,D}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1e+11,"s^-1"),
+        A = (1e+11, 's^-1'),
         n = 0,
-        Ea = (84.808,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (1300,"K"),
-        Pmin = (23300,"Pa"),
-        Pmax = (66700,"Pa"),
+        Ea = (84.808, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (1300, 'K'),
+        Pmin = (23300, 'Pa'),
+        Pmax = (66700, 'Pa'),
     ),
     reference = Article(
         authors = ["Handford-Styring, S.M.", "Walker, R.W."],
@@ -2434,54 +2504,56 @@ entry(
     label = "1995HAN/WAL1431-1438:9",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {8,S} {9,S}
-2  *2 C 0 {1,S} {4,S} {7,S} {10,S}
-3  *4 C 0 {1,S} {5,S} {11,S} {12,S}
-4     C 0 {2,S} {6,D} {13,S}
-5  *1 C 1 {3,S} {14,S} {15,S}
-6     C 0 {4,D} {16,S} {17,S}
-7  *3 H 0 {2,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {5,S}
-15    H 0 {5,S}
-16    H 0 {6,S}
-17    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *2 C u0 p0 c0  {1,S} {4,S} {7,S} {10,S}
+3  *4 C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+4     C u0 p0 c0  {2,S} {6,D} {13,S}
+5  *1 C u1 p0 c0  {3,S} {14,S} {15,S}
+6     C u0 p0 c0  {4,D} {16,S} {17,S}
+7  *3 H u0 p0 c0  {2,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {5,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {6,S}
+17    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {3,S} {8,S} {9,S}
-2  *4 C 0 {1,S} {4,S} {10,S} {11,S}
-3  *2 C 0 {1,S} {7,S} {12,S} {13,S}
-4  *1 C 1 {2,S} {5,S} {14,S}
-5     C 0 {4,S} {6,D} {15,S}
-6     C 0 {5,D} {16,S} {17,S}
-7  *3 H 0 {3,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {6,S}
-17    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *4 C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3  *2 C u0 p0 c0  {1,S} {7,S} {12,S} {13,S}
+4  *1 C u1 p0 c0  {2,S} {5,S} {14,S}
+5     C u0 p0 c0  {4,S} {6,D} {15,S}
+6     C u0 p0 c0  {5,D} {16,S} {17,S}
+7  *3 H u0 p0 c0  {3,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {6,S}
+17    H u0 p0 c0  {6,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1e+12,"s^-1"),
+        A = (1e+12, 's^-1'),
         n = 0,
-        Ea = (124.717,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (1300,"K"),
-        Pmin = (23300,"Pa"),
-        Pmax = (66700,"Pa"),
+        Ea = (124.717, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (1300, 'K'),
+        Pmin = (23300, 'Pa'),
+        Pmax = (66700, 'Pa'),
     ),
     reference = Article(
         authors = ["Handford-Styring, S.M.", "Walker, R.W."],
@@ -2507,52 +2579,54 @@ entry(
     label = "2003MAT/GRE95-119:13",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {8,S} {9,S}
-2  *2 C 0 {1,S} {4,S} {7,S} {10,S}
-3  *4 C 0 {1,S} {5,S} {11,S} {12,S}
-4     C 0 {2,S} {6,D} {13,S}
-5  *1 C 1 {3,S} {14,S} {15,S}
-6     C 0 {4,D} {16,S} {17,S}
-7  *3 H 0 {2,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {5,S}
-15    H 0 {5,S}
-16    H 0 {6,S}
-17    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *2 C u0 p0 c0  {1,S} {4,S} {7,S} {10,S}
+3  *4 C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+4     C u0 p0 c0  {2,S} {6,D} {13,S}
+5  *1 C u1 p0 c0  {3,S} {14,S} {15,S}
+6     C u0 p0 c0  {4,D} {16,S} {17,S}
+7  *3 H u0 p0 c0  {2,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {5,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {6,S}
+17    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {3,S} {8,S} {9,S}
-2  *4 C 0 {1,S} {4,S} {10,S} {11,S}
-3  *2 C 0 {1,S} {7,S} {12,S} {13,S}
-4  *1 C 1 {2,S} {5,S} {14,S}
-5     C 0 {4,S} {6,D} {15,S}
-6     C 0 {5,D} {16,S} {17,S}
-7  *3 H 0 {3,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {6,S}
-17    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *4 C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3  *2 C u0 p0 c0  {1,S} {7,S} {12,S} {13,S}
+4  *1 C u1 p0 c0  {2,S} {5,S} {14,S}
+5     C u0 p0 c0  {4,S} {6,D} {15,S}
+6     C u0 p0 c0  {5,D} {16,S} {17,S}
+7  *3 H u0 p0 c0  {3,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {6,S}
+17    H u0 p0 c0  {6,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (3.67e+12,"s^-1"),
+        A = (3.67e+12, 's^-1'),
         n = -0.6,
-        Ea = (64.015,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (64.015, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = Article(
         authors = ["Matheu, D.M.", "Green, W.H.", "Grenda, J.M."],
@@ -2582,48 +2656,50 @@ entry(
     label = "1977BAL/BAR2483:9",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4  *2 C 0 {2,S} {6,S} {7,S} {14,S}
-5     O 0 {3,S} {15,S}
-6  *1 O 1 {4,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {2,S} {6,S} {7,S} {14,S}
+5     O u0 p2 c0  {3,S} {15,S}
+6  *1 O u1 p2 c0  {4,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4  *1 C 1 {2,S} {6,S} {14,S}
-5     O 0 {3,S} {15,S}
-6  *2 O 0 {4,S} {7,S}
-7  *3 H 0 {6,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *1 C u1 p0 c0  {2,S} {6,S} {14,S}
+5     O u0 p2 c0  {3,S} {15,S}
+6  *2 O u0 p2 c0  {4,S} {7,S}
+7  *3 H u0 p0 c0  {6,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (1.58e+11,"s^-1"),
+        A = (1.58e+11, 's^-1'),
         n = 0,
-        Ea = (27.188,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (298,"K"),
-        Tmax = (450,"K"),
+        Ea = (27.188, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (298, 'K'),
+        Tmax = (450, 'K'),
     ),
     reference = Article(
         authors = ["Baldwin, A.C.", "Barker, J.R.", "Golden, D.M.", "Hendry, D.G."],
@@ -2649,52 +2725,54 @@ entry(
     label = "2003MER/RAY4828-4833:3",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2  *5 C 0 {1,S} {4,S} {10,S} {11,S}
-3  *4 C 0 {1,S} {5,S} {6,S} {12,S}
-4  *2 C 0 {2,S} {7,S} {13,S} {14,S}
-5     C 0 {3,S} {15,S} {16,S} {17,S}
-6  *1 O 1 {3,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *5 C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3  *4 C u0 p0 c0  {1,S} {5,S} {6,S} {12,S}
+4  *2 C u0 p0 c0  {2,S} {7,S} {13,S} {14,S}
+5     C u0 p0 c0  {3,S} {15,S} {16,S} {17,S}
+6  *1 O u1 p2 c0  {3,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {4,S} {6,S} {8,S}
-2     C 0 {1,S} {3,S} {9,S} {10,S}
-3  *4 C 0 {2,S} {5,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5  *1 C 1 {3,S} {16,S} {17,S}
-6  *2 O 0 {1,S} {7,S}
-7  *3 H 0 {6,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {4,S} {6,S} {8,S}
+2     C u0 p0 c0  {1,S} {3,S} {9,S} {10,S}
+3  *4 C u0 p0 c0  {2,S} {5,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {3,S} {16,S} {17,S}
+6  *2 O u0 p2 c0  {1,S} {7,S}
+7  *3 H u0 p0 c0  {6,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (2.4e+12,"s^-1","*|/",5),
+        A = (2.4e+12, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (38.911,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (298,"K"),
-        Tmax = (298,"K"),
+        Ea = (38.911, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (298, 'K'),
+        Tmax = (298, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -2735,54 +2813,56 @@ entry(
     label = "1986DOB/BER329:3",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {8,S} {9,S}
-2  *5 C 0 {1,S} {4,S} {10,S} {11,S}
-3  *4 C 0 {1,S} {5,S} {6,S} {12,S}
-4  *2 C 0 {2,S} {7,S} {13,S} {14,S}
-5     C 0 {3,S} {15,S} {16,S} {17,S}
-6  *1 O 1 {3,S}
-7  *3 H 0 {4,S}
-8     H 0 {1,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {8,S} {9,S}
+2  *5 C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3  *4 C u0 p0 c0  {1,S} {5,S} {6,S} {12,S}
+4  *2 C u0 p0 c0  {2,S} {7,S} {13,S} {14,S}
+5     C u0 p0 c0  {3,S} {15,S} {16,S} {17,S}
+6  *1 O u1 p2 c0  {3,S}
+7  *3 H u0 p0 c0  {4,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {4,S} {6,S} {8,S}
-2     C 0 {1,S} {3,S} {9,S} {10,S}
-3  *4 C 0 {2,S} {5,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5  *1 C 1 {3,S} {16,S} {17,S}
-6  *2 O 0 {1,S} {7,S}
-7  *3 H 0 {6,S}
-8     H 0 {1,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {4,S} {6,S} {8,S}
+2     C u0 p0 c0  {1,S} {3,S} {9,S} {10,S}
+3  *4 C u0 p0 c0  {2,S} {5,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5  *1 C u1 p0 c0  {3,S} {16,S} {17,S}
+6  *2 O u0 p2 c0  {1,S} {7,S}
+7  *3 H u0 p0 c0  {6,S}
+8     H u0 p0 c0  {1,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (1.26e+11,"s^-1","*|/",5),
+        A = (1.26e+11, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (39.743,"kJ/mol","+|-",4.773),
-        T0 = (1,"K"),
-        Tmin = (279,"K"),
-        Tmax = (385,"K"),
-        Pmin = (15100,"Pa"),
-        Pmax = (15100,"Pa"),
+        Ea = (39.743, 'kJ/mol', '+|-', 4.773),
+        T0 = (1, 'K'),
+        Tmin = (279, 'K'),
+        Tmax = (385, 'K'),
+        Pmin = (15100, 'Pa'),
+        Pmax = (15100, 'Pa'),
     ),
     reference = Article(
         authors = ["Dobe, S.", "Berces, T.", "Marta, F."],
@@ -2811,56 +2891,58 @@ entry(
     label = "1992HUG/HAL645-652:1",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {7,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5     C 0 {1,S} {16,S} {17,S} {18,S}
-6  *4 O 0 {2,S} {8,S}
-7  *3 H 0 {3,S}
-8  *1 O 1 {6,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {7,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5     C u0 p0 c0  {1,S} {16,S} {17,S} {18,S}
+6  *4 O u0 p2 c0  {2,S} {8,S}
+7  *3 H u0 p0 c0  {3,S}
+8  *1 O u1 p2 c0  {6,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1  *4 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4     C 0 {1,S} {14,S} {15,S} {16,S}
-5  *1 C 1 {1,S} {17,S} {18,S}
-6  *5 O 0 {2,S} {7,S}
-7  *2 O 0 {6,S} {8,S}
-8  *3 H 0 {7,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
+multiplicity 2
+1  *4 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4     C u0 p0 c0  {1,S} {14,S} {15,S} {16,S}
+5  *1 C u1 p0 c0  {1,S} {17,S} {18,S}
+6  *5 O u0 p2 c0  {2,S} {7,S}
+7  *2 O u0 p2 c0  {6,S} {8,S}
+8  *3 H u0 p0 c0  {7,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
 """,
     degeneracy = 9,
     kinetics = Arrhenius(
-        A = (1.58e+12,"s^-1","*|/",10),
+        A = (1.58e+12, 's^-1', '*|/', 10),
         n = 0,
-        Ea = (123.054,"kJ/mol","+|-",9.811),
-        T0 = (1,"K"),
-        Tmin = (660,"K"),
-        Tmax = (750,"K"),
-        Pmin = (53300,"Pa"),
-        Pmax = (200000,"Pa"),
+        Ea = (123.054, 'kJ/mol', '+|-', 9.811),
+        T0 = (1, 'K'),
+        Tmin = (660, 'K'),
+        Tmax = (750, 'K'),
+        Pmin = (53300, 'Pa'),
+        Pmax = (200000, 'Pa'),
     ),
     reference = Article(
         authors = ["Hughes, K.J.", "Halford-Maw, P.A.", "Lightfoot, P.D.", "Turanyi, T.", "Pilling, M.J."],
@@ -2888,56 +2970,58 @@ entry(
     label = "1982BAL/HIS1615:4",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {7,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5     C 0 {1,S} {16,S} {17,S} {18,S}
-6  *4 O 0 {2,S} {8,S}
-7  *3 H 0 {3,S}
-8  *1 O 1 {6,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {7,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5     C u0 p0 c0  {1,S} {16,S} {17,S} {18,S}
+6  *4 O u0 p2 c0  {2,S} {8,S}
+7  *3 H u0 p0 c0  {3,S}
+8  *1 O u1 p2 c0  {6,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1  *4 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4     C 0 {1,S} {14,S} {15,S} {16,S}
-5  *1 C 1 {1,S} {17,S} {18,S}
-6  *5 O 0 {2,S} {7,S}
-7  *2 O 0 {6,S} {8,S}
-8  *3 H 0 {7,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
+multiplicity 2
+1  *4 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4     C u0 p0 c0  {1,S} {14,S} {15,S} {16,S}
+5  *1 C u1 p0 c0  {1,S} {17,S} {18,S}
+6  *5 O u0 p2 c0  {2,S} {7,S}
+7  *2 O u0 p2 c0  {6,S} {8,S}
+8  *3 H u0 p0 c0  {7,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
 """,
     degeneracy = 9,
     kinetics = Arrhenius(
-        A = (1.2e+13,"s^-1"),
+        A = (1.2e+13, 's^-1'),
         n = 0,
-        Ea = (119.728,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (653,"K"),
-        Tmax = (793,"K"),
-        Pmin = (66700,"Pa"),
-        Pmax = (66700,"Pa"),
+        Ea = (119.728, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (653, 'K'),
+        Tmax = (793, 'K'),
+        Pmin = (66700, 'Pa'),
+        Pmax = (66700, 'Pa'),
     ),
     reference = Article(
         authors = ["Baldwin, R.R.", "Hisham, M.W.M.", "Walker, R.W."],
@@ -2965,56 +3049,58 @@ entry(
     label = "2004SUN/BOZ1694-1711:21",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {7,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5     C 0 {1,S} {16,S} {17,S} {18,S}
-6  *4 O 0 {2,S} {8,S}
-7  *3 H 0 {3,S}
-8  *1 O 1 {6,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {7,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5     C u0 p0 c0  {1,S} {16,S} {17,S} {18,S}
+6  *4 O u0 p2 c0  {2,S} {8,S}
+7  *3 H u0 p0 c0  {3,S}
+8  *1 O u1 p2 c0  {6,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1  *4 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4     C 0 {1,S} {14,S} {15,S} {16,S}
-5  *1 C 1 {1,S} {17,S} {18,S}
-6  *5 O 0 {2,S} {7,S}
-7  *2 O 0 {6,S} {8,S}
-8  *3 H 0 {7,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
+multiplicity 2
+1  *4 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4     C u0 p0 c0  {1,S} {14,S} {15,S} {16,S}
+5  *1 C u1 p0 c0  {1,S} {17,S} {18,S}
+6  *5 O u0 p2 c0  {2,S} {7,S}
+7  *2 O u0 p2 c0  {6,S} {8,S}
+8  *3 H u0 p0 c0  {7,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
 """,
     degeneracy = 9,
     kinetics = Arrhenius(
-        A = (8.87e+07,"s^-1"),
+        A = (8.87e+07, 's^-1'),
         n = 1.07,
-        Ea = (98.667,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (900,"K"),
-        Pmin = (101000,"Pa"),
-        Pmax = (101000,"Pa"),
+        Ea = (98.667, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (900, 'K'),
+        Pmin = (101000, 'Pa'),
+        Pmax = (101000, 'Pa'),
     ),
     reference = Article(
         authors = ["Sun, H.", "Bozzelli, J.W."],
@@ -3042,56 +3128,58 @@ entry(
     label = "2004SUN/BOZ1694-1711:22",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {9,S} {10,S}
-3  *2 C 0 {1,S} {7,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5     C 0 {1,S} {16,S} {17,S} {18,S}
-6  *4 O 0 {2,S} {8,S}
-7  *3 H 0 {3,S}
-8  *1 O 1 {6,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {9,S} {10,S}
+3  *2 C u0 p0 c0  {1,S} {7,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5     C u0 p0 c0  {1,S} {16,S} {17,S} {18,S}
+6  *4 O u0 p2 c0  {2,S} {8,S}
+7  *3 H u0 p0 c0  {3,S}
+8  *1 O u1 p2 c0  {6,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
 """,
     product1 = 
 """
-1  *4 C 0 {2,S} {3,S} {4,S} {5,S}
-2     C 0 {1,S} {6,S} {9,S} {10,S}
-3     C 0 {1,S} {11,S} {12,S} {13,S}
-4     C 0 {1,S} {14,S} {15,S} {16,S}
-5  *1 C 1 {1,S} {17,S} {18,S}
-6  *5 O 0 {2,S} {7,S}
-7  *2 O 0 {6,S} {8,S}
-8  *3 H 0 {7,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
+multiplicity 2
+1  *4 C u0 p0 c0  {2,S} {3,S} {4,S} {5,S}
+2     C u0 p0 c0  {1,S} {6,S} {9,S} {10,S}
+3     C u0 p0 c0  {1,S} {11,S} {12,S} {13,S}
+4     C u0 p0 c0  {1,S} {14,S} {15,S} {16,S}
+5  *1 C u1 p0 c0  {1,S} {17,S} {18,S}
+6  *5 O u0 p2 c0  {2,S} {7,S}
+7  *2 O u0 p2 c0  {6,S} {8,S}
+8  *3 H u0 p0 c0  {7,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
 """,
     degeneracy = 9,
     kinetics = Arrhenius(
-        A = (1.44e+35,"s^-1"),
+        A = (1.44e+35, 's^-1'),
         n = -7.2,
-        Ea = (146.243,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (900,"K"),
-        Tmax = (2500,"K"),
-        Pmin = (101000,"Pa"),
-        Pmax = (101000,"Pa"),
+        Ea = (146.243, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (900, 'K'),
+        Tmax = (2500, 'K'),
+        Pmin = (101000, 'Pa'),
+        Pmax = (101000, 'Pa'),
     ),
     reference = Article(
         authors = ["Sun, H.", "Bozzelli, J.W."],
@@ -3119,56 +3207,58 @@ entry(
     label = "2003MER/RAY4828-4833:8",
     reactant1 = 
 """
-1  *2 C 0 {2,S} {3,S} {7,S} {9,S}
-2  *5 C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4     C 0 {2,S} {6,S} {14,S} {15,S}
-5     C 0 {3,S} {16,S} {17,S} {18,S}
-6  *4 C 0 {4,S} {8,S} {19,S} {20,S}
-7  *3 H 0 {1,S}
-8  *1 O 1 {6,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
+multiplicity 2
+1  *2 C u0 p0 c0  {2,S} {3,S} {7,S} {9,S}
+2  *5 C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4     C u0 p0 c0  {2,S} {6,S} {14,S} {15,S}
+5     C u0 p0 c0  {3,S} {16,S} {17,S} {18,S}
+6  *4 C u0 p0 c0  {4,S} {8,S} {19,S} {20,S}
+7  *3 H u0 p0 c0  {1,S}
+8  *1 O u1 p2 c0  {6,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {4,S} {9,S} {10,S}
-2  *4 C 0 {1,S} {6,S} {11,S} {12,S}
-3     C 0 {5,S} {6,S} {13,S} {14,S}
-4  *5 C 0 {1,S} {7,S} {15,S} {16,S}
-5     C 0 {3,S} {17,S} {18,S} {19,S}
-6  *1 C 1 {2,S} {3,S} {20,S}
-7  *2 O 0 {4,S} {8,S}
-8  *3 H 0 {7,S}
-9     H 0 {1,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {5,S}
-20    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {9,S} {10,S}
+2  *4 C u0 p0 c0  {1,S} {6,S} {11,S} {12,S}
+3     C u0 p0 c0  {5,S} {6,S} {13,S} {14,S}
+4  *5 C u0 p0 c0  {1,S} {7,S} {15,S} {16,S}
+5     C u0 p0 c0  {3,S} {17,S} {18,S} {19,S}
+6  *1 C u1 p0 c0  {2,S} {3,S} {20,S}
+7  *2 O u0 p2 c0  {4,S} {8,S}
+8  *3 H u0 p0 c0  {7,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {5,S}
+20    H u0 p0 c0  {6,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1.4e+12,"s^-1","*|/",5),
+        A = (1.4e+12, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (32.217,"kJ/mol"),
-        T0 = (1,"K"),
+        Ea = (32.217, 'kJ/mol'),
+        T0 = (1, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -3209,56 +3299,58 @@ entry(
     label = "2003MER/RAY4828-4833:7",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {9,S} {10,S}
-2     C 0 {1,S} {4,S} {11,S} {12,S}
-3  *2 C 0 {1,S} {5,S} {8,S} {13,S}
-4  *4 C 0 {2,S} {6,S} {7,S} {14,S}
-5     C 0 {3,S} {15,S} {16,S} {17,S}
-6     C 0 {4,S} {18,S} {19,S} {20,S}
-7  *1 O 1 {4,S}
-8  *3 H 0 {3,S}
-9     H 0 {1,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {9,S} {10,S}
+2     C u0 p0 c0  {1,S} {4,S} {11,S} {12,S}
+3  *2 C u0 p0 c0  {1,S} {5,S} {8,S} {13,S}
+4  *4 C u0 p0 c0  {2,S} {6,S} {7,S} {14,S}
+5     C u0 p0 c0  {3,S} {15,S} {16,S} {17,S}
+6     C u0 p0 c0  {4,S} {18,S} {19,S} {20,S}
+7  *1 O u1 p2 c0  {4,S}
+8  *3 H u0 p0 c0  {3,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {4,S} {7,S} {9,S}
-2     C 0 {1,S} {3,S} {10,S} {11,S}
-3  *4 C 0 {2,S} {6,S} {12,S} {13,S}
-4     C 0 {1,S} {14,S} {15,S} {16,S}
-5     C 0 {6,S} {17,S} {18,S} {19,S}
-6  *1 C 1 {3,S} {5,S} {20,S}
-7  *2 O 0 {1,S} {8,S}
-8  *3 H 0 {7,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {5,S}
-20    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {4,S} {7,S} {9,S}
+2     C u0 p0 c0  {1,S} {3,S} {10,S} {11,S}
+3  *4 C u0 p0 c0  {2,S} {6,S} {12,S} {13,S}
+4     C u0 p0 c0  {1,S} {14,S} {15,S} {16,S}
+5     C u0 p0 c0  {6,S} {17,S} {18,S} {19,S}
+6  *1 C u1 p0 c0  {3,S} {5,S} {20,S}
+7  *2 O u0 p2 c0  {1,S} {8,S}
+8  *3 H u0 p0 c0  {7,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {5,S}
+20    H u0 p0 c0  {6,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1.5e+12,"s^-1","*|/",5),
+        A = (1.5e+12, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (30.962,"kJ/mol"),
-        T0 = (1,"K"),
+        Ea = (30.962, 'kJ/mol'),
+        T0 = (1, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -3299,57 +3391,54 @@ entry(
     label = "2003MER/RAY4828-4833:9",
     reactant1 = 
 """
-1  *2 C 0 {2,S} {4,S} {5,S} {7,S}
-2  *5 C 0 {1,S} {3,S} {9,S} {10,S}
-3     C 0 {2,S} {6,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5     C 0 {1,S} {16,S} {17,S} {18,S}
-6  *4 C 0 {3,S} {8,S} {19,S} {20,S}
-7  *3 H 0 {1,S}
-8  *1 O 1 {6,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
+multiplicity 2
+1  *2 C u0 p0 c0  {2,S} {4,S} {5,S} {7,S}
+2  *5 C u0 p0 c0  {1,S} {3,S} {9,S} {10,S}
+3     C u0 p0 c0  {2,S} {6,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5     C u0 p0 c0  {1,S} {16,S} {17,S} {18,S}
+6  *4 C u0 p0 c0  {3,S} {8,S} {19,S} {20,S}
+7  *3 H u0 p0 c0  {1,S}
+8  *1 O u1 p2 c0  {6,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {9,S} {10,S}
-2  *4 C 0 {1,S} {6,S} {11,S} {12,S}
-3  *5 C 0 {1,S} {7,S} {13,S} {14,S}
-4     C 0 {6,S} {15,S} {16,S} {17,S}
-5     C 0 {6,S} {18,S} {19,S} {20,S}
-6  *1 C 1 {2,S} {4,S} {5,S}
-7  *2 O 0 {3,S} {8,S}
-8  *3 H 0 {7,S}
-9     H 0 {1,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {4,S}
-18    H 0 {5,S}
-19    H 0 {5,S}
-20    H 0 {5,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {9,S} {10,S}
+2  *4 C u0 p0 c0  {1,S} {6,S} {11,S} {12,S}
+3  *5 C u0 p0 c0  {1,S} {7,S} {13,S} {14,S}
+4     C u0 p0 c0  {6,S} {15,S} {16,S} {17,S}
+5     C u0 p0 c0  {6,S} {18,S} {19,S} {20,S}
+6  *1 C u1 p0 c0  {2,S} {4,S} {5,S}
+7  *2 O u0 p2 c0  {3,S} {8,S}
+8  *3 H u0 p0 c0  {7,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {4,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {5,S}
+20    H u0 p0 c0  {5,S}
 """,
     degeneracy = 1,
-    kinetics = Arrhenius(
-        A = (8.7e+11,"s^-1","*|/",5),
-        n = 0,
-        Ea = (20.92,"kJ/mol"),
-        T0 = (1,"K"),
-    ),
+    kinetics = Arrhenius(A=(8.7e+11, 's^-1', '*|/', 5), n=0, Ea=(20.92, 'kJ/mol'), T0=(1, 'K')),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
         title = u'Isomerization reactions of alkoxy radicals: theoretical study and structure-activity relationships',
@@ -3389,56 +3478,58 @@ entry(
     label = "2003MER/RAY4828-4833:6",
     reactant1 = 
 """
-1  *4 C 0 {2,S} {4,S} {5,S} {7,S}
-2     C 0 {1,S} {3,S} {9,S} {10,S}
-3  *5 C 0 {2,S} {6,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5     C 0 {1,S} {16,S} {17,S} {18,S}
-6  *2 C 0 {3,S} {8,S} {19,S} {20,S}
-7  *1 O 1 {1,S}
-8  *3 H 0 {6,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
+multiplicity 2
+1  *4 C u0 p0 c0  {2,S} {4,S} {5,S} {7,S}
+2     C u0 p0 c0  {1,S} {3,S} {9,S} {10,S}
+3  *5 C u0 p0 c0  {2,S} {6,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5     C u0 p0 c0  {1,S} {16,S} {17,S} {18,S}
+6  *2 C u0 p0 c0  {3,S} {8,S} {19,S} {20,S}
+7  *1 O u1 p2 c0  {1,S}
+8  *3 H u0 p0 c0  {6,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {4,S} {5,S} {7,S}
-2     C 0 {1,S} {3,S} {9,S} {10,S}
-3  *4 C 0 {2,S} {6,S} {11,S} {12,S}
-4     C 0 {1,S} {13,S} {14,S} {15,S}
-5     C 0 {1,S} {16,S} {17,S} {18,S}
-6  *1 C 1 {3,S} {19,S} {20,S}
-7  *2 O 0 {1,S} {8,S}
-8  *3 H 0 {7,S}
-9     H 0 {2,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {4,S} {5,S} {7,S}
+2     C u0 p0 c0  {1,S} {3,S} {9,S} {10,S}
+3  *4 C u0 p0 c0  {2,S} {6,S} {11,S} {12,S}
+4     C u0 p0 c0  {1,S} {13,S} {14,S} {15,S}
+5     C u0 p0 c0  {1,S} {16,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {3,S} {19,S} {20,S}
+7  *2 O u0 p2 c0  {1,S} {8,S}
+8  *3 H u0 p0 c0  {7,S}
+9     H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (2.1e+12,"s^-1","*|/",5),
+        A = (2.1e+12, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (37.656,"kJ/mol"),
-        T0 = (1,"K"),
+        Ea = (37.656, 'kJ/mol'),
+        T0 = (1, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -3479,56 +3570,58 @@ entry(
     label = "2003MER/RAY4828-4833:5",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {9,S} {10,S}
-2  *4 C 0 {1,S} {4,S} {7,S} {11,S}
-3  *5 C 0 {1,S} {5,S} {12,S} {13,S}
-4     C 0 {2,S} {6,S} {14,S} {15,S}
-5  *2 C 0 {3,S} {8,S} {16,S} {17,S}
-6     C 0 {4,S} {18,S} {19,S} {20,S}
-7  *1 O 1 {2,S}
-8  *3 H 0 {5,S}
-9     H 0 {1,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {9,S} {10,S}
+2  *4 C u0 p0 c0  {1,S} {4,S} {7,S} {11,S}
+3  *5 C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4     C u0 p0 c0  {2,S} {6,S} {14,S} {15,S}
+5  *2 C u0 p0 c0  {3,S} {8,S} {16,S} {17,S}
+6     C u0 p0 c0  {4,S} {18,S} {19,S} {20,S}
+7  *1 O u1 p2 c0  {2,S}
+8  *3 H u0 p0 c0  {5,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {3,S} {7,S} {9,S}
-2     C 0 {1,S} {4,S} {10,S} {11,S}
-3     C 0 {1,S} {5,S} {12,S} {13,S}
-4  *4 C 0 {2,S} {6,S} {14,S} {15,S}
-5     C 0 {3,S} {16,S} {17,S} {18,S}
-6  *1 C 1 {4,S} {19,S} {20,S}
-7  *2 O 0 {1,S} {8,S}
-8  *3 H 0 {7,S}
-9     H 0 {1,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {7,S} {9,S}
+2     C u0 p0 c0  {1,S} {4,S} {10,S} {11,S}
+3     C u0 p0 c0  {1,S} {5,S} {12,S} {13,S}
+4  *4 C u0 p0 c0  {2,S} {6,S} {14,S} {15,S}
+5     C u0 p0 c0  {3,S} {16,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {4,S} {19,S} {20,S}
+7  *2 O u0 p2 c0  {1,S} {8,S}
+8  *3 H u0 p0 c0  {7,S}
+9     H u0 p0 c0  {1,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (2.3e+12,"s^-1","*|/",5),
+        A = (2.3e+12, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (40.166,"kJ/mol"),
-        T0 = (1,"K"),
+        Ea = (40.166, 'kJ/mol'),
+        T0 = (1, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -3569,62 +3662,64 @@ entry(
     label = "2003MER/RAY4828-4833:10",
     reactant1 = 
 """
-1  *2 C 0 {2,S} {5,S} {6,S} {8,S}
-2  *5 C 0 {1,S} {3,S} {10,S} {11,S}
-3     C 0 {2,S} {4,S} {12,S} {13,S}
-4  *4 C 0 {3,S} {7,S} {9,S} {14,S}
-5     C 0 {1,S} {15,S} {16,S} {17,S}
-6     C 0 {1,S} {18,S} {19,S} {20,S}
-7     C 0 {4,S} {21,S} {22,S} {23,S}
-8  *3 H 0 {1,S}
-9  *1 O 1 {4,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
-21    H 0 {7,S}
-22    H 0 {7,S}
-23    H 0 {7,S}
+multiplicity 2
+1  *2 C u0 p0 c0  {2,S} {5,S} {6,S} {8,S}
+2  *5 C u0 p0 c0  {1,S} {3,S} {10,S} {11,S}
+3     C u0 p0 c0  {2,S} {4,S} {12,S} {13,S}
+4  *4 C u0 p0 c0  {3,S} {7,S} {9,S} {14,S}
+5     C u0 p0 c0  {1,S} {15,S} {16,S} {17,S}
+6     C u0 p0 c0  {1,S} {18,S} {19,S} {20,S}
+7     C u0 p0 c0  {4,S} {21,S} {22,S} {23,S}
+8  *3 H u0 p0 c0  {1,S}
+9  *1 O u1 p2 c0  {4,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
+21    H u0 p0 c0  {7,S}
+22    H u0 p0 c0  {7,S}
+23    H u0 p0 c0  {7,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {4,S} {8,S} {10,S}
-2     C 0 {1,S} {3,S} {11,S} {12,S}
-3  *4 C 0 {2,S} {7,S} {13,S} {14,S}
-4     C 0 {1,S} {15,S} {16,S} {17,S}
-5     C 0 {7,S} {18,S} {19,S} {20,S}
-6     C 0 {7,S} {21,S} {22,S} {23,S}
-7  *1 C 1 {3,S} {5,S} {6,S}
-8  *2 O 0 {1,S} {9,S}
-9  *3 H 0 {8,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {4,S}
-18    H 0 {5,S}
-19    H 0 {5,S}
-20    H 0 {5,S}
-21    H 0 {6,S}
-22    H 0 {6,S}
-23    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {4,S} {8,S} {10,S}
+2     C u0 p0 c0  {1,S} {3,S} {11,S} {12,S}
+3  *4 C u0 p0 c0  {2,S} {7,S} {13,S} {14,S}
+4     C u0 p0 c0  {1,S} {15,S} {16,S} {17,S}
+5     C u0 p0 c0  {7,S} {18,S} {19,S} {20,S}
+6     C u0 p0 c0  {7,S} {21,S} {22,S} {23,S}
+7  *1 C u1 p0 c0  {3,S} {5,S} {6,S}
+8  *2 O u0 p2 c0  {1,S} {9,S}
+9  *3 H u0 p0 c0  {8,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {4,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {5,S}
+20    H u0 p0 c0  {5,S}
+21    H u0 p0 c0  {6,S}
+22    H u0 p0 c0  {6,S}
+23    H u0 p0 c0  {6,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (7.9e+11,"s^-1","*|/",5),
+        A = (7.9e+11, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (15.481,"kJ/mol"),
-        T0 = (1,"K"),
+        Ea = (15.481, 'kJ/mol'),
+        T0 = (1, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -3665,62 +3760,64 @@ entry(
     label = "2003MER/RAY4828-4833:11",
     reactant1 = 
 """
-1  *4 C 0 {2,S} {5,S} {6,S} {8,S}
-2     C 0 {1,S} {3,S} {10,S} {11,S}
-3  *5 C 0 {2,S} {4,S} {12,S} {13,S}
-4  *2 C 0 {3,S} {7,S} {9,S} {14,S}
-5     C 0 {1,S} {15,S} {16,S} {17,S}
-6     C 0 {1,S} {18,S} {19,S} {20,S}
-7     C 0 {4,S} {21,S} {22,S} {23,S}
-8  *1 O 1 {1,S}
-9  *3 H 0 {4,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
-21    H 0 {7,S}
-22    H 0 {7,S}
-23    H 0 {7,S}
+multiplicity 2
+1  *4 C u0 p0 c0  {2,S} {5,S} {6,S} {8,S}
+2     C u0 p0 c0  {1,S} {3,S} {10,S} {11,S}
+3  *5 C u0 p0 c0  {2,S} {4,S} {12,S} {13,S}
+4  *2 C u0 p0 c0  {3,S} {7,S} {9,S} {14,S}
+5     C u0 p0 c0  {1,S} {15,S} {16,S} {17,S}
+6     C u0 p0 c0  {1,S} {18,S} {19,S} {20,S}
+7     C u0 p0 c0  {4,S} {21,S} {22,S} {23,S}
+8  *1 O u1 p2 c0  {1,S}
+9  *3 H u0 p0 c0  {4,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
+21    H u0 p0 c0  {7,S}
+22    H u0 p0 c0  {7,S}
+23    H u0 p0 c0  {7,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {4,S} {5,S} {8,S}
-2     C 0 {1,S} {3,S} {10,S} {11,S}
-3  *4 C 0 {2,S} {7,S} {12,S} {13,S}
-4     C 0 {1,S} {14,S} {15,S} {16,S}
-5     C 0 {1,S} {17,S} {18,S} {19,S}
-6     C 0 {7,S} {20,S} {21,S} {22,S}
-7  *1 C 1 {3,S} {6,S} {23,S}
-8  *2 O 0 {1,S} {9,S}
-9  *3 H 0 {8,S}
-10    H 0 {2,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {5,S}
-20    H 0 {6,S}
-21    H 0 {6,S}
-22    H 0 {6,S}
-23    H 0 {7,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {4,S} {5,S} {8,S}
+2     C u0 p0 c0  {1,S} {3,S} {10,S} {11,S}
+3  *4 C u0 p0 c0  {2,S} {7,S} {12,S} {13,S}
+4     C u0 p0 c0  {1,S} {14,S} {15,S} {16,S}
+5     C u0 p0 c0  {1,S} {17,S} {18,S} {19,S}
+6     C u0 p0 c0  {7,S} {20,S} {21,S} {22,S}
+7  *1 C u1 p0 c0  {3,S} {6,S} {23,S}
+8  *2 O u0 p2 c0  {1,S} {9,S}
+9  *3 H u0 p0 c0  {8,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {5,S}
+20    H u0 p0 c0  {6,S}
+21    H u0 p0 c0  {6,S}
+22    H u0 p0 c0  {6,S}
+23    H u0 p0 c0  {7,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1.7e+12,"s^-1","*|/",5),
+        A = (1.7e+12, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (29.288,"kJ/mol"),
-        T0 = (1,"K"),
+        Ea = (29.288, 'kJ/mol'),
+        T0 = (1, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
@@ -3761,56 +3858,58 @@ entry(
     label = "2001HAN/WAL2043-2052:5",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {10,S}
-2     C 0 {1,S} {5,S} {11,S} {12,S}
-3     C 0 {1,S} {6,S} {13,S} {14,S}
-4  *2 C 0 {5,S} {6,S} {8,S} {15,S}
-5  *5 C 0 {2,S} {4,S} {16,S} {17,S}
-6     C 0 {3,S} {4,S} {18,S} {19,S}
-7  *4 O 0 {1,S} {9,S}
-8  *3 H 0 {4,S}
-9  *1 O 1 {7,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {10,S}
+2     C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+3     C u0 p0 c0  {1,S} {6,S} {13,S} {14,S}
+4  *2 C u0 p0 c0  {5,S} {6,S} {8,S} {15,S}
+5  *5 C u0 p0 c0  {2,S} {4,S} {16,S} {17,S}
+6     C u0 p0 c0  {3,S} {4,S} {18,S} {19,S}
+7  *4 O u0 p2 c0  {1,S} {9,S}
+8  *3 H u0 p0 c0  {4,S}
+9  *1 O u1 p2 c0  {7,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {10,S}
-2     C 0 {1,S} {4,S} {11,S} {12,S}
-3     C 0 {1,S} {5,S} {13,S} {14,S}
-4  *4 C 0 {2,S} {6,S} {15,S} {16,S}
-5     C 0 {3,S} {6,S} {17,S} {18,S}
-6  *1 C 1 {4,S} {5,S} {19,S}
-7  *5 O 0 {1,S} {8,S}
-8  *2 O 0 {7,S} {9,S}
-9  *3 H 0 {8,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {10,S}
+2     C u0 p0 c0  {1,S} {4,S} {11,S} {12,S}
+3     C u0 p0 c0  {1,S} {5,S} {13,S} {14,S}
+4  *4 C u0 p0 c0  {2,S} {6,S} {15,S} {16,S}
+5     C u0 p0 c0  {3,S} {6,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {4,S} {5,S} {19,S}
+7  *5 O u0 p2 c0  {1,S} {8,S}
+8  *2 O u0 p2 c0  {7,S} {9,S}
+9  *3 H u0 p0 c0  {8,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (1.51e+11,"s^-1"),
+        A = (1.51e+11, 's^-1'),
         n = 0,
-        Ea = (112.5,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (673,"K"),
-        Tmax = (793,"K"),
+        Ea = (112.5, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (673, 'K'),
+        Tmax = (793, 'K'),
     ),
     reference = Article(
         authors = ["Handford-Styring, S.M.", "Walker, R.W."],
@@ -3842,56 +3941,58 @@ entry(
     label = "2001HAN/WAL2043-2052:4",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {7,S} {10,S}
-2  *5 C 0 {1,S} {5,S} {11,S} {12,S}
-3     C 0 {1,S} {6,S} {13,S} {14,S}
-4     C 0 {5,S} {6,S} {15,S} {16,S}
-5  *2 C 0 {2,S} {4,S} {8,S} {17,S}
-6     C 0 {3,S} {4,S} {18,S} {19,S}
-7  *4 O 0 {1,S} {9,S}
-8  *3 H 0 {5,S}
-9  *1 O 1 {7,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {7,S} {10,S}
+2  *5 C u0 p0 c0  {1,S} {5,S} {11,S} {12,S}
+3     C u0 p0 c0  {1,S} {6,S} {13,S} {14,S}
+4     C u0 p0 c0  {5,S} {6,S} {15,S} {16,S}
+5  *2 C u0 p0 c0  {2,S} {4,S} {8,S} {17,S}
+6     C u0 p0 c0  {3,S} {4,S} {18,S} {19,S}
+7  *4 O u0 p2 c0  {1,S} {9,S}
+8  *3 H u0 p0 c0  {5,S}
+9  *1 O u1 p2 c0  {7,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {4,S} {7,S} {10,S}
-2     C 0 {1,S} {3,S} {11,S} {12,S}
-3     C 0 {2,S} {5,S} {13,S} {14,S}
-4  *4 C 0 {1,S} {6,S} {15,S} {16,S}
-5     C 0 {3,S} {6,S} {17,S} {18,S}
-6  *1 C 1 {4,S} {5,S} {19,S}
-7  *5 O 0 {1,S} {8,S}
-8  *2 O 0 {7,S} {9,S}
-9  *3 H 0 {8,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {7,S} {10,S}
+2     C u0 p0 c0  {1,S} {3,S} {11,S} {12,S}
+3     C u0 p0 c0  {2,S} {5,S} {13,S} {14,S}
+4  *4 C u0 p0 c0  {1,S} {6,S} {15,S} {16,S}
+5     C u0 p0 c0  {3,S} {6,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {4,S} {5,S} {19,S}
+7  *5 O u0 p2 c0  {1,S} {8,S}
+8  *2 O u0 p2 c0  {7,S} {9,S}
+9  *3 H u0 p0 c0  {8,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
 """,
     degeneracy = 8,
     kinetics = Arrhenius(
-        A = (2.57e+12,"s^-1"),
+        A = (2.57e+12, 's^-1'),
         n = 0,
-        Ea = (123.5,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (673,"K"),
-        Tmax = (793,"K"),
+        Ea = (123.5, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (673, 'K'),
+        Tmax = (793, 'K'),
     ),
     reference = Article(
         authors = ["Handford-Styring, S.M.", "Walker, R.W."],
@@ -3923,56 +4024,58 @@ entry(
     label = "2001HAN/WAL2043-2052:3",
     reactant1 = 
 """
-1  *5 C 0 {2,S} {3,S} {7,S} {10,S}
-2  *2 C 0 {1,S} {5,S} {8,S} {11,S}
-3     C 0 {1,S} {6,S} {12,S} {13,S}
-4     C 0 {5,S} {6,S} {14,S} {15,S}
-5     C 0 {2,S} {4,S} {16,S} {17,S}
-6     C 0 {3,S} {4,S} {18,S} {19,S}
-7  *4 O 0 {1,S} {9,S}
-8  *3 H 0 {2,S}
-9  *1 O 1 {7,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {3,S}
-13    H 0 {3,S}
-14    H 0 {4,S}
-15    H 0 {4,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {3,S} {7,S} {10,S}
+2  *2 C u0 p0 c0  {1,S} {5,S} {8,S} {11,S}
+3     C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+4     C u0 p0 c0  {5,S} {6,S} {14,S} {15,S}
+5     C u0 p0 c0  {2,S} {4,S} {16,S} {17,S}
+6     C u0 p0 c0  {3,S} {4,S} {18,S} {19,S}
+7  *4 O u0 p2 c0  {1,S} {9,S}
+8  *3 H u0 p0 c0  {2,S}
+9  *1 O u1 p2 c0  {7,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
 """,
     product1 = 
 """
-1  *4 C 0 {2,S} {6,S} {7,S} {10,S}
-2     C 0 {1,S} {3,S} {11,S} {12,S}
-3     C 0 {2,S} {4,S} {13,S} {14,S}
-4     C 0 {3,S} {5,S} {15,S} {16,S}
-5     C 0 {4,S} {6,S} {17,S} {18,S}
-6  *1 C 1 {1,S} {5,S} {19,S}
-7  *5 O 0 {1,S} {8,S}
-8  *2 O 0 {7,S} {9,S}
-9  *3 H 0 {8,S}
-10    H 0 {1,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
+multiplicity 2
+1  *4 C u0 p0 c0  {2,S} {6,S} {7,S} {10,S}
+2     C u0 p0 c0  {1,S} {3,S} {11,S} {12,S}
+3     C u0 p0 c0  {2,S} {4,S} {13,S} {14,S}
+4     C u0 p0 c0  {3,S} {5,S} {15,S} {16,S}
+5     C u0 p0 c0  {4,S} {6,S} {17,S} {18,S}
+6  *1 C u1 p0 c0  {1,S} {5,S} {19,S}
+7  *5 O u0 p2 c0  {1,S} {8,S}
+8  *2 O u0 p2 c0  {7,S} {9,S}
+9  *3 H u0 p0 c0  {8,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (3.47e+12,"s^-1"),
+        A = (3.47e+12, 's^-1'),
         n = 0,
-        Ea = (135.7,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (673,"K"),
-        Tmax = (793,"K"),
+        Ea = (135.7, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (673, 'K'),
+        Tmax = (793, 'K'),
     ),
     reference = Article(
         authors = ["Handford-Styring, S.M.", "Walker, R.W."],
@@ -4004,70 +4107,72 @@ entry(
     label = "1987DOB/BER895:2",
     reactant1 = 
 """
-1     C 0 {2,S} {4,S} {10,S} {11,S}
-2     C 0 {1,S} {3,S} {12,S} {13,S}
-3  *2 C 0 {2,S} {5,S} {9,S} {14,S}
-4     C 0 {1,S} {6,S} {15,S} {16,S}
-5  *4 C 0 {3,S} {8,S} {17,S} {18,S}
-6     C 0 {4,S} {19,S} {20,S} {21,S}
-7     C 0 {8,S} {22,S} {23,S} {24,S}
-8  *1 C 1 {5,S} {7,S} {25,S}
-9  *3 H 0 {3,S}
-10    H 0 {1,S}
-11    H 0 {1,S}
-12    H 0 {2,S}
-13    H 0 {2,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
-21    H 0 {6,S}
-22    H 0 {7,S}
-23    H 0 {7,S}
-24    H 0 {7,S}
-25    H 0 {8,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {10,S} {11,S}
+2     C u0 p0 c0  {1,S} {3,S} {12,S} {13,S}
+3  *2 C u0 p0 c0  {2,S} {5,S} {9,S} {14,S}
+4     C u0 p0 c0  {1,S} {6,S} {15,S} {16,S}
+5  *4 C u0 p0 c0  {3,S} {8,S} {17,S} {18,S}
+6     C u0 p0 c0  {4,S} {19,S} {20,S} {21,S}
+7     C u0 p0 c0  {8,S} {22,S} {23,S} {24,S}
+8  *1 C u1 p0 c0  {5,S} {7,S} {25,S}
+9  *3 H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {1,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {2,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
+21    H u0 p0 c0  {6,S}
+22    H u0 p0 c0  {7,S}
+23    H u0 p0 c0  {7,S}
+24    H u0 p0 c0  {7,S}
+25    H u0 p0 c0  {8,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {4,S} {10,S} {11,S}
-2     C 0 {1,S} {6,S} {12,S} {13,S}
-3  *2 C 0 {5,S} {7,S} {9,S} {14,S}
-4     C 0 {1,S} {8,S} {15,S} {16,S}
-5  *4 C 0 {3,S} {8,S} {17,S} {18,S}
-6     C 0 {2,S} {19,S} {20,S} {21,S}
-7     C 0 {3,S} {22,S} {23,S} {24,S}
-8  *1 C 1 {4,S} {5,S} {25,S}
-9  *3 H 0 {3,S}
-10    H 0 {1,S}
-11    H 0 {1,S}
-12    H 0 {2,S}
-13    H 0 {2,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {5,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
-21    H 0 {6,S}
-22    H 0 {7,S}
-23    H 0 {7,S}
-24    H 0 {7,S}
-25    H 0 {8,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {10,S} {11,S}
+2     C u0 p0 c0  {1,S} {6,S} {12,S} {13,S}
+3  *2 C u0 p0 c0  {5,S} {7,S} {9,S} {14,S}
+4     C u0 p0 c0  {1,S} {8,S} {15,S} {16,S}
+5  *4 C u0 p0 c0  {3,S} {8,S} {17,S} {18,S}
+6     C u0 p0 c0  {2,S} {19,S} {20,S} {21,S}
+7     C u0 p0 c0  {3,S} {22,S} {23,S} {24,S}
+8  *1 C u1 p0 c0  {4,S} {5,S} {25,S}
+9  *3 H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {1,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {2,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
+21    H u0 p0 c0  {6,S}
+22    H u0 p0 c0  {7,S}
+23    H u0 p0 c0  {7,S}
+24    H u0 p0 c0  {7,S}
+25    H u0 p0 c0  {8,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (3.16e+10,"s^-1","*|/",5),
+        A = (3.16e+10, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (71.172,"kJ/mol","+|-",8.564),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (385,"K"),
-        Pmin = (6666,"Pa"),
-        Pmax = (100000,"Pa"),
+        Ea = (71.172, 'kJ/mol', '+|-', 8.564),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (385, 'K'),
+        Pmin = (6666, 'Pa'),
+        Pmax = (100000, 'Pa'),
     ),
     reference = Article(
         authors = ["Dobe, S.", "Berces, T.", "Reti, F.", "Marta, F."],
@@ -4096,70 +4201,72 @@ entry(
     label = "1987DOB/BER895:3",
     reactant1 = 
 """
-1     C 0 {2,S} {3,S} {10,S} {11,S}
-2     C 0 {1,S} {4,S} {12,S} {13,S}
-3     C 0 {1,S} {6,S} {14,S} {15,S}
-4     C 0 {2,S} {8,S} {16,S} {17,S}
-5  *2 C 0 {7,S} {8,S} {9,S} {18,S}
-6     C 0 {3,S} {19,S} {20,S} {21,S}
-7     C 0 {5,S} {22,S} {23,S} {24,S}
-8  *1 C 1 {4,S} {5,S} {25,S}
-9  *3 H 0 {5,S}
-10    H 0 {1,S}
-11    H 0 {1,S}
-12    H 0 {2,S}
-13    H 0 {2,S}
-14    H 0 {3,S}
-15    H 0 {3,S}
-16    H 0 {4,S}
-17    H 0 {4,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
-21    H 0 {6,S}
-22    H 0 {7,S}
-23    H 0 {7,S}
-24    H 0 {7,S}
-25    H 0 {8,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {3,S} {10,S} {11,S}
+2     C u0 p0 c0  {1,S} {4,S} {12,S} {13,S}
+3     C u0 p0 c0  {1,S} {6,S} {14,S} {15,S}
+4     C u0 p0 c0  {2,S} {8,S} {16,S} {17,S}
+5  *2 C u0 p0 c0  {7,S} {8,S} {9,S} {18,S}
+6     C u0 p0 c0  {3,S} {19,S} {20,S} {21,S}
+7     C u0 p0 c0  {5,S} {22,S} {23,S} {24,S}
+8  *1 C u1 p0 c0  {4,S} {5,S} {25,S}
+9  *3 H u0 p0 c0  {5,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {1,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {2,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {3,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {4,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
+21    H u0 p0 c0  {6,S}
+22    H u0 p0 c0  {7,S}
+23    H u0 p0 c0  {7,S}
+24    H u0 p0 c0  {7,S}
+25    H u0 p0 c0  {8,S}
 """,
     product1 = 
 """
-1     C 0 {2,S} {4,S} {10,S} {11,S}
-2     C 0 {1,S} {3,S} {12,S} {13,S}
-3     C 0 {2,S} {5,S} {14,S} {15,S}
-4     C 0 {1,S} {6,S} {16,S} {17,S}
-5  *2 C 0 {3,S} {8,S} {9,S} {18,S}
-6     C 0 {4,S} {19,S} {20,S} {21,S}
-7     C 0 {8,S} {22,S} {23,S} {24,S}
-8  *1 C 1 {5,S} {7,S} {25,S}
-9  *3 H 0 {5,S}
-10    H 0 {1,S}
-11    H 0 {1,S}
-12    H 0 {2,S}
-13    H 0 {2,S}
-14    H 0 {3,S}
-15    H 0 {3,S}
-16    H 0 {4,S}
-17    H 0 {4,S}
-18    H 0 {5,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
-21    H 0 {6,S}
-22    H 0 {7,S}
-23    H 0 {7,S}
-24    H 0 {7,S}
-25    H 0 {8,S}
+multiplicity 2
+1     C u0 p0 c0  {2,S} {4,S} {10,S} {11,S}
+2     C u0 p0 c0  {1,S} {3,S} {12,S} {13,S}
+3     C u0 p0 c0  {2,S} {5,S} {14,S} {15,S}
+4     C u0 p0 c0  {1,S} {6,S} {16,S} {17,S}
+5  *2 C u0 p0 c0  {3,S} {8,S} {9,S} {18,S}
+6     C u0 p0 c0  {4,S} {19,S} {20,S} {21,S}
+7     C u0 p0 c0  {8,S} {22,S} {23,S} {24,S}
+8  *1 C u1 p0 c0  {5,S} {7,S} {25,S}
+9  *3 H u0 p0 c0  {5,S}
+10    H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {1,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {2,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {3,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {4,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
+21    H u0 p0 c0  {6,S}
+22    H u0 p0 c0  {7,S}
+23    H u0 p0 c0  {7,S}
+24    H u0 p0 c0  {7,S}
+25    H u0 p0 c0  {8,S}
 """,
     degeneracy = 4,
     kinetics = Arrhenius(
-        A = (2.51e+09,"s^-1","*|/",5),
+        A = (2.51e+09, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (46.894,"kJ/mol","+|-",4.215),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (385,"K"),
-        Pmin = (6666,"Pa"),
-        Pmax = (100000,"Pa"),
+        Ea = (46.894, 'kJ/mol', '+|-', 4.215),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (385, 'K'),
+        Pmin = (6666, 'Pa'),
+        Pmax = (100000, 'Pa'),
     ),
     reference = Article(
         authors = ["Dobe, S.", "Berces, T.", "Reti, F.", "Marta, F."],
@@ -4188,50 +4295,52 @@ entry(
     label = "2003TOK/LIN11397-11408:7",
     reactant1 = 
 """
-1  *4 C 0 {2,B} {4,S} {8,B}
-2     C 0 {1,B} {3,B} {10,S}
-3     C 0 {2,B} {5,B} {11,S}
-4  *5 C 0 {1,S} {7,D} {12,S}
-5     C 0 {3,B} {6,B} {13,S}
-6     C 0 {5,B} {8,B} {14,S}
-7  *2 C 0 {4,D} {9,S} {15,S}
-8  *1 C 1 {1,B} {6,B}
-9  *3 H 0 {7,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {5,S}
-14    H 0 {6,S}
-15    H 0 {7,S}
+multiplicity 2
+1  *4 C u0 p0 c0  {2,B} {4,S} {8,B}
+2     C u0 p0 c0  {1,B} {3,B} {10,S}
+3     C u0 p0 c0  {2,B} {5,B} {11,S}
+4  *5 C u0 p0 c0  {1,S} {7,D} {12,S}
+5     C u0 p0 c0  {3,B} {6,B} {13,S}
+6     C u0 p0 c0  {5,B} {8,B} {14,S}
+7  *2 C u0 p0 c0  {4,D} {9,S} {15,S}
+8  *1 C u1 p0 c0  {1,B} {6,B}
+9  *3 H u0 p0 c0  {7,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {5,S}
+14    H u0 p0 c0  {6,S}
+15    H u0 p0 c0  {7,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,B} {3,B} {7,S}
-2     C 0 {1,B} {4,B} {10,S}
-3  *2 C 0 {1,B} {6,B} {9,S}
-4     C 0 {2,B} {5,B} {11,S}
-5     C 0 {4,B} {6,B} {12,S}
-6     C 0 {3,B} {5,B} {13,S}
-7  *4 C 0 {1,S} {8,D} {14,S}
-8  *1 C 1 {7,D} {15,S}
-9  *3 H 0 {3,S}
-10    H 0 {2,S}
-11    H 0 {4,S}
-12    H 0 {5,S}
-13    H 0 {6,S}
-14    H 0 {7,S}
-15    H 0 {8,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,B} {3,B} {7,S}
+2     C u0 p0 c0  {1,B} {4,B} {10,S}
+3  *2 C u0 p0 c0  {1,B} {6,B} {9,S}
+4     C u0 p0 c0  {2,B} {5,B} {11,S}
+5     C u0 p0 c0  {4,B} {6,B} {12,S}
+6     C u0 p0 c0  {3,B} {5,B} {13,S}
+7  *4 C u0 p0 c0  {1,S} {8,D} {14,S}
+8  *1 C u1 p0 c0  {7,D} {15,S}
+9  *3 H u0 p0 c0  {3,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {4,S}
+12    H u0 p0 c0  {5,S}
+13    H u0 p0 c0  {6,S}
+14    H u0 p0 c0  {7,S}
+15    H u0 p0 c0  {8,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (4.57e+09,"s^-1"),
+        A = (4.57e+09, 's^-1'),
         n = 0.81,
-        Ea = (109.914,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (250,"K"),
-        Tmax = (2000,"K"),
-        Pmin = (101000,"Pa"),
-        Pmax = (101000,"Pa"),
+        Ea = (109.914, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (250, 'K'),
+        Tmax = (2000, 'K'),
+        Pmin = (101000, 'Pa'),
+        Pmax = (101000, 'Pa'),
     ),
     reference = Article(
         authors = ["Tokmakov, I.V.", "Lin, M.C."],
@@ -4258,50 +4367,52 @@ entry(
     label = "2003TOK/LIN11397-11408:6",
     reactant1 = 
 """
-1  *5 C 0 {2,B} {3,B} {7,S}
-2  *2 C 0 {1,B} {5,B} {9,S}
-3     C 0 {1,B} {6,B} {10,S}
-4     C 0 {5,B} {6,B} {11,S}
-5     C 0 {2,B} {4,B} {12,S}
-6     C 0 {3,B} {4,B} {13,S}
-7  *4 C 0 {1,S} {8,D} {14,S}
-8  *1 C 1 {7,D} {15,S}
-9  *3 H 0 {2,S}
-10    H 0 {3,S}
-11    H 0 {4,S}
-12    H 0 {5,S}
-13    H 0 {6,S}
-14    H 0 {7,S}
-15    H 0 {8,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,B} {3,B} {7,S}
+2  *2 C u0 p0 c0  {1,B} {5,B} {9,S}
+3     C u0 p0 c0  {1,B} {6,B} {10,S}
+4     C u0 p0 c0  {5,B} {6,B} {11,S}
+5     C u0 p0 c0  {2,B} {4,B} {12,S}
+6     C u0 p0 c0  {3,B} {4,B} {13,S}
+7  *4 C u0 p0 c0  {1,S} {8,D} {14,S}
+8  *1 C u1 p0 c0  {7,D} {15,S}
+9  *3 H u0 p0 c0  {2,S}
+10    H u0 p0 c0  {3,S}
+11    H u0 p0 c0  {4,S}
+12    H u0 p0 c0  {5,S}
+13    H u0 p0 c0  {6,S}
+14    H u0 p0 c0  {7,S}
+15    H u0 p0 c0  {8,S}
 """,
     product1 = 
 """
-1  *4 C 0 {2,B} {5,S} {8,B}
-2     C 0 {1,B} {3,B} {10,S}
-3     C 0 {2,B} {4,B} {11,S}
-4     C 0 {3,B} {6,B} {12,S}
-5  *5 C 0 {1,S} {7,D} {13,S}
-6     C 0 {4,B} {8,B} {14,S}
-7  *2 C 0 {5,D} {9,S} {15,S}
-8  *1 C 1 {1,B} {6,B}
-9  *3 H 0 {7,S}
-10    H 0 {2,S}
-11    H 0 {3,S}
-12    H 0 {4,S}
-13    H 0 {5,S}
-14    H 0 {6,S}
-15    H 0 {7,S}
+multiplicity 2
+1  *4 C u0 p0 c0  {2,B} {5,S} {8,B}
+2     C u0 p0 c0  {1,B} {3,B} {10,S}
+3     C u0 p0 c0  {2,B} {4,B} {11,S}
+4     C u0 p0 c0  {3,B} {6,B} {12,S}
+5  *5 C u0 p0 c0  {1,S} {7,D} {13,S}
+6     C u0 p0 c0  {4,B} {8,B} {14,S}
+7  *2 C u0 p0 c0  {5,D} {9,S} {15,S}
+8  *1 C u1 p0 c0  {1,B} {6,B}
+9  *3 H u0 p0 c0  {7,S}
+10    H u0 p0 c0  {2,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {4,S}
+13    H u0 p0 c0  {5,S}
+14    H u0 p0 c0  {6,S}
+15    H u0 p0 c0  {7,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (2.04e+10,"s^-1"),
+        A = (2.04e+10, 's^-1'),
         n = 0.7,
-        Ea = (115.06,"kJ/mol"),
-        T0 = (1,"K"),
-        Tmin = (250,"K"),
-        Tmax = (2000,"K"),
-        Pmin = (101000,"Pa"),
-        Pmax = (101000,"Pa"),
+        Ea = (115.06, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (250, 'K'),
+        Tmax = (2000, 'K'),
+        Pmin = (101000, 'Pa'),
+        Pmax = (101000, 'Pa'),
     ),
     reference = Article(
         authors = ["Tokmakov, I.V.", "Lin, M.C."],
@@ -4328,68 +4439,70 @@ entry(
     label = "2003MER/RAY4828-4833:12",
     reactant1 = 
 """
-1  *2 C 0 {3,S} {5,S} {6,S} {10,S}
-2  *4 C 0 {4,S} {7,S} {8,S} {9,S}
-3  *5 C 0 {1,S} {4,S} {11,S} {12,S}
-4     C 0 {2,S} {3,S} {13,S} {14,S}
-5     C 0 {1,S} {15,S} {16,S} {17,S}
-6     C 0 {1,S} {18,S} {19,S} {20,S}
-7     C 0 {2,S} {21,S} {22,S} {23,S}
-8     C 0 {2,S} {24,S} {25,S} {26,S}
-9  *1 O 1 {2,S}
-10 *3 H 0 {1,S}
-11    H 0 {3,S}
-12    H 0 {3,S}
-13    H 0 {4,S}
-14    H 0 {4,S}
-15    H 0 {5,S}
-16    H 0 {5,S}
-17    H 0 {5,S}
-18    H 0 {6,S}
-19    H 0 {6,S}
-20    H 0 {6,S}
-21    H 0 {7,S}
-22    H 0 {7,S}
-23    H 0 {7,S}
-24    H 0 {8,S}
-25    H 0 {8,S}
-26    H 0 {8,S}
+multiplicity 2
+1  *2 C u0 p0 c0  {3,S} {5,S} {6,S} {10,S}
+2  *4 C u0 p0 c0  {4,S} {7,S} {8,S} {9,S}
+3  *5 C u0 p0 c0  {1,S} {4,S} {11,S} {12,S}
+4     C u0 p0 c0  {2,S} {3,S} {13,S} {14,S}
+5     C u0 p0 c0  {1,S} {15,S} {16,S} {17,S}
+6     C u0 p0 c0  {1,S} {18,S} {19,S} {20,S}
+7     C u0 p0 c0  {2,S} {21,S} {22,S} {23,S}
+8     C u0 p0 c0  {2,S} {24,S} {25,S} {26,S}
+9  *1 O u1 p2 c0  {2,S}
+10 *3 H u0 p0 c0  {1,S}
+11    H u0 p0 c0  {3,S}
+12    H u0 p0 c0  {3,S}
+13    H u0 p0 c0  {4,S}
+14    H u0 p0 c0  {4,S}
+15    H u0 p0 c0  {5,S}
+16    H u0 p0 c0  {5,S}
+17    H u0 p0 c0  {5,S}
+18    H u0 p0 c0  {6,S}
+19    H u0 p0 c0  {6,S}
+20    H u0 p0 c0  {6,S}
+21    H u0 p0 c0  {7,S}
+22    H u0 p0 c0  {7,S}
+23    H u0 p0 c0  {7,S}
+24    H u0 p0 c0  {8,S}
+25    H u0 p0 c0  {8,S}
+26    H u0 p0 c0  {8,S}
 """,
     product1 = 
 """
-1  *5 C 0 {2,S} {4,S} {5,S} {9,S}
-2     C 0 {1,S} {3,S} {11,S} {12,S}
-3  *4 C 0 {2,S} {8,S} {13,S} {14,S}
-4     C 0 {1,S} {15,S} {16,S} {17,S}
-5     C 0 {1,S} {18,S} {19,S} {20,S}
-6     C 0 {8,S} {21,S} {22,S} {23,S}
-7     C 0 {8,S} {24,S} {25,S} {26,S}
-8  *1 C 1 {3,S} {6,S} {7,S}
-9  *2 O 0 {1,S} {10,S}
-10 *3 H 0 {9,S}
-11    H 0 {2,S}
-12    H 0 {2,S}
-13    H 0 {3,S}
-14    H 0 {3,S}
-15    H 0 {4,S}
-16    H 0 {4,S}
-17    H 0 {4,S}
-18    H 0 {5,S}
-19    H 0 {5,S}
-20    H 0 {5,S}
-21    H 0 {6,S}
-22    H 0 {6,S}
-23    H 0 {6,S}
-24    H 0 {7,S}
-25    H 0 {7,S}
-26    H 0 {7,S}
+multiplicity 2
+1  *5 C u0 p0 c0  {2,S} {4,S} {5,S} {9,S}
+2     C u0 p0 c0  {1,S} {3,S} {11,S} {12,S}
+3  *4 C u0 p0 c0  {2,S} {8,S} {13,S} {14,S}
+4     C u0 p0 c0  {1,S} {15,S} {16,S} {17,S}
+5     C u0 p0 c0  {1,S} {18,S} {19,S} {20,S}
+6     C u0 p0 c0  {8,S} {21,S} {22,S} {23,S}
+7     C u0 p0 c0  {8,S} {24,S} {25,S} {26,S}
+8  *1 C u1 p0 c0  {3,S} {6,S} {7,S}
+9  *2 O u0 p2 c0  {1,S} {10,S}
+10 *3 H u0 p0 c0  {9,S}
+11    H u0 p0 c0  {2,S}
+12    H u0 p0 c0  {2,S}
+13    H u0 p0 c0  {3,S}
+14    H u0 p0 c0  {3,S}
+15    H u0 p0 c0  {4,S}
+16    H u0 p0 c0  {4,S}
+17    H u0 p0 c0  {4,S}
+18    H u0 p0 c0  {5,S}
+19    H u0 p0 c0  {5,S}
+20    H u0 p0 c0  {5,S}
+21    H u0 p0 c0  {6,S}
+22    H u0 p0 c0  {6,S}
+23    H u0 p0 c0  {6,S}
+24    H u0 p0 c0  {7,S}
+25    H u0 p0 c0  {7,S}
+26    H u0 p0 c0  {7,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (8.6e+11,"s^-1","*|/",5),
+        A = (8.6e+11, 's^-1', '*|/', 5),
         n = 0,
-        Ea = (16.318,"kJ/mol"),
-        T0 = (1,"K"),
+        Ea = (16.318, 'kJ/mol'),
+        T0 = (1, 'K'),
     ),
     reference = Article(
         authors = ["Mereau, R.", "Rayez, M.T.", "Caralp, F.", "Rayez, J.C."],
