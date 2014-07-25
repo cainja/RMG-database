@@ -23,8 +23,8 @@ from rmgpy.data.rmg import RMGDatabase
 if __name__ == '__main__':
 
     # Set the import and export paths
-    oldPath = 'input'
-    newPath = 'input_new'
+    oldPath = 'input_old'
+    newPath = 'input'
         
     print 'Loading old RMG-Py database...'
     database = RMGDatabase()
